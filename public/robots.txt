@@ -1,0 +1,13 @@
+# -------------------------------------------------------
+# THE GREEN BRICK ROAD
+# -------------------------------------------------------
+# Copyright (c) [2023] The Green Brick Road
+# All rights reserved
+# -------------------------------------------------------
+# Configure URLs accessible by search engine crawlers
+# -------------------------------------------------------
+# Nadège LEMPERIERE, @02 may 2023
+# Latest revision: 02 may 2023
+# -------------------------------------------------------
+User-agent: *
+Disallow:
