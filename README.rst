@@ -1,4 +1,5 @@
-.. image:: public/logo512.png
+.. image:: public/logo192.png
+   :width: 100 px
    :alt: Logo
 
 ===========================
