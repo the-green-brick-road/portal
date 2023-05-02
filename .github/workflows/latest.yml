@@ -53,6 +53,7 @@ jobs:
               if: always()
               with:
                 sarif_file: snyk.sarif
+                token: ${{ secrets.GH_ACCESS_TOKEN }}
 
     test:
         name: Testing Website
