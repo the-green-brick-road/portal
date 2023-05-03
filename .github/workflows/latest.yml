@@ -101,9 +101,9 @@ jobs:
               with:
                 args: npm run build
 
-            - name: Publish portal to Github Pages
-              uses: peaceiris/actions-gh-pages@v3
+            - name: Deploy to Firebase
+              uses: w9jds/firebase-action@master
               with:
-                publish_dir: ./build/
-                github_token: ${{ secrets.GH_ACCESS_TOKEN }}
-                commit_message: "Generate Documentation"
+                args: deploy --only hosting
+              env:
+                FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
