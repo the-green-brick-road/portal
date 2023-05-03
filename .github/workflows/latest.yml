@@ -104,7 +104,7 @@ jobs:
                 args: npm run build
 
             - name: Publish portal to Github Pages
-              uses: peaceiris/actions-gh-pages@main
+              uses: peaceiris/actions-gh-pages@v3
               with:
                 publish_dir: ./build/
                 github_token: ${{ secrets.GH_ACCESS_TOKEN }}
