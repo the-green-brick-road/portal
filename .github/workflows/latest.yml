@@ -20,6 +20,11 @@ jobs:
         name: Build Website
         runs-on: ubuntu-latest
         container: node:alpine
+        permissions:
+          # For CodeQL actions
+          security-events: write
+          actions: read
+          contents: read
         steps:
             - name: Checkout code
               uses: actions/checkout@master
