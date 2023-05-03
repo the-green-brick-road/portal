@@ -18,7 +18,7 @@ on:
 
 jobs:
 
-    build:
+    check:
         name: Build Website
         runs-on: ubuntu-latest
         container: node:alpine
@@ -42,11 +42,6 @@ jobs:
               with:
                 args: npm run lint
 
-            - name: Building application
-              uses: docker://node:alpine
-              with:
-                args: npm run build
-
             - name: Run Snyk to check for vulnerabilities
               continue-on-error: true
               uses: snyk/actions/node@master
@@ -56,7 +51,7 @@ jobs:
                 args: --sarif-file-output=snyk.sarif
 
             - name: Upload result to GitHub Code Scanning
-              uses: github/codeql-action/upload-sarif@v2
+              uses: github/codeql-action/upload-sarif@main
               if: always()
               with:
                 sarif_file: snyk.sarif
@@ -93,10 +88,15 @@ jobs:
     publish:
         name: Publish Website
         runs-on: ubuntu-latest
-        needs: [build, test]
+        needs: [check, test]
         steps:
             - name: Checkout code
               uses: actions/checkout@master
+
+            - name: Installing dependencies
+              uses: docker://node:alpine
+              with:
+                args: npm install
 
             - name: Building application
               uses: docker://node:alpine
