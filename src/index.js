@@ -33,6 +33,7 @@ __webpack_nonce__ = window.__webpack_nonce__;// eslint-disable-line no-native-re
 ReactDOM.render(
     <React.StrictMode>
         <CacheProvider value={nonceCache}>
+            <p>Beta version</p>
         </CacheProvider>
     </React.StrictMode>,
     document.getElementById('root')

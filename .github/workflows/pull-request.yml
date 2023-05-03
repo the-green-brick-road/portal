@@ -4,18 +4,17 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Configure pipeline for each commit
+# Configure pipeline for pull requests
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @02 may 2023
-# Latest revision: 02 may 2023
+# Nadège LEMPERIERE, @03 may 2023
+# Latest revision: 03 may 2023
 # -------------------------------------------------------
 
-name: Website Latest Pipeline
+name: Website Pull Request Pipeline
 
 on:
-  push:
-  workflow_dispatch:
-    inputs:
+    pull_request:
+        types: [ assigned, opened, synchronize, reopened ]
 
 jobs:
 
@@ -39,13 +38,11 @@ jobs:
 
             - name: Lint code
               uses: docker://node:alpine
-              continue-on-error: true
               with:
                 args: npm run lint
 
             - name: Run Snyk to check for vulnerabilities
               uses: snyk/actions/node@master
-              continue-on-error: true
               env:
                 SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
               with:
@@ -53,7 +50,6 @@ jobs:
 
             - name: Upload result to GitHub Code Scanning
               uses: github/codeql-action/upload-sarif@main
-              continue-on-error: true
               if: always()
               with:
                 sarif_file: snyk.sarif
@@ -72,7 +68,6 @@ jobs:
 
             - name: Launch tests
               uses: docker://node:alpine
-              continue-on-error: true
               with:
                 args: npm test -- --watchAll=false --passWithNoTests
 
@@ -83,7 +78,7 @@ jobs:
                 files: clover.xml, coverage-final.json,lcov.info
                 directory: ./coverage/
                 name: codecov-portal
-                fail_ci_if_error: false
+                fail_ci_if_error: true
                 verbose: true
                 commit_parent: ${{ github.sha }}
 
