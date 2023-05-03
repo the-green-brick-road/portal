@@ -10,3 +10,8 @@ ignore:
         reason: No update available for react-scripts
         expires: 2030-03-11T00:00:00.000Z
         created: 2023-05-11T18:24:00.000Z
+    - 'react-scripts@5.0.1 > jest@27.5.1 > @jest/core@27.5.1 > jest-config@27.5.1 > jest-environment-jsdom@27.5.1 > jsdom@16.7.0 > escodegen@2.0.0 > optionator@0.8.3 > word-wrap@1.2.3':
+        reason: No update available for react-scripts
+        expires: 2030-03-11T00:00:00.000Z
+        created: 2023-05-11T18:24:00.000Z
+
