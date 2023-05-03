@@ -15,8 +15,6 @@ name: Website Build Pipeline
 on:
   push:
   workflow_dispatch:
-    inputs:
-
 
 jobs:
 
