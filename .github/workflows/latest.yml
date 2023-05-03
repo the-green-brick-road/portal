@@ -12,7 +12,11 @@
 
 name: Website Build Pipeline
 
-on: push
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+
 
 jobs:
 
