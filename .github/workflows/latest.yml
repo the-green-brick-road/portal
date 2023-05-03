@@ -31,12 +31,12 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@master
 
-            - name: Installing dependencies
+            - name: Install dependencies
               uses: docker://node:alpine
               with:
                 args: npm install
 
-            - name: Linting code
+            - name: Lint code
               uses: docker://node:alpine
               continue-on-error: true
               with:
@@ -63,12 +63,12 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@master
 
-            - name: Installing dependencies
+            - name: Install dependencies
               uses: docker://node:alpine
               with:
                 args: npm install
 
-            - name: Launching tests
+            - name: Launch tests
               continue-on-error: true
               uses: docker://node:alpine
               with:
@@ -93,12 +93,12 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@master
 
-            - name: Installing dependencies
+            - name: Install dependencies
               uses: docker://node:alpine
               with:
                 args: npm install
 
-            - name: Building application
+            - name: Build application
               uses: docker://node:alpine
               with:
                 args: npm run build
@@ -109,3 +109,4 @@ jobs:
                 repoToken: "${{ secrets.GH_ACCESS_TOKEN }}"
                 firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
                 projectId: portal-8382d
+                channelId: live
