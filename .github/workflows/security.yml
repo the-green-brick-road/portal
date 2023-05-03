@@ -16,30 +16,29 @@ on:
   schedule:
     - cron:  '0 0 1 * *'
   workflow_dispatch:
-    inputs:
 
 jobs:
 
     sast:
-        name: Static Website analysis
+        name: Static code analysis
         runs-on: ubuntu-latest
         container: node:alpine
         steps:
             - name: Checkout code
               uses: actions/checkout@master
 
-            - name: Installing dependencies
+            - name: Install dependencies
               uses: docker://node:alpine
               with:
                 args: npm install
 
-            - name: Linting code
+            - name: Lint code
               uses: docker://node:alpine
               continue-on-error: true
               with:
                 args: npm run lint
 
-            - name: Building application
+            - name: Build application
               uses: docker://node:alpine
               with:
                 args: npm run build
@@ -64,36 +63,12 @@ jobs:
         steps:
             - name: Checkout code
               uses: actions/checkout@master
-              with:
-                path: portal
-
-            - name: Retrieving vault
-              uses: actions/checkout@master
-              with:
-                repository: technogix/vault
-                path: vault
-                ref: v2.1.0
-                token: ${{ secrets.GH_ACCESS_TOKEN }}
-
-            - name: Retrieve testing url
-              env:
-                VAULT_KEY: ${{ secrets.VAULT_KEY }}
-              uses: docker://technogix/terraform-python-awscli:v2.0.0
-              with:
-                args: ./portal/scripts/url.sh -b develop -k VAULT_KEY
-
-            - name: Reading file content
-              id: url
-              run: |
-                content=`cat url.json`
-                echo $content
-                echo "::set-output name=url::${content}"
 
             - name: zap scan
               uses: zaproxy/action-full-scan@v0.3.0
               with:
                 token:  ${{ secrets.GH_ACCESS_TOKEN }}
                 docker_name: 'owasp/zap2docker-stable'
-                target: ${{ fromJSON(steps.url.outputs.url).url }}
+                target: 'https://${{ secrets.FIREBASE_PROJECT }}.firebaseapp.com/'
                 rules_file_name: 'rules.tsv'
                 cmd_options: '-a -j'

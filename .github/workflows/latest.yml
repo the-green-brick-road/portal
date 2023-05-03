@@ -15,7 +15,6 @@ name: Website Latest Pipeline
 on:
   push:
   workflow_dispatch:
-    inputs:
 
 jobs:
 
