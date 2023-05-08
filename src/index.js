@@ -12,11 +12,14 @@
 
 /* React includes */
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 /* Emotion includes */
 import createCache from '@emotion/cache'; // eslint-disable-line import/no-extraneous-dependencies
 import { CacheProvider } from '@emotion/react'; // eslint-disable-line import/no-extraneous-dependencies
+
+/* Local includes */
+import App from './App.js'
 
 /* Content Security Policy configuration */
 const nonce = Math.random().toString(16).substr(2, 21);
@@ -30,11 +33,12 @@ window.__webpack_nonce__ = nonce;
 __webpack_nonce__ = window.__webpack_nonce__;// eslint-disable-line no-native-reassign, no-global-assign
 
 /* Rendering function with cache */
-ReactDOM.render(
+const rootNode = document.getElementById('root');
+const root = createRoot(rootNode);
+root.render(
     <React.StrictMode>
         <CacheProvider value={nonceCache}>
-            <p>Beta version</p>
+            <App/>
         </CacheProvider>
-    </React.StrictMode>,
-    document.getElementById('root')
+    </React.StrictMode>
 );

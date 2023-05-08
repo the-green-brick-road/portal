@@ -1,0 +1,129 @@
+/* ------------------------------------------------------
+# THE GREEN BRICK ROAD
+# -------------------------------------------------------
+# Copyright (c) [2023] The Green Brick Road
+# All rights reserved
+# -------------------------------------------------------
+# Analytics provider to share state and update between
+# components
+# -------------------------------------------------------
+# Nadège LEMPERIERE, @03 may 2023
+# Latest revision: 08 may 2023
+# ---------------------------------------------------- */
+
+/* React includes */
+import React, { useMemo, useReducer, useEffect, useState }          from 'react';
+
+/* Local includes */
+import { Context }                                                  from './Context';
+import { useInitializeApp, useIsSupported, useGetAnalytics}         from './FirebaseHook';
+import { useGetPerformance, useSetAnalyticsCollectionEnabled}       from './FirebaseHook';
+import { setIsAnalyticsActivated, setIsPerformanceActivated }       from './store/actions';
+import reducer                                                      from './store/reducer';
+
+function Provider(props) {
+
+    /* --------- Gather inputs --------- */
+    const { config, children, persistKey = 'analytics' } = props;
+    const isSupported = useIsSupported();
+    const setAnalyticsCollectionEnabled = useSetAnalyticsCollectionEnabled();
+    const getAnalytics = useGetAnalytics();
+    const getPerformance = useGetPerformance();
+    const initializeApp = useInitializeApp();
+
+    /* Create local states */
+    const savedState = JSON.parse(localStorage.getItem(persistKey));
+    const [analytics, dispatch] = useReducer(reducer, {
+        isAnalyticsActivated:  false,   /* Is analytics report activated ? */
+        isPerformanceActivated:  false, /* Is performance report activated ? */
+        ...savedState,
+    });
+
+    const [firebase, setFirebase] = useState({analytics : null, performance : null})
+
+    useEffect(() => {
+
+        isSupported().then((isSupported) => {
+
+            if (isSupported) {
+
+                const firebase_config = {
+                    apiKey:              config.firebase['api-key'],
+                    authDomain:          config.firebase['auth-domain'],
+                    projectId:           config.firebase['project-id'],
+                    storageBucket:       config.firebase['storage-bucket'],
+                    messagingSenderId:   config.firebase['messaging-sender-id'],
+                    appId:               config.firebase['app-id'],
+                    measurementId:       config.firebase['measurement-id'],
+                };
+
+                const app               = initializeApp(firebase_config);
+                const local_analytics   = getAnalytics(app);
+                const local_performance = getPerformance(app);
+                setFirebase({analytics: local_analytics, performance: local_performance})
+                setAnalyticsCollectionEnabled(local_analytics, analytics.isAnalyticsActivated)
+                local_performance.instrumentationEnabled = analytics.isPerformanceActivated
+                local_performance.dataCollectionEnabled  = analytics.isPerformanceActivated
+
+            }
+
+        })
+
+    }, []); /* eslint-disable-line react-hooks/exhaustive-deps */
+
+    /* Manage state persistence */
+    useEffect(() => {
+
+        localStorage.setItem(persistKey, JSON.stringify(analytics))
+
+    }, [analytics, persistKey]);
+
+    const state = useMemo(() => ({
+        activateAnalytics()   {
+
+            if( firebase.analytics !== null ) { setAnalyticsCollectionEnabled(firebase.analytics, true) }
+            dispatch(setIsAnalyticsActivated(true))
+
+        },
+        deactivateAnalytics() {
+
+            if( firebase.analytics !== null ) { setAnalyticsCollectionEnabled(firebase.analytics, false) }
+            dispatch(setIsAnalyticsActivated(false))
+
+        },
+        activatePerformance()   {
+
+            if( firebase.performance !== null) {
+
+                firebase.performance.instrumentationEnabled = true
+                firebase.performance.dataCollectionEnabled = true
+
+            }
+            dispatch(setIsPerformanceActivated(true))
+
+        },
+        deactivatePerformance() {
+
+            if( firebase.performance !== null) {
+
+                firebase.performance.instrumentationEnabled = false
+                firebase.performance.dataCollectionEnabled = false
+
+            }
+            dispatch(setIsPerformanceActivated(false))
+
+        },
+        isAnalyticsActivated :   analytics.isAnalyticsActivated,
+        isPerformanceActivated : analytics.isPerformanceActivated,
+    }), [analytics, firebase.analytics, firebase.performance, setAnalyticsCollectionEnabled]);
+
+    /* ----------- Define HTML --------- */
+    return (
+        <Context.Provider value={state}>
+            {children}
+        </Context.Provider>
+    );
+
+}
+
+export default Provider;
