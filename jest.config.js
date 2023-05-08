@@ -14,6 +14,6 @@ module.exports = {
     preset: 'react-native',
     setupFilesAfterEnv: ['src/jest.setup.js'],
     transformIgnorePatterns: [
-      'node_modules/(?!(react-native|my-project|react-native-button)/)',
+        'node_modules/(?!(react-native|my-project|react-native-button)/)'
     ],
 };

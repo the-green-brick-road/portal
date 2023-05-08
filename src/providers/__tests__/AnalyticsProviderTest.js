@@ -108,16 +108,22 @@ describe("Analytics provider" ,() => {
         const mockInitializeApp = jest.fn((app) => { return null });
         useInitializeApp.mockReturnValue(mockInitializeApp);
 
-        await act(async () => {render(
-            <React.StrictMode>
-                <div>
-                    <AnalyticsProvider config={Config}>
-                        <MockAnalyticsConsumer/>
-                        <MockPerformanceConsumer/>
-                    </AnalyticsProvider>
-                </div>
-            </React.StrictMode>
-        );})
+        await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
+
+            render(
+
+                <React.StrictMode>
+                    <div>
+                        <AnalyticsProvider config={Config}>
+                            <MockAnalyticsConsumer/>
+                            <MockPerformanceConsumer/>
+                        </AnalyticsProvider>
+                    </div>
+                </React.StrictMode>
+
+            );
+
+        })
 
         expect(mockIsSupported).toHaveBeenCalledTimes(2)
         expect(mockInitializeApp).toHaveBeenCalledTimes(2)
@@ -126,12 +132,12 @@ describe("Analytics provider" ,() => {
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenCalledTimes(2)
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, false)
 
-        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-analytics-consumer/i))})
+        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-analytics-consumer/i))}) // eslint-disable-line testing-library/no-unnecessary-act
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, true)
-        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-analytics-consumer/i))})
+        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-analytics-consumer/i))}) // eslint-disable-line testing-library/no-unnecessary-act
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, false)
-        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-performance-consumer/i))})
-        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-performance-consumer/i))})
+        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-performance-consumer/i))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-performance-consumer/i))}) // eslint-disable-line testing-library/no-unnecessary-act
 
 
         /*expect(mockSetAnalyticsCollectionEnabled).toHaveBeenCalledTimes(2)*/
