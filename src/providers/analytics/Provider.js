@@ -8,11 +8,14 @@
 # components
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @03 may 2023
-# Latest revision: 08 may 2023
+# Latest revision: 09 may 2023
 # ---------------------------------------------------- */
 
 /* React includes */
-import React, { useMemo, useReducer, useEffect, useState }          from 'react';
+import { useMemo, useReducer, useEffect, useState }                 from 'react';
+
+/* Portal includes */
+import { useLogging }                                               from '../../providers';
 
 /* Local includes */
 import { Context }                                                  from './Context';
@@ -25,11 +28,14 @@ function Provider(props) {
 
     /* --------- Gather inputs --------- */
     const { config, children, persistKey = 'analytics' } = props;
-    const isSupported = useIsSupported();
+    const { metrics = {}}                                = config;
+    const { logText }                                    = useLogging();
+    const isSupported                                    = useIsSupported();
     const setAnalyticsCollectionEnabled = useSetAnalyticsCollectionEnabled();
     const getAnalytics = useGetAnalytics();
     const getPerformance = useGetPerformance();
     const initializeApp = useInitializeApp();
+    const componentName = 'AnalyticsProvider';
 
     /* Create local states */
     const savedState = JSON.parse(localStorage.getItem(persistKey));
@@ -47,14 +53,15 @@ function Provider(props) {
 
             if (isSupported) {
 
+                logText(componentName, 'info', 'data', ' Analytics exports are supported')
                 const firebase_config = {
-                    apiKey:              config.firebase['api-key'],
-                    authDomain:          config.firebase['auth-domain'],
-                    projectId:           config.firebase['project-id'],
-                    storageBucket:       config.firebase['storage-bucket'],
-                    messagingSenderId:   config.firebase['messaging-sender-id'],
-                    appId:               config.firebase['app-id'],
-                    measurementId:       config.firebase['measurement-id'],
+                    apiKey:              metrics.firebase['api-key'],
+                    authDomain:          metrics.firebase['auth-domain'],
+                    projectId:           metrics.firebase['project-id'],
+                    storageBucket:       metrics.firebase['storage-bucket'],
+                    messagingSenderId:   metrics.firebase['messaging-sender-id'],
+                    appId:               metrics.firebase['app-id'],
+                    measurementId:       metrics.firebase['measurement-id'],
                 };
 
                 const app               = initializeApp(firebase_config);
@@ -81,18 +88,21 @@ function Provider(props) {
     const state = useMemo(() => ({
         activateAnalytics()   {
 
+            logText(componentName, 'info', 'data', ' Activating analytics')
             if( firebase.analytics !== null ) { setAnalyticsCollectionEnabled(firebase.analytics, true) }
             dispatch(setIsAnalyticsActivated(true))
 
         },
         deactivateAnalytics() {
 
+            logText(componentName, 'info', 'data', ' Deactivating analytics')
             if( firebase.analytics !== null ) { setAnalyticsCollectionEnabled(firebase.analytics, false) }
             dispatch(setIsAnalyticsActivated(false))
 
         },
         activatePerformance()   {
 
+            logText(componentName, 'info', 'data', ' Activating performance')
             if( firebase.performance !== null) {
 
                 firebase.performance.instrumentationEnabled = true
@@ -104,6 +114,7 @@ function Provider(props) {
         },
         deactivatePerformance() {
 
+            logText(componentName, 'info', 'data', ' Deactivating analytics')
             if( firebase.performance !== null) {
 
                 firebase.performance.instrumentationEnabled = false
@@ -115,7 +126,7 @@ function Provider(props) {
         },
         isAnalyticsActivated :   analytics.isAnalyticsActivated,
         isPerformanceActivated : analytics.isPerformanceActivated,
-    }), [analytics, firebase.analytics, firebase.performance, setAnalyticsCollectionEnabled]);
+    }), [analytics, logText, firebase.analytics, firebase.performance, setAnalyticsCollectionEnabled]);
 
     /* ----------- Define HTML --------- */
     return (

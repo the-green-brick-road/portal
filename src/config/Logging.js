@@ -4,11 +4,21 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Providers exports
+# Sentry configuration parser
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @09 may 2023
-# Latest revision: 09 may 2023
+# Nadège LEMPERIERE, @08 may 2023
+# Latest revision: 08 may 2023
 # ---------------------------------------------------- */
 
-export { useLogging, LoggingProvider } from './logging';
-export { useAnalytics, AnalyticsProvider } from './analytics';
+/* Local includes */
+import SentryConfig from './data/sentry.json';
+import LoggingConfig from './data/logging.json';
+
+/* Container definition */
+const Logging = {
+    settings:   LoggingConfig,
+    sentry:     SentryConfig,
+};
+
+/* Container export */
+export default Logging;

@@ -93,7 +93,7 @@ jobs:
             - name: Install dependencies
               uses: docker://node:alpine
               with:
-                args: npm install
+                args: npm install --omit=dev
 
             - name: Build application
               uses: docker://node:alpine

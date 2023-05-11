@@ -10,12 +10,13 @@
 # Latest revision: 08 may 2023
 # ---------------------------------------------------- */
 
-/* React includes */
-import React from 'react';
+/* Material UI includes */
+import { Container }        from '@mui/material';
 
 /* Website includes */
-import Config from './config';
-import { AnalyticsProvider } from './providers';
+import Config                                   from './config';
+import { ErrorBoundary }                        from './containers';
+import { AnalyticsProvider, LoggingProvider }   from './providers';
 
 function App() {
 
@@ -24,11 +25,15 @@ function App() {
 
     /* -------- Render component ------- */
     return (
-        <div>
-            <AnalyticsProvider config={Config}>
-                <p>Beta version</p>
-            </AnalyticsProvider>
-        </div>
+        <Container style={{width:'100vw', height:'100vh', margin:0, padding:0}} >
+            <LoggingProvider config={Config}>
+                <ErrorBoundary>
+                    <AnalyticsProvider config={Config}>
+                        First version
+                    </AnalyticsProvider>
+                </ErrorBoundary>
+            </LoggingProvider>
+        </Container>
     );
 
 }
