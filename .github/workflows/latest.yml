@@ -73,7 +73,7 @@ jobs:
               uses: docker://node:alpine
               continue-on-error: true
               with:
-                args: npm test -- --watchAll=false --passWithNoTests
+                args: npm test -- --watchAll=false
 
             - name: Upload coverage to Codecov
               uses: codecov/codecov-action@main
