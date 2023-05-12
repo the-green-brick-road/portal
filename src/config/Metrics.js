@@ -14,7 +14,7 @@
 import FirebaseConfig from './data/firebase.json';
 
 /* Container definition */
-const Firebase = FirebaseConfig;
+const Metrics = { firebase: FirebaseConfig} ;
 
 /* Container export */
-export default Firebase;
+export default Metrics;

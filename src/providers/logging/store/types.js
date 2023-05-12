@@ -4,11 +4,10 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Providers exports
+# Logging provider reducer types
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @09 may 2023
-# Latest revision: 09 may 2023
+# Nadège LEMPERIERE, @08 may 2023
+# Latest revision: 08 may 2023
 # ---------------------------------------------------- */
 
-export { useLogging, LoggingProvider } from './logging';
-export { useAnalytics, AnalyticsProvider } from './analytics';
+export const SET_IS_LOGGING_ACTIVATED   = 'SET_IS_LOGGING_ACTIVATED'; /* eslint-disable-line import/prefer-default-export */

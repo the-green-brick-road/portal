@@ -1,0 +1,5 @@
+{
+    "components": ["all"],
+    "levels":     ["fatal", "error", "warning", "info", "debug", "log"],
+    "level":      "log"
+}

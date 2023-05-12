@@ -69,7 +69,7 @@ jobs:
             - name: Launch tests
               uses: docker://node:alpine
               with:
-                args: npm test -- --watchAll=false --passWithNoTests
+                args: npm test -- --watchAll=false
 
             - name: Upload coverage to Codecov
               uses: codecov/codecov-action@main
@@ -93,7 +93,7 @@ jobs:
             - name: Install dependencies
               uses: docker://node:alpine
               with:
-                args: npm install
+                args: npm install --omit=dev
 
             - name: Build application
               uses: docker://node:alpine

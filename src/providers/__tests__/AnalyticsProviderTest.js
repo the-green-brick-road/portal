@@ -7,26 +7,30 @@
 # Analytics Provider test suite
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @03 may 2023
-# Latest revision: 08 may 2023
+# Latest revision: 09 may 2023
 # ---------------------------------------------------- */
 
 /* React includes */
-import React                        from 'react';
+import { StrictMode }                      from 'react';
 
 /* Material UI includes */
-import { Button }                   from '@mui/material';
+import { Button }                          from '@mui/material';
 
 /* Test includes */
-import {render, fireEvent, screen, act}  from '@testing-library/react'
-import {expect, test}               from '@jest/globals';
+import { render, fireEvent, screen, act}   from '@testing-library/react'
+import { expect, test}                     from '@jest/globals';
 
 /* Component under test */
-import { useAnalytics, AnalyticsProvider } from '../../providers';
+import { useAnalytics, AnalyticsProvider } from '../../providers/analytics';
 
 /* Mocks includes */
-import { useIsSupported, useGetAnalytics, useSetAnalyticsCollectionEnabled } from '../analytics/FirebaseHook';
-import { useInitializeApp, useGetPerformance } from '../analytics/FirebaseHook';
+/* eslint-disable jest/no-mocks-import */
+import { useIsSupported, useGetAnalytics, useSetAnalyticsCollectionEnabled }    from '../analytics/FirebaseHook';
+import { useInitializeApp, useGetPerformance }                                  from '../analytics/FirebaseHook';
+import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
 jest.mock('../analytics/FirebaseHook');
+jest.mock('../../providers', () => ({ useLogging: (() => { return mockUseLogging(); }) }));
+/* eslint-enable jest/no-mocks-import */
 
 function MockAnalyticsConsumer() {
 
@@ -85,14 +89,16 @@ describe("Analytics provider" ,() => {
     test('Should activate and deactivate analytics publication', async () => {
 
         const Config = {
-            "firebase"   : {
-                "api-key"               : "AIzaSyDxkYnmt7ihsK7dA3hTY1Njk72XkV1qHrg",
-                "auth-domain"           : "portal-8382d.firebaseapp.com",
-                "project-id"            : "portal-8382d",
-                "storage-bucket"        : "portal-8382d.appspot.com",
-                "messaging-sender-id"   : "186359319446",
-                "app-id"                : "1:186359319446:web:da2da46323495a19e3ebb7",
-                "measurement-id"        : "G-EVC01WVTWW",
+            "metrics" : {
+                "firebase"   : {
+                    "api-key"               : "AIzaSyDxkYnmt7ihsK7dA3hTY1Njk72XkV1qHrg",
+                    "auth-domain"           : "portal-8382d.firebaseapp.com",
+                    "project-id"            : "portal-8382d",
+                    "storage-bucket"        : "portal-8382d.appspot.com",
+                    "messaging-sender-id"   : "186359319446",
+                    "app-id"                : "1:186359319446:web:da2da46323495a19e3ebb7",
+                    "measurement-id"        : "G-EVC01WVTWW",
+                },
             },
         }
 
@@ -108,18 +114,19 @@ describe("Analytics provider" ,() => {
         const mockInitializeApp = jest.fn((app) => { return null });
         useInitializeApp.mockReturnValue(mockInitializeApp);
 
+
         await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
 
             render(
 
-                <React.StrictMode>
-                    <div>
+                <StrictMode>
+                    <MockLoggingProvider>
                         <AnalyticsProvider config={Config}>
                             <MockAnalyticsConsumer/>
                             <MockPerformanceConsumer/>
                         </AnalyticsProvider>
-                    </div>
-                </React.StrictMode>
+                    </MockLoggingProvider>
+                </StrictMode>
 
             );
 
@@ -132,16 +139,12 @@ describe("Analytics provider" ,() => {
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenCalledTimes(2)
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, false)
 
-        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-analytics-consumer/i))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-analytics-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, true)
-        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-analytics-consumer/i))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-analytics-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, false)
-        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-performance-consumer/i))}) // eslint-disable-line testing-library/no-unnecessary-act
-        await act(async () => {fireEvent.click(screen.getByLabelText(/mock-performance-consumer/i))}) // eslint-disable-line testing-library/no-unnecessary-act
-
-
-        /*expect(mockSetAnalyticsCollectionEnabled).toHaveBeenCalledTimes(2)*/
-
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-performance-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-performance-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
 
     })
 

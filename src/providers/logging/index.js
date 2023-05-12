@@ -4,11 +4,14 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Providers exports
+# Analytics provider exports
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @09 may 2023
-# Latest revision: 09 may 2023
+# Nadège LEMPERIERE, @03 may 2023
+# Latest revision: 03 may 2023
 # ---------------------------------------------------- */
 
-export { useLogging, LoggingProvider } from './logging';
-export { useAnalytics, AnalyticsProvider } from './analytics';
+/* Local includes */
+import useProvider  from './Context';
+import Provider     from './Provider';
+
+export { useProvider as useLogging, Provider as LoggingProvider };

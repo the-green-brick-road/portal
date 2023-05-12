@@ -4,11 +4,17 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Providers exports
+# Analytics provider context
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @09 may 2023
-# Latest revision: 09 may 2023
+# Nadège LEMPERIERE, @03 may 2023
+# Latest revision: 03 may 2023
 # ---------------------------------------------------- */
 
-export { useLogging, LoggingProvider } from './logging';
-export { useAnalytics, AnalyticsProvider } from './analytics';
+/* React includes */
+import { useContext, createContext } from 'react';
+
+export const Context = createContext(null);
+
+function useProvider() { return useContext(Context); }
+
+export default useProvider;

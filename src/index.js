@@ -11,7 +11,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import React from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 /* Emotion includes */
@@ -36,9 +36,9 @@ __webpack_nonce__ = window.__webpack_nonce__;// eslint-disable-line no-native-re
 const rootNode = document.getElementById('root');
 const root = createRoot(rootNode);
 root.render(
-    <React.StrictMode>
+    <StrictMode>
         <CacheProvider value={nonceCache}>
             <App/>
         </CacheProvider>
-    </React.StrictMode>
+    </StrictMode>
 );
