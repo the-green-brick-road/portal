@@ -4,12 +4,11 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Providers exports
+# Analytics provider reducer types
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @09 may 2023
-# Latest revision: 16 may 2023
+# Nadège LEMPERIERE, @15 may 2023
+# Latest revision: 15 may 2023
 # ---------------------------------------------------- */
 
-export { useLogging,   LoggingProvider }   from './logging';
-export { useAnalytics, AnalyticsProvider } from './analytics';
-export { useDesign,    DesignProvider }    from './design';
+export const SET_IS_WEBP_SUPPORTED = 'SET_IS_WEBP_SUPPORTED';
+export const SET_IS_SLIDING        = 'SET_IS_SLIDING';

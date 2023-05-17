@@ -8,7 +8,7 @@
 # components
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @03 may 2023
-# Latest revision: 08 may 2023
+# Latest revision: 15 may 2023
 # ---------------------------------------------------- */
 
 /* React includes */
@@ -36,7 +36,7 @@ function Provider(props) {
 
     /* Create local states */
     const savedState = JSON.parse(localStorage.getItem(persistKey));
-    const [logger, dispatch] = useReducer(reducer, {
+    const [loggingStore, dispatch] = useReducer(reducer, {
         isLoggingActivated:  (process.env.NODE_ENV === 'production'? false : true),   /* Is logging activated ? */
         ...savedState,
     });
@@ -46,7 +46,7 @@ function Provider(props) {
 
 
         if ((logging.settings.levels.indexOf(level) <= logging.settings.levels.indexOf(logging.settings.level)) &&
-            (logger.isLoggingActivated)) { /* If event level shall be logged */
+            (loggingStore.isLoggingActivated)) { /* If event level shall be logged */
 
             if(level === 'error' || level === 'warning' || level === 'fatal' ) {
 
@@ -84,7 +84,7 @@ function Provider(props) {
     const logDevelopment = (component, level, topic, message) => {
 
         if ((logging.settings.levels.indexOf(level) <= logging.settings.levels.indexOf(logging.settings.level)) &&
-            (logger.isLoggingActivated)) { /* If event level shall be logged */
+            (loggingStore.isLoggingActivated)) { /* If event level shall be logged */
 
             if (
                 (logging.settings.components.indexOf(component) > -1) ||
@@ -125,9 +125,9 @@ function Provider(props) {
     /* Manage state persistence */
     useEffect(() => {
 
-        localStorage.setItem(persistKey, JSON.stringify(logger))
+        localStorage.setItem(persistKey, JSON.stringify(loggingStore))
 
-    }, [logger, persistKey]);
+    }, [loggingStore, persistKey]);
 
     const state = useMemo(() => ({
 
@@ -145,8 +145,8 @@ function Provider(props) {
             else if( process.env.NODE_ENV === 'development') { logDevelopment(component, level, topic, message)}
 
         },
-        isLoggingActivated :   logger.isLoggingActivated,
-    }), [logger]); /* eslint-disable-line react-hooks/exhaustive-deps */
+        isLoggingActivated :   loggingStore.isLoggingActivated,
+    }), [loggingStore]); /* eslint-disable-line react-hooks/exhaustive-deps */
 
     /* ----------- Define HTML --------- */
     return (

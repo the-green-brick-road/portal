@@ -7,17 +7,19 @@
 # Config exports
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @03 may 2023
-# Latest revision: 03 may 2023
+# Latest revision: 16 may 2023
 # ---------------------------------------------------- */
 
 /* Local includes */
 import Metrics from './Metrics';
 import Logging from './Logging';
+import Design  from './Design';
 
 const Config = {
 
     metrics: Metrics,
     logging: Logging,
+    design:  Design,
 
 };
 
