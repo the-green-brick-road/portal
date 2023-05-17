@@ -1,0 +1,8 @@
+{
+    "small-width"          : 320,
+    "medium-width"         : 640,
+    "large-width"          : 1110,
+    "menu-height"          : 84,
+    "margin"               : 20,
+    "hamburger-height"     : 30
+}

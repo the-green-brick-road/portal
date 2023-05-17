@@ -7,16 +7,17 @@
 # React application definition
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @03 may 2023
-# Latest revision: 08 may 2023
+# Latest revision: 16 may 2023
 # ---------------------------------------------------- */
 
 /* Material UI includes */
-import { Container }        from '@mui/material';
+import { Container }                                            from '@mui/material';
 
 /* Website includes */
-import Config                                   from './config';
-import { ErrorBoundary }                        from './containers';
-import { AnalyticsProvider, LoggingProvider }   from './providers';
+import Config                                                   from './config';
+import { ErrorBoundary }                                        from './containers';
+import { AnalyticsProvider, LoggingProvider, DesignProvider }   from './providers';
+
 
 function App() {
 
@@ -29,7 +30,9 @@ function App() {
             <LoggingProvider config={Config}>
                 <ErrorBoundary>
                     <AnalyticsProvider config={Config}>
-                        First version
+                        <DesignProvider config={Config}>
+                            First version
+                        </DesignProvider>
                     </AnalyticsProvider>
                 </ErrorBoundary>
             </LoggingProvider>

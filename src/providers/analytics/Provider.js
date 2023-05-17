@@ -8,7 +8,7 @@
 # components
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @03 may 2023
-# Latest revision: 09 may 2023
+# Latest revision: 15 may 2023
 # ---------------------------------------------------- */
 
 /* React includes */
@@ -30,7 +30,7 @@ function Provider(props) {
     const { config, children, persistKey = 'analytics' } = props;
     const { metrics = {}}                                = config;
     const { logText }                                    = useLogging();
-    const isSupported                                    = useIsSupported();
+    const isSupported = useIsSupported();
     const setAnalyticsCollectionEnabled = useSetAnalyticsCollectionEnabled();
     const getAnalytics = useGetAnalytics();
     const getPerformance = useGetPerformance();
@@ -39,7 +39,7 @@ function Provider(props) {
 
     /* Create local states */
     const savedState = JSON.parse(localStorage.getItem(persistKey));
-    const [analytics, dispatch] = useReducer(reducer, {
+    const [metricsStore, dispatch] = useReducer(reducer, {
         isAnalyticsActivated:  false,   /* Is analytics report activated ? */
         isPerformanceActivated:  false, /* Is performance report activated ? */
         ...savedState,
@@ -68,9 +68,9 @@ function Provider(props) {
                 const local_analytics   = getAnalytics(app);
                 const local_performance = getPerformance(app);
                 setFirebase({analytics: local_analytics, performance: local_performance})
-                setAnalyticsCollectionEnabled(local_analytics, analytics.isAnalyticsActivated)
-                local_performance.instrumentationEnabled = analytics.isPerformanceActivated
-                local_performance.dataCollectionEnabled  = analytics.isPerformanceActivated
+                setAnalyticsCollectionEnabled(local_analytics, metricsStore.isAnalyticsActivated)
+                local_performance.instrumentationEnabled = metricsStore.isPerformanceActivated
+                local_performance.dataCollectionEnabled  = metricsStore.isPerformanceActivated
 
             }
 
@@ -81,9 +81,9 @@ function Provider(props) {
     /* Manage state persistence */
     useEffect(() => {
 
-        localStorage.setItem(persistKey, JSON.stringify(analytics))
+        localStorage.setItem(persistKey, JSON.stringify(metricsStore))
 
-    }, [analytics, persistKey]);
+    }, [metricsStore, persistKey]);
 
     const state = useMemo(() => ({
         activateAnalytics()   {
@@ -124,9 +124,9 @@ function Provider(props) {
             dispatch(setIsPerformanceActivated(false))
 
         },
-        isAnalyticsActivated :   analytics.isAnalyticsActivated,
-        isPerformanceActivated : analytics.isPerformanceActivated,
-    }), [analytics, logText, firebase.analytics, firebase.performance, setAnalyticsCollectionEnabled]);
+        isAnalyticsActivated :   metricsStore.isAnalyticsActivated,
+        isPerformanceActivated : metricsStore.isPerformanceActivated,
+    }), [metricsStore, logText, firebase.analytics, firebase.performance, setAnalyticsCollectionEnabled]);
 
     /* ----------- Define HTML --------- */
     return (
