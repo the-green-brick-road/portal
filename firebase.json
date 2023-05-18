@@ -22,10 +22,6 @@
           "value": "ambient-light-sensor=(), autoplay=*, battery=(), camera=(), display-capture=(), document-domain=(), encrypted-media=*, execution-while-not-rendered=*, execution-while-out-of-viewport=*, fullscreen=* microphone=(), gamepad=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=*, payment(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), speaker-selection=(), storage-access=(), usb=(), web-share=(), xr-spatial-tracking=()"
         },
         {
-          "key": "Content-Type",
-          "value": "text/html; charset=utf-8"
-        },
-        {
           "key": "X-Frame-Options",
           "value": "DENY"
         },
