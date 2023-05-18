@@ -27,7 +27,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self' the-green-brick-road.com *.the-green-brick-road.com gbrbots.com *.gbrbots.com"
+          "value": "default-src 'self'; img-src *; media-src *; style-src 'self'"
         }
       ]
     }]
