@@ -27,7 +27,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src 'self' data:; media-src 'self' *; connect-src firebase.googleapis.com firebaseremoteconfig.googleapis.com; style-src 'self' 'unsafe-inline'; script-src 'self' *.googletagmanager.com googletagmanager.com"
+          "value": "default-src 'self'; img-src 'self' data:; media-src 'self' *; connect-src firebase.googleapis.com firebaseremoteconfig.googleapis.com; style-src 'self'; script-src 'self' *.googletagmanager.com googletagmanager.com"
         }
       ]
     }]
