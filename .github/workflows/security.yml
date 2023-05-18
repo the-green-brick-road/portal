@@ -71,6 +71,6 @@ jobs:
               with:
                 token:  ${{ secrets.GH_ACCESS_TOKEN }}
                 docker_name: 'owasp/zap2docker-stable'
-                target: 'https://${{ secrets.FIREBASE_PROJECT }}.firebaseapp.com/'
+                target: 'https://${{ secrets.FIREBASE_PROJECT }}.web.app/'
                 rules_file_name: 'rules.tsv'
                 cmd_options: '-a -j'
