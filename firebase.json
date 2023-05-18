@@ -27,7 +27,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src *; media-src *; style-src 'self'"
+          "value": "default-src 'self'; img-src 'self' data:; media-src *; style-src 'self' *.googletagmanager.com googletagmanager.com"
         }
       ]
     }]
