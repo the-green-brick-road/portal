@@ -43,8 +43,8 @@ jobs:
               with:
                 args: npm run build
 
+
             - name: Run Snyk to check for vulnerabilities
-              continue-on-error: true
               uses: snyk/actions/node@master
               env:
                 SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
@@ -52,7 +52,7 @@ jobs:
                 args: --sarif-file-output=snyk.sarif
 
             - name: Upload result to GitHub Code Scanning
-              uses: github/codeql-action/upload-sarif@v1
+              uses: github/codeql-action/upload-sarif@main
               if: always()
               with:
                 sarif_file: snyk.sarif
@@ -65,10 +65,10 @@ jobs:
               uses: actions/checkout@master
 
             - name: zap scan
-              uses: zaproxy/action-full-scan@v0.3.0
+              uses: zaproxy/action-full-scan@v0.4.0
               with:
                 token:  ${{ secrets.GH_ACCESS_TOKEN }}
                 docker_name: 'owasp/zap2docker-stable'
-                target: 'https://${{ secrets.FIREBASE_PROJECT }}.firebaseapp.com/'
+                target: 'https://${{ secrets.FIREBASE_PROJECT }}.web.app/'
                 rules_file_name: 'rules.tsv'
                 cmd_options: '-a -j'
