@@ -4,3 +4,5 @@
 90003	IGNORE	(Sub Resource Integrity Attribute Missing)	Google fonts does not support subresource integrity yet
 10094	IGNORE	(Base64 Disclosure)	Not leaking sensitive information
 10027	IGNORE	(Information Disclosure - Suspicious Comments)	Not leaking sensitive information
+10049	IGNORE	(Non-Storable Content)	No impact on performance
+10110	IGNORE	(Dangerous JS Functions)	From Sentry - not a call but rather a comparison
