@@ -26,10 +26,14 @@ import { useAnalytics, AnalyticsProvider } from '../../providers/analytics';
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useIsSupported, useGetAnalytics, useSetAnalyticsCollectionEnabled }    from '../analytics/FirebaseHook';
-import { useInitializeApp, useGetPerformance }                                  from '../analytics/FirebaseHook';
+import { useInitializeApp, useGetPerformance, useGetApps }                      from '../analytics/FirebaseHook';
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
+import { useConfiguration as mockUseConfiguration, ConfigurationProvider as MockConfigurationProvider } from '../../providers/__mocks__/ConfigurationProvider';
 jest.mock('../analytics/FirebaseHook');
-jest.mock('../../providers', () => ({ useLogging: (() => { return mockUseLogging(); }) }));
+jest.mock('../../providers', () => ({
+    useLogging:       (() => { return mockUseLogging(); }),
+    useConfiguration: (() => { return mockUseConfiguration(); }),
+}));
 /* eslint-enable jest/no-mocks-import */
 
 function MockAnalyticsConsumer() {
@@ -82,23 +86,19 @@ function MockPerformanceConsumer() {
 
 };
 
-
-
 describe("Analytics provider" ,() => {
 
     test('Should activate and deactivate analytics publication', async () => {
 
         const Config = {
-            "metrics" : {
-                "firebase"   : {
-                    "api-key"               : "AIzaSyDxkYnmt7ihsK7dA3hTY1Njk72XkV1qHrg",
-                    "auth-domain"           : "portal-8382d.firebaseapp.com",
-                    "project-id"            : "portal-8382d",
-                    "storage-bucket"        : "portal-8382d.appspot.com",
-                    "messaging-sender-id"   : "186359319446",
-                    "app-id"                : "1:186359319446:web:da2da46323495a19e3ebb7",
-                    "measurement-id"        : "G-EVC01WVTWW",
-                },
+            "firebase"   : {
+                "api-key"               : "AIzaSyDxkYnmt7ihsK7dA3hTY1Njk72XkV1qHrg",
+                "auth-domain"           : "portal-8382d.firebaseapp.com",
+                "project-id"            : "portal-8382d",
+                "storage-bucket"        : "portal-8382d.appspot.com",
+                "messaging-sender-id"   : "186359319446",
+                "app-id"                : "1:186359319446:web:da2da46323495a19e3ebb7",
+                "measurement-id"        : "G-EVC01WVTWW",
             },
         }
 
@@ -113,6 +113,8 @@ describe("Analytics provider" ,() => {
         useSetAnalyticsCollectionEnabled.mockReturnValue(mockSetAnalyticsCollectionEnabled);
         const mockInitializeApp = jest.fn((app) => { return null });
         useInitializeApp.mockReturnValue(mockInitializeApp);
+        const mockGetApps = jest.fn(() => { return [] });
+        useGetApps.mockReturnValue(mockGetApps);
 
 
         await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
@@ -120,12 +122,14 @@ describe("Analytics provider" ,() => {
             render(
 
                 <StrictMode>
-                    <MockLoggingProvider>
-                        <AnalyticsProvider config={Config}>
-                            <MockAnalyticsConsumer/>
-                            <MockPerformanceConsumer/>
-                        </AnalyticsProvider>
-                    </MockLoggingProvider>
+                    <MockConfigurationProvider config={Config}>
+                        <MockLoggingProvider>
+                            <AnalyticsProvider >
+                                <MockAnalyticsConsumer/>
+                                <MockPerformanceConsumer/>
+                            </AnalyticsProvider>
+                        </MockLoggingProvider>
+                    </MockConfigurationProvider>
                 </StrictMode>
 
             );

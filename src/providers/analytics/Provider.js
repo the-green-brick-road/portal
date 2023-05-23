@@ -15,26 +15,29 @@
 import { useMemo, useReducer, useEffect, useState }                 from 'react';
 
 /* Portal includes */
-import { useLogging }                                               from '../../providers';
+import { useLogging, useConfiguration }                             from '../../providers';
 
 /* Local includes */
 import { Context }                                                  from './Context';
-import { useInitializeApp, useIsSupported, useGetAnalytics}         from './FirebaseHook';
-import { useGetPerformance, useSetAnalyticsCollectionEnabled}       from './FirebaseHook';
+import { useInitializeApp, useIsSupported, useGetAnalytics }        from './FirebaseHook';
+import { useGetPerformance, useSetAnalyticsCollectionEnabled }      from './FirebaseHook';
+import { useGetApps }                                               from './FirebaseHook';
 import { setIsAnalyticsActivated, setIsPerformanceActivated }       from './store/actions';
 import reducer                                                      from './store/reducer';
 
 function Provider(props) {
 
     /* --------- Gather inputs --------- */
-    const { config, children, persistKey = 'analytics' } = props;
-    const { metrics = {}}                                = config;
-    const { logText }                                    = useLogging();
-    const isSupported = useIsSupported();
-    const setAnalyticsCollectionEnabled = useSetAnalyticsCollectionEnabled();
-    const getAnalytics = useGetAnalytics();
-    const getPerformance = useGetPerformance();
-    const initializeApp = useInitializeApp();
+    const { children, persistKey = 'analytics' } = props;
+    const { logText }                            = useLogging();
+    const { config }                             = useConfiguration();
+    const { firebase = {}}                       = config;
+    const isSupported                            = useIsSupported();
+    const setAnalyticsCollectionEnabled          = useSetAnalyticsCollectionEnabled();
+    const getAnalytics                           = useGetAnalytics();
+    const getPerformance                         = useGetPerformance();
+    const initializeApp                          = useInitializeApp();
+    const getApps                                = useGetApps();
     const componentName = 'AnalyticsProvider';
 
     /* Create local states */
@@ -45,7 +48,7 @@ function Provider(props) {
         ...savedState,
     });
 
-    const [firebase, setFirebase] = useState({analytics : null, performance : null})
+    const [firebaseState, setFirebase] = useState({analytics : null, performance : null})
 
     useEffect(() => {
 
@@ -54,17 +57,26 @@ function Provider(props) {
             if (isSupported) {
 
                 logText(componentName, 'info', 'data', ' Analytics exports are supported')
+
+                /* Set firebase configuration */
                 const firebase_config = {
-                    apiKey:              metrics.firebase['api-key'],
-                    authDomain:          metrics.firebase['auth-domain'],
-                    projectId:           metrics.firebase['project-id'],
-                    storageBucket:       metrics.firebase['storage-bucket'],
-                    messagingSenderId:   metrics.firebase['messaging-sender-id'],
-                    appId:               metrics.firebase['app-id'],
-                    measurementId:       metrics.firebase['measurement-id'],
+                    apiKey:              firebase['api-key'],
+                    authDomain:          firebase['auth-domain'],
+                    projectId:           firebase['project-id'],
+                    storageBucket:       firebase['storage-bucket'],
+                    messagingSenderId:   firebase['messaging-sender-id'],
+                    appId:               firebase['app-id'],
+                    measurementId:       firebase['measurement-id'],
                 };
 
-                const app               = initializeApp(firebase_config);
+                /* Initialize firebase if it was not previously done */
+                const apps              = getApps()
+                console.log(apps)
+                let app = null
+                if( apps.length === 0 ) { app = initializeApp(firebase_config) }
+                else                    { app = apps[0]}
+
+                /* Configure analytics */
                 const local_analytics   = getAnalytics(app);
                 const local_performance = getPerformance(app);
                 setFirebase({analytics: local_analytics, performance: local_performance})
@@ -89,24 +101,24 @@ function Provider(props) {
         activateAnalytics()   {
 
             logText(componentName, 'info', 'data', ' Activating analytics')
-            if( firebase.analytics !== null ) { setAnalyticsCollectionEnabled(firebase.analytics, true) }
+            if( firebaseState.analytics !== null ) { setAnalyticsCollectionEnabled(firebaseState.analytics, true) }
             dispatch(setIsAnalyticsActivated(true))
 
         },
         deactivateAnalytics() {
 
             logText(componentName, 'info', 'data', ' Deactivating analytics')
-            if( firebase.analytics !== null ) { setAnalyticsCollectionEnabled(firebase.analytics, false) }
+            if( firebaseState.analytics !== null ) { setAnalyticsCollectionEnabled(firebaseState.analytics, false) }
             dispatch(setIsAnalyticsActivated(false))
 
         },
         activatePerformance()   {
 
             logText(componentName, 'info', 'data', ' Activating performance')
-            if( firebase.performance !== null) {
+            if( firebaseState.performance !== null) {
 
-                firebase.performance.instrumentationEnabled = true
-                firebase.performance.dataCollectionEnabled = true
+                firebaseState.performance.instrumentationEnabled = true
+                firebaseState.performance.dataCollectionEnabled = true
 
             }
             dispatch(setIsPerformanceActivated(true))
@@ -115,10 +127,10 @@ function Provider(props) {
         deactivatePerformance() {
 
             logText(componentName, 'info', 'data', ' Deactivating analytics')
-            if( firebase.performance !== null) {
+            if( firebaseState.performance !== null) {
 
-                firebase.performance.instrumentationEnabled = false
-                firebase.performance.dataCollectionEnabled = false
+                firebaseState.performance.instrumentationEnabled = false
+                firebaseState.performance.dataCollectionEnabled = false
 
             }
             dispatch(setIsPerformanceActivated(false))
@@ -126,7 +138,7 @@ function Provider(props) {
         },
         isAnalyticsActivated :   metricsStore.isAnalyticsActivated,
         isPerformanceActivated : metricsStore.isPerformanceActivated,
-    }), [metricsStore, logText, firebase.analytics, firebase.performance, setAnalyticsCollectionEnabled]);
+    }), [metricsStore, logText, firebaseState.analytics, firebaseState.performance, setAnalyticsCollectionEnabled]);
 
     /* ----------- Define HTML --------- */
     return (

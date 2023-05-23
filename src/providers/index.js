@@ -10,6 +10,8 @@
 # Latest revision: 16 may 2023
 # ---------------------------------------------------- */
 
-export { useLogging,   LoggingProvider }   from './logging';
-export { useAnalytics, AnalyticsProvider } from './analytics';
-export { useDesign,    DesignProvider }    from './design';
+export { useLogging,           LoggingProvider }        from './logging';
+export { useConfiguration,     ConfigurationProvider }  from './configuration';
+export { useAnalytics,         AnalyticsProvider }      from './analytics';
+export { useDesign,            DesignProvider }         from './design';
+export { useAuthentication,    AuthenticationProvider } from './authentication';

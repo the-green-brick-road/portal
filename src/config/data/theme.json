@@ -4,12 +4,12 @@
             "black": "#212121",
             "white": "#ffffff"
         },
-        "primary": {
+        "secondary": {
             "main": "#70ad47",
             "light": "#70ad47",
             "dark": "#70ad47"
         },
-        "secondary" : {
+        "primary" : {
             "main": "#cae6c2",
             "light": "#cae6c2",
             "dark": "#cae6c2"
@@ -31,7 +31,7 @@
             "fontSize": "2rem",
             "color": "#70ad47",
             "textTransform": "uppercase",
-            "fontFamily": "Consolas,monaco,monospace",
+            "fontFamily": "Roboto,Helvetica,Arial,sans-serif",
             "textAlign": "center",
             "position": "relative",
             "marginBottom": "15px",
@@ -73,7 +73,7 @@
             "fontSize": "1.5rem",
             "color": "black",
             "textTransform": "uppercase",
-            "fontFamily": "Consolas,monaco,monospace",
+            "fontFamily": "Roboto,Helvetica,Arial,sans-serif",
             "position": "relative",
             "marginBottom": "15px",
             "marginTop": "10px",
@@ -114,7 +114,7 @@
             "fontSize": "14px",
             "color": "black",
             "textTransform": "uppercase",
-            "fontFamily": "Consolas,monaco,monospace",
+            "fontFamily": "Roboto,Helvetica,Arial,sans-serif",
             "position": "relative",
             "marginBottom": "10px",
             "marginTop": "10px",
@@ -136,14 +136,14 @@
         "body1": {
             "fontSize": "9px",
             "color": "black",
-            "fontFamily": "Consolas,monaco,monospace",
+            "fontFamily": "Roboto,Helvetica,Arial,sans-serif",
             "position": "relative",
             "textAlign": "justify"
         },
         "body2": {
             "fontSize": "9px",
             "color": "black",
-            "fontFamily": "Consolas,monaco,monospace",
+            "fontFamily": "Roboto,Helvetica,Arial,sans-serif",
             "position": "relative",
             "textAlign": "justify"
         }

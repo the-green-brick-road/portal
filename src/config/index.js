@@ -11,15 +11,14 @@
 # ---------------------------------------------------- */
 
 /* Local includes */
-import Metrics from './Metrics';
-import Logging from './Logging';
-import Design  from './Design';
-
+import Firebase from './Firebase';
+import Logging  from './Logging';
+import Design   from './Design';
 const Config = {
 
-    metrics: Metrics,
-    logging: Logging,
-    design:  Design,
+    firebase: Firebase,
+    logging:  Logging,
+    design:   Design,
 
 };
 

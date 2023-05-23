@@ -4,17 +4,14 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Firebase configuration parser
+# Config provider exports
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @03 may 2023
-# Latest revision: 03 may 2023
+# Nadège LEMPERIERE, @12 may 2023
+# Latest revision: 15 may 2023
 # ---------------------------------------------------- */
 
 /* Local includes */
-import FirebaseConfig from './data/firebase.json';
+import useProvider  from './Context';
+import Provider     from './Provider';
 
-/* Container definition */
-const Metrics = { firebase: FirebaseConfig} ;
-
-/* Container export */
-export default Metrics;
+export { useProvider as useConfiguration, Provider as ConfigurationProvider };

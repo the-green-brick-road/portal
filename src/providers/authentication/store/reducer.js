@@ -4,10 +4,10 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Design provider reducer
+# Authentication provider reducer
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @15 may 2023
-# Latest revision: 15 may 2023
+# Nadège LEMPERIERE, @18 may 2023
+# Latest revision: 22 may 2023
 # ---------------------------------------------------- */
 
 /* Local includes */
@@ -20,14 +20,15 @@ export default function reducer(state = {}, action) {
     const { type, payload } = action;
     switch (type) {
 
-    case types.SET_IS_WEBP_SUPPORTED:
-        return { ...state, isWebpSupported: payload };
-    case types.SET_IS_SLIDING:
-        return { ...state, isSliding: payload };
-    case types.SET_IMAGES:
-        return { ...state, images: payload };
-    default:
-        return state;
+    case types.SET_IS_AUTHENTICATED:
+        return { ...state, isAuthenticated: payload };
+    case types.SET_IS_OPEN:
+        return { ...state, isOpen: payload };
+    case types.SET_TOKEN:
+        return { ...state, token: payload };
+    case types.SET_ERROR:
+        return { ...state, error: payload };
+    default: return state;
 
     }
 

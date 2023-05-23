@@ -10,4 +10,4 @@
 # Latest revision: 09 may 2023
 # ---------------------------------------------------- */
 
-export { default as ErrorBoundary } from './errorboundary/ErrorBoundary'; /* eslint-disable-line import/prefer-default-export */
+export { default as ErrorBoundary } from './errorboundary/ErrorBoundary';/* eslint-disable-line import/prefer-default-export */

@@ -4,12 +4,17 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Design provider reducer types
+# Firebase configuration parser
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @15 may 2023
-# Latest revision: 15 may 2023
+# Nadège LEMPERIERE, @03 may 2023
+# Latest revision: 03 may 2023
 # ---------------------------------------------------- */
 
-export const SET_IS_WEBP_SUPPORTED = 'SET_IS_WEBP_SUPPORTED';
-export const SET_IS_SLIDING        = 'SET_IS_SLIDING';
-export const SET_IMAGES            = 'SET_IMAGES';
+/* Local includes */
+import FirebaseConfig from './data/firebase.json';
+
+/* Container definition */
+const Firebase = FirebaseConfig;
+
+/* Container export */
+export default Firebase;

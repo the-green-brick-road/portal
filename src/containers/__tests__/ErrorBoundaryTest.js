@@ -20,11 +20,14 @@ import { expect, test}                     from '@jest/globals';
 /* Component under test */
 import { ErrorBoundary }                   from '../../containers';
 
-
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
-jest.mock('../../providers', () => ({ useLogging: (() => { return mockUseLogging(); }) }));
+import { useConfiguration as mockUseConfiguration, ConfigurationProvider as MockConfigurationProvider } from '../../providers/__mocks__/ConfigurationProvider';
+jest.mock('../../providers', () => ({
+    useLogging:       (() => { return mockUseLogging(); }),
+    useConfiguration: (() => { return mockUseConfiguration(); }),
+}));
 /* eslint-enable jest/no-mocks-import */
 function MockErrorComponent() {
 
@@ -48,11 +51,13 @@ describe("ErrorBoundary container" ,() => {
             render(
 
                 <div>
-                    <MockLoggingProvider>
-                        <ErrorBoundary>
-                            <MockErrorComponent/>
-                        </ErrorBoundary>
-                    </MockLoggingProvider>
+                    <MockConfigurationProvider>
+                        <MockLoggingProvider>
+                            <ErrorBoundary>
+                                <MockErrorComponent/>
+                            </ErrorBoundary>
+                        </MockLoggingProvider>
+                    </MockConfigurationProvider>
                 </div>
 
             );
@@ -67,7 +72,7 @@ describe("ErrorBoundary container" ,() => {
         expect(message.textContent).toBe(' SOMETHING WENT WRONG ')
         expect(error.textContent).toBe(' UndefinedFunction is not defined ')
         expect(stack.textContent).toContain(' --- at MockErrorComponent ')
-        expect(stack.textContent).toContain('/src/containers/__tests__/ErrorBoundaryTest.js:32:50) ')
+        expect(stack.textContent).toContain('/src/containers/__tests__/ErrorBoundaryTest.js:35:50) ')
 
         const summary = screen.getByTestId('fallback-accordion');
         expect(summary.getAttribute('aria-expanded')).toBe('false')
@@ -85,11 +90,13 @@ describe("ErrorBoundary container" ,() => {
             render(
 
                 <div>
-                    <MockLoggingProvider>
-                        <ErrorBoundary>
-                            <MockErrorComponent/>
-                        </ErrorBoundary>
-                    </MockLoggingProvider>
+                    <MockConfigurationProvider>
+                        <MockLoggingProvider>
+                            <ErrorBoundary>
+                                <MockErrorComponent/>
+                            </ErrorBoundary>
+                        </MockLoggingProvider>
+                    </MockConfigurationProvider>
                 </div>
 
             );

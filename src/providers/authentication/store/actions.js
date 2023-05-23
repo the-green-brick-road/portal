@@ -4,10 +4,10 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Design provider reducer actions
+# Authentication provider reducer actions
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @15 may 2023
-# Latest revision: 15 may 2023
+# Nadège LEMPERIERE, @18 may 2023
+# Latest revision: 22 may 2023
 # ---------------------------------------------------- */
 
 /* Local includes */
@@ -15,16 +15,20 @@ import * as types from './types';
 
 /* eslint-disable padded-blocks */
 
-export function setIsSliding(content) {
-    return { type: types.SET_IS_SLIDING, payload: content };
+export function setIsAuthenticated(content) {
+    return { type: types.SET_IS_AUTHENTICATED, payload: content };
 }
 
-export function setIsWebpSupported(content) {
-    return { type: types.SET_IS_WEBP_SUPPORTED, payload: content };
+export function setToken(content) {
+    return { type: types.SET_TOKEN, payload: content };
 }
 
-export function setImages(content) {
-    return { type: types.SET_IMAGES, payload: content };
+export function setIsOpen(content) {
+    return { type: types.SET_IS_OPEN, payload: content };
+}
+
+export function setError(content) {
+    return { type: types.SET_ERROR, payload: content };
 }
 
 

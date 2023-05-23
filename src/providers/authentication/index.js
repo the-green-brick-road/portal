@@ -4,12 +4,14 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Design provider reducer types
+# Design provider exports
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @15 may 2023
-# Latest revision: 15 may 2023
+# Nadège LEMPERIERE, @18 may 2023
+# Latest revision: 18 may 2023
 # ---------------------------------------------------- */
 
-export const SET_IS_WEBP_SUPPORTED = 'SET_IS_WEBP_SUPPORTED';
-export const SET_IS_SLIDING        = 'SET_IS_SLIDING';
-export const SET_IMAGES            = 'SET_IMAGES';
+/* Local includes */
+import useProvider  from './Context';
+import Provider     from './Provider';
+
+export { useProvider as useAuthentication, Provider as AuthenticationProvider };
