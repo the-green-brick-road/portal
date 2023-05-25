@@ -1,0 +1,757 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout container Should provide required design when not sliding and menu open for small screens 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+      />
+      <header
+        class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0);\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
+          style=\\"height: 100%; width: 100%;\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 80px; background-color: rgb(102, 102, 102); width: 100%;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerBar 
+            </p>
+          </div>
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"min-height: 30px; top: 80px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerMenu 
+            </p>
+          </div>
+        </div>
+      </header>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          id=\\"content\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"page\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          data-testid=\\"layout-page-subcontainer\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+        >
+          <div>
+            <p>
+               target
+              0
+               
+            </p>
+            <button
+              aria-label=\\"test1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test3\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Layout container Should provide required design when not sliding for large screens 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+      />
+      <header
+        class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0);\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
+          style=\\"height: 100%; width: 100%;\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 80px; background-color: rgb(102, 102, 102); width: 100%;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               NavigationBar 
+            </p>
+          </div>
+        </div>
+      </header>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          id=\\"content\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"page\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          data-testid=\\"layout-page-subcontainer\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+        >
+          <div>
+            <p>
+               target
+              0
+               
+            </p>
+            <button
+              aria-label=\\"test1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test3\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Layout container Should provide required design when not sliding for medium screens 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+      />
+      <header
+        class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0);\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
+          style=\\"height: 100%; width: 100%;\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 80px; background-color: rgb(102, 102, 102); width: 100%;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerBar 
+            </p>
+          </div>
+        </div>
+      </header>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          id=\\"content\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"page\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          data-testid=\\"layout-page-subcontainer\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+        >
+          <div>
+            <p>
+               target
+              0
+               
+            </p>
+            <button
+              aria-label=\\"test1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test3\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Layout container Should provide required design when not sliding for small screens 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+      />
+      <header
+        class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0);\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
+          style=\\"height: 100%; width: 100%;\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 80px; background-color: rgb(102, 102, 102); width: 100%;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerBar 
+            </p>
+          </div>
+        </div>
+      </header>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          id=\\"content\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"page\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          data-testid=\\"layout-page-subcontainer\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+        >
+          <div>
+            <p>
+               target
+              0
+               
+            </p>
+            <button
+              aria-label=\\"test1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test3\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Layout container Should provide required design when sliding and menu open for small screen 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+      />
+      <header
+        class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102);\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
+          style=\\"height: 100%; width: 100%;\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 80px; background-color: rgb(85, 85, 85); width: 100%;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerBar 
+            </p>
+          </div>
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"min-height: 30px; top: 80px; z-index: 1000; position: absolute; background-color: rgb(85, 85, 85);\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerMenu 
+            </p>
+          </div>
+        </div>
+      </header>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          id=\\"content\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"page\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          data-testid=\\"layout-page-subcontainer\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+        >
+          <div>
+            <p>
+               target
+              0
+               
+            </p>
+            <button
+              aria-label=\\"test1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test3\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Layout container Should provide required design when sliding for large screen 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+      />
+      <header
+        class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102);\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
+          style=\\"height: 100%; width: 100%;\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 80px; background-color: rgb(85, 85, 85); width: 100%;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               NavigationBar 
+            </p>
+          </div>
+        </div>
+      </header>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          id=\\"content\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"page\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          data-testid=\\"layout-page-subcontainer\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+        >
+          <div>
+            <p>
+               target
+              0
+               
+            </p>
+            <button
+              aria-label=\\"test1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test3\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Layout container Should provide required design when sliding for medium screen 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+      />
+      <header
+        class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102);\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
+          style=\\"height: 100%; width: 100%;\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 80px; background-color: rgb(85, 85, 85); width: 100%;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerBar 
+            </p>
+          </div>
+        </div>
+      </header>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          id=\\"content\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"page\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          data-testid=\\"layout-page-subcontainer\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+        >
+          <div>
+            <p>
+               target
+              0
+               
+            </p>
+            <button
+              aria-label=\\"test1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test3\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Layout container Should provide required design when sliding for small screen 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+      />
+      <header
+        class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102);\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
+          style=\\"height: 100%; width: 100%;\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 80px; background-color: rgb(85, 85, 85); width: 100%;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerBar 
+            </p>
+          </div>
+        </div>
+      </header>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          id=\\"content\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"page\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          data-testid=\\"layout-page-subcontainer\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+        >
+          <div>
+            <p>
+               target
+              0
+               
+            </p>
+            <button
+              aria-label=\\"test1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+            <button
+              aria-label=\\"test3\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;

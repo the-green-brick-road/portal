@@ -4,7 +4,7 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Analytics provider reducer
+# Design provider reducer
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @15 may 2023
 # Latest revision: 15 may 2023
@@ -24,6 +24,8 @@ export default function reducer(state = {}, action) {
         return { ...state, isWebpSupported: payload };
     case types.SET_IS_SLIDING:
         return { ...state, isSliding: payload };
+    case types.SET_IMAGES:
+        return { ...state, images: payload };
     default:
         return state;
 

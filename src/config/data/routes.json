@@ -1,0 +1,14 @@
+[
+    {
+        "path": "/",
+        "element": "Home"
+    },
+    {
+        "path": "/superpowered",
+        "element": "SuperPowered"
+    },
+    {
+        "path": "/cargoconnect",
+        "element": "CargoConnect"
+    }
+]

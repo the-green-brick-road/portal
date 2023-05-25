@@ -10,4 +10,6 @@
 # Latest revision: 09 may 2023
 # ---------------------------------------------------- */
 
-export { default as ErrorBoundary } from './errorboundary/ErrorBoundary'; /* eslint-disable-line import/prefer-default-export */
+export { default as ErrorBoundary } from './errorboundary/ErrorBoundary';
+export { default as Layout        } from './layout/Layout';
+export { default as Router }        from './router/Router';

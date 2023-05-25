@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar component Should display a navigation bar 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiStack-root css-1v42qh1-MuiStack-root\\"
+        id=\\"hamburgerbar\\"
+        placeholder=\\"hamburgerbar\\"
+      >
+        <a
+          class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-142vkfw-MuiTypography-root-MuiLink-root\\"
+          href=\\"/\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: calc( 84px - 2 * 20px ); vertical-align: middle; top: 20px; background-color: blue;\\"
+          />
+        </a>
+        <button
+          aria-label=\\"open drawer\\"
+          class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1dwr8jp-MuiButtonBase-root-MuiButton-root\\"
+          col=\\"#666666\\"
+          height=\\"30px\\"
+          style=\\"background-color: rgba(255, 255, 255, 0); border-color: #666666; border-style: solid;\\"
+          tabindex=\\"0\\"
+          type=\\"button\\"
+          width=\\"30px\\"
+        >
+          <svg
+            aria-hidden=\\"true\\"
+            class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+            data-testid=\\"MenuIcon\\"
+            focusable=\\"false\\"
+            style=\\"width: 30px; height: 30px; color: rgb(102, 102, 102);\\"
+            viewBox=\\"0 0 24 24\\"
+          >
+            <path
+              d=\\"M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z\\"
+            />
+          </svg>
+          <span
+            class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`NavigationBar component Should display a negative navigation bar 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiStack-root css-1xuok6q-MuiStack-root\\"
+        id=\\"hamburgerbar\\"
+        placeholder=\\"hamburgerbar\\"
+      >
+        <a
+          class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-142vkfw-MuiTypography-root-MuiLink-root\\"
+          href=\\"/\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: calc( 84px - 2 * 20px ); vertical-align: middle; top: 20px; background-color: blue;\\"
+          />
+        </a>
+        <button
+          aria-label=\\"open drawer\\"
+          class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1h1aaxo-MuiButtonBase-root-MuiButton-root\\"
+          col=\\"#555555\\"
+          height=\\"30px\\"
+          style=\\"background-color: rgba(255, 255, 255, 0); border-color: #555555; border-style: solid;\\"
+          tabindex=\\"0\\"
+          type=\\"button\\"
+          width=\\"30px\\"
+        >
+          <svg
+            aria-hidden=\\"true\\"
+            class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+            data-testid=\\"MenuIcon\\"
+            focusable=\\"false\\"
+            style=\\"width: 30px; height: 30px; color: rgb(85, 85, 85);\\"
+            viewBox=\\"0 0 24 24\\"
+          >
+            <path
+              d=\\"M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z\\"
+            />
+          </svg>
+          <span
+            class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</body>"
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image component Should display an image if existing 1`] = `
+"<body>
+  <div>
+    <div>
+      <picture
+        data-testid=\\"picture-test\\"
+      >
+        <source
+          srcset=\\" test.png 200w , test.png 400w , test.png 800w ,\\"
+          type=\\"image/png\\"
+        />
+        <source
+          srcset=\\" test.webp 200w , test.webp 400w , test.webp 800w ,\\"
+          type=\\"image/webp\\"
+        />
+        <img
+          alt=\\"test\\"
+          src=\\"test.png\\"
+          style=\\"margin: 70px;\\"
+        />
+      </picture>
+    </div>
+  </div>
+</body>"
+`;

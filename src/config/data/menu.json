@@ -1,0 +1,24 @@
+[
+    {
+        "id":     "home",
+        "path":   "/",
+        "icon":   "Home",
+        "target": "_top"
+    },
+    {
+        "id": "seasons",
+        "icon" : "EmojiEvents",
+        "subitems": [
+            {
+                "id": "superpowered",
+                "path": "/superpowered",
+                "target": "_top"
+            },
+            {
+                "id": "cargo connect",
+                "path": "/cargoconnect",
+                "target": "_top"
+            }
+        ]
+    }
+]

@@ -7,19 +7,23 @@
 # Config exports
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @03 may 2023
-# Latest revision: 16 may 2023
+# Latest revision: 23 may 2023
 # ---------------------------------------------------- */
 
 /* Local includes */
-import Metrics from './Metrics';
-import Logging from './Logging';
-import Design  from './Design';
+import Firebase from './Firebase';
+import Logging  from './Logging';
+import Design   from './Design';
+import Menu     from './Menu';
+import Routes   from './Routes';
 
 const Config = {
 
-    metrics: Metrics,
-    logging: Logging,
-    design:  Design,
+    firebase: Firebase,
+    logging:  Logging,
+    design:   Design,
+    menu:     Menu,
+    routes:   Routes,
 
 };
 

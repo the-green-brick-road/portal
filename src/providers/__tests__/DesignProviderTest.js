@@ -26,15 +26,19 @@ import { useDesign, DesignProvider }        from '../../providers/design';
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
+import { useConfiguration as mockUseConfiguration, ConfigurationProvider as MockConfigurationProvider} from '../../providers/__mocks__/ConfigurationProvider';
 import { useUseMediaQuery }                                                     from '../design/MaterialHook';
 jest.mock('../design/MaterialHook');
-jest.mock('../../providers', () => ({ useLogging: (() => { return mockUseLogging(); }) }));
+jest.mock('../../providers', () => ({
+    useLogging: (() => { return mockUseLogging(); }),
+    useConfiguration: (() => { return mockUseConfiguration(); }),
+}));
 /* eslint-enable jest/no-mocks-import */
 
 function MockDesignConsumer(props) {
 
-    const { isSliding, isWebpSupported, isDesktop, setIsSliding } = useDesign();
-    const { desktop } = props;
+    const { isSliding, isWebpSupported, screen, sizes, images, setIsSliding } = useDesign();
+    const { size } = props;
 
     var calls = JSON.parse(localStorage.getItem('mock-design-consumer'));
     if (calls === null) { calls = 0; }
@@ -42,8 +46,26 @@ function MockDesignConsumer(props) {
     if (calls % 2 === 0) { expect(isSliding).toBe(false) }
     else                 { expect(isSliding).toBe(true)  }
 
-    expect(isDesktop).toBe(desktop)
-    if(calls > 0) { expect(isWebpSupported).toBe(true) }
+    expect(screen).toBe(size)
+    if(calls > 0) {
+
+        expect(isWebpSupported).toBe(true)
+
+        expect(sizes['small-width']).toBe(200)
+        expect(sizes['medium-width']).toBe(400)
+        expect(sizes['large-width']).toBe(800)
+        expect(sizes['menu-height']).toBe(80)
+        expect(sizes['margin']).toBe(10)
+        expect(sizes['hamburger-height']).toBe(40)
+
+        expect(images['test']['png']['small']['width']).toBe('200w')
+        expect(images['test']['png']['medium']['width']).toBe('400w')
+        expect(images['test']['png']['large']['width']).toBe('800w')
+        expect(images['test']['webp']['small']['width']).toBe('200w')
+        expect(images['test']['webp']['medium']['width']).toBe('400w')
+        expect(images['test']['webp']['large']['width']).toBe('800w')
+
+    }
 
     const handleClick = () => {
 
@@ -72,6 +94,13 @@ describe("Design provider" ,() => {
 
         const Config = {
             "design": {
+                "images" :  [
+                    {
+                        "name" : "test",
+                        "raw"  : "home.png",
+                        "web"  : "home.webp",
+                    }
+                ],
                 "sizes" : {
                     "small-width"          : 200,
                     "medium-width"         : 400,
@@ -141,11 +170,13 @@ describe("Design provider" ,() => {
             render(
 
                 <StrictMode>
-                    <MockLoggingProvider>
-                        <DesignProvider config={Config}>
-                            <MockDesignConsumer desktop={true}/>
-                        </DesignProvider>
-                    </MockLoggingProvider>
+                    <MockConfigurationProvider config={Config}>
+                        <MockLoggingProvider>
+                            <DesignProvider >
+                                <MockDesignConsumer size='large'/>
+                            </DesignProvider>
+                        </MockLoggingProvider>
+                    </MockConfigurationProvider>
                 </StrictMode>
 
             );
@@ -181,6 +212,13 @@ describe("Design provider" ,() => {
 
         const Config = {
             "design": {
+                "images" :  [
+                    {
+                        "name" : "test",
+                        "raw"  : "home.png",
+                        "web"  : "home.webp",
+                    }
+                ],
                 "sizes" : {
                     "small-width"          : 200,
                     "medium-width"         : 400,
@@ -250,11 +288,14 @@ describe("Design provider" ,() => {
             render(
 
                 <StrictMode>
-                    <MockLoggingProvider>
-                        <DesignProvider config={Config}>
-                            <MockDesignConsumer desktop={false}/>
-                        </DesignProvider>
-                    </MockLoggingProvider>
+
+                    <MockConfigurationProvider config={Config}>
+                        <MockLoggingProvider>
+                            <DesignProvider >
+                                <MockDesignConsumer size='small'/>
+                            </DesignProvider>
+                        </MockLoggingProvider>
+                    </MockConfigurationProvider>
                 </StrictMode>
 
             );

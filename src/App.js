@@ -7,17 +7,17 @@
 # React application definition
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @03 may 2023
-# Latest revision: 16 may 2023
+# Latest revision: 19 may 2023
 # ---------------------------------------------------- */
 
 /* Material UI includes */
 import { Container }                                            from '@mui/material';
 
-/* Website includes */
+/* Portal includes */
 import Config                                                   from './config';
-import { ErrorBoundary }                                        from './containers';
+import { ErrorBoundary, Router }                                from './containers';
 import { AnalyticsProvider, LoggingProvider, DesignProvider }   from './providers';
-
+import { ConfigurationProvider, MenuProvider }                  from './providers';
 
 function App() {
 
@@ -26,16 +26,20 @@ function App() {
 
     /* -------- Render component ------- */
     return (
-        <Container style={{width:'100vw', height:'100vh', margin:0, padding:0}} >
-            <LoggingProvider config={Config}>
-                <ErrorBoundary>
-                    <AnalyticsProvider config={Config}>
-                        <DesignProvider config={Config}>
-                            First version
-                        </DesignProvider>
-                    </AnalyticsProvider>
-                </ErrorBoundary>
-            </LoggingProvider>
+        <Container style={{width:'100vw', height:'100vh', maxWidth:'3000px',margin:0, padding:0, overflowY: 'hidden'}} >
+            <ConfigurationProvider config={Config}>
+                <LoggingProvider>
+                    <ErrorBoundary>
+                        <AnalyticsProvider>
+                            <DesignProvider>
+                                <MenuProvider>
+                                    <Router/>
+                                </MenuProvider>
+                            </DesignProvider>
+                        </AnalyticsProvider>
+                    </ErrorBoundary>
+                </LoggingProvider>
+            </ConfigurationProvider>
         </Container>
     );
 

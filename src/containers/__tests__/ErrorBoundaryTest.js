@@ -20,7 +20,6 @@ import { expect, test}                     from '@jest/globals';
 /* Component under test */
 import { ErrorBoundary }                   from '../../containers';
 
-
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
@@ -67,7 +66,7 @@ describe("ErrorBoundary container" ,() => {
         expect(message.textContent).toBe(' SOMETHING WENT WRONG ')
         expect(error.textContent).toBe(' UndefinedFunction is not defined ')
         expect(stack.textContent).toContain(' --- at MockErrorComponent ')
-        expect(stack.textContent).toContain('/src/containers/__tests__/ErrorBoundaryTest.js:32:50) ')
+        expect(stack.textContent).toContain('/src/containers/__tests__/ErrorBoundaryTest.js:31:50) ')
 
         const summary = screen.getByTestId('fallback-accordion');
         expect(summary.getAttribute('aria-expanded')).toBe('false')
