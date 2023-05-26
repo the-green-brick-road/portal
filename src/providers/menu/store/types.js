@@ -12,4 +12,3 @@
 
 export const SET_IS_MENU_OPEN     = 'SET_IS_MENU_OPEN';
 export const SET_IS_ITEM_SELECTED = 'SET_IS_ITEM_SELECTED';
-export const SET_ICONS            = 'SET_ICONS';

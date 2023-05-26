@@ -19,10 +19,13 @@ import { Typography } from '@mui/material';
 
 function Layout(props) {
 
+    const { children } = props
+
     return (
 
         <Fragment>
             <Typography> Mock Layout </Typography>
+            {children}
             <Outlet />
         </Fragment>
 

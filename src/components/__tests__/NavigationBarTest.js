@@ -11,27 +11,58 @@
 # ---------------------------------------------------- */
 
 /* Test includes */
-import { render, prettyDOM }       from '@testing-library/react'
-import { expect, test}             from '@jest/globals';
+import { render, act, screen, fireEvent, prettyDOM }  from '@testing-library/react'
+import { expect, test}                                from '@jest/globals';
 
 /* Material UI includes */
-import { Science }                 from '@mui/icons-material/';
+import { Science }                                    from '@mui/icons-material/';
 
 /* Component under test */
-import { default as NavigationBar } from '../../components/navigationbar/NavigationBar';
+import { default as NavigationBar }                   from '../../components/navigationbar/NavigationBar';
 
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useMenu as mockUseMenu, MenuProvider as MockMenuProvider } from '../../providers/__mocks__/MenuProvider';
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
-import { default as MockImage }  from '../../components/__mocks__/Image';
+import { default as MockImage }   from '../../components/__mocks__/Image';
+import { default as MockRouter }  from '../../containers/__mocks__/Router';
+import { default as MockLayout }  from '../../containers/__mocks__/Layout';
 jest.mock('../../providers', () => ({
     useLogging: (() => { return mockUseLogging(); }),
     useMenu: (()    => { return mockUseMenu(); }),
 }));
 jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
+jest.mock("../../containers", () => ({
+    Router: (props) => MockRouter(props),
+    Layout: (props) => MockLayout(props),
+}));
 
 /* eslint-enable jest/no-mocks-import */
+
+function MockLayoutWithBar() {
+
+    const theme = {
+        "palette": {
+            "common": {
+                "black": "#444444",
+                "white": "#555555",
+            },
+            "primary": {
+                "main": "#666666",
+            },
+            "secondary" : {
+                "main": "#777777",
+            }
+        }
+    };
+
+    return(
+        <MockLayout>
+            <NavigationBar height='84px' isNegative={true} theme={theme}/>
+        </MockLayout>
+    )
+
+};
 
 describe("NavigationBar component" ,() => {
 
@@ -39,7 +70,7 @@ describe("NavigationBar component" ,() => {
     const entries = [
         {
             "id":     "item1",
-            "path":   "/item1",
+            "path":   "/",
             "icon":   Science,
             "target": "_top",
         },
@@ -49,12 +80,12 @@ describe("NavigationBar component" ,() => {
             "subitems": [
                 {
                     "id": "subitem21",
-                    "path": "/subitem21",
+                    "path": "/test1",
                     "target": "_top",
                 },
                 {
                     "id": "subitem22",
-                    "path": "/subitem22",
+                    "path": "/test2",
                     "target": "_top",
                 }
             ],
@@ -147,6 +178,44 @@ describe("NavigationBar component" ,() => {
         )
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false,highlight: false});
         expect(tree).toMatchSnapshot();
+
+    })
+
+    test('Should select menu item on click', async () => {
+
+
+        const state = mockUseMenu();
+
+        let view = null
+        await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
+
+            view = render(
+
+                <div>
+                    <MockLoggingProvider>
+                        <MockMenuProvider entries={entries}>
+                            <MockRouter layout={MockLayoutWithBar} />
+                        </MockMenuProvider>
+                    </MockLoggingProvider>
+                </div>
+
+            )
+
+        })
+
+
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+        await delay(1000);
+
+        await act(async () => {fireEvent.click(screen.getByRole('link', { name: 'item1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        expect(state.selectEntry).toHaveBeenLastCalledWith('item1', false)
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'item2' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        expect(state.selectEntry).toHaveBeenLastCalledWith('item2', true)
+
+
+        expect(screen.getByText('item1').closest('a').getAttribute('href')).toBe('/')
+        expect(screen.getByText('subitem21').closest('a').getAttribute('href')).toBe('/test1')
+        expect(screen.getByText('subitem22').closest('a').getAttribute('href')).toBe('/test2')
 
     })
 

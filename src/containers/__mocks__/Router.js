@@ -22,7 +22,7 @@ import { BrowserRouter, useRoutes }        from 'react-router-dom';
 /* eslint-enable jest/no-mocks-import */
 function MockLayoutConsumer(props) {
 
-    const { index } = props;
+    const { index } = props
 
     const navigate = useNavigate();
 

@@ -11,7 +11,7 @@ function Home() {
     return (
         <Fragment>
 
-            <Typography> Home </Typography>
+            <Typography> Home Home Home Home Home Home Home Home Home Home Home Home Home Home </Typography>
             <Typography> Home </Typography>
             <Typography> Home </Typography>
             <Typography> Home </Typography>

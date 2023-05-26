@@ -23,8 +23,4 @@ export function setIsMenuOpen(content) {
     return { type: types.SET_IS_MENU_OPEN, payload: content };
 }
 
-export function setIcons(content) {
-    return { type: types.SET_ICONS, payload: content };
-}
-
 /* eslint-enable padded-blocks */

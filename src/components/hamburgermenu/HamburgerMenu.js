@@ -113,8 +113,8 @@ const HamburgerListItemIcon = styled(ListItemIcon)(({ color }) => ({ color }));
 function HamburgerMenu(props) {
 
     /* --------- Gather inputs --------- */
-    const { top = '95px', margin='20px', itemHeight='20px', isNegative = false, theme={} } = props;
-    const { selectEntry, entries, setMenuState }                                           = useMenu();
+    const { top = '95px', margin='20px', itemHeight='20px', isNegative = false, theme={palette:{common:{white:'#ffffff'},primary:{main:'#000000'},secondary:{main:'#ffffff'}}} } = props;
+    const { selectEntry, entries, isItemSelected, setMenuState }                           = useMenu();
     const { logText }                                                                      = useLogging();
     const componentName    = 'HamburgerMenu';
 
@@ -122,10 +122,10 @@ function HamburgerMenu(props) {
     const menuWidthString = `calc( 100vw - 2 * ${margin})`;
 
     /* ------ Manage button click ------ */
-    const handleButtonClick = (event) => {
+    const handleClick = (event) => {
 
-        logText(componentName, 'debug', 'workflow', ' handleButtonClick');
-        selectEntry(event.currentTarget.name, true);
+        logText(componentName, 'debug', 'workflow', ' handleClick');
+        selectEntry(event.target.parentNode.parentNode.getAttribute("name"), true);
 
     };
 
@@ -133,11 +133,10 @@ function HamburgerMenu(props) {
     const handleClose = (event) => {
 
         logText(componentName, 'debug', 'workflow', ' handleClose');
-        selectEntry(event.currentTarget.name, false);
+        selectEntry(event.target.parentNode.parentNode.getAttribute("name"), false);
         setMenuState(false);
 
     };
-
 
     /* -------- Defining theme --------- */
     let txtcolor = theme.palette.primary.main;
@@ -156,7 +155,7 @@ function HamburgerMenu(props) {
                     return (
                         <div key={item.id}>
                             {('subitems' in item) && (
-                                <HamburgerMenuItem divider={false} padding="0px" height={itemHeight} color={txtcolor}>
+                                <HamburgerMenuItem name={item.id} divider={false} padding="0px" height={itemHeight} color={txtcolor} onClick={handleClick} >
                                     <HamburgerListItemIcon color={txtcolor}>
                                         <IconName />
                                     </HamburgerListItemIcon>
@@ -169,7 +168,7 @@ function HamburgerMenu(props) {
 
                                 return (
                                     <Link key={subitem.id} underline="none" href={subitem.path} target={subitem.target} name={subitem.id}>
-                                        <HamburgerMenuSubItem onClick={handleClose} divider={false} padding="0px" height={itemHeight} color={txtcolor}>
+                                        <HamburgerMenuSubItem name={item.id} onClick={handleClose} divider={false} padding="0px" height={itemHeight} color={txtcolor}>
                                             <HamburgerListSubItemText color={txtcolor}>
                                                 {subitem.id}
                                             </HamburgerListSubItemText>
@@ -180,8 +179,8 @@ function HamburgerMenu(props) {
                             })}
                             {('subitems' in item) && <Divider light />}
                             {!('subitems' in item) && (
-                                <Link key={item.id} underline="none" href={item.path} target={item.target} onClick={handleButtonClick} name={item.id}>
-                                    <HamburgerMenuItem onClick={handleClose} divider={true} key={item.id} padding="0px" height={itemHeight} color={txtcolor}>
+                                <Link key={item.id} underline="none" href={item.path} target={item.target} name={item.id}>
+                                    <HamburgerMenuItem name={item.id} onClick={handleClose} divider={true} key={item.id} padding="0px" height={itemHeight} color={txtcolor}>
                                         <HamburgerListItemIcon color={txtcolor}>
                                             <IconName />
                                         </HamburgerListItemIcon>

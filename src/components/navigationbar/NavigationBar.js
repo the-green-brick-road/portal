@@ -86,7 +86,7 @@ function NavigationBar(props) {
                     const IconName = item.icon;
                     const visibility = (isItemSelected[item.id] ? 'visible' : 'hidden')
                     return (
-                        <div key={item.id} style={{width:'100%'}}>
+                        <div key={item.id} style={{width:'100%'}} aria-label={item.id}>
                             <NavigationButton
                                 id={item.id}
                                 theme={theme}
@@ -99,7 +99,7 @@ function NavigationBar(props) {
                                 target={ 'subitems' in item ? null : item.target }
                                 alt={item.id}
                                 startIcon={<IconName/>}
-                                onClick={handleButtonClick}
+                                onClick={'subitems' in item ? handleButtonClick : handleClose}
                             >
                                 {item.id}
                             </NavigationButton>

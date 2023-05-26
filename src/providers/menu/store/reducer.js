@@ -24,8 +24,6 @@ export default function reducer(state = {}, action) {
         return { ...state, isItemSelected: payload };
     case types.SET_IS_MENU_OPEN:
         return { ...state, isMenuOpen: payload };
-    case types.SET_ICONS:
-        return { ...state, icons: payload };
     default:
         return state;
 

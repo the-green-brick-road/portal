@@ -23,7 +23,7 @@ import { useDesign, useLogging }  from '../../providers';
 function LayoutPage(props) {
 
     /* --------- Gather inputs --------- */
-    const { top = '95px', left = '20px', height = '100vw', width = '100%', children } = props || {};
+    const { top, left, height, width, children } = props || {};
     const { setIsSliding } = useDesign();
     const { logText }      = useLogging();
     const componentName    = 'LayoutPage';

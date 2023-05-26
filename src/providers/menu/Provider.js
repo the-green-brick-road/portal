@@ -68,9 +68,8 @@ function Provider(props) {
         },
         selectEntry(entry, value = true)   {
 
-            logText(componentName, 'info', 'workflow', ` Selecting entry : ${value}`)
+            logText(componentName, 'info', 'workflow', ` Selecting entry ${entry} : ${value}`)
             const items = {};
-
             const array = Object.entries(menuStore.isItemSelected);
             for (let i_entry = 0; i_entry < array.length; i_entry += 1) { items[array[i_entry][0]] = false; }
             items[entry] = value;

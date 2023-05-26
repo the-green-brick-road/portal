@@ -16,7 +16,7 @@ import { Container }    from '@mui/material';
 function LayoutContent(props) {
 
     /* --------- Gather inputs --------- */
-    const { top = '95px', left = '20px', height = '100vw', width = '100%' } = props || {};
+    const { top, left, height, width } = props || {};
 
     /* ----------- Define HTML --------- */
     return (

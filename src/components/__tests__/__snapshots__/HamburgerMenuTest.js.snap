@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavigationBar component Should display a navigation bar 1`] = `
+exports[`HamburgerMenu component Should display a hamburger menu 1`] = `
 "<body>
   <div>
     <div>
@@ -22,7 +22,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
           >
             <a
               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-4m5fmp-MuiTypography-root-MuiLink-root\\"
-              href=\\"/item1\\"
+              href=\\"/\\"
               name=\\"item1\\"
               target=\\"_top\\"
             >
@@ -30,6 +30,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                 class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider css-6owcs9-MuiButtonBase-root-MuiMenuItem-root\\"
                 color=\\"#666666\\"
                 height=\\"10px\\"
+                name=\\"item1\\"
                 padding=\\"0px\\"
                 role=\\"menuitem\\"
                 tabindex=\\"-1\\"
@@ -71,6 +72,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
               class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-gtz6vn-MuiButtonBase-root-MuiMenuItem-root\\"
               color=\\"#666666\\"
               height=\\"10px\\"
+              name=\\"item2\\"
               padding=\\"0px\\"
               role=\\"menuitem\\"
               tabindex=\\"-1\\"
@@ -107,7 +109,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             </li>
             <a
               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-4m5fmp-MuiTypography-root-MuiLink-root\\"
-              href=\\"/subitem21\\"
+              href=\\"/test1\\"
               name=\\"subitem21\\"
               target=\\"_top\\"
             >
@@ -115,6 +117,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                 class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1w5ofpo-MuiButtonBase-root-MuiMenuItem-root\\"
                 color=\\"#666666\\"
                 height=\\"10px\\"
+                name=\\"item2\\"
                 padding=\\"0px\\"
                 role=\\"menuitem\\"
                 tabindex=\\"-1\\"
@@ -136,7 +139,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             </a>
             <a
               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-4m5fmp-MuiTypography-root-MuiLink-root\\"
-              href=\\"/subitem22\\"
+              href=\\"/test2\\"
               name=\\"subitem22\\"
               target=\\"_top\\"
             >
@@ -144,6 +147,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                 class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1w5ofpo-MuiButtonBase-root-MuiMenuItem-root\\"
                 color=\\"#666666\\"
                 height=\\"10px\\"
+                name=\\"item2\\"
                 padding=\\"0px\\"
                 role=\\"menuitem\\"
                 tabindex=\\"-1\\"
@@ -174,7 +178,185 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
 </body>"
 `;
 
-exports[`NavigationBar component Should display a negative navigation bar 1`] = `
+exports[`HamburgerMenu component Should display a hamburger menu even with no attributes 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1dxrhub-MuiContainer-root\\"
+        color=\\"#ffffff\\"
+        left=\\"0\\"
+        top=\\"95px\\"
+        width=\\"calc( 100vw - 2 * 20px)\\"
+      >
+        <ul
+          class=\\"MuiList-root MuiList-padding css-1jmgfrh-MuiList-root\\"
+          padding=\\"0px\\"
+          role=\\"menu\\"
+          tabindex=\\"-1\\"
+        >
+          <div
+            tabindex=\\"0\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-4m5fmp-MuiTypography-root-MuiLink-root\\"
+              href=\\"/\\"
+              name=\\"item1\\"
+              target=\\"_top\\"
+            >
+              <li
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider css-enhu5j-MuiButtonBase-root-MuiMenuItem-root\\"
+                color=\\"#000000\\"
+                height=\\"20px\\"
+                name=\\"item1\\"
+                padding=\\"0px\\"
+                role=\\"menuitem\\"
+                tabindex=\\"-1\\"
+              >
+                <div
+                  class=\\"MuiListItemIcon-root css-uxqleb-MuiListItemIcon-root\\"
+                  color=\\"#000000\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"ScienceIcon\\"
+                    focusable=\\"false\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class=\\"MuiListItemText-root css-16jtqit-MuiListItemText-root\\"
+                  color=\\"#000000\\"
+                >
+                  <span
+                    class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root\\"
+                  >
+                    item1
+                  </span>
+                </div>
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </li>
+            </a>
+          </div>
+          <div>
+            <li
+              class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-2h6oef-MuiButtonBase-root-MuiMenuItem-root\\"
+              color=\\"#000000\\"
+              height=\\"20px\\"
+              name=\\"item2\\"
+              padding=\\"0px\\"
+              role=\\"menuitem\\"
+              tabindex=\\"-1\\"
+            >
+              <div
+                class=\\"MuiListItemIcon-root css-uxqleb-MuiListItemIcon-root\\"
+                color=\\"#000000\\"
+              >
+                <svg
+                  aria-hidden=\\"true\\"
+                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                  data-testid=\\"ScienceIcon\\"
+                  focusable=\\"false\\"
+                  viewBox=\\"0 0 24 24\\"
+                >
+                  <path
+                    d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                  />
+                </svg>
+              </div>
+              <div
+                class=\\"MuiListItemText-root css-16jtqit-MuiListItemText-root\\"
+                color=\\"#000000\\"
+              >
+                <span
+                  class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root\\"
+                >
+                  item2
+                </span>
+              </div>
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </li>
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-4m5fmp-MuiTypography-root-MuiLink-root\\"
+              href=\\"/test1\\"
+              name=\\"subitem21\\"
+              target=\\"_top\\"
+            >
+              <li
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1i2pbi7-MuiButtonBase-root-MuiMenuItem-root\\"
+                color=\\"#000000\\"
+                height=\\"20px\\"
+                name=\\"item2\\"
+                padding=\\"0px\\"
+                role=\\"menuitem\\"
+                tabindex=\\"-1\\"
+              >
+                <div
+                  class=\\"MuiListItemText-root css-1jl7vcq-MuiListItemText-root\\"
+                  color=\\"#000000\\"
+                >
+                  <span
+                    class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root\\"
+                  >
+                    subitem21
+                  </span>
+                </div>
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </li>
+            </a>
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-4m5fmp-MuiTypography-root-MuiLink-root\\"
+              href=\\"/test2\\"
+              name=\\"subitem22\\"
+              target=\\"_top\\"
+            >
+              <li
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1i2pbi7-MuiButtonBase-root-MuiMenuItem-root\\"
+                color=\\"#000000\\"
+                height=\\"20px\\"
+                name=\\"item2\\"
+                padding=\\"0px\\"
+                role=\\"menuitem\\"
+                tabindex=\\"-1\\"
+              >
+                <div
+                  class=\\"MuiListItemText-root css-1jl7vcq-MuiListItemText-root\\"
+                  color=\\"#000000\\"
+                >
+                  <span
+                    class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root\\"
+                  >
+                    subitem22
+                  </span>
+                </div>
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </li>
+            </a>
+            <hr
+              class=\\"MuiDivider-root MuiDivider-fullWidth MuiDivider-light css-xetjfm-MuiDivider-root\\"
+            />
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`HamburgerMenu component Should display a negative hamburger menu 1`] = `
 "<body>
   <div>
     <div>
@@ -196,7 +378,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
           >
             <a
               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-4m5fmp-MuiTypography-root-MuiLink-root\\"
-              href=\\"/item1\\"
+              href=\\"/\\"
               name=\\"item1\\"
               target=\\"_top\\"
             >
@@ -204,6 +386,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                 class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider css-fugi7y-MuiButtonBase-root-MuiMenuItem-root\\"
                 color=\\"#555555\\"
                 height=\\"10px\\"
+                name=\\"item1\\"
                 padding=\\"0px\\"
                 role=\\"menuitem\\"
                 tabindex=\\"-1\\"
@@ -245,6 +428,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
               class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1tg625t-MuiButtonBase-root-MuiMenuItem-root\\"
               color=\\"#555555\\"
               height=\\"10px\\"
+              name=\\"item2\\"
               padding=\\"0px\\"
               role=\\"menuitem\\"
               tabindex=\\"-1\\"
@@ -281,7 +465,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
             </li>
             <a
               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-4m5fmp-MuiTypography-root-MuiLink-root\\"
-              href=\\"/subitem21\\"
+              href=\\"/test1\\"
               name=\\"subitem21\\"
               target=\\"_top\\"
             >
@@ -289,6 +473,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                 class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-88pf6u-MuiButtonBase-root-MuiMenuItem-root\\"
                 color=\\"#555555\\"
                 height=\\"10px\\"
+                name=\\"item2\\"
                 padding=\\"0px\\"
                 role=\\"menuitem\\"
                 tabindex=\\"-1\\"
@@ -310,7 +495,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
             </a>
             <a
               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-4m5fmp-MuiTypography-root-MuiLink-root\\"
-              href=\\"/subitem22\\"
+              href=\\"/test2\\"
               name=\\"subitem22\\"
               target=\\"_top\\"
             >
@@ -318,6 +503,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                 class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-88pf6u-MuiButtonBase-root-MuiMenuItem-root\\"
                 color=\\"#555555\\"
                 height=\\"10px\\"
+                name=\\"item2\\"
                 padding=\\"0px\\"
                 role=\\"menuitem\\"
                 tabindex=\\"-1\\"

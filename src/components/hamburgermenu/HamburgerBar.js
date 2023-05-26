@@ -18,7 +18,7 @@ import HamburgerIcon             from './HamburgerIcon';
 function HamburgerBar(props) {
 
     /* --------- Gather inputs --------- */
-    const { height = '20px', isNegative = false, theme={} }  = props
+    const { height = '20px', isNegative = false, theme={palette:{primary:{main:'#000000'},secondary:{main:'#ffffff'}}} }  = props
     /* const componentName = 'HamburgerBar'; */
 
     /* -------- Defining theme --------- */

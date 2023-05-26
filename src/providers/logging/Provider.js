@@ -29,7 +29,7 @@ function Provider(props) {
     /* --------- Gather inputs --------- */
     const { children, persistKey = 'logging' } = props;
     const { config }                           = useConfiguration();
-    const { logging = {} }                     = config;
+    const { logging }                          = config;
     const init                                 = useInit();
     const captureMessage                       = useCaptureMessage();
     const setTag                               = useSetTag();

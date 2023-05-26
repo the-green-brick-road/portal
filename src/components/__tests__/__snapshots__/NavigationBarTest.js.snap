@@ -23,13 +23,14 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
           style=\\"margin-left: 10px; margin-right: 10px; width: 100%; left: 0px;\\"
         >
           <div
+            aria-label=\\"item1\\"
             style=\\"width: 100%;\\"
           >
             <a
               alt=\\"item1\\"
               class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-xg3fdv-MuiButtonBase-root-MuiButton-root\\"
               col=\\"#666666\\"
-              href=\\"/item1\\"
+              href=\\"/\\"
               id=\\"item1\\"
               name=\\"item1\\"
               tabindex=\\"0\\"
@@ -54,6 +55,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             </a>
           </div>
           <div
+            aria-label=\\"item2\\"
             style=\\"width: 100%;\\"
           >
             <button
@@ -96,7 +98,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
               >
                 <a
                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
-                  href=\\"/subitem21\\"
+                  href=\\"/test1\\"
                   style=\\"text-decoration: none; color: rgb(102, 102, 102);\\"
                   target=\\"_top\\"
                 >
@@ -114,7 +116,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
               >
                 <a
                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
-                  href=\\"/subitem22\\"
+                  href=\\"/test2\\"
                   style=\\"text-decoration: none; color: rgb(102, 102, 102);\\"
                   target=\\"_top\\"
                 >
@@ -156,13 +158,14 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
           style=\\"margin-left: 10px; margin-right: 10px; width: 100%; left: 0px;\\"
         >
           <div
+            aria-label=\\"item1\\"
             style=\\"width: 100%;\\"
           >
             <a
               alt=\\"item1\\"
               class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-1jecpqq-MuiButtonBase-root-MuiButton-root\\"
               col=\\"#555555\\"
-              href=\\"/item1\\"
+              href=\\"/\\"
               id=\\"item1\\"
               name=\\"item1\\"
               tabindex=\\"0\\"
@@ -187,6 +190,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
             </a>
           </div>
           <div
+            aria-label=\\"item2\\"
             style=\\"width: 100%;\\"
           >
             <button
@@ -229,7 +233,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
               >
                 <a
                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
-                  href=\\"/subitem21\\"
+                  href=\\"/test1\\"
                   style=\\"text-decoration: none; color: rgb(85, 85, 85);\\"
                   target=\\"_top\\"
                 >
@@ -247,7 +251,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
               >
                 <a
                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
-                  href=\\"/subitem22\\"
+                  href=\\"/test2\\"
                   style=\\"text-decoration: none; color: rgb(85, 85, 85);\\"
                   target=\\"_top\\"
                 >

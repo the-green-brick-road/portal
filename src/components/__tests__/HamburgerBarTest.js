@@ -11,14 +11,14 @@
 # ---------------------------------------------------- */
 
 /* Test includes */
-import { render, prettyDOM }       from '@testing-library/react'
-import { expect, test}             from '@jest/globals';
+import { render, prettyDOM, act, screen, fireEvent } from '@testing-library/react'
+import { expect, test}                               from '@jest/globals';
 
 /* Material UI includes */
-import { Science }                 from '@mui/icons-material/';
+import { Science }                                   from '@mui/icons-material/';
 
 /* Component under test */
-import { default as HamburgerBar } from '../../components/hamburgermenu/HamburgerBar';
+import { default as HamburgerBar }                   from '../../components/hamburgermenu/HamburgerBar';
 
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
@@ -33,7 +33,7 @@ jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
 
 /* eslint-enable jest/no-mocks-import */
 
-describe("NavigationBar component" ,() => {
+describe("HamburgerBar component" ,() => {
 
     const entries = [
         {
@@ -141,6 +141,50 @@ describe("NavigationBar component" ,() => {
         );
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false,highlight: false});
         expect(tree).toMatchSnapshot();
+
+    })
+
+    test('Should display a negative navigation event with no attributes', async () => {
+
+        const view = render(
+            <div>
+                <MockLoggingProvider>
+                    <MockMenuProvider entries={entries}>
+                        <HamburgerBar />
+                    </MockMenuProvider>
+                </MockLoggingProvider>
+            </div>
+        );
+        const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false,highlight: false});
+        expect(tree).toMatchSnapshot();
+
+    })
+
+    test('Should open and close hamburger menu', async () => {
+
+        const state = mockUseMenu();
+
+        let view = null
+        await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
+
+            view = render(
+                <div>
+                    <MockLoggingProvider>
+                        <MockMenuProvider entries={entries}>
+                            <HamburgerBar height='84px' isNegative={true} theme={theme}/>
+                        </MockMenuProvider>
+                    </MockLoggingProvider>
+                </div>
+            );
+
+        })
+
+        const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false,highlight: false});
+        expect(tree).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'open drawer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        expect(state.setMenuState).toHaveBeenLastCalledWith(true)
+
 
     })
 
