@@ -114,7 +114,7 @@ function HamburgerMenu(props) {
 
     /* --------- Gather inputs --------- */
     const { top = '95px', margin='20px', itemHeight='20px', isNegative = false, theme={palette:{common:{white:'#ffffff'},primary:{main:'#000000'},secondary:{main:'#ffffff'}}} } = props;
-    const { selectEntry, entries, isItemSelected, setMenuState }                           = useMenu();
+    const { selectEntry, entries, setMenuState }                           = useMenu();
     const { logText }                                                                      = useLogging();
     const componentName    = 'HamburgerMenu';
 

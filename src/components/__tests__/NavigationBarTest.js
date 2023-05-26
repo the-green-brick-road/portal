@@ -47,13 +47,9 @@ function MockLayoutWithBar() {
                 "black": "#444444",
                 "white": "#555555",
             },
-            "primary": {
-                "main": "#666666",
-            },
-            "secondary" : {
-                "main": "#777777",
-            }
-        }
+            "primary": { "main": "#666666" },
+            "secondary" : { "main": "#777777" },
+        },
     };
 
     return(
@@ -186,10 +182,9 @@ describe("NavigationBar component" ,() => {
 
         const state = mockUseMenu();
 
-        let view = null
         await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
 
-            view = render(
+            render(
 
                 <div>
                     <MockLoggingProvider>
@@ -212,10 +207,12 @@ describe("NavigationBar component" ,() => {
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'item2' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         expect(state.selectEntry).toHaveBeenLastCalledWith('item2', true)
 
-
+        /* eslint-disable testing-library/no-node-access*/
         expect(screen.getByText('item1').closest('a').getAttribute('href')).toBe('/')
         expect(screen.getByText('subitem21').closest('a').getAttribute('href')).toBe('/test1')
         expect(screen.getByText('subitem22').closest('a').getAttribute('href')).toBe('/test2')
+        /* eslint-enable testing-library/no-node-access*/
+
 
     })
 
