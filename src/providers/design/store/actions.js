@@ -23,5 +23,9 @@ export function setIsWebpSupported(content) {
     return { type: types.SET_IS_WEBP_SUPPORTED, payload: content };
 }
 
+export function setImages(content) {
+    return { type: types.SET_IMAGES, payload: content };
+}
+
 
 /* eslint-enable padded-blocks */

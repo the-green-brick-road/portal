@@ -13,11 +13,12 @@
 # Latest revision: 08 may 2023
 # ---------------------------------------------------- */
 
-import { initializeApp }                                            from 'firebase/app';
+import { initializeApp, getApps }                                   from 'firebase/app';
 import { isSupported, getAnalytics, setAnalyticsCollectionEnabled } from 'firebase/analytics';
 import { getPerformance }                                           from "firebase/performance";
 
 export const useInitializeApp = () => { return initializeApp; };
+export const useGetApps = () => { return getApps; };
 export const useIsSupported = () => { return isSupported; };
 export const useGetAnalytics = () => { return getAnalytics; };
 export const useGetPerformance = () => { return getPerformance; };

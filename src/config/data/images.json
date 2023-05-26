@@ -3,5 +3,10 @@
         "name" : "home",
         "raw"  : "home.png",
         "web"  : "home.webp"
+    },
+    {
+        "name" : "logo",
+        "raw"  : "logo.png",
+        "web"  : "logo.webp"
     }
 ]

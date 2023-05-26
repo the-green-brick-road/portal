@@ -21,13 +21,17 @@ import { render, fireEvent, screen, act }           from '@testing-library/react
 import { expect, test }                             from '@jest/globals';
 
 /* Component under test */
-import { useLogging, LoggingProvider }              from '..';
+import { useLogging, LoggingProvider }              from '../../providers/logging';
 
 /* Mocks includes */
+/* eslint-disable jest/no-mocks-import */
 import { useInit, useCaptureMessage, useSetTag }    from '../logging/SentryHook';
 import { useLog, useError, useWarn }                from '../logging/ConsoleHook';
+import { useConfiguration as mockUseConfiguration, ConfigurationProvider as MockConfigurationProvider } from '../../providers/__mocks__/ConfigurationProvider';
 jest.mock('../logging/SentryHook');
 jest.mock('../logging/ConsoleHook');
+jest.mock('../../providers', () => ({ useConfiguration: (() => { return mockUseConfiguration(); }) }));
+/* eslint-enable jest/no-mocks-import */
 
 function MockLoggingConsumer(props) {
 
@@ -107,9 +111,11 @@ const developmentTest = async (level, components, stats, index) => {
         render(
 
             <div>
-                <LoggingProvider config={Config}>
-                    <MockLoggingConsumer mode={process.env.NODE_ENV} index={index}/>
-                </LoggingProvider>
+                <MockConfigurationProvider config={Config}>
+                    <LoggingProvider>
+                        <MockLoggingConsumer mode={process.env.NODE_ENV} index={index}/>
+                    </LoggingProvider>
+                </MockConfigurationProvider>
             </div>
 
         );
@@ -176,9 +182,11 @@ const productionTest = async (level, components, stats, index) => {
         render(
 
             <div>
-                <LoggingProvider config={Config}>
-                    <MockLoggingConsumer mode={process.env.NODE_ENV} index={index}/>
-                </LoggingProvider>
+                <MockConfigurationProvider config={Config}>
+                    <LoggingProvider>
+                        <MockLoggingConsumer mode={process.env.NODE_ENV} index={index}/>
+                    </LoggingProvider>
+                </MockConfigurationProvider>
             </div>
 
         );
@@ -247,9 +255,11 @@ describe("Logging provider" ,() => {
             render(
                 <StrictMode>
                     <div>
-                        <LoggingProvider config={Config}>
-                            <MockLoggingConsumer mode={process.env.NODE_ENV} index={0}/>
-                        </LoggingProvider>
+                        <MockConfigurationProvider config={Config}>
+                            <LoggingProvider>
+                                <MockLoggingConsumer mode={process.env.NODE_ENV} index={0}/>
+                            </LoggingProvider>
+                        </MockConfigurationProvider>
                     </div>
                 </StrictMode>
 

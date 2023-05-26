@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar component Should display a navigation bar 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiStack-root css-fzqd5a-MuiStack-root\\"
+      >
+        <a
+          class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1645xoy-MuiTypography-root-MuiLink-root\\"
+          href=\\"/\\"
+          logopadding=\\"5px\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 100%; vertical-align: middle; background-color: blue;\\"
+          />
+        </a>
+        <div
+          class=\\"MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-fullWidth MuiButtonGroup-disableElevation css-8q4ur5-MuiButtonGroup-root\\"
+          role=\\"group\\"
+          style=\\"margin-left: 10px; margin-right: 10px; width: 100%; left: 0px;\\"
+        >
+          <div
+            aria-label=\\"item1\\"
+            style=\\"width: 100%;\\"
+          >
+            <a
+              alt=\\"item1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-xg3fdv-MuiButtonBase-root-MuiButton-root\\"
+              col=\\"#666666\\"
+              href=\\"/\\"
+              id=\\"item1\\"
+              name=\\"item1\\"
+              tabindex=\\"0\\"
+              target=\\"_top\\"
+            >
+              <span
+                class=\\"MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon\\"
+              >
+                <svg
+                  aria-hidden=\\"true\\"
+                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                  data-testid=\\"ScienceIcon\\"
+                  focusable=\\"false\\"
+                  viewBox=\\"0 0 24 24\\"
+                >
+                  <path
+                    d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                  />
+                </svg>
+              </span>
+              item1
+            </a>
+          </div>
+          <div
+            aria-label=\\"item2\\"
+            style=\\"width: 100%;\\"
+          >
+            <button
+              alt=\\"item2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-xg3fdv-MuiButtonBase-root-MuiButton-root\\"
+              col=\\"#666666\\"
+              id=\\"item2\\"
+              name=\\"item2\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon\\"
+              >
+                <svg
+                  aria-hidden=\\"true\\"
+                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                  data-testid=\\"ScienceIcon\\"
+                  focusable=\\"false\\"
+                  viewBox=\\"0 0 24 24\\"
+                >
+                  <path
+                    d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                  />
+                </svg>
+              </span>
+              item2
+            </button>
+            <ul
+              class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+              role=\\"menu\\"
+              style=\\"padding: 0px; border-radius: 0; visibility: hidden; position: absolute; top: 84px; border-width: 1px; border-style: solid; border-color: #666666;\\"
+              tabindex=\\"-1\\"
+            >
+              <li
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root\\"
+                role=\\"menuitem\\"
+                style=\\"background-color: rgb(85, 85, 85); color: rgb(102, 102, 102); border-radius: 0;\\"
+                tabindex=\\"0\\"
+              >
+                <a
+                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
+                  href=\\"/test1\\"
+                  style=\\"text-decoration: none; color: rgb(102, 102, 102);\\"
+                  target=\\"_top\\"
+                >
+                  subitem21
+                </a>
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </li>
+              <li
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root\\"
+                role=\\"menuitem\\"
+                style=\\"background-color: rgb(85, 85, 85); color: rgb(102, 102, 102); border-radius: 0;\\"
+                tabindex=\\"-1\\"
+              >
+                <a
+                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
+                  href=\\"/test2\\"
+                  style=\\"text-decoration: none; color: rgb(102, 102, 102);\\"
+                  target=\\"_top\\"
+                >
+                  subitem22
+                </a>
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`NavigationBar component Should display a negative navigation bar 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiStack-root css-10auekq-MuiStack-root\\"
+      >
+        <a
+          class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1645xoy-MuiTypography-root-MuiLink-root\\"
+          href=\\"/\\"
+          logopadding=\\"5px\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 100%; vertical-align: middle; background-color: blue;\\"
+          />
+        </a>
+        <div
+          class=\\"MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-fullWidth MuiButtonGroup-disableElevation css-8q4ur5-MuiButtonGroup-root\\"
+          role=\\"group\\"
+          style=\\"margin-left: 10px; margin-right: 10px; width: 100%; left: 0px;\\"
+        >
+          <div
+            aria-label=\\"item1\\"
+            style=\\"width: 100%;\\"
+          >
+            <a
+              alt=\\"item1\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-1jecpqq-MuiButtonBase-root-MuiButton-root\\"
+              col=\\"#555555\\"
+              href=\\"/\\"
+              id=\\"item1\\"
+              name=\\"item1\\"
+              tabindex=\\"0\\"
+              target=\\"_top\\"
+            >
+              <span
+                class=\\"MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon\\"
+              >
+                <svg
+                  aria-hidden=\\"true\\"
+                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                  data-testid=\\"ScienceIcon\\"
+                  focusable=\\"false\\"
+                  viewBox=\\"0 0 24 24\\"
+                >
+                  <path
+                    d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                  />
+                </svg>
+              </span>
+              item1
+            </a>
+          </div>
+          <div
+            aria-label=\\"item2\\"
+            style=\\"width: 100%;\\"
+          >
+            <button
+              alt=\\"item2\\"
+              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-1jecpqq-MuiButtonBase-root-MuiButton-root\\"
+              col=\\"#555555\\"
+              id=\\"item2\\"
+              name=\\"item2\\"
+              tabindex=\\"0\\"
+              type=\\"button\\"
+            >
+              <span
+                class=\\"MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon\\"
+              >
+                <svg
+                  aria-hidden=\\"true\\"
+                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                  data-testid=\\"ScienceIcon\\"
+                  focusable=\\"false\\"
+                  viewBox=\\"0 0 24 24\\"
+                >
+                  <path
+                    d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                  />
+                </svg>
+              </span>
+              item2
+            </button>
+            <ul
+              class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+              role=\\"menu\\"
+              style=\\"padding: 0px; border-radius: 0; visibility: hidden; position: absolute; top: 84px; border-width: 1px; border-style: none; border-color: #666666;\\"
+              tabindex=\\"-1\\"
+            >
+              <li
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root\\"
+                role=\\"menuitem\\"
+                style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); border-radius: 0;\\"
+                tabindex=\\"0\\"
+              >
+                <a
+                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
+                  href=\\"/test1\\"
+                  style=\\"text-decoration: none; color: rgb(85, 85, 85);\\"
+                  target=\\"_top\\"
+                >
+                  subitem21
+                </a>
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </li>
+              <li
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root\\"
+                role=\\"menuitem\\"
+                style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); border-radius: 0;\\"
+                tabindex=\\"-1\\"
+              >
+                <a
+                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
+                  href=\\"/test2\\"
+                  style=\\"text-decoration: none; color: rgb(85, 85, 85);\\"
+                  target=\\"_top\\"
+                >
+                  subitem22
+                </a>
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;

@@ -14,6 +14,9 @@
 /* React includes */
 import { useMemo, useReducer, useEffect }               from 'react';
 
+/* Portal includes */
+import { useConfiguration }                             from '../../providers';
+
 /* Local includes */
 import { Context }                                      from './Context';
 import { useInit, useCaptureMessage, useSetTag }        from './SentryHook';
@@ -24,14 +27,15 @@ import reducer                                          from './store/reducer';
 function Provider(props) {
 
     /* --------- Gather inputs --------- */
-    const { config, children, persistKey = 'logging' } = props;
-    const { logging = {} }                             = config;
-    const init           = useInit();
-    const captureMessage = useCaptureMessage();
-    const setTag         = useSetTag();
-    const log            = useLog();
-    const error          = useError();
-    const warn           = useWarn();
+    const { children, persistKey = 'logging' } = props;
+    const { config }                           = useConfiguration();
+    const { logging }                          = config;
+    const init                                 = useInit();
+    const captureMessage                       = useCaptureMessage();
+    const setTag                               = useSetTag();
+    const log                                  = useLog();
+    const error                                = useError();
+    const warn                                 = useWarn();
     const componentName = 'LoggingProvider';
 
     /* Create local states */

@@ -7,7 +7,7 @@
 # Fallback component for error boundary
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @08 may 2023
-# Latest revision: 10 may 2023
+# Latest revision: 24 may 2023
 # ---------------------------------------------------- */
 
 /* React includes */
@@ -63,16 +63,23 @@ function Fallback(props) {
 
                             var  line = ''
                             const label = `fallback-stack-${index}`
-                            if(index > 0) {
+                            if(index > 0 && item.length > 0) {
 
                                 line = item.split(' at ');
-                                line = line[1];
-                                line = line.trim();
+                                if(line.length > 1)
+                                {
+
+                                    line = line[1];
+                                    line = line.trim();
+                                    line = `--- at ${line}`
+
+                                }
+                                else { line = item }
 
                             }
                             return(
                                 <Fragment key={index}>
-                                    {(index > 0) && (<Typography data-testid={label} > --- at {line} </Typography>)}
+                                    {(index > 0) && (<Typography data-testid={label} > {line} </Typography>)}
                                 </Fragment>
                             )
 

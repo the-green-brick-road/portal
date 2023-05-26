@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Router component Should build correct routes 1`] = `
+"<body>
+  <div>
+    <p
+      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+    >
+       Mock Layout 
+    </p>
+    <div>
+      <p>
+         target1 
+      </p>
+      <button
+        aria-label=\\"target1\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+      <button
+        aria-label=\\"target2\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+      <button
+        aria-label=\\"target3\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Router component Should build correct routes 2`] = `
+"<body>
+  <div>
+    <p
+      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+      style=\\"\\"
+    >
+       Mock Layout 
+    </p>
+    <div>
+      <p>
+         target2 
+      </p>
+      <button
+        aria-label=\\"target1\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+      <button
+        aria-label=\\"target2\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+      <button
+        aria-label=\\"target3\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Router component Should build correct routes 3`] = `
+"<body>
+  <div>
+    <p
+      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+      style=\\"\\"
+    >
+       Mock Layout 
+    </p>
+    <div>
+      <p>
+         target3 
+      </p>
+      <button
+        aria-label=\\"target1\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+      <button
+        aria-label=\\"target2\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+      <button
+        aria-label=\\"target3\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Router component Should build correct routes 4`] = `
+"<body>
+  <div>
+    <p
+      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+      style=\\"\\"
+    >
+       Mock Layout 
+    </p>
+    <div>
+      <p>
+         target1 
+      </p>
+      <button
+        aria-label=\\"target1\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+      <button
+        aria-label=\\"target2\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+      <button
+        aria-label=\\"target3\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
+    </div>
+  </div>
+</body>"
+`;
