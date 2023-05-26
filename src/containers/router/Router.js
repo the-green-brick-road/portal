@@ -33,7 +33,7 @@ function PortalRouter(props) {
         const route_elements     = [];
         for (let i_route = 0; i_route < config.routes.length; i_route += 1) {
 
-            const Element = lazy(() => import(`../../${folder}/${config.routes[i_route].element.toLowerCase()}/${config.routes[i_route].element}`));
+            const Element = lazy(() => import(`../../views${folder}/${config.routes[i_route].element.toLowerCase()}/${config.routes[i_route].element}`));
             const rt = {
                 exact: true,
                 path: config.routes[i_route].path,
@@ -61,7 +61,7 @@ function PortalRouter(props) {
 function Router(props) {
 
     /* --------- Gather inputs --------- */
-    const { folder = 'views' }  = props
+    const { folder = '' }  = props
     /* const { logText }   = useLogging();
     const componentName = 'Router'; */
 

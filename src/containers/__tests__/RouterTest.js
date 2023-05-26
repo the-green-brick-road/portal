@@ -57,7 +57,7 @@ describe("Router component" ,() => {
 
                 <MockConfigurationProvider config={Config}>
                     <Suspense>
-                        <Router folder='containers/__mocks__' />
+                        <Router folder='/__mocks__' />
                     </Suspense>
                 </MockConfigurationProvider>
 
