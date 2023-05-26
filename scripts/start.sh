@@ -22,5 +22,5 @@ docker container run -it --rm --name=gbr-portal \
                      --volume ${scriptpath}/../:/work:rw \
                      -p 3000:3000 -p 9229:9229 --workdir /work \
                      --entrypoint /bin/sh \
-                     node:alpine3.17
+                     node:alpine
                      #npm start
