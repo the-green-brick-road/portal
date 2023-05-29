@@ -11,15 +11,15 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment }                                           from 'react';
+import { Fragment }                                   from 'react';
 
 /* Material UI includes */
-import { Toolbar, AppBar }                                    from '@mui/material';
-import { useTheme }                                           from '@mui/material/styles';
+import { Toolbar, AppBar }                            from '@mui/material';
+import { useTheme }                                   from '@mui/material/styles';
 
 /* Portal includes */
-import { NavigationBar, HamburgerMenu, HamburgerBar, Footer } from '../../components';
-import { useDesign, useMenu }                                 from '../../providers';
+import { NavigationBar, HamburgerMenu, HamburgerBar } from '../../components';
+import { useDesign, useMenu }                         from '../../providers';
 
 function LayoutMenu(props) {
 

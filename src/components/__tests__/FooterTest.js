@@ -11,22 +11,17 @@
 # ---------------------------------------------------- */
 
 /* Test includes */
-import { render, prettyDOM, act, screen, fireEvent } from '@testing-library/react'
-import { expect, test}                               from '@jest/globals';
-
-/* Material UI includes */
-import { Science }                                   from '@mui/icons-material/';
+import { render, prettyDOM } from '@testing-library/react'
+import { expect, test}       from '@jest/globals';
 
 /* Component under test */
-import { default as Footer }                         from '../../components/footer/Footer';
+import { default as Footer } from '../../components/footer/Footer';
 
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../../providers/__mocks__/DesignProvider';
 import { default as MockImage }  from '../../components/__mocks__/Image';
-jest.mock('../../providers', () => ({
-    useDesign: (() => { return mockUseDesign(); }),
-}));
+jest.mock('../../providers', () => ({ useDesign: (() => { return mockUseDesign(); }) }));
 jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
 /* eslint-enable jest/no-mocks-import */
 
