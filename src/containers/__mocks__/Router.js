@@ -4,7 +4,7 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Router component mock
+# Router container mock
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @24 may 2023
 # Latest revision: 24 may 2023

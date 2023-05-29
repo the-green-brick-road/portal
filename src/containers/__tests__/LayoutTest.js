@@ -4,7 +4,7 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Analytics Provider test suite
+# Layout container test suite
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @24 may 2023
 # Latest revision: 24 may 2023
@@ -29,6 +29,7 @@ import { default as MockNavigationBar }  from '../../components/__mocks__/Naviga
 import { default as MockHamburgerBar }   from '../../components/__mocks__/HamburgerBar';
 import { default as MockImage }          from '../../components/__mocks__/Image';
 import { default as MockHamburgerMenu }  from '../../components/__mocks__/HamburgerMenu';
+import { default as MockFooter }         from '../../components/__mocks__/Footer';
 import { default as MockRouter }         from '../../containers/__mocks__/Router';
 jest.mock('../../providers', () => ({
     useLogging: (() => { return mockUseLogging(); }),
@@ -40,6 +41,7 @@ jest.mock("../../components", () => ({
     NavigationBar: (props) => MockNavigationBar(props),
     HamburgerBar: (props) => MockHamburgerBar(props),
     HamburgerMenu: (props) => MockHamburgerMenu(props),
+    Footer: (props) => MockFooter(props),
 }));
 jest.mock("../../containers", () => ({ Router: (props) => MockRouter(props) }));
 /* eslint-enable jest/no-mocks-import */

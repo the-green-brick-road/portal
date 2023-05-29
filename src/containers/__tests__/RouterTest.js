@@ -4,7 +4,7 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Analytics Provider test suite
+# Router container test suite
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @24 may 2023
 # Latest revision: 24 may 2023

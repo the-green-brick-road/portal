@@ -14,3 +14,4 @@ export { default as NavigationBar } from './navigationbar/NavigationBar';
 export { default as HamburgerBar }  from './hamburgermenu/HamburgerBar';
 export { default as HamburgerMenu } from './hamburgermenu/HamburgerMenu';
 export { default as Image }         from './image/Image';
+export { default as Footer }        from './footer/Footer';

@@ -4,7 +4,7 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Logging provider mock
+# Menu provider mock
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @09 may 2023
 # Latest revision: 09 may 2023
@@ -19,7 +19,7 @@ const context = createContext(null);
 var state = {
     isMenuOpen:      false,
     isItemSelected:  {},
-    entries:          {},
+    entries:         {},
     setMenuState:    jest.fn((value) => { state.isMenuOpen = value }),
     selectEntry:     jest.fn((entry, value) => {
 
