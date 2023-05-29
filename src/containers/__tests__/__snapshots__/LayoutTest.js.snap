@@ -97,6 +97,17 @@ exports[`Layout container Should provide required design when not sliding and me
           </div>
         </div>
       </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"footer\\"
+        style=\\"position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; z-index: 1; box-shadow: 0;\\"
+      >
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"background-color: green;\\"
+        />
+      </div>
     </div>
   </div>
 </body>"
@@ -188,6 +199,17 @@ exports[`Layout container Should provide required design when not sliding for la
             </button>
           </div>
         </div>
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"footer\\"
+        style=\\"position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; z-index: 1; box-shadow: 0;\\"
+      >
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"background-color: green;\\"
+        />
       </div>
     </div>
   </div>
@@ -281,6 +303,17 @@ exports[`Layout container Should provide required design when not sliding for me
           </div>
         </div>
       </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"footer\\"
+        style=\\"position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; z-index: 1; box-shadow: 0;\\"
+      >
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"background-color: green;\\"
+        />
+      </div>
     </div>
   </div>
 </body>"
@@ -372,6 +405,17 @@ exports[`Layout container Should provide required design when not sliding for sm
             </button>
           </div>
         </div>
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"footer\\"
+        style=\\"position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; z-index: 1; box-shadow: 0;\\"
+      >
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"background-color: green;\\"
+        />
       </div>
     </div>
   </div>
@@ -475,6 +519,17 @@ exports[`Layout container Should provide required design when sliding and menu o
           </div>
         </div>
       </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"footer\\"
+        style=\\"position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; z-index: 1; box-shadow: 0;\\"
+      >
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"background-color: green;\\"
+        />
+      </div>
     </div>
   </div>
 </body>"
@@ -566,6 +621,17 @@ exports[`Layout container Should provide required design when sliding for large 
             </button>
           </div>
         </div>
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"footer\\"
+        style=\\"position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; z-index: 1; box-shadow: 0;\\"
+      >
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"background-color: green;\\"
+        />
       </div>
     </div>
   </div>
@@ -659,6 +725,17 @@ exports[`Layout container Should provide required design when sliding for medium
           </div>
         </div>
       </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"footer\\"
+        style=\\"position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; z-index: 1; box-shadow: 0;\\"
+      >
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"background-color: green;\\"
+        />
+      </div>
     </div>
   </div>
 </body>"
@@ -750,6 +827,17 @@ exports[`Layout container Should provide required design when sliding for small 
             </button>
           </div>
         </div>
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"footer\\"
+        style=\\"position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; z-index: 1; box-shadow: 0;\\"
+      >
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"background-color: green;\\"
+        />
       </div>
     </div>
   </div>

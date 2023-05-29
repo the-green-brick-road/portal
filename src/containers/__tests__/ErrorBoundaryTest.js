@@ -4,7 +4,7 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Analytics Provider test suite
+# ErrorBoundary container test suite
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @03 may 2023
 # Latest revision: 09 may 2023

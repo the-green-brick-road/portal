@@ -8,5 +8,25 @@
         "name" : "logo",
         "raw"  : "logo.png",
         "web"  : "logo.webp"
+    },
+    {
+        "name" : "fll",
+        "raw"  : "fll.png",
+        "web"  : "fll.webp"
+    },
+    {
+        "name" : "fasny",
+        "raw"  : "fasny.png",
+        "web"  : "fasny.webp"
+    },
+    {
+        "name" : "sharkbots",
+        "raw"  : "sharkbots.png",
+        "web"  : "sharkbots.webp"
+    },
+    {
+        "name" : "hudson",
+        "raw"  : "hudson.png",
+        "web"  : "hudson.webp"
     }
 ]
