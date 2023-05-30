@@ -26,7 +26,7 @@ import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } 
 jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
 jest.mock('../../providers', () => ({
     useDesign: (() => { return mockUseDesign(); }),
-    useLogging: (() => { return mockUseLogging(); })
+    useLogging: (() => { return mockUseLogging(); }),
 }));
 /* eslint-enable jest/no-mocks-import */
 
