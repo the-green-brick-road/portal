@@ -7,18 +7,41 @@
     },
     {
         "id": "seasons",
-        "icon" : "EmojiEvents",
+        "icon" : "CalendarMonth",
         "subitems": [
             {
-                "id": "superpowered",
-                "path": "/superpowered",
+                "id": "2023-2024 masterpiece",
+                "path": "/seasons/vKLWvZsDOFgrTU43T1Ru",
                 "target": "_top"
             },
             {
-                "id": "cargo connect",
-                "path": "/cargoconnect",
+                "id": "2022-2023 superpowered",
+                "path": "/seasons/uzqqbIPFUMyDSEMVVRE0",
+                "target": "_top"
+            },
+            {
+                "id": "2021-2022 cargo connect",
+                "path": "/seasons/iRzMaPgj0r7KlKRXfaMR",
                 "target": "_top"
             }
         ]
+    },
+    {
+        "id": "robots",
+        "path": "/robots",
+        "icon" : "SmartToy",
+        "target": "_top"
+    },
+    {
+        "id": "competitions",
+        "path": "/competitions",
+        "icon" : "EmojiEvents",
+        "target": "_top"
+    },
+    {
+        "id": "blog",
+        "path": "/blog",
+        "icon" : "Newspaper",
+        "target": "_top"
     }
 ]

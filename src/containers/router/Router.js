@@ -15,7 +15,7 @@ import { lazy, useEffect, useState }   from 'react';
 import { BrowserRouter, useRoutes }    from 'react-router-dom';
 
 /* Portal includes */
-import { useConfiguration }            from '../../providers';
+import { useConfiguration, useData }   from '../../providers';
 import { Layout }                      from '../../containers';
 
 function PortalRouter(props) {
@@ -23,6 +23,7 @@ function PortalRouter(props) {
     /* --------- Gather inputs --------- */
     const { folder }         = props
     const { config }         = useConfiguration();
+    const { seasons, posts } = useData();
     /* const componentName      = 'PortalRouter'; */
 
     const [routesState, setRoutes] = useState([])
@@ -43,6 +44,31 @@ function PortalRouter(props) {
             setRoutes(route_elements)
 
         }
+        for (let i_route = 0; i_route < seasons.length; i_route += 1) {
+
+            const Element = lazy(() => import(`../../views${folder}/season/Season`));
+            const rt = {
+                exact: true,
+                path: `/seasons/${seasons[i_route].id}`,
+                element: <Element data={seasons[i_route]}/>,
+            };
+            route_elements.push(rt);
+            setRoutes(route_elements)
+
+        }
+        for (let i_route = 0; i_route < posts.length; i_route += 1) {
+
+            const Element = lazy(() => import(`../../views${folder}/post/Post`));
+            const rt = {
+                exact: true,
+                path: `/posts/${posts[i_route].id}`,
+                element: <Element data={posts[i_route]}/>,
+            };
+            route_elements.push(rt);
+            setRoutes(route_elements)
+
+        }
+
 
     }, []) /* eslint-disable-line react-hooks/exhaustive-deps */
 

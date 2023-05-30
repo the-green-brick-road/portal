@@ -5,8 +5,8 @@ exports[`HamburgerMenu component Should display a hamburger menu 1`] = `
   <div>
     <div>
       <div
-        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-65jxfs-MuiContainer-root\\"
-        color=\\"#555555\\"
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-25jtj5-MuiContainer-root\\"
+        color=\\"#444444\\"
         left=\\"0\\"
         top=\\"95px\\"
         width=\\"calc( 100vw - 2 * 30px)\\"
@@ -183,8 +183,7 @@ exports[`HamburgerMenu component Should display a hamburger menu even with no at
   <div>
     <div>
       <div
-        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1dxrhub-MuiContainer-root\\"
-        color=\\"#ffffff\\"
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1w5hny9-MuiContainer-root\\"
         left=\\"0\\"
         top=\\"95px\\"
         width=\\"calc( 100vw - 2 * 20px)\\"

@@ -16,8 +16,8 @@ import { styled } from '@mui/system';
 const FooterAvatar = styled(Avatar)(({ col }) => ({
 
     backgroundColor: col,
-    width:  '30px',
-    height: '30px',
+    width:  '20px',
+    height: '20px',
     '&:hover': {
         borderStyle: 'solid',
         borderColor: 'rgba(255,255,255,1)',

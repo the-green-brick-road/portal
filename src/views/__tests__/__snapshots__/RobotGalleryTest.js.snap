@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RobotGallery view Should display robot gallery page 1`] = `
+"<body>
+  <div>
+    <div>
+      <p
+        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+      >
+         Robot gallery 
+      </p>
+    </div>
+  </div>
+</body>"
+`;

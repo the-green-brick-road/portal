@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Competitions view Should display competitions page 1`] = `
+"<body>
+  <div>
+    <div>
+      <p
+        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+      >
+         Competitions 
+      </p>
+    </div>
+  </div>
+</body>"
+`;

@@ -5,7 +5,7 @@ exports[`HamburgerBar component Should display a navigation bar 1`] = `
   <div>
     <div>
       <div
-        class=\\"MuiStack-root css-1v42qh1-MuiStack-root\\"
+        class=\\"MuiStack-root css-7k4jhb-MuiStack-root\\"
         id=\\"hamburgerbar\\"
         placeholder=\\"hamburgerbar\\"
       >
@@ -55,7 +55,7 @@ exports[`HamburgerBar component Should display a negative navigation bar 1`] = `
   <div>
     <div>
       <div
-        class=\\"MuiStack-root css-1xuok6q-MuiStack-root\\"
+        class=\\"MuiStack-root css-wm7o92-MuiStack-root\\"
         id=\\"hamburgerbar\\"
         placeholder=\\"hamburgerbar\\"
       >
@@ -105,7 +105,7 @@ exports[`HamburgerBar component Should display a negative navigation event with 
   <div>
     <div>
       <div
-        class=\\"MuiStack-root css-nbrbk7-MuiStack-root\\"
+        class=\\"MuiStack-root css-1kadltl-MuiStack-root\\"
         id=\\"hamburgerbar\\"
         placeholder=\\"hamburgerbar\\"
       >
@@ -155,7 +155,7 @@ exports[`HamburgerBar component Should open and close hamburger menu 1`] = `
   <div>
     <div>
       <div
-        class=\\"MuiStack-root css-1xuok6q-MuiStack-root\\"
+        class=\\"MuiStack-root css-wm7o92-MuiStack-root\\"
         id=\\"hamburgerbar\\"
         placeholder=\\"hamburgerbar\\"
       >

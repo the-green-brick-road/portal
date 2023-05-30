@@ -28,7 +28,7 @@ function HamburgerBar(props) {
 
     /* ----------- Define HTML --------- */
     return (
-        <HamburgerStack placeholder="hamburgerbar" id="hamburgerbar" direction="row" alignItems="center" justifyContent="space-between" color={stackcolor} padding="0px" height={height}>
+        <HamburgerStack placeholder="hamburgerbar" id="hamburgerbar" direction="row" alignItems="center" justifyContent="space-between" color={stackcolor} padding="20px" height={height}>
             <HamburgerLogo padding="20px" height={height} name='logo' />
             <HamburgerIcon width="30px" height="30px" color={stackcolor} />
         </HamburgerStack>

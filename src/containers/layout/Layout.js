@@ -36,7 +36,6 @@ function Layout() {
     const margin_width      = `max( ${sizes['margin']}px ,calc(100vw - ${sizes['large-width']}px )/2)`;
     const margin_height     = `${sizes['margin']}px`;
     const width             = `min(calc(100vw - 2 * ${sizes['margin']}px ), ${sizes['large-width']}px )`;
-    const footer_width      = `min(calc(100vw - 2 * ${sizes['margin']}px - 20px), ${sizes['large-width']}px - 20px)`;
     const height            = `calc( 100vh - ${sizes['margin']}px )`;
     const content_height    = `calc( 100vh - ${sizes['margin']}px - ${menu_height} )`;
     const item              = `${sizes['hamburger-height']}px`
@@ -49,8 +48,8 @@ function Layout() {
             <LayoutContent top={menu_height} left={margin_width} height={content_height} width={width}/>
             <LayoutPage top={margin_height} left={margin_width} height={height} width={width}>
                 <Outlet />
+                <LayoutFooter width={width}/>
             </LayoutPage>
-            <LayoutFooter left={margin_width} width={footer_width}/>
         </Fragment>
     );
 
