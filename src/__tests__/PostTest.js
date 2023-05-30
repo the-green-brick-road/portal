@@ -15,21 +15,21 @@ import { render, prettyDOM }       from '@testing-library/react'
 import { expect, test}             from '@jest/globals';
 
 /* Component under test */
-import { default as Competitions } from '../../views/competitions/Competitions';
+import { default as Post }         from '../views/post/Post';
 
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
-import { default as MockImage }    from '../../components/__mocks__/Image';
-jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
+import { default as MockImage }    from '../components/__mocks__/Image';
+jest.mock("../components", () => ({ Image: (props) => MockImage(props) }));
 /* eslint-enable jest/no-mocks-import */
 
-describe("Competitions view" ,() => {
+describe("Post view" ,() => {
 
-    test('Should display competitions page', async () => {
+    test('Should display post page', async () => {
 
         const view = render(
             <div>
-                <Competitions/>
+                <Post data={{'title':'post', 'image':'https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0','date':'13/10/2008'}}/>
             </div>
         );
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});

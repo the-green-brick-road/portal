@@ -11,25 +11,25 @@
 # ---------------------------------------------------- */
 
 /* Test includes */
-import { render, prettyDOM }     from '@testing-library/react'
-import { expect, test}           from '@jest/globals';
+import { render, prettyDOM }       from '@testing-library/react'
+import { expect, test}             from '@jest/globals';
 
 /* Component under test */
-import { default as Home }       from '../../views/home/Home';
+import { default as Blog }         from '../views/blog/Blog';
 
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
-import { default as MockImage }  from '../../components/__mocks__/Image';
-jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
+import { default as MockImage }    from '../components/__mocks__/Image';
+jest.mock("../components", () => ({ Image: (props) => MockImage(props) }));
 /* eslint-enable jest/no-mocks-import */
 
-describe("Home view" ,() => {
+describe("Blog view" ,() => {
 
-    test('Should display home page', async () => {
+    test('Should display blog page', async () => {
 
         const view = render(
             <div>
-                <Home/>
+                <Blog/>
             </div>
         );
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});

@@ -15,16 +15,16 @@ import { render, prettyDOM }       from '@testing-library/react'
 import { expect, test}             from '@jest/globals';
 
 /* Component under test */
-import { default as Season }       from '../../views/season/Season';
+import { default as Season }       from '../views/season/Season';
 
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
-import { default as MockImage }    from '../../components/__mocks__/Image';
+import { default as MockImage }    from '../components/__mocks__/Image';
 
-import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../../providers/__mocks__/DesignProvider';
-import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
-jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
-jest.mock('../../providers', () => ({
+import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../providers/__mocks__/DesignProvider';
+import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../providers/__mocks__/LoggingProvider';
+jest.mock("../components", () => ({ Image: (props) => MockImage(props) }));
+jest.mock('../providers', () => ({
     useDesign: (() => { return mockUseDesign(); }),
     useLogging: (() => { return mockUseLogging(); }),
 }));
