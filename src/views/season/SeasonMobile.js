@@ -91,7 +91,7 @@ function SeasonMobile(props) {
                             <Typography variant="body2" style={{ fontWeight:'bold', fontSize:'12px' }}>Season Reveal</Typography>
                         </SeasonAccordionSummary>
                         <SeasonAccordionDetails>
-                            {(isRevealOpen) && (<YouTube videoId={data['reveal']} opts={{ width: video_width, height:video_height, playerVars: {origin: 'https://mywebsite.com', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
+                            {(isRevealOpen) && (<YouTube videoId={data['reveal']} opts={{ width: video_width, height:video_height, playerVars: {origin: 'https://the-green-brick-road.org', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
                         </SeasonAccordionDetails>
                     </SeasonAccordion>
                 )}
@@ -128,7 +128,7 @@ function SeasonMobile(props) {
                             <Typography variant="body2" style={{ fontWeight:'bold', fontSize:'12px'}}>Robot Game</Typography>
                         </SeasonAccordionSummary>
                         <SeasonAccordionDetails>
-                            {(isRobotGameOpen) && (<YouTube videoId={data['robot-game']} opts={{ width: video_width, height:video_height, playerVars: {origin: 'https://mywebsite.com', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
+                            {(isRobotGameOpen) && (<YouTube videoId={data['robot-game']} opts={{ width: video_width, height:video_height, playerVars: {origin: 'https://the-green-brick-road.org', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
                         </SeasonAccordionDetails>
                     </SeasonAccordion>
                 )}

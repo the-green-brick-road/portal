@@ -58,7 +58,7 @@ function SeasonDesktop(props) {
 
                     </Tabs>
                 </Box>
-                {(tab === 0) && ('reveal' in data) && (<YouTube videoId={data['reveal']} opts={{ width: '560', height:'315', playerVars: {origin: 'https://mywebsite.com', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
+                {(tab === 0) && ('reveal' in data) && (<YouTube videoId={data['reveal']} opts={{ width: '560', height:'315', playerVars: { origin: 'https://the-green-brick-road.org', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
                 {(tab === 1) && ('resources' in data) && (
                     <Table style={{ width:'100%' }}>
                         <TableBody>
@@ -79,7 +79,7 @@ function SeasonDesktop(props) {
                         </TableBody>
                     </Table>
                 )}
-                {(tab === 2) && ('robot-game' in data) && (<YouTube videoId={data['robot-game']} opts={{ width: '560', height:'315', playerVars: {origin: 'https://mywebsite.com', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
+                {(tab === 2) && ('robot-game' in data) && (<YouTube videoId={data['robot-game']} opts={{ width: '560', height:'315', playerVars: {origin: 'https://the-green-brick-road.org', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
             </Container>
         </Fragment>
     );
