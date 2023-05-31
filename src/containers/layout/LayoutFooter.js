@@ -19,24 +19,22 @@ import { Footer }                 from '../../components';
 function LayoutFooter(props) {
 
     /* --------- Gather inputs --------- */
-    const { left, width  } = props || {};
+    const { width  } = props || {};
     /*const componentName    = 'LayoutFooter';*/
 
     /* ----------- Define HTML --------- */
     return (
         <Container
-            id="footer"
+            id="layout-footer"
             data-testid='layout-page-container'
             style={{
                 width: width,
-                position: 'absolute',
+                position: 'relative',
                 bottom:0,
                 padding:0,
-                left:left,
+                left:0,
                 marginBottom: 0,
-                zIndex: '1',
                 boxShadow: 0,
-                'div > MuiPaper-elevation1' : { padding:0 },
             }}
         >
             <Footer/>

@@ -21,7 +21,7 @@ const NavigationLogoLink = styled(Link)(({ logopadding }) => ({
 
     height: '100%',
     width: 'auto',
-    marginRight: '10px',
+    marginRight: '5px',
     paddingBottom: logopadding,
     paddingTop: logopadding,
 

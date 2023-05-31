@@ -10,6 +10,9 @@
 # Latest revision: 19 may 2023
 # ---------------------------------------------------- */
 
+/* React includes */
+import { Suspense }                                             from 'react';
+
 /* Material UI includes */
 import { Container }                                            from '@mui/material';
 
@@ -17,7 +20,7 @@ import { Container }                                            from '@mui/mater
 import Config                                                   from './config';
 import { ErrorBoundary, Router }                                from './containers';
 import { AnalyticsProvider, LoggingProvider, DesignProvider }   from './providers';
-import { ConfigurationProvider, MenuProvider }                  from './providers';
+import { ConfigurationProvider, MenuProvider, DataProvider }    from './providers';
 
 function App() {
 
@@ -33,7 +36,11 @@ function App() {
                         <AnalyticsProvider>
                             <DesignProvider>
                                 <MenuProvider>
-                                    <Router/>
+                                    <DataProvider>
+                                        <Suspense>
+                                            <Router/>
+                                        </Suspense>
+                                    </DataProvider>
                                 </MenuProvider>
                             </DesignProvider>
                         </AnalyticsProvider>

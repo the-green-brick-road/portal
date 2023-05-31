@@ -4,11 +4,15 @@
         "element": "Home"
     },
     {
-        "path": "/superpowered",
-        "element": "SuperPowered"
+        "path": "/robots",
+        "element": "RobotGallery"
     },
     {
-        "path": "/cargoconnect",
-        "element": "CargoConnect"
+        "path": "/blog",
+        "element": "Blog"
+    },
+    {
+        "path": "/competitions",
+        "element": "Competitions"
     }
 ]

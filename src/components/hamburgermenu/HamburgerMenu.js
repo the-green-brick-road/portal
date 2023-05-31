@@ -142,7 +142,7 @@ function HamburgerMenu(props) {
     let txtcolor = theme.palette.primary.main;
     if (isNegative) { txtcolor = theme.palette.common.white; }
 
-    let menucolor = theme.palette.common.white;
+    let menucolor = theme.palette.common.black;
     if (isNegative) { menucolor = theme.palette.primary.main; }
 
     /* ----------- Define HTML --------- */

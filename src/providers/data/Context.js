@@ -4,22 +4,17 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# SuperPowered page definition
+# Data provider context
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @19 may 2023
-# Latest revision: 19 may 2023
+# Nadège LEMPERIERE, @30 may 2023
+# Latest revision: 30 may 2023
 # ---------------------------------------------------- */
 
-/* Material UI includes */
-import { Typography }                      from '@mui/material';
+/* React includes */
+import { useContext, createContext } from 'react';
 
-function SuperPowered() {
+export const Context = createContext(null);
 
-    /* ----------- Define HTML --------- */
-    return (
-        <Typography> SuperPowered </Typography>
-    );
+function useProvider() { return useContext(Context); }
 
-}
-
-export default SuperPowered;
+export default useProvider;

@@ -1,7 +1,7 @@
 {
     "palette": {
         "common": {
-            "black": "#212121",
+            "black": "#333333",
             "white": "#ffffff"
         },
         "primary": {
@@ -143,7 +143,7 @@
         "body2": {
             "fontSize": "9px",
             "color": "black",
-            "fontFamily": "Consolas,monaco,monospace",
+            "fontFamily": "Play, sans-serif",
             "position": "relative",
             "textAlign": "justify"
         }

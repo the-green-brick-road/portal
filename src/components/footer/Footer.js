@@ -28,7 +28,7 @@ function Footer() {
 
     /* ----------- Define HTML --------- */
     return (
-        <Paper square={true} style={{ position:'relative', backgroundColor: '#ffffff', padding:'15px', bottom:0 }}>
+        <Paper square={true} style={{ position:'relative', backgroundColor: '#ffffff', padding:'5px', bottom:0 }}>
             {(screen === 'large') && (<FooterDesktop />)}
             {(screen !== 'large') && (<FooterMobile />)}
         </Paper>

@@ -7,7 +7,7 @@ The Green Brick Road portal
 ===========================
 
 .. image:: https://img.shields.io/website-up-down-green-red/https/the-green-brick-road.com.svg
-   :target: https://the-green-brick-road.com
+   :target: https://the-green-brick-road.org
    :alt: Website
 
 About The Project

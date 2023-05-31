@@ -4,22 +4,27 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# CargoConnect page definition
+# Competitions page definition
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @24 may 2023
-# Latest revision: 24 may 2023
+# Nadège LEMPERIERE, @29 may 2023
+# Latest revision: 29 may 2023
 # ---------------------------------------------------- */
 
-/* Material UI includes */
-import { Typography }                      from '@mui/material';
+/* React includes */
+import { Fragment }   from 'react';
 
-function CargoConnect() {
+/* Material UI includes */
+import { Typography } from '@mui/material';
+
+function Competitions() {
 
     /* ----------- Define HTML --------- */
     return (
-        <Typography> CargoConnect </Typography>
+        <Fragment>
+            <Typography> Competitions </Typography>
+        </Fragment>
     );
 
 }
 
-export default CargoConnect;
+export default Competitions;

@@ -20,9 +20,11 @@ const NavigationButton = styled(Button)(({ col }) => ({
     verticalAlign: 'middle',
     borderRadius: '0',
     paddingTop: '6.5px',
-    paddingLeft: '4px',
-    paddingRight: '4px',
+    paddingLeft: '6px',
+    paddingRight: '6px',
     fontSize: '14px',
+    fontWeight: 'bold',
+    textTransform: 'capitalize',
     span: { visibility: 'hidden' },
     '&:hover': {
         borderTopStyle: 'none',

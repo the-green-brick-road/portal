@@ -30,36 +30,36 @@ function FooterDesktop() {
     /* ----------- Define HTML --------- */
     /* eslint-disable padded-blocks */
     return (
-        <Container style={{ backgroundColor: 'rgba(255,255,255,0)', padding:0 }}>
+        <Container id="footer" style={{ backgroundColor: 'rgba(255,255,255,0)', padding:0 }}>
             <Divider style={{ color:theme.palette.primary.main, borderColor:theme.palette.primary.main, width:'100%' }}/>
-            <Stack direction="row" alignItems="center" justifyContent="center" spacing={1} style={{ width:'100%', padding:10 }}>
+            <Stack direction="row" alignItems="center" justifyContent="center" spacing={1} style={{ width:'100%', padding:5 }}>
                 <Typography style={{ textTransform:'uppercase', color:theme.palette.primary.main, textAlign:'left', fontSize:'11px', fontWeight:'bold' }}>
                     Follow us:
                 </Typography>
                 <Tooltip title="GBR on YouTube">
                     <Link href="https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg" target="_blank">
-                        <FooterAvatar variant="circle" col={theme.palette.primary.main} ><YouTube style={{ backgroundColor:theme.palette.primary.main, color:theme.palette.common.white, padding:2 }}/></FooterAvatar>
+                        <FooterAvatar variant="circle" col={theme.palette.primary.main} ><YouTube style={{ backgroundColor:theme.palette.primary.main, color:theme.palette.common.white, padding:2, height:'20px' }}/></FooterAvatar>
                     </Link>
                 </Tooltip>
                 <Tooltip title="GBR on Github">
                     <Link href="https://github.com/the-green-brick-road/" target="_blank">
-                        <FooterAvatar variant="circle" col={theme.palette.primary.main}><GitHub style={{ backgroundColor:theme.palette.primary.main, color:theme.palette.common.white, padding:2 }}/></FooterAvatar>
+                        <FooterAvatar variant="circle" col={theme.palette.primary.main}><GitHub style={{ backgroundColor:theme.palette.primary.main, color:theme.palette.common.white, padding:2, height:'20px' }}/></FooterAvatar>
                     </Link>
                 </Tooltip>
                 <Tooltip title="GBR on Facebook">
                     <Link href="https://www.facebook.com/100093250563007/" target="_blank">
-                        <FooterAvatar variant="circle" col={theme.palette.primary.main}><Facebook style={{ backgroundColor:theme.palette.primary.main, color:theme.palette.common.white, padding:2 }}/></FooterAvatar>
+                        <FooterAvatar variant="circle" col={theme.palette.primary.main}><Facebook style={{ backgroundColor:theme.palette.primary.main, color:theme.palette.common.white, padding:2, height:'20px' }}/></FooterAvatar>
                     </Link>
                 </Tooltip>
                 <Tooltip title="GBR on Instagram">
                     <Link href="https://www.instagram.com/the.green.brick.road/" target="_blank">
-                        <FooterAvatar variant="circle" col={theme.palette.primary.main}><Instagram style={{ backgroundColor:theme.palette.primary.main, color:theme.palette.common.white, padding:2 }}/></FooterAvatar>
+                        <FooterAvatar variant="circle" col={theme.palette.primary.main}><Instagram style={{ backgroundColor:theme.palette.primary.main, color:theme.palette.common.white, padding:2, height:'20px' }}/></FooterAvatar>
                     </Link>
                 </Tooltip>
             </Stack>
             <Divider style={{ color:theme.palette.primary.main, borderColor:theme.palette.primary.main, width:'100%' }}/>
-            <Grid container xs={12} style={{ paddingTop:'10px' }}>
-                <Grid container xs={12} style={{ paddingBottom:10 }}>
+            <Grid container style={{ paddingTop:'5px' }}>
+                <Grid container item xs={12} style={{ paddingBottom:5 }}>
                     <Grid item xs={6} >
                         <Typography style={{ textTransform:'uppercase', color:theme.palette.primary.main, textAlign:'left', fontSize:'11px', fontWeight:'bold', textDecoration:'underline' }}>
                             About us
@@ -71,13 +71,13 @@ function FooterDesktop() {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid container xs={12} style={{ paddingTop:'2px' }}>
+                <Grid container item xs={12} style={{ paddingTop:'2px', height:'20px' }}>
                     <Grid item xs={1} style={{ textAlign:'center' }}>
                         <Link href="https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu" target="_blank">
-                            <LocationOn style={{ color:theme.palette.primary.main, height:'24px' }}/>
+                            <LocationOn style={{ color:theme.palette.primary.main, height:'20px' }}/>
                         </Link>
                     </Grid>
-                    <Grid item xs={5} style={{ paddingTop:'4px' }}>
+                    <Grid item xs={5} style={{ paddingTop:'3px' }}>
                         <Link underline="none" href="https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu" target="_blank">
                             <Typography style={{ color:theme.palette.primary.main, fontSize:'10px' }}>
                                 145 New Street - Mamaroneck, NY 10543
@@ -86,10 +86,10 @@ function FooterDesktop() {
                     </Grid>
                     <Grid item xs={1} style={{ textAlign:'center' }} >
                         <Link href="https://www.firstlegoleague.org/" target="_blank">
-                            <Image name="fll" style={{ margin:0, height:'24px' }}/>
+                            <Image name="fll" style={{ margin:0, height:'20px' }}/>
                         </Link>
                     </Grid>
-                    <Grid item xs={5} style={{ paddingTop:'4px' }}>
+                    <Grid item xs={5} style={{ paddingTop:'3px' }}>
                         <Link href="https://www.firstlegoleague.org/" target="_blank" underline="none">
                             <Typography style={{ color:theme.palette.primary.main, fontSize:'10px' }}>
                                 First Lego League
@@ -97,10 +97,10 @@ function FooterDesktop() {
                         </Link>
                     </Grid>
                 </Grid>
-                <Grid container xs={12} style={{ paddingTop:'2px' }}>
+                <Grid container item xs={12} style={{ paddingTop:'2px', height:'20px' }}>
                     <Grid item xs={1} style={{ textAlign:'center' }}>
                         <Link href="mailto:green.brick.road.first@gmail.com">
-                            <Email style={{ color:theme.palette.primary.main, height:'24px'}}/>
+                            <Email style={{ color:theme.palette.primary.main, height:'20px'}}/>
                         </Link>
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
@@ -112,7 +112,7 @@ function FooterDesktop() {
                     </Grid>
                     <Grid item xs={1}  style={{ textAlign:'center' }}>
                         <Link href="https://www.fasny.org/" target="_blank">
-                            <Image name="fasny" style={{ height:'24px' }}/>
+                            <Image name="fasny" style={{ height:'20px' }}/>
                         </Link>
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
@@ -123,9 +123,9 @@ function FooterDesktop() {
                         </Link>
                     </Grid>
                 </Grid>
-                <Grid container xs={12} style={{ paddingTop:'2px' }}>
+                <Grid container item xs={12} style={{ paddingTop:'2px', height:'20px' }}>
                     <Grid item xs={1} style={{ textAlign:'center' }}>
-                        <Policy style={{ color:theme.palette.primary.main, height:'24px' }}/>
+                        <Policy style={{ color:theme.palette.primary.main, height:'20px' }}/>
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
                         <Typography style={{ color:theme.palette.primary.main, fontSize:'10px' }}>
@@ -134,7 +134,7 @@ function FooterDesktop() {
                     </Grid>
                     <Grid item xs={1} style={{ textAlign:'center' }}>
                         <Link href="https://www.sharkbots.org/" target="_blank">
-                            <Image name="sharkbots" style={{ height:'24px' }}/>
+                            <Image name="sharkbots" style={{ height:'20px' }}/>
                         </Link>
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
@@ -145,16 +145,16 @@ function FooterDesktop() {
                         </Link>
                     </Grid>
                 </Grid>
-                <Grid container xs={12} style={{ paddingTop:'2px' }}>
+                <Grid container item xs={12} style={{ paddingTop:'2px', height:'20px' }}>
                     <Grid item xs={1} style={{ textAlign:'center' }}>
-                        <Gavel style={{ color:theme.palette.primary.main, height:'24px' }}/>
+                        <Gavel style={{ color:theme.palette.primary.main, height:'20px' }}/>
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
                         <Typography style={{ color:theme.palette.primary.main, fontSize:'10px' }}> Terms & Conditions</Typography>
                     </Grid>
                     <Grid item xs={1} style={{ textAlign:'center' }}>
                         <Link href="https://sites.google.com/site/hudsonvalleyfirstlegoleague/" target="_blank">
-                            <Image name="hudson" style={{ height:'24px' }}/>
+                            <Image name="hudson" style={{ height:'20px' }}/>
                         </Link>
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
@@ -166,7 +166,7 @@ function FooterDesktop() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Divider style={{ color:theme.palette.primary.main, borderColor:theme.palette.primary.main, width:'100%', paddingTop:10 }}/>
+            <Divider style={{ color:theme.palette.primary.main, borderColor:theme.palette.primary.main, width:'100%', paddingTop:5 }}/>
             <Typography style={{ color:theme.palette.primary.main, fontSize:'10px' }}> THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road - All rights reserved </Typography>
         </Container>
     );

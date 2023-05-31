@@ -23,8 +23,12 @@ import { default as Router }                         from '../../containers/rout
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useConfiguration as mockUseConfiguration, ConfigurationProvider as MockConfigurationProvider } from '../../providers/__mocks__/ConfigurationProvider';
+import { useData as mockUseData, DataProvider as MockDataProvider } from '../../providers/__mocks__/DataProvider';
 import { default as MockLayout }  from '../../containers/__mocks__/Layout';
-jest.mock('../../providers', () => ({ useConfiguration: (() => { return mockUseConfiguration(); }) }));
+jest.mock('../../providers', () => ({
+    useConfiguration: (() => { return mockUseConfiguration(); }),
+    useData: (() => { return mockUseData(); }),
+}));
 jest.mock("../../containers", () => ({ Layout: (props) => MockLayout(props) }));
 
 /* eslint-enable jest/no-mocks-import */
@@ -50,15 +54,20 @@ describe("Router component" ,() => {
             ],
         };
 
+        const Seasons = [ { 'name' : 'season1', 'id' : '1' } , { 'name' : 'season2', 'id' : '2' } ];
+        const Posts = [ { 'title' : 'post1', 'id' : '1' } , { 'title' : 'post2', 'id' : '2' } ];
+
         let view = null
         await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
 
             view = render(
 
                 <MockConfigurationProvider config={Config}>
-                    <Suspense>
-                        <Router folder='/__mocks__' />
-                    </Suspense>
+                    <MockDataProvider seasons={Seasons} posts={Posts} >
+                        <Suspense>
+                            <Router folder='/__mocks__' />
+                        </Suspense>
+                    </MockDataProvider>
                 </MockConfigurationProvider>
 
             )
@@ -68,7 +77,7 @@ describe("Router component" ,() => {
 
         const delay = ms => new Promise(res => setTimeout(res, ms));
 
-        await delay(1000);
+        await delay(2000);
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree).toMatchSnapshot();
 
@@ -79,6 +88,22 @@ describe("Router component" ,() => {
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'target3' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         const tree3 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree3).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'season1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const tree4 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(tree4).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'season2' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const tree5 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(tree5).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'post1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const tree6 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(tree6).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'post2' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const tree7 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(tree7).toMatchSnapshot();
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'target1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         const tree1 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});

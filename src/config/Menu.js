@@ -11,18 +11,21 @@
 # ---------------------------------------------------- */
 
 /* Material UI includes */
-import { Home, EmojiEvents }    from '@mui/icons-material/';
+import { Home, EmojiEvents, SmartToy, Newspaper, CalendarMonth } from '@mui/icons-material/';
 
 /* Local includes */
-import MenuConfig               from './data/menu.json';
+import MenuConfig                                                from './data/menu.json';
 
 /* Container definition */
 const Menu = { entries: MenuConfig }
 
 for (let i_entry = 0; i_entry < Menu.entries.length; i_entry += 1) {
 
-    if(Menu.entries[i_entry].icon === 'Home')             { Menu.entries[i_entry].icon = Home }
-    else if(Menu.entries[i_entry].icon === 'EmojiEvents') { Menu.entries[i_entry].icon = EmojiEvents }
+    if(Menu.entries[i_entry].icon === 'Home')               { Menu.entries[i_entry].icon = Home }
+    else if(Menu.entries[i_entry].icon === 'EmojiEvents')   { Menu.entries[i_entry].icon = EmojiEvents }
+    else if(Menu.entries[i_entry].icon === 'SmartToy')      { Menu.entries[i_entry].icon = SmartToy }
+    else if(Menu.entries[i_entry].icon === 'Newspaper')     { Menu.entries[i_entry].icon = Newspaper }
+    else if(Menu.entries[i_entry].icon === 'CalendarMonth') { Menu.entries[i_entry].icon = CalendarMonth }
 
 }
 
