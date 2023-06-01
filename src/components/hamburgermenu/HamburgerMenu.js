@@ -36,7 +36,7 @@ const HamburgerMenuItem = styled(MenuItem)(({ padding, height, color }) => ({
     paddingLeft: '10px',
     paddingRight: '10px',
     minHeight: '30px',
-    fontSize: '14px',
+    fontSize: '1px',
     textDecoration: 'none',
     textDecorationColor: 'black',
     a: { textDecoration: 'none' },

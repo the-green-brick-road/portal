@@ -15,7 +15,7 @@ import { useRef }                                         from 'react';
 
 /* Material UI includes */
 import { ButtonGroup, MenuList, MenuItem, Link, Avatar }  from '@mui/material';
-import { Login }                                          from '@mui/icons-material';
+import { default as Login }                               from '@mui/icons-material/Login';
 
 /* Portal includes */
 import { useLogging, useMenu }                            from '../../providers';
@@ -71,7 +71,7 @@ function NavigationBar(props) {
             justifyContent="space-between"
             alignItems="center"
             color={stackcolor}
-            padding="0px"
+            padding="10px"
             height={height}
         >
             <NavigationStack
@@ -92,7 +92,7 @@ function NavigationBar(props) {
                     disableFocusRipple={true}
                     fullWidth={true}
                     disableRipple={true}
-                    style={{ marginLeft: '0px', marginRight: '10px', width: '100%', left: 0 }}
+                    style={{ marginLeft: '0px', marginRight: '0px', width: '100%', left: 0 }}
                 >
                     { entries.map((item, index) => { /* Loop on all menu content to create button */
 

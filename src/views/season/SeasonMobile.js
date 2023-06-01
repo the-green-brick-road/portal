@@ -29,7 +29,6 @@ import { useLogging }                                                      from 
 /* Local includes */
 import { SeasonAccordion, SeasonAccordionSummary, SeasonAccordionDetails } from './SeasonAccordion';
 
-
 function SeasonMobile(props) {
 
     /* --------- Gather inputs --------- */
@@ -84,6 +83,17 @@ function SeasonMobile(props) {
             <Container id='season-mobile' style={{ width:'100%', height:'30vh', padding:0, backgroundColor:theme.palette.common.black, position:'relative' }}>
                 <img src={data.image} style={{ position: 'absolute', zIndex:1, top: '11vh', right: '2%', height:'15vh' }} alt={data.name}/>
             </Container>
+            {('description' in data) && (
+                <Container style={{padding:10}}>
+                    { data.description.split('<br/>').map((item, index) => {
+
+                        return(
+                            <Typography variant="body2" key={index} style={{ fontSize:'14px', textAlign:'justify', padding:5 }}>{item}</Typography>
+                        )
+
+                    })}
+                </Container>
+            )}
             <Container style={{padding:10}}>
                 {('reveal' in data) && (
                     <SeasonAccordion elevation={0} onChange={handleReveal}>

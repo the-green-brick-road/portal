@@ -64,7 +64,7 @@ function LayoutPage(props) {
                 zIndex: '0',
             }}
         >
-            <Container data-testid='layout-page-subcontainer' ref={ref} style={{ scrollbarWidth: 'thin', backgroundColor: '#ffffff', position: 'absolute', overflowY: 'scroll', width: width, height: height, top: 0, paddingLeft: 0, paddingRight: 0, zIndex: '1' }}>
+            <Container data-testid='layout-page-subcontainer' ref={ref} style={{ backgroundColor: '#ffffff', position: 'absolute', overflowY: 'scroll', overflowX: 'hidden', width: width, height: height, top: 0, paddingLeft: 0, paddingRight: 0, zIndex: '1' }}>
                 {children}
             </Container>
         </Container>

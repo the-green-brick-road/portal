@@ -22,8 +22,6 @@ const NavigationButton = styled(Button)(({ col }) => ({
     paddingTop: '6.5px',
     paddingLeft: '6px',
     paddingRight: '6px',
-    fontSize: '14px',
-    fontWeight: 'bold',
     textTransform: 'capitalize',
     span: { visibility: 'hidden' },
     '&:hover': {

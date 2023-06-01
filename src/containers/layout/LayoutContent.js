@@ -27,7 +27,7 @@ function LayoutContent(props) {
                     width,
                     height,
                     position: 'fixed',
-                    backgroundColor: 'red',
+                    backgroundColor: 'rgba(255,255,255,0)',
                     top: top,
                     left: left,
                     flexDirection: 'row',

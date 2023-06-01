@@ -28,6 +28,7 @@ function Target1(props) {
     function handleClick5() { navigate('/seasons/2') }
     function handleClick6() { navigate('/posts/1') }
     function handleClick7() { navigate('/posts/2') }
+    function handleClick8() { navigate('/posts/3') }
 
     return (
 
@@ -40,6 +41,7 @@ function Target1(props) {
             <Button aria-label='season2' onClick={handleClick5}/>
             <Button aria-label='post1'   onClick={handleClick6}/>
             <Button aria-label='post2'   onClick={handleClick7}/>
+            <Button aria-label='post3'   onClick={handleClick8}/>
         </div>
 
     )

@@ -14,7 +14,7 @@ exports[`Layout container Should provide required design when not sliding and me
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
-          style=\\"height: 100%; width: 100%; padding-left: 10px; padding-right: 10px;\\"
+          style=\\"height: 100%; width: 100%; padding-left: 0px; padding-right: 20px;\\"
         >
           <div
             class=\\"MuiBox-root css-0\\"
@@ -44,7 +44,7 @@ exports[`Layout container Should provide required design when not sliding and me
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"content\\"
-          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: rgba(255, 255, 255, 0); top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
         />
       </div>
       <div
@@ -56,7 +56,7 @@ exports[`Layout container Should provide required design when not sliding and me
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -127,7 +127,7 @@ exports[`Layout container Should provide required design when not sliding for la
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
-          style=\\"height: 100%; width: 100%; padding-left: 10px; padding-right: 10px;\\"
+          style=\\"height: 100%; width: 100%; padding-left: 0px; padding-right: 20px;\\"
         >
           <div
             class=\\"MuiBox-root css-0\\"
@@ -147,7 +147,7 @@ exports[`Layout container Should provide required design when not sliding for la
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"content\\"
-          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: rgba(255, 255, 255, 0); top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
         />
       </div>
       <div
@@ -159,7 +159,7 @@ exports[`Layout container Should provide required design when not sliding for la
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -230,7 +230,7 @@ exports[`Layout container Should provide required design when not sliding for me
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
-          style=\\"height: 100%; width: 100%; padding-left: 10px; padding-right: 10px;\\"
+          style=\\"height: 100%; width: 100%; padding-left: 0px; padding-right: 20px;\\"
         >
           <div
             class=\\"MuiBox-root css-0\\"
@@ -250,7 +250,7 @@ exports[`Layout container Should provide required design when not sliding for me
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"content\\"
-          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: rgba(255, 255, 255, 0); top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
         />
       </div>
       <div
@@ -262,7 +262,7 @@ exports[`Layout container Should provide required design when not sliding for me
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -333,7 +333,7 @@ exports[`Layout container Should provide required design when not sliding for sm
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
-          style=\\"height: 100%; width: 100%; padding-left: 10px; padding-right: 10px;\\"
+          style=\\"height: 100%; width: 100%; padding-left: 0px; padding-right: 20px;\\"
         >
           <div
             class=\\"MuiBox-root css-0\\"
@@ -353,7 +353,7 @@ exports[`Layout container Should provide required design when not sliding for sm
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"content\\"
-          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: rgba(255, 255, 255, 0); top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
         />
       </div>
       <div
@@ -365,7 +365,7 @@ exports[`Layout container Should provide required design when not sliding for sm
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -436,7 +436,7 @@ exports[`Layout container Should provide required design when sliding and menu o
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
-          style=\\"height: 100%; width: 100%; padding-left: 10px; padding-right: 10px;\\"
+          style=\\"height: 100%; width: 100%; padding-left: 0px; padding-right: 20px;\\"
         >
           <div
             class=\\"MuiBox-root css-0\\"
@@ -466,7 +466,7 @@ exports[`Layout container Should provide required design when sliding and menu o
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"content\\"
-          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: rgba(255, 255, 255, 0); top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
         />
       </div>
       <div
@@ -478,7 +478,7 @@ exports[`Layout container Should provide required design when sliding and menu o
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -549,7 +549,7 @@ exports[`Layout container Should provide required design when sliding for large 
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
-          style=\\"height: 100%; width: 100%; padding-left: 10px; padding-right: 10px;\\"
+          style=\\"height: 100%; width: 100%; padding-left: 0px; padding-right: 20px;\\"
         >
           <div
             class=\\"MuiBox-root css-0\\"
@@ -569,7 +569,7 @@ exports[`Layout container Should provide required design when sliding for large 
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"content\\"
-          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: rgba(255, 255, 255, 0); top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
         />
       </div>
       <div
@@ -581,7 +581,7 @@ exports[`Layout container Should provide required design when sliding for large 
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -652,7 +652,7 @@ exports[`Layout container Should provide required design when sliding for medium
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
-          style=\\"height: 100%; width: 100%; padding-left: 10px; padding-right: 10px;\\"
+          style=\\"height: 100%; width: 100%; padding-left: 0px; padding-right: 20px;\\"
         >
           <div
             class=\\"MuiBox-root css-0\\"
@@ -672,7 +672,7 @@ exports[`Layout container Should provide required design when sliding for medium
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"content\\"
-          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: rgba(255, 255, 255, 0); top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
         />
       </div>
       <div
@@ -684,7 +684,7 @@ exports[`Layout container Should provide required design when sliding for medium
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -755,7 +755,7 @@ exports[`Layout container Should provide required design when sliding for small 
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
-          style=\\"height: 100%; width: 100%; padding-left: 10px; padding-right: 10px;\\"
+          style=\\"height: 100%; width: 100%; padding-left: 0px; padding-right: 20px;\\"
         >
           <div
             class=\\"MuiBox-root css-0\\"
@@ -775,7 +775,7 @@ exports[`Layout container Should provide required design when sliding for small 
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"content\\"
-          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: red; top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: rgba(255, 255, 255, 0); top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
         />
       </div>
       <div
@@ -787,7 +787,7 @@ exports[`Layout container Should provide required design when sliding for small 
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
