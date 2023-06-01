@@ -7,3 +7,4 @@
 10049	IGNORE	(Non-Storable Content)	No impact on performance
 10110	IGNORE	(Dangerous JS Functions)	From Sentry - not a call but rather a comparison
 10055	IGNORE	(CSP: Wildcard Directive)	Trusted providers
+10020	IGNORE	(Missing Anti-clickjacking Header)	Replace by CSP frame-src to allow youtube reading
