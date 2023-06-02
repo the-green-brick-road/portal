@@ -6,7 +6,7 @@ exports[`Season view Should display season page for desktop 1`] = `
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"width: 100%; height: 30vh; padding: 0px; background-color: rgb(0, 0, 0); position: relative;\\"
+        style=\\"pointer-events: none; width: 100%; height: 30vh; padding: 0px; background-color: rgb(0, 0, 0); position: relative;\\"
       >
         <img
           alt=\\"season\\"

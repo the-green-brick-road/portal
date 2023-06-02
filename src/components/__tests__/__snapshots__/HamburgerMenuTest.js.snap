@@ -27,7 +27,7 @@ exports[`HamburgerMenu component Should display a hamburger menu 1`] = `
               target=\\"_top\\"
             >
               <li
-                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider css-6owcs9-MuiButtonBase-root-MuiMenuItem-root\\"
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider css-1f19q05-MuiButtonBase-root-MuiMenuItem-root\\"
                 color=\\"#666666\\"
                 height=\\"10px\\"
                 name=\\"item1\\"
@@ -69,7 +69,7 @@ exports[`HamburgerMenu component Should display a hamburger menu 1`] = `
           </div>
           <div>
             <li
-              class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-gtz6vn-MuiButtonBase-root-MuiMenuItem-root\\"
+              class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-26uz1n-MuiButtonBase-root-MuiMenuItem-root\\"
               color=\\"#666666\\"
               height=\\"10px\\"
               name=\\"item2\\"
@@ -204,7 +204,7 @@ exports[`HamburgerMenu component Should display a hamburger menu even with no at
               target=\\"_top\\"
             >
               <li
-                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider css-enhu5j-MuiButtonBase-root-MuiMenuItem-root\\"
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider css-6etpfl-MuiButtonBase-root-MuiMenuItem-root\\"
                 color=\\"#000000\\"
                 height=\\"20px\\"
                 name=\\"item1\\"
@@ -246,7 +246,7 @@ exports[`HamburgerMenu component Should display a hamburger menu even with no at
           </div>
           <div>
             <li
-              class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-2h6oef-MuiButtonBase-root-MuiMenuItem-root\\"
+              class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1ll8qn0-MuiButtonBase-root-MuiMenuItem-root\\"
               color=\\"#000000\\"
               height=\\"20px\\"
               name=\\"item2\\"
@@ -382,7 +382,7 @@ exports[`HamburgerMenu component Should display a negative hamburger menu 1`] = 
               target=\\"_top\\"
             >
               <li
-                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider css-fugi7y-MuiButtonBase-root-MuiMenuItem-root\\"
+                class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-divider css-vt8a9g-MuiButtonBase-root-MuiMenuItem-root\\"
                 color=\\"#555555\\"
                 height=\\"10px\\"
                 name=\\"item1\\"
@@ -424,7 +424,7 @@ exports[`HamburgerMenu component Should display a negative hamburger menu 1`] = 
           </div>
           <div>
             <li
-              class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1tg625t-MuiButtonBase-root-MuiMenuItem-root\\"
+              class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-1pedyoq-MuiButtonBase-root-MuiMenuItem-root\\"
               color=\\"#555555\\"
               height=\\"10px\\"
               name=\\"item2\\"

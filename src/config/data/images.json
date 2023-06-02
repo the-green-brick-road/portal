@@ -33,20 +33,5 @@
         "name" : "gbr",
         "raw"  : "gbr.png",
         "web"  : "gbr.webp"
-    },
-    {
-        "name" : "superpowered",
-        "raw"  : "superpowered.png",
-        "web"  : "superpowered.webp"
-    },
-    {
-        "name" : "cargoconnect",
-        "raw"  : "cargoconnect.png",
-        "web"  : "cargoconnect.webp"
-    },
-    {
-        "name" : "masterpiece",
-        "raw"  : "masterpiece.png",
-        "web"  : "masterpiece.webp"
     }
 ]

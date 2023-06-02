@@ -75,7 +75,7 @@ function MockDataConsumer(props) {
 
 describe("Data provider" ,() => {
 
-    test('Should activate and deactivate analytics publication', async () => {
+    test('Should collect and organize data', async () => {
 
         const Config = {
             "firebase"   : {
@@ -114,11 +114,22 @@ describe("Data provider" ,() => {
             }
             class DataPost {
 
-                constructor(title) { this.title = title; }
+                constructor(title, media) { this.title = title; this.media = media }
                 data() {
 
-                    const result = { 'title' : this.title };
+                    const result = { 'title' : this.title, 'image': this.title, 'media' : this.media };
                     return result
+
+                }
+
+            }
+
+            class Result {
+
+                constructor(results) { this.results = results; this.size = results.length }
+                forEach(resolve) {
+
+                    return this.results.forEach(resolve)
 
                 }
 
@@ -128,9 +139,9 @@ describe("Data provider" ,() => {
 
                 let result = []
                 if ( name === 'seasons' ) { result = [ new DataSeason('season1'), new DataSeason('season2'), new DataSeason('season3')]}
-                if ( name === 'posts' ) { result = [ new DataPost('post1'), new DataPost('post2')]}
+                if ( name === 'posts' ) { result = [ new DataPost('post1', []), new DataPost('post2', ['media1', 'media2', 'media3'])]}
 
-                resolve(result);
+                resolve(new Result(result));
 
             });
 
@@ -167,14 +178,17 @@ describe("Data provider" ,() => {
 
         })
 
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+        await delay(3000);
+
         expect(mockInitializeApp).toHaveBeenCalledTimes(2)
         expect(mockGetApps).toHaveBeenCalledTimes(2)
         expect(mockGetFirestore).toHaveBeenCalledTimes(2)
         expect(mockGetStorage).toHaveBeenCalledTimes(2)
         expect(mockCollection).toHaveBeenCalledTimes(4)
         expect(mockGetDocs).toHaveBeenCalledTimes(4)
-        expect(mockRef).toHaveBeenCalledTimes(10)
-        expect(mockGetDownloadUrl).toHaveBeenCalledTimes(10)
+        expect(mockRef).toHaveBeenCalledTimes(16)
+        expect(mockGetDownloadUrl).toHaveBeenCalledTimes(16)
 
         expect(screen.getByTestId('mock-data-consumer-season-0').textContent).toBe('season1');
         expect(screen.getByTestId('mock-data-consumer-season-1').textContent).toBe('season2');

@@ -146,6 +146,14 @@
             "fontFamily": "Play, sans-serif",
             "position": "relative",
             "textAlign": "justify"
+        },
+        "button": {
+            "fontSize": "13px",
+            "fontWeight": "bold",
+            "color": "black",
+            "fontFamily": "Play, sans-serif",
+            "position": "relative",
+            "textAlign": "justify"
         }
     }
 }

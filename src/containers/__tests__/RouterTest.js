@@ -55,7 +55,7 @@ describe("Router component" ,() => {
         };
 
         const Seasons = [ { 'name' : 'season1', 'id' : '1' } , { 'name' : 'season2', 'id' : '2' } ];
-        const Posts = [ { 'title' : 'post1', 'id' : '1' } , { 'title' : 'post2', 'id' : '2' } ];
+        const Posts = [ { 'title' : 'post1', 'id' : '1', 'real': true } , { 'title' : 'post2', 'id' : '2', 'real': true }, { 'title' : 'post3', 'id' : '3', 'real': false } ];
 
         let view = null
         await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
@@ -108,6 +108,12 @@ describe("Router component" ,() => {
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'target1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         const tree1 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree1).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'post3' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const tree_empty = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(tree_empty).toMatchSnapshot();
+
+
 
     })
 

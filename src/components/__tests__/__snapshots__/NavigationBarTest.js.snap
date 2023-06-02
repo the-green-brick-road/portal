@@ -5,7 +5,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
   <div>
     <div>
       <div
-        class=\\"MuiStack-root css-fzqd5a-MuiStack-root\\"
+        class=\\"MuiStack-root css-i1uka7-MuiStack-root\\"
       >
         <div
           class=\\"MuiStack-root css-1bfbfkp-MuiStack-root\\"
@@ -23,14 +23,14 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
           <div
             class=\\"MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-fullWidth MuiButtonGroup-disableElevation css-8q4ur5-MuiButtonGroup-root\\"
             role=\\"group\\"
-            style=\\"margin-left: 0px; margin-right: 10px; width: 100%; left: 0px;\\"
+            style=\\"margin-left: 0px; margin-right: 0px; width: 100%; left: 0px;\\"
           >
             <div
               aria-label=\\"item1\\"
             >
               <a
                 alt=\\"item1\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-1hnvgnt-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-2l621i-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#666666\\"
                 href=\\"/\\"
                 id=\\"item1\\"
@@ -61,7 +61,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             >
               <button
                 alt=\\"item2\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-1hnvgnt-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-2l621i-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#666666\\"
                 id=\\"item2\\"
                 name=\\"item2\\"
@@ -163,7 +163,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
   <div>
     <div>
       <div
-        class=\\"MuiStack-root css-10auekq-MuiStack-root\\"
+        class=\\"MuiStack-root css-1x3vcbx-MuiStack-root\\"
       >
         <div
           class=\\"MuiStack-root css-1bfbfkp-MuiStack-root\\"
@@ -181,14 +181,14 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
           <div
             class=\\"MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-fullWidth MuiButtonGroup-disableElevation css-8q4ur5-MuiButtonGroup-root\\"
             role=\\"group\\"
-            style=\\"margin-left: 0px; margin-right: 10px; width: 100%; left: 0px;\\"
+            style=\\"margin-left: 0px; margin-right: 0px; width: 100%; left: 0px;\\"
           >
             <div
               aria-label=\\"item1\\"
             >
               <a
                 alt=\\"item1\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-1upzvil-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-pzygiv-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#555555\\"
                 href=\\"/\\"
                 id=\\"item1\\"
@@ -219,7 +219,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
             >
               <button
                 alt=\\"item2\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-1upzvil-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-pzygiv-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#555555\\"
                 id=\\"item2\\"
                 name=\\"item2\\"

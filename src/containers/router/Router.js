@@ -11,12 +11,12 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { lazy, useEffect, useState }   from 'react';
-import { BrowserRouter, useRoutes }    from 'react-router-dom';
+import { lazy, useEffect, useState, Suspense } from 'react';
+import { BrowserRouter, useRoutes }            from 'react-router-dom';
 
 /* Portal includes */
-import { useConfiguration, useData }   from '../../providers';
-import { Layout }                      from '../../containers';
+import { useConfiguration, useData }           from '../../providers';
+import { Layout }                              from '../../containers';
 
 function PortalRouter(props) {
 
@@ -26,12 +26,17 @@ function PortalRouter(props) {
     const { seasons, posts } = useData();
     /* const componentName      = 'PortalRouter'; */
 
-    const [routesState, setRoutes] = useState([])
+    const [ routesState, setRoutes ] = useState(
+        [{
+            element: <Layout />,
+            children: [],
+        }]
+    )
 
-    /* Routes loading */
     useEffect(() => {
 
-        const route_elements     = [];
+        const newRoutes = [...routesState];
+
         for (let i_route = 0; i_route < config.routes.length; i_route += 1) {
 
             const Element = lazy(() => import(`../../views${folder}/${config.routes[i_route].element.toLowerCase()}/${config.routes[i_route].element}`));
@@ -40,8 +45,7 @@ function PortalRouter(props) {
                 path: config.routes[i_route].path,
                 element: <Element />,
             };
-            route_elements.push(rt);
-            setRoutes(route_elements)
+            newRoutes[0].children.push(rt);
 
         }
         for (let i_route = 0; i_route < seasons.length; i_route += 1) {
@@ -52,35 +56,34 @@ function PortalRouter(props) {
                 path: `/seasons/${seasons[i_route].id}`,
                 element: <Element data={seasons[i_route]}/>,
             };
-            route_elements.push(rt);
-            setRoutes(route_elements)
+            newRoutes[0].children.push(rt);
 
         }
         for (let i_route = 0; i_route < posts.length; i_route += 1) {
 
-            const Element = lazy(() => import(`../../views${folder}/post/Post`));
-            const rt = {
-                exact: true,
-                path: `/posts/${posts[i_route].id}`,
-                element: <Element data={posts[i_route]}/>,
-            };
-            route_elements.push(rt);
-            setRoutes(route_elements)
+            if (posts[i_route].real) {
+
+                const Element = lazy(() => import(`../../views${folder}/post/Post`));
+                const rt = {
+                    exact: true,
+                    path: `/posts/${posts[i_route].id}`,
+                    element: <Element data={posts[i_route]}/>,
+                };
+                newRoutes[0].children.push(rt);
+
+            }
 
         }
 
+        setRoutes(newRoutes)
 
-    }, []) /* eslint-disable-line react-hooks/exhaustive-deps */
+    }, [config, seasons, posts]); /* eslint-disable-line react-hooks/exhaustive-deps */
 
-
-    const routes_with_layout = [
-        {
-            element: <Layout />,
-            children: routesState,
-        }
-    ]
-    const element = useRoutes(routes_with_layout);
-    return element;
+    return (
+        <Suspense fallback={<div ><p>Loading ...</p></div>}>
+            {useRoutes(routesState)}
+        </Suspense>
+    );
 
 };
 

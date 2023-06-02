@@ -82,6 +82,16 @@ exports[`Router component Should build correct routes 1`] = `
           class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
         />
       </button>
+      <button
+        aria-label=\\"post3\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
     </div>
   </div>
 </body>"
@@ -710,7 +720,23 @@ exports[`Router component Should build correct routes 8`] = `
           class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
         />
       </button>
+      <button
+        aria-label=\\"post3\\"
+        class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root\\"
+        tabindex=\\"0\\"
+        type=\\"button\\"
+      >
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+        />
+      </button>
     </div>
   </div>
+</body>"
+`;
+
+exports[`Router component Should build correct routes 9`] = `
+"<body>
+  <div />
 </body>"
 `;

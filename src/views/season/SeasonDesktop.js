@@ -11,19 +11,19 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment, useState }                    from 'react';
+import { Fragment, useState }                          from 'react';
 
 /* Material UI includes */
-import { Container, Tabs, Tab, Box, Link }       from '@mui/material';
-import { Table, TableRow, TableCell, TableBody } from '@mui/material';
-import { OpenInBrowser }                         from '@mui/icons-material';
-import { useTheme }                              from '@mui/material/styles';
+import { Container, Tabs, Tab, Box, Link, Typography } from '@mui/material';
+import { Table, TableRow, TableCell, TableBody }       from '@mui/material';
+import { default as OpenInBrowser }                    from '@mui/icons-material/OpenInBrowser';
+import { useTheme }                                    from '@mui/material/styles';
 
 /* You Tube includes */
-import YouTube                                   from 'react-youtube'
+import YouTube                                         from 'react-youtube'
 
 /* Portal includes */
-import { useLogging }                            from '../../providers';
+import { useLogging }                                  from '../../providers';
 
 
 function SeasonDesktop(props) {
@@ -46,9 +46,20 @@ function SeasonDesktop(props) {
     /* ----------- Define HTML --------- */
     return (
         <Fragment>
-            <Container style={{ width:'100%', height:'30vh', padding:0, backgroundColor:theme.palette.common.black, position:'relative' }}>
+            <Container style={{ pointerEvents: 'none', width:'100%', height:'30vh', padding:0, backgroundColor:theme.palette.common.black, position:'relative' }}>
                 <img src={data.image} style={{ position: 'absolute', zIndex:1, top: '11vh', right: '2%', height:'15vh' }} alt={data.name}/>
             </Container>
+            {('description' in data) && (
+                <Container style={{padding:10}}>
+                    { data.description.split('<br/>').map((item, index) => {
+
+                        return(
+                            <Typography variant="body2" key={index} style={{ fontSize:'14px', textAlign:'justify', padding:5 }}>{item}</Typography>
+                        )
+
+                    })}
+                </Container>
+            )}
             <Container style={{padding:10}}>
                 <Box>
                     <Tabs value={tab} onChange={handleChange}>
@@ -62,7 +73,7 @@ function SeasonDesktop(props) {
                 {(tab === 1) && ('resources' in data) && (
                     <Table style={{ width:'100%' }}>
                         <TableBody>
-                            { data['resources'].map((item, index) => { /* Loop on all resources */
+                            { data['resources'].map((item, index) => {
 
                                 return(
                                     <TableRow key={index}>

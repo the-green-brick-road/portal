@@ -4,11 +4,2322 @@ exports[`Blog view Should display blog page 1`] = `
 "<body>
   <div>
     <div>
-      <p
-        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; height: 80px;\\"
+      />
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; overflow-x: hidden; overflow-y: hidden;\\"
       >
-        Blog
-      </p>
+        <div
+          class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root\\"
+          style=\\"transform-origin: 50vw 50vh;\\"
+        >
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/5\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post5
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/4\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post4
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/2\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      5
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/7\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post7
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/1\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post1
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/3\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      10
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post3
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/6\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      12
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+              style=\\"margin: 10px;\\"
+            >
+              <img
+                class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                style=\\"object-fit: cover;\\"
+              />
+              <div
+                class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                  style=\\"background-color: rgb(136, 136, 136); padding-left: 5px; padding-right: 5px;\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                    style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                  >
+                     
+                    14
+                    -
+                    Jan
+                    -
+                    1970
+                     
+                  </p>
+                </div>
+              </div>
+              <div
+                class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                >
+                  <span
+                    class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                  >
+                    post8
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Blog view Should display blog page 2`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; height: 80px;\\"
+      />
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; overflow-x: hidden; overflow-y: hidden;\\"
+      >
+        <div
+          class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root\\"
+          style=\\"transform-origin: 50vw 50vh;\\"
+        >
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/5\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post5
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/4\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post4
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/2\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      5
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/7\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post7
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/1\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post1
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/3\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      10
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post3
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/6\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      12
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+              style=\\"margin: 10px;\\"
+            >
+              <img
+                class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                style=\\"object-fit: cover;\\"
+              />
+              <div
+                class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                  style=\\"background-color: rgb(136, 136, 136); padding-left: 5px; padding-right: 5px;\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                    style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                  >
+                     
+                    14
+                    -
+                    Jan
+                    -
+                    1970
+                     
+                  </p>
+                </div>
+              </div>
+              <div
+                class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                >
+                  <span
+                    class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                  >
+                    post8
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Blog view Should display blog page 3`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; height: 80px;\\"
+      />
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; overflow-x: hidden; overflow-y: hidden;\\"
+      >
+        <div
+          class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root\\"
+          style=\\"transform-origin: 50vw 50vh;\\"
+        >
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/5\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post5
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/4\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post4
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/2\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      5
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/7\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post7
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/1\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post1
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/3\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      10
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post3
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/6\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      12
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+              style=\\"margin: 10px;\\"
+            >
+              <img
+                class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                style=\\"object-fit: cover;\\"
+              />
+              <div
+                class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                  style=\\"background-color: rgb(136, 136, 136); padding-left: 5px; padding-right: 5px;\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                    style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                  >
+                     
+                    14
+                    -
+                    Jan
+                    -
+                    1970
+                     
+                  </p>
+                </div>
+              </div>
+              <div
+                class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                >
+                  <span
+                    class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                  >
+                    post8
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Blog view Should display blog page 4`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; height: 80px;\\"
+      />
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; overflow-x: hidden; overflow-y: hidden;\\"
+      >
+        <div
+          class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root\\"
+          style=\\"transform-origin: 50vw 50vh;\\"
+        >
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/5\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post5
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/4\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post4
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/2\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      5
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/7\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post7
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/1\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post1
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/3\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      10
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post3
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/6\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      12
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+              style=\\"margin: 10px;\\"
+            >
+              <img
+                class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                style=\\"object-fit: cover;\\"
+              />
+              <div
+                class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                  style=\\"background-color: rgb(136, 136, 136); padding-left: 5px; padding-right: 5px;\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                    style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                  >
+                     
+                    14
+                    -
+                    Jan
+                    -
+                    1970
+                     
+                  </p>
+                </div>
+              </div>
+              <div
+                class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                >
+                  <span
+                    class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                  >
+                    post8
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Blog view Should display blog page 5`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; height: 80px;\\"
+      />
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgb(68, 68, 68); width: 100%; overflow-x: hidden; overflow-y: hidden;\\"
+      >
+        <div
+          class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root\\"
+          style=\\"transform-origin: 50vw 50vh;\\"
+        >
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/5\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post5
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/4\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      1
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post4
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/2\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      5
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/7\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post7
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/1\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      6
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post1
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/3\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      10
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post3
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"/posts/6\\"
+              target=\\"\\"
+            >
+              <div
+                class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+                style=\\"margin: 10px;\\"
+              >
+                <img
+                  class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                  style=\\"object-fit: cover;\\"
+                />
+                <div
+                  class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                    style=\\"background-color: rgb(102, 102, 102); padding-left: 5px; padding-right: 5px;\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                      style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                    >
+                       
+                      12
+                      -
+                      Jan
+                      -
+                      1970
+                       
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                  style=\\"padding: 5px;\\"
+                >
+                  <div
+                    class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                  >
+                    <span
+                      class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                    >
+                      post6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-30 MuiGrid-grid-sm-20 MuiGrid-grid-md-15 MuiGrid-grid-lg-12 css-1qg0jvd-MuiGrid-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation4 MuiCard-root css-lfiv52-MuiPaper-root-MuiCard-root\\"
+              style=\\"margin: 10px;\\"
+            >
+              <img
+                class=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root\\"
+                style=\\"object-fit: cover;\\"
+              />
+              <div
+                class=\\"MuiCardContent-root css-46bh2p-MuiCardContent-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1emjetk-MuiPaper-root\\"
+                  style=\\"background-color: rgb(136, 136, 136); padding-left: 5px; padding-right: 5px;\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                    style=\\"color: rgb(85, 85, 85); font-size: 11px; font-weight: bold;\\"
+                  >
+                     
+                    14
+                    -
+                    Jan
+                    -
+                    1970
+                     
+                  </p>
+                </div>
+              </div>
+              <div
+                class=\\"MuiCardHeader-root css-185gdzj-MuiCardHeader-root\\"
+                style=\\"padding: 5px;\\"
+              >
+                <div
+                  class=\\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\\"
+                >
+                  <span
+                    class=\\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-aw2yl1-MuiTypography-root\\"
+                  >
+                    post8
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>"

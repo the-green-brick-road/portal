@@ -44,6 +44,23 @@ exports[`HamburgerBar component Should display a navigation bar 1`] = `
             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
           />
         </button>
+        <div
+          class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root\\"
+          style=\\"background-color: rgb(102, 102, 102);\\"
+        >
+          <svg
+            aria-hidden=\\"true\\"
+            class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+            data-testid=\\"LoginIcon\\"
+            focusable=\\"false\\"
+            style=\\"color: rgb(85, 85, 85);\\"
+            viewBox=\\"0 0 24 24\\"
+          >
+            <path
+              d=\\"M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z\\"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -94,6 +111,23 @@ exports[`HamburgerBar component Should display a negative navigation bar 1`] = `
             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
           />
         </button>
+        <div
+          class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root\\"
+          style=\\"background-color: rgb(85, 85, 85);\\"
+        >
+          <svg
+            aria-hidden=\\"true\\"
+            class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+            data-testid=\\"LoginIcon\\"
+            focusable=\\"false\\"
+            style=\\"color: rgb(102, 102, 102);\\"
+            viewBox=\\"0 0 24 24\\"
+          >
+            <path
+              d=\\"M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z\\"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -144,6 +178,23 @@ exports[`HamburgerBar component Should display a negative navigation event with 
             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
           />
         </button>
+        <div
+          class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root\\"
+          style=\\"background-color: rgb(0, 0, 0);\\"
+        >
+          <svg
+            aria-hidden=\\"true\\"
+            class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+            data-testid=\\"LoginIcon\\"
+            focusable=\\"false\\"
+            style=\\"color: rgb(255, 255, 255);\\"
+            viewBox=\\"0 0 24 24\\"
+          >
+            <path
+              d=\\"M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z\\"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -194,6 +245,23 @@ exports[`HamburgerBar component Should open and close hamburger menu 1`] = `
             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
           />
         </button>
+        <div
+          class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root\\"
+          style=\\"background-color: rgb(85, 85, 85);\\"
+        >
+          <svg
+            aria-hidden=\\"true\\"
+            class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+            data-testid=\\"LoginIcon\\"
+            focusable=\\"false\\"
+            style=\\"color: rgb(102, 102, 102);\\"
+            viewBox=\\"0 0 24 24\\"
+          >
+            <path
+              d=\\"M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z\\"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>

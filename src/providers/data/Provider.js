@@ -50,7 +50,7 @@ function Provider(props) {
         ...savedState,
     });
 
-    const [firebaseState, setFirebase] = useState({firestore : null, storage: null}) /* eslint-disable-line no-unused-vars */
+    const [firebaseState, setFirebase] = useState({firestore : null, storage : null}) /* eslint-disable-line no-unused-vars */
 
     useEffect(() => {
 
@@ -75,42 +75,72 @@ function Provider(props) {
         const local_firestore   = getFirestore(app);
         const local_storage     = getStorage(app);
         setFirebase({firestore: local_firestore, storage: local_storage})
-        const seasons = []
-        const posts = []
         getDocs(collection(local_firestore, 'seasons'))
             .then((docs) => {
 
-                logText(componentName, 'info', 'data', ` Found ${docs.length} seasons`)
+                logText(componentName, 'info', 'data', ` Found ${docs.size} seasons`)
+                const seasons = []
                 docs.forEach((doc) => {
 
                     const data = JSON.parse(JSON.stringify(doc.data()))
-                    getDownloadURL(ref(local_storage, `seasons/${doc.data().name}.png`))
+                    getDownloadURL(ref(local_storage, `seasons/${data['image']}`))
                         .then((url) => {
 
                             data['image'] = url
                             data['id'] = doc.id
-                            seasons.push(data);
-                            dispatch(setSeasons(seasons))
+                            seasons.push(data)
+                            if(seasons.length === docs.size) { dispatch(setSeasons(seasons)) }
 
                         })
 
                 })
 
             })
+
         getDocs(collection(local_firestore, 'posts'))
             .then((docs) => {
 
+
+                logText(componentName, 'info', 'data', ` Found ${docs.size} posts`)
+                const posts = []
                 docs.forEach((doc) => {
 
-                    logText(componentName, 'info', 'data', ` Found ${docs.length} posts`)
                     const data = JSON.parse(JSON.stringify(doc.data()))
-                    getDownloadURL(ref(local_storage, `posts/${doc.data().image}`))
+                    getDownloadURL(ref(local_storage, `posts/${data['image']}`))
                         .then((url) => {
 
                             data['image'] = url
                             data['id'] = doc.id
-                            posts.push(data);
-                            dispatch(setPosts(posts))
+
+                            if ('media' in data && data['media'].length > 0) {
+
+                                const media = []
+                                for(let i_media = 0; i_media < data.media.length; i_media ++)
+                                {
+
+                                    getDownloadURL(ref(local_storage, `posts/${data['media'][i_media]}`))
+                                        .then((url_media) => {
+
+                                            media.push(url_media)
+                                            if (media.length === data.media.length) {
+
+                                                data['media'] = media
+                                                posts.push(data)
+
+                                            }
+                                            if(posts.length === docs.size) { dispatch(setPosts(posts)) }
+
+                                        })
+
+                                }
+
+                            }
+                            else {
+
+                                posts.push(data)
+                                if(posts.length === docs.size) { dispatch(setPosts(posts)) }
+
+                            }
 
                         })
 

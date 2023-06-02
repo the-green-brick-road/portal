@@ -20,7 +20,6 @@ import { default as Season }       from '../views/season/Season';
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { default as MockImage }    from '../components/__mocks__/Image';
-
 import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../providers/__mocks__/DesignProvider';
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../providers/__mocks__/LoggingProvider';
 jest.mock("../components", () => ({ Image: (props) => MockImage(props) }));

@@ -11,10 +11,14 @@
 # ---------------------------------------------------- */
 
 /* Material UI includes */
-import { Home, EmojiEvents, SmartToy, Newspaper, CalendarMonth } from '@mui/icons-material/';
+import { default as Home }          from '@mui/icons-material/Home';
+import { default as EmojiEvents }   from '@mui/icons-material/EmojiEvents';
+import { default as SmartToy }      from '@mui/icons-material/SmartToy';
+import { default as Newspaper }     from '@mui/icons-material/Newspaper';
+import { default as CalendarMonth } from '@mui/icons-material/CalendarMonth';
 
 /* Local includes */
-import MenuConfig                                                from './data/menu.json';
+import MenuConfig                   from './data/menu.json';
 
 /* Container definition */
 const Menu = { entries: MenuConfig }
