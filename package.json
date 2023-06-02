@@ -1,6 +1,6 @@
 {
     "name": "gbr-portal",
-    "version": "beta",
+    "version": "v0.0.1",
     "private": true,
     "dependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
