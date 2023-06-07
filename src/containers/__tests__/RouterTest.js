@@ -82,34 +82,42 @@ describe("Router component" ,() => {
         expect(tree).toMatchSnapshot();
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'target2' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(100);
         const tree2 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree2).toMatchSnapshot();
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'target3' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(100);
         const tree3 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree3).toMatchSnapshot();
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'season1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(100);
         const tree4 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree4).toMatchSnapshot();
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'season2' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(100);
         const tree5 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree5).toMatchSnapshot();
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'post1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(100);
         const tree6 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree6).toMatchSnapshot();
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'post2' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(100);
         const tree7 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree7).toMatchSnapshot();
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'target1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(100);
         const tree1 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree1).toMatchSnapshot();
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'post3' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(100);
         const tree_empty = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree_empty).toMatchSnapshot();
 
