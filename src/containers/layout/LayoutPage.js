@@ -18,15 +18,15 @@ import { Container }              from '@mui/material';
 import { useScrollTrigger }       from '@mui/material';
 
 /* Portal includes */
-import { useDesign, useLogging }  from '../../providers';
+import { useLogging, useDesign }  from '../../providers';
 
 function LayoutPage(props) {
 
     /* --------- Gather inputs --------- */
-    const { top, left, height, width, children } = props || {};
-    const { setIsSliding } = useDesign();
-    const { logText }      = useLogging();
-    const componentName    = 'LayoutPage';
+    const { top = '0px', left = '0px', height = '100vh', width='100vw', color='white', children } = props || {};
+    const { setIsSliding }                              = useDesign();
+    const { logText }                                   = useLogging();
+    const componentName                                 = 'LayoutPage';
 
     /* ----- Manage sliding event  ---- */
     const ref = useRef();
@@ -55,7 +55,7 @@ function LayoutPage(props) {
                 display: 'flex',
                 flexDirection: 'column',
                 height: height,
-                backgroundColor: '#ffffff',
+                backgroundColor: color,
                 top: top,
                 left: left,
                 marginBottom: 0,
@@ -64,7 +64,7 @@ function LayoutPage(props) {
                 zIndex: '0',
             }}
         >
-            <Container data-testid='layout-page-subcontainer' ref={ref} style={{ backgroundColor: '#ffffff', position: 'absolute', overflowY: 'scroll', overflowX: 'hidden', width: width, height: height, top: 0, paddingLeft: 0, paddingRight: 0, zIndex: '1' }}>
+            <Container data-testid='layout-page-subcontainer' ref={ref} style={{ backgroundColor: color, position: 'absolute', overflowY: 'scroll', overflowX: 'hidden', width: width, height: height, top: 0, paddingLeft: 0, paddingRight: 0, zIndex: '1' }}>
                 {children}
             </Container>
         </Container>

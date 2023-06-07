@@ -6,12 +6,13 @@ exports[`Footer component Should display a large footer 1`] = `
     <div>
       <div
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation1 css-1p2ttux-MuiPaper-root\\"
-        style=\\"position: relative; background-color: rgb(255, 255, 255); padding: 5px; bottom: 0px;\\"
+        id=\\"footer\\"
+        style=\\"position: relative; padding: 0px; bottom: 0px;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-          id=\\"footer\\"
-          style=\\"background-color: rgba(255, 255, 255, 0); padding: 0px;\\"
+          id=\\"footer-desktop\\"
+          style=\\"padding: 0px;\\"
         >
           <hr
             class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
@@ -35,7 +36,7 @@ exports[`Footer component Should display a large footer 1`] = `
               target=\\"_blank\\"
             >
               <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-1xium7r-MuiAvatar-root\\"
+                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
                 col=\\"#666666\\"
               >
                 <svg
@@ -43,7 +44,7 @@ exports[`Footer component Should display a large footer 1`] = `
                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
                   data-testid=\\"YouTubeIcon\\"
                   focusable=\\"false\\"
-                  style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
+                  style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
                   viewBox=\\"0 0 24 24\\"
                 >
                   <path
@@ -60,7 +61,7 @@ exports[`Footer component Should display a large footer 1`] = `
               target=\\"_blank\\"
             >
               <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-1xium7r-MuiAvatar-root\\"
+                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
                 col=\\"#666666\\"
               >
                 <svg
@@ -85,7 +86,7 @@ exports[`Footer component Should display a large footer 1`] = `
               target=\\"_blank\\"
             >
               <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-1xium7r-MuiAvatar-root\\"
+                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
                 col=\\"#666666\\"
               >
                 <svg
@@ -110,7 +111,7 @@ exports[`Footer component Should display a large footer 1`] = `
               target=\\"_blank\\"
             >
               <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-1xium7r-MuiAvatar-root\\"
+                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
                 col=\\"#666666\\"
               >
                 <svg
@@ -214,10 +215,12 @@ exports[`Footer component Should display a large footer 1`] = `
                   href=\\"https://www.firstlegoleague.org/\\"
                   target=\\"_blank\\"
                 >
-                  <div
-                    class=\\"MuiBox-root css-0\\"
-                    style=\\"margin: 0px; height: 20px; background-color: blue;\\"
-                  />
+                  <svg
+                    fill=\\"#666666\\"
+                    style=\\"color: rgb(102, 102, 102); height: 20px;\\"
+                  >
+                    fll.svg
+                  </svg>
                 </a>
               </div>
               <div
@@ -289,10 +292,12 @@ exports[`Footer component Should display a large footer 1`] = `
                   href=\\"https://www.fasny.org/\\"
                   target=\\"_blank\\"
                 >
-                  <div
-                    class=\\"MuiBox-root css-0\\"
-                    style=\\"height: 20px; background-color: blue;\\"
-                  />
+                  <svg
+                    fill=\\"#666666\\"
+                    style=\\"height: 20px;\\"
+                  >
+                    fasny.svg
+                  </svg>
                 </a>
               </div>
               <div
@@ -359,10 +364,12 @@ exports[`Footer component Should display a large footer 1`] = `
                   href=\\"https://www.sharkbots.org/\\"
                   target=\\"_blank\\"
                 >
-                  <div
-                    class=\\"MuiBox-root css-0\\"
-                    style=\\"height: 20px; background-color: blue;\\"
-                  />
+                  <svg
+                    fill=\\"#666666\\"
+                    style=\\"height: 20px;\\"
+                  >
+                    sharkbots.svg
+                  </svg>
                 </a>
               </div>
               <div
@@ -424,10 +431,12 @@ exports[`Footer component Should display a large footer 1`] = `
                   href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
                   target=\\"_blank\\"
                 >
-                  <div
-                    class=\\"MuiBox-root css-0\\"
-                    style=\\"height: 20px; background-color: blue;\\"
-                  />
+                  <svg
+                    fill=\\"#666666\\"
+                    style=\\"height: 20px;\\"
+                  >
+                    hudson.svg
+                  </svg>
                 </a>
               </div>
               <div
@@ -472,11 +481,13 @@ exports[`Footer component Should display a thin footer 1`] = `
     <div>
       <div
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation1 css-1p2ttux-MuiPaper-root\\"
-        style=\\"position: relative; background-color: rgb(255, 255, 255); padding: 5px; bottom: 0px;\\"
+        id=\\"footer\\"
+        style=\\"position: relative; padding: 0px; bottom: 0px;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-          style=\\"background-color: rgba(255, 255, 255, 0); padding: 0px 20px 0px 0px;\\"
+          id=\\"footer-mobile\\"
+          style=\\"padding: 0px 20px 0px 0px;\\"
         >
           <hr
             class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
@@ -500,7 +511,7 @@ exports[`Footer component Should display a thin footer 1`] = `
               target=\\"_blank\\"
             >
               <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-1xium7r-MuiAvatar-root\\"
+                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
                 col=\\"#666666\\"
               >
                 <svg
@@ -525,7 +536,7 @@ exports[`Footer component Should display a thin footer 1`] = `
               target=\\"_blank\\"
             >
               <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-1xium7r-MuiAvatar-root\\"
+                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
                 col=\\"#666666\\"
               >
                 <svg
@@ -550,7 +561,7 @@ exports[`Footer component Should display a thin footer 1`] = `
               target=\\"_blank\\"
             >
               <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-1xium7r-MuiAvatar-root\\"
+                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
                 col=\\"#666666\\"
               >
                 <svg
@@ -575,7 +586,7 @@ exports[`Footer component Should display a thin footer 1`] = `
               target=\\"_blank\\"
             >
               <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-1xium7r-MuiAvatar-root\\"
+                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
                 col=\\"#666666\\"
               >
                 <svg
@@ -707,10 +718,12 @@ exports[`Footer component Should display a thin footer 1`] = `
                   href=\\"https://www.firstlegoleague.org/\\"
                   target=\\"_blank\\"
                 >
-                  <div
-                    class=\\"MuiBox-root css-0\\"
-                    style=\\"margin: 0px; height: 24px; background-color: blue;\\"
-                  />
+                  <svg
+                    fill=\\"#666666\\"
+                    style=\\"color: rgb(102, 102, 102); height: 24px;\\"
+                  >
+                    fll.svg
+                  </svg>
                 </a>
                 <a
                   aria-label=\\"French American School of New York\\"
@@ -719,10 +732,12 @@ exports[`Footer component Should display a thin footer 1`] = `
                   href=\\"https://www.fasny.org/\\"
                   target=\\"_blank\\"
                 >
-                  <div
-                    class=\\"MuiBox-root css-0\\"
-                    style=\\"height: 24px; background-color: blue;\\"
-                  />
+                  <svg
+                    fill=\\"#666666\\"
+                    style=\\"height: 24px;\\"
+                  >
+                    fasny.svg
+                  </svg>
                 </a>
                 <a
                   aria-label=\\"Our big brothers & sisters from FTC team\\"
@@ -731,10 +746,12 @@ exports[`Footer component Should display a thin footer 1`] = `
                   href=\\"https://www.sharkbots.org/\\"
                   target=\\"_blank\\"
                 >
-                  <div
-                    class=\\"MuiBox-root css-0\\"
-                    style=\\"margin: 0px; height: 24px; background-color: blue;\\"
-                  />
+                  <svg
+                    fill=\\"#666666\\"
+                    style=\\"height: 24px;\\"
+                  >
+                    sharkbots.svg
+                  </svg>
                 </a>
                 <a
                   aria-label=\\"Our regional First Lego League\\"
@@ -743,10 +760,12 @@ exports[`Footer component Should display a thin footer 1`] = `
                   href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
                   target=\\"_blank\\"
                 >
-                  <div
-                    class=\\"MuiBox-root css-0\\"
-                    style=\\"height: 24px; background-color: blue;\\"
-                  />
+                  <svg
+                    fill=\\"#666666\\"
+                    style=\\"color: rgb(102, 102, 102); height: 24px;\\"
+                  >
+                    hudson.svg
+                  </svg>
                 </a>
               </div>
             </div>

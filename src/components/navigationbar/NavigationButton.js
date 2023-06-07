@@ -16,7 +16,7 @@ import { styled } from '@mui/system';
 
 const NavigationButton = styled(Button)(({ col }) => ({
 
-    color: col,
+    color:col,
     verticalAlign: 'middle',
     borderRadius: '0',
     paddingTop: '6.5px',

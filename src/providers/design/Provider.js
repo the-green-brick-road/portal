@@ -39,19 +39,23 @@ function Provider(props) {
     const savedState = JSON.parse(localStorage.getItem(persistKey));
     const [designStore, dispatch] = useReducer(reducer, {
         isWebpSupported: false,   /* Are webp images supported ? */
+        isDarkMode: false,
         isSliding: false,
         images: [],
         ...savedState,
     });
-    const isLarge   = useMediaQuery(`(min-width:${design.sizes['medium-width']}px)`)
-    const isMedium  = useMediaQuery(`(min-width:${design.sizes['small-width']}px)`)
+    const isLarge    = useMediaQuery(`(min-width:${design.sizes['medium-width']}px)`)
+    const isMedium   = useMediaQuery(`(min-width:${design.sizes['small-width']}px)`)
+    const isDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
 
     var screen     = 'small'
     if (isMedium) { screen = 'medium'}
     if (isLarge)  { screen = 'large'}
 
     const sizes = design.sizes;
-    const theme = createTheme(design.theme);
+    let theme = {}
+    if (isDarkMode) { theme = createTheme(design.theme.dark); }
+    else            { theme = createTheme(design.theme.light); }
 
     useEffect(() => {
 
@@ -140,7 +144,7 @@ function Provider(props) {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Context.Provider value={{screen, sizes, ...state}}>
+            <Context.Provider value={{isDarkMode, screen, sizes, ...state}}>
                 {children}
             </Context.Provider>
         </ThemeProvider>

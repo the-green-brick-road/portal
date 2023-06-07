@@ -19,7 +19,7 @@ import { Footer }                 from '../../components';
 function LayoutFooter(props) {
 
     /* --------- Gather inputs --------- */
-    const { width  } = props || {};
+    const { width, color, isDark } = props || {};
     /*const componentName    = 'LayoutFooter';*/
 
     /* ----------- Define HTML --------- */
@@ -29,6 +29,7 @@ function LayoutFooter(props) {
             data-testid='layout-page-container'
             style={{
                 width: width,
+                backgroundColor: color,
                 position: 'relative',
                 bottom:0,
                 padding:0,
@@ -37,7 +38,7 @@ function LayoutFooter(props) {
                 boxShadow: 0,
             }}
         >
-            <Footer/>
+            <Footer color={color} isDark={isDark}/>
         </Container>
     );
 

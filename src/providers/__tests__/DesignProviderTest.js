@@ -90,26 +90,25 @@ function MockDesignConsumer(props) {
 
 describe("Design provider" ,() => {
 
-    test('Should set design in desktop mode', async () => {
-
-        const Config = {
-            "design": {
-                "images" :  [
-                    {
-                        "name" : "test",
-                        "raw"  : "home.png",
-                        "web"  : "home.webp",
-                    }
-                ],
-                "sizes" : {
-                    "small-width"          : 200,
-                    "medium-width"         : 400,
-                    "large-width"          : 800,
-                    "menu-height"          : 80,
-                    "margin"               : 10,
-                    "hamburger-height"     : 40,
-                },
-                "theme" : {
+    const Config = {
+        "design": {
+            "images" :  [
+                {
+                    "name" : "test",
+                    "raw"  : "home.png",
+                    "web"  : "home.webp",
+                }
+            ],
+            "sizes" : {
+                "small-width"          : 200,
+                "medium-width"         : 400,
+                "large-width"          : 800,
+                "menu-height"          : 80,
+                "margin"               : 10,
+                "hamburger-height"     : 40,
+            },
+            "theme" : {
+                "light" : {
                     "palette": {
                         "common": {
                             "black": "#444444",
@@ -159,9 +158,64 @@ describe("Design provider" ,() => {
                         },
                     },
                 },
+                "dark" : {
+                    "palette": {
+                        "common": {
+                            "black": "#999999",
+                            "white": "#888888",
+                        },
+                        "primary": {
+                            "main": "#777777",
+                            "light": "#777776",
+                            "dark": "#777775",
+                        },
+                        "secondary" : {
+                            "main": "#666666",
+                            "light": "#666665",
+                            "dark": "#666664",
+                        },
+                        "disabled" : {
+                            "main": "#555555",
+                            "light": "#555554",
+                            "dark": "#555553",
+                        },
+                        "text" : {
+                            "primary": "#444444",
+                            "secondary": "#333333",
+                            "disabled": "#222222",
+                        },
+                    },
+                    "direction": "ltr",
+                    "typography": {
+                        "h1": {
+                            "fontSize": "11.5rem",
+                            "color": "#222222",
+                            "textTransform": "lowercase",
+                            "fontFamily": "Roboto Condensed",
+                        },
+                        "h2": {
+                            "fontSize": "11rem",
+                            "color": "#333333",
+                            "textTransform": "uppercase",
+                            "fontFamily": "Roboto Condensed",
+                        },
+                        "body1": {
+                            "fontSize": "12px",
+                            "color": "white",
+                            "fontFamily": "Roboto",
+                            "position": "relative",
+                            "textAlign": "justify",
+                        },
+                    },
+                },
             },
+        },
 
-        }
+    }
+
+    test('Should set design in dark mode and desktop mode', async () => {
+
+
         const mockUseUseMediaQuery= jest.fn(() => { return true });
         useUseMediaQuery.mockReturnValue(mockUseUseMediaQuery);
 
@@ -190,96 +244,24 @@ describe("Design provider" ,() => {
         const h2 = getComputedStyle(screen.getByTestId('mock-design-consumer-h2'))
         const body1 = getComputedStyle(screen.getByTestId('mock-design-consumer-body1'))
 
-        expect(h1['font-size']).toBe('2.5rem')
-        expect(h1['color']).toBe('rgb(17, 17, 17)')
-        expect(h1['text-transform']).toBe('uppercase')
+        expect(h1['font-size']).toBe('11.5rem')
+        expect(h1['color']).toBe('rgb(34, 34, 34)')
+        expect(h1['text-transform']).toBe('lowercase')
         expect(h1['font-family']).toBe('Roboto Condensed')
-        expect(h2['font-size']).toBe('2rem')
-        expect(h2['color']).toBe('rgb(34, 34, 34)')
-        expect(h2['text-transform']).toBe('lowercase')
+        expect(h2['font-size']).toBe('11rem')
+        expect(h2['color']).toBe('rgb(51, 51, 51)')
+        expect(h2['text-transform']).toBe('uppercase')
         expect(h2['font-family']).toBe('Roboto Condensed')
-        expect(body1['font-size']).toBe('14px')
-        expect(body1['color']).toBe('black')
+        expect(body1['font-size']).toBe('12px')
+        expect(body1['color']).toBe('white')
         expect(body1['font-family']).toBe('Roboto')
         expect(body1['position']).toBe('relative')
         expect(body1['text-align']).toBe('justify')
 
     })
 
+    test('Should set design in light mode and non desktop mode', async () => {
 
-
-    test('Should set design in non desktop mode', async () => {
-
-        const Config = {
-            "design": {
-                "images" :  [
-                    {
-                        "name" : "test",
-                        "raw"  : "home.png",
-                        "web"  : "home.webp",
-                    }
-                ],
-                "sizes" : {
-                    "small-width"          : 200,
-                    "medium-width"         : 400,
-                    "large-width"          : 800,
-                    "menu-height"          : 80,
-                    "margin"               : 10,
-                    "hamburger-height"     : 40,
-                },
-                "theme" : {
-                    "palette": {
-                        "common": {
-                            "black": "#444444",
-                            "white": "#555555",
-                        },
-                        "primary": {
-                            "main": "#666666",
-                            "light": "#666667",
-                            "dark": "#666668",
-                        },
-                        "secondary" : {
-                            "main": "#777777",
-                            "light": "#777778",
-                            "dark": "#777779",
-                        },
-                        "disabled" : {
-                            "main": "#888888",
-                            "light": "#888889",
-                            "dark": "#888880",
-                        },
-                        "text" : {
-                            "primary": "#111111",
-                            "secondary": "#222222",
-                            "disabled": "#333333",
-                        },
-                    },
-                    "direction": "ltr",
-                    "typography": {
-                        "h1": {
-                            "fontSize": "2.5rem",
-                            "color": "#111111",
-                            "textTransform": "uppercase",
-                            "fontFamily": "Roboto Condensed",
-                        },
-                        "h2": {
-                            "fontSize": "2rem",
-                            "color": "#222222",
-                            "textTransform": "lowercase",
-                            "fontFamily": "Roboto Condensed",
-                        },
-                        "body1": {
-                            "fontSize": "14px",
-                            "color": "black",
-                            "fontFamily": "Roboto",
-                            "position": "relative",
-                            "textAlign": "justify",
-                        },
-                    },
-                },
-            },
-
-        }
         const mockUseUseMediaQuery= jest.fn(() => { return false });
         useUseMediaQuery.mockReturnValue(mockUseUseMediaQuery);
 
