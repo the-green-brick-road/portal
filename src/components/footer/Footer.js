@@ -20,17 +20,18 @@ import { useDesign } from '../../providers';
 import FooterDesktop from './FooterDesktop';
 import FooterMobile from './FooterMobile';
 
-function Footer() {
+function Footer(props) {
 
     /* --------- Gather inputs --------- */
+    const { color, isDark } = props;
     const { screen }        = useDesign();
     //const componentName = 'Footer';
 
     /* ----------- Define HTML --------- */
     return (
-        <Paper square={true} style={{ position:'relative', backgroundColor: '#ffffff', padding:'5px', bottom:0 }}>
-            {(screen === 'large') && (<FooterDesktop />)}
-            {(screen !== 'large') && (<FooterMobile />)}
+        <Paper id="footer" square={true} style={{ backgroundColor:color, position:'relative', padding:'0px', bottom:0 }}>
+            {(screen === 'large') && (<FooterDesktop isDark={isDark} />)}
+            {(screen !== 'large') && (<FooterMobile isDark={isDark} />)}
         </Paper>
     );
 

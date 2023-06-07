@@ -16,6 +16,7 @@ import { Outlet }     from "react-router-dom";
 
 /* Material UI includes */
 import { Container }  from '@mui/material';
+import { useTheme }   from '@mui/material/styles';
 
 /* Portal includes */
 import { useDesign }  from '../../providers';
@@ -29,7 +30,12 @@ import LayoutFooter   from './LayoutFooter';
 function Layout() {
 
     /* --------- Gather inputs --------- */
-    const { sizes }   = useDesign();
+    const { sizes, isDarkMode } = useDesign();
+    const theme                 = useTheme();
+
+    /* -------- Defining theme --------- */
+    let background_color = theme.palette.common.white;
+    if (isDarkMode) { background_color = theme.palette.common.black; }
 
     /* --------- Compute sizes --------- */
     const menu_height       = `${sizes['menu-height']}px`;
@@ -44,11 +50,11 @@ function Layout() {
     return (
         <Fragment>
             <Container style={{ width: '100vw', height: '100vh', maxWidth:'3000px', backgroundColor: 'black', zIndex: -1, position: 'absolute', padding:0}}/>
-            <LayoutMenu top={margin_height} height={menu_height} width={width} left={margin_width} item={item}/>
+            <LayoutMenu top={margin_height} height={menu_height} width={width} left={margin_width} item={item} isDark={isDarkMode}/>
             <LayoutContent top={menu_height} left={margin_width} height={content_height} width={width}/>
-            <LayoutPage top={margin_height} left={margin_width} height={height} width={width}>
+            <LayoutPage top={margin_height} left={margin_width} height={height} width={width} color={background_color}>
                 <Outlet />
-                <LayoutFooter width={width}/>
+                <LayoutFooter width={width} color={background_color} isDark={isDarkMode}/>
             </LayoutPage>
         </Fragment>
     );

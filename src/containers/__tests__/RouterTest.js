@@ -77,7 +77,7 @@ describe("Router component" ,() => {
 
         const delay = ms => new Promise(res => setTimeout(res, ms));
 
-        await delay(2000);
+        await delay(3000);
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
         expect(tree).toMatchSnapshot();
 

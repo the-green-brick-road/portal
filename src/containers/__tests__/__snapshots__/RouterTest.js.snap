@@ -102,7 +102,6 @@ exports[`Router component Should build correct routes 2`] = `
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-      style=\\"\\"
     >
        Mock Layout 
     </p>
@@ -190,7 +189,6 @@ exports[`Router component Should build correct routes 3`] = `
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-      style=\\"\\"
     >
        Mock Layout 
     </p>
@@ -278,7 +276,6 @@ exports[`Router component Should build correct routes 4`] = `
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-      style=\\"\\"
     >
        Mock Layout 
     </p>
@@ -368,13 +365,10 @@ exports[`Router component Should build correct routes 5`] = `
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-      style=\\"\\"
     >
        Mock Layout 
     </p>
-    <div
-      style=\\"\\"
-    >
+    <div>
       <p>
          
         season2
@@ -460,7 +454,6 @@ exports[`Router component Should build correct routes 6`] = `
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-      style=\\"\\"
     >
        Mock Layout 
     </p>
@@ -550,13 +543,10 @@ exports[`Router component Should build correct routes 7`] = `
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-      style=\\"\\"
     >
        Mock Layout 
     </p>
-    <div
-      style=\\"\\"
-    >
+    <div>
       <p>
          
         post2
@@ -642,7 +632,6 @@ exports[`Router component Should build correct routes 8`] = `
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-      style=\\"\\"
     >
        Mock Layout 
     </p>

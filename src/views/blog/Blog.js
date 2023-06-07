@@ -86,26 +86,26 @@ function Blog() {
 
                                 {(item.real) && (
                                     <Link href={url} underline="none" target={target}>
-                                        <Card elevation={4} style={{ margin:10 }}>
+                                        <Card elevation={4} style={{ backgroundColor:theme.palette.common.white, margin:10 }}>
                                             <CardMedia component="img" style={{objectFit: 'cover', objectPosition: item['image-position'] }} image={item.image}/>
-                                            <CardContent style={{ padding:'5px' }}>
+                                            <CardContent style={{ backgroundColor:theme.palette.common.white, padding:'5px' }}>
                                                 <Paper style={{ backgroundColor:theme.palette.primary.main, paddingLeft:'5px', paddingRight:'5px' }} >
                                                     <Typography variant="body1" style={{ color:theme.palette.common.white, fontSize:'11px', fontWeight:'bold'}}> {date}-{month}-{year} </Typography>
                                                 </Paper>
                                             </CardContent>
-                                            <CardHeader style={{ padding:'5px'}} titleTypographyProps={{ fontSize:'12px', fontWeight:'bold', fontFamily:item.font }} title={item.title} />
+                                            <CardHeader style={{ backgroundColor:theme.palette.common.white, padding:'5px'}} titleTypographyProps={{ fontSize:'12px', fontWeight:'bold', fontFamily:item.font }} title={item.title} />
                                         </Card>
                                     </Link>
                                 )}
                                 {(!item.real) && (
-                                    <Card elevation={4} style={{ margin:10 }}>
+                                    <Card elevation={4} style={{ backgroundColor:theme.palette.common.white, margin:10 }}>
                                         <CardMedia component="img" style={{objectFit: 'cover', objectPosition: item['image-position'] }} image={item.image}/>
-                                        <CardContent style={{ padding:'5px' }}>
+                                        <CardContent style={{ backgroundColor:theme.palette.common.white, padding:'5px' }}>
                                             <Paper style={{ backgroundColor:'#888888', paddingLeft:'5px', paddingRight:'5px' }} >
                                                 <Typography variant="body1" style={{ color:theme.palette.common.white, fontSize:'11px', fontWeight:'bold'}}> {date}-{month}-{year} </Typography>
                                             </Paper>
                                         </CardContent>
-                                        <CardHeader style={{ padding:'5px'}} titleTypographyProps={{ fontSize:'12px', fontWeight:'bold', fontFamily:item.font }} title={item.title} />
+                                        <CardHeader style={{ backgroundColor:theme.palette.common.white, padding:'5px'}} titleTypographyProps={{ fontSize:'12px', fontWeight:'bold', fontFamily:item.font }} title={item.title} />
                                     </Card>
                                 )}
                             </Grid>

@@ -11,22 +11,31 @@
 # ---------------------------------------------------- */
 
 /* Local includes */
-import ThemeConfig from './data/theme.json';
+import LightThemeConfig from './data/theme-light.json';
+import DarkThemeConfig from './data/theme-dark.json';
 import ImageConfig from './data/images.json';
 import SizesConfig from './data/sizes.json';
 
 /* Container definition */
 const Design = {
-    theme:      ThemeConfig,
+    theme:     {
+        light: LightThemeConfig,
+        dark:  DarkThemeConfig,
+    },
     sizes:      SizesConfig,
     images:     ImageConfig,
 }
 
-Design.theme['typography']['h1']['&::before']['content']='"  "'
-Design.theme['typography']['h1']['&::after']['content']='"  "'
-Design.theme['typography']['h2']['&::before']['content']='"  "'
-Design.theme['typography']['h2']['&::after']['content']='"  "'
-Design.theme['typography']['h3']['&::after']['content']='"  "'
+Design.theme['light']['typography']['h1']['&::before']['content']='"  "'
+Design.theme['light']['typography']['h1']['&::after']['content']='"  "'
+Design.theme['light']['typography']['h2']['&::before']['content']='"  "'
+Design.theme['light']['typography']['h2']['&::after']['content']='"  "'
+Design.theme['light']['typography']['h3']['&::after']['content']='"  "'
+Design.theme['dark']['typography']['h1']['&::before']['content']='"  "'
+Design.theme['dark']['typography']['h1']['&::after']['content']='"  "'
+Design.theme['dark']['typography']['h2']['&::before']['content']='"  "'
+Design.theme['dark']['typography']['h2']['&::after']['content']='"  "'
+Design.theme['dark']['typography']['h3']['&::after']['content']='"  "'
 
 /* Container export */
 export default Design;

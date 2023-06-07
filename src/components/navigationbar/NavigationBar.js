@@ -28,17 +28,19 @@ import NavigationStack                                    from './NavigationStac
 function NavigationBar(props) {
 
     /* --------- Gather inputs --------- */
-    const { height = '20px', isNegative = false, theme={} } = props
-    const { logText }                                       = useLogging();
-    const { selectEntry, isItemSelected, entries}           = useMenu();
+    const { height = '20px', isNegative = false, isDark = false, theme={} } = props
+    const { logText }                                                       = useLogging();
+    const { selectEntry, isItemSelected, entries}                           = useMenu();
     const allRef        = useRef({});
     const componentName = 'NavigationBar';
 
     /* -------- Defining theme --------- */
     let stackcolor = theme.palette.primary.main;
-    if (isNegative) { stackcolor = theme.palette.common.white; }
+    if (isNegative && !isDark) { stackcolor = theme.palette.common.white; }
+    if (isNegative && isDark) { stackcolor = theme.palette.common.black; }
 
     let logincolor = theme.palette.common.white;
+    if (isDark) { logincolor = theme.palette.common.black; }
     if (isNegative) { logincolor = theme.palette.primary.main; }
 
     let menucolor = theme.palette.common.black;

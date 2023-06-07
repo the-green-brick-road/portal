@@ -1,5 +1,6 @@
 {
     "palette": {
+        "mode": "light",
         "common": {
             "black": "#333333",
             "white": "#ffffff"
@@ -8,6 +9,11 @@
             "main": "#70ad47",
             "light": "#70ad47",
             "dark": "#70ad47"
+        },
+        "background": {
+            "main": "#000000",
+            "light": "#000000",
+            "dark": "#000000"
         },
         "secondary" : {
             "main": "#cae6c2",

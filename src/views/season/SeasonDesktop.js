@@ -63,9 +63,9 @@ function SeasonDesktop(props) {
             <Container style={{padding:10}}>
                 <Box>
                     <Tabs value={tab} onChange={handleChange}>
-                        <Tab label="Season Reveal" id="0" value={0} style={{ fontWeight:'bold', textTransform:'capitalize' }} />
-                        <Tab label="Resources" id="1" value={1} style={{ fontWeight:'bold', textTransform:'capitalize' }} />
-                        <Tab label="Robot Game" id="2" style={{ fontWeight:'bold', textTransform:'capitalize' }} />
+                        <Tab label="Season Reveal" id="0" value={0} style={{ color:theme.typography.body2.color, fontWeight:'bold', textTransform:'capitalize' }} />
+                        <Tab label="Resources" id="1" value={1} style={{ color:theme.typography.body2.color, fontWeight:'bold', textTransform:'capitalize' }} />
+                        <Tab label="Robot Game" id="2" style={{ color:theme.typography.body2.color, fontWeight:'bold', textTransform:'capitalize' }} />
 
                     </Tabs>
                 </Box>
@@ -78,10 +78,10 @@ function SeasonDesktop(props) {
                                 return(
                                     <TableRow key={index}>
                                         <TableCell style={{ width:'0%', padding:0, borderStyle:'none' }}>
-                                            <Link href={item.url} variant="body2" target="_blank" style={{ color: 'black', textDecoration:'none' }}><OpenInBrowser style={{ color:theme.palette.primary.main }}/></Link>
+                                            <Link href={item.url} variant="body2" target="_blank" style={{ color:theme.typography.body2.color, textDecoration:'none' }}><OpenInBrowser style={{ color:theme.palette.primary.main }}/></Link>
                                         </TableCell>
                                         <TableCell style={{ textAlign:'left', paddingTop:0, paddingBottom:0, paddingLeft:10, borderStyle:'none' }}>
-                                            <Link href={item.url} variant="body2" target="_blank" style={{ color: 'black', textDecoration:'none', fontSize:'11px' }}>{item.name}</Link>
+                                            <Link href={item.url} variant="body2" target="_blank" style={{ color:theme.typography.body2.color, textDecoration:'none', fontSize:'11px' }}>{item.name}</Link>
                                         </TableCell>
                                     </TableRow>
                                 )

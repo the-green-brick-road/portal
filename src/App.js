@@ -30,15 +30,15 @@ function App() {
             <ConfigurationProvider config={Config}>
                 <LoggingProvider>
                     <ErrorBoundary>
-                        <AnalyticsProvider>
-                            <DesignProvider>
-                                <MenuProvider>
-                                    <DataProvider>
+                        <DataProvider>
+                            <AnalyticsProvider>
+                                <DesignProvider>
+                                    <MenuProvider>
                                         <Router/>
-                                    </DataProvider>
-                                </MenuProvider>
-                            </DesignProvider>
-                        </AnalyticsProvider>
+                                    </MenuProvider>
+                                </DesignProvider>
+                            </AnalyticsProvider>
+                        </DataProvider>
                     </ErrorBoundary>
                 </LoggingProvider>
             </ConfigurationProvider>

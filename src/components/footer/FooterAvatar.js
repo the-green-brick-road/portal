@@ -16,12 +16,11 @@ import { styled } from '@mui/system';
 const FooterAvatar = styled(Avatar)(({ col }) => ({
 
     backgroundColor: col,
-    width:  '20px',
-    height: '20px',
+    width:  '22px',
+    height: '22px',
     '&:hover': {
-        borderStyle: 'solid',
-        borderColor: 'rgba(255,255,255,1)',
-        borderWidth: '1px',
+        width:  '24px',
+        height: '24px',
         transition: 'border-bottom-style 2s',
     },
     '&:hover span': { visibility: 'visible' },

@@ -23,7 +23,7 @@ const context = createContext(null);
 var state = {
     isWebpSupported: true,
     isSliding:       false,
-    isDark:          false,
+    isDarkMode:      false,
     images:          {},
     screen:          '',
     sizes:           {},
@@ -32,7 +32,7 @@ var state = {
 
 function DesignProvider(props) {
 
-    const { children, isWebpSupported, screen, isDark = false, isSliding = false, sizes, images = [], theme = {} } = props;
+    const { children, isWebpSupported, screen, isDarkMode = false, isSliding = false, sizes, images = [], theme = {} } = props;
 
     /* ------ Defining behaviour ------- */
     var local_theme = {}
@@ -43,7 +43,7 @@ function DesignProvider(props) {
     state.images          = {}
     state.sizes           = sizes;
     state.isSliding       = isSliding;
-    state.isDark          = isDark;
+    state.isDarkMode      = isDarkMode;
     for (const image of images)
     {
 

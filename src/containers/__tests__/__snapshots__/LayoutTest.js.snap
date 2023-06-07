@@ -51,12 +51,12 @@ exports[`Layout container Should provide required design when not sliding and me
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         data-testid=\\"layout-page-container\\"
         id=\\"page\\"
-        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(85, 85, 85); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -99,7 +99,7 @@ exports[`Layout container Should provide required design when not sliding and me
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-page-container\\"
             id=\\"layout-footer\\"
-            style=\\"position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -154,12 +154,12 @@ exports[`Layout container Should provide required design when not sliding for la
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         data-testid=\\"layout-page-container\\"
         id=\\"page\\"
-        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(85, 85, 85); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -202,7 +202,7 @@ exports[`Layout container Should provide required design when not sliding for la
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-page-container\\"
             id=\\"layout-footer\\"
-            style=\\"position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -257,12 +257,12 @@ exports[`Layout container Should provide required design when not sliding for me
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         data-testid=\\"layout-page-container\\"
         id=\\"page\\"
-        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(85, 85, 85); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -305,7 +305,7 @@ exports[`Layout container Should provide required design when not sliding for me
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-page-container\\"
             id=\\"layout-footer\\"
-            style=\\"position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -360,12 +360,12 @@ exports[`Layout container Should provide required design when not sliding for sm
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         data-testid=\\"layout-page-container\\"
         id=\\"page\\"
-        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(85, 85, 85); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -408,7 +408,7 @@ exports[`Layout container Should provide required design when not sliding for sm
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-page-container\\"
             id=\\"layout-footer\\"
-            style=\\"position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -473,12 +473,12 @@ exports[`Layout container Should provide required design when sliding and menu o
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         data-testid=\\"layout-page-container\\"
         id=\\"page\\"
-        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(85, 85, 85); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -521,7 +521,7 @@ exports[`Layout container Should provide required design when sliding and menu o
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-page-container\\"
             id=\\"layout-footer\\"
-            style=\\"position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -576,12 +576,12 @@ exports[`Layout container Should provide required design when sliding for large 
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         data-testid=\\"layout-page-container\\"
         id=\\"page\\"
-        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(85, 85, 85); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -624,7 +624,7 @@ exports[`Layout container Should provide required design when sliding for large 
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-page-container\\"
             id=\\"layout-footer\\"
-            style=\\"position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -679,12 +679,12 @@ exports[`Layout container Should provide required design when sliding for medium
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         data-testid=\\"layout-page-container\\"
         id=\\"page\\"
-        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(85, 85, 85); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -727,7 +727,7 @@ exports[`Layout container Should provide required design when sliding for medium
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-page-container\\"
             id=\\"layout-footer\\"
-            style=\\"position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -782,12 +782,12 @@ exports[`Layout container Should provide required design when sliding for small 
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         data-testid=\\"layout-page-container\\"
         id=\\"page\\"
-        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(255, 255, 255); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(85, 85, 85); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
       >
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           data-testid=\\"layout-page-subcontainer\\"
-          style=\\"background-color: rgb(255, 255, 255); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+          style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
           <div>
             <p>
@@ -830,7 +830,7 @@ exports[`Layout container Should provide required design when sliding for small 
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-page-container\\"
             id=\\"layout-footer\\"
-            style=\\"position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"

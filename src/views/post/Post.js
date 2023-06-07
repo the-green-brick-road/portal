@@ -26,10 +26,14 @@ import PostParser                      from './PostParser'
 function Post(props) {
 
     /* --------- Gather inputs --------- */
-    const { data }          = props
-    const theme             = useTheme();
-    const { sizes }         = useDesign();
+    const { data }              = props
+    const theme                 = useTheme();
+    const { sizes, isDarkMode } = useDesign();
     //const componentName     = 'Post';
+
+    /* -------- Defining theme --------- */
+    let bgcolor = 'rgba(255,255,255,0.7)';
+    if ( isDarkMode ) { bgcolor = 'rgba(51,51,51,0.7)'; }
 
 
     /* ------- Sort posts by date ------ */
@@ -79,7 +83,7 @@ function Post(props) {
     /* ----------- Define HTML --------- */
     return (
         <Fragment>
-            <Container style={{ position:'absolute', zIndex:5, backgroundColor:'rgba(255,255,255,0.7)', width:'100%', height:sizes['menu-height']}}/>
+            <Container style={{ position:'absolute', zIndex:5, backgroundColor:bgcolor, width:'100%', height:sizes['menu-height']}}/>
             <Container style={{ width:'100%', height:data['image-height'], padding:0, backgroundColor:theme.palette.common.black, position:'relative' }}>
                 <img src={data.image} style={{ pointerEvents: 'none', width:'100%', height:data['image-height'], objectFit: 'cover', objectPosition: data['image-position'] }} alt={data.name}/>
             </Container>
