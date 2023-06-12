@@ -11,9 +11,8 @@
             "dark": "#70ad47"
         },
         "background": {
-            "main": "#000000",
-            "light": "#000000",
-            "dark": "#000000"
+            "paper": "#000000",
+            "default": "#000000"
         },
         "secondary" : {
             "main": "#cae6c2",
@@ -29,12 +28,13 @@
             "primary": "rgba(0,0,0,0.87)",
             "secondary": "rgba(0,0,0,0.6)",
             "disabled": "rgba(0,0,0,0.38)"
-        }
+        },
+        "tonalOffset" : 0
     },
     "direction": "ltr",
     "typography": {
         "h1": {
-            "fontSize": "2rem",
+            "fontSize": "30px",
             "color": "#70ad47",
             "textTransform": "uppercase",
             "fontFamily": "Consolas,monaco,monospace",
@@ -117,7 +117,7 @@
             }
         },
         "h3": {
-            "fontSize": "14px",
+            "fontSize": "20px",
             "color": "black",
             "textTransform": "uppercase",
             "fontFamily": "Consolas,monaco,monospace",
@@ -140,21 +140,21 @@
             }
         },
         "body1": {
-            "fontSize": "9px",
+            "fontSize": "16px",
             "color": "black",
             "fontFamily": "Consolas,monaco,monospace",
             "position": "relative",
             "textAlign": "justify"
         },
         "body2": {
-            "fontSize": "9px",
+            "fontSize": "16px",
             "color": "black",
             "fontFamily": "Play, sans-serif",
             "position": "relative",
             "textAlign": "justify"
         },
         "button": {
-            "fontSize": "13px",
+            "fontSize": "16px",
             "fontWeight": "bold",
             "color": "black",
             "fontFamily": "Play, sans-serif",

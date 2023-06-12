@@ -12,7 +12,7 @@ exports[`Footer component Should display a large footer 1`] = `
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"footer-desktop\\"
-          style=\\"padding: 0px;\\"
+          style=\\"padding-top: 0px; padding-left: 11px; padding-right: 20px;\\"
         >
           <hr
             class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
@@ -24,7 +24,7 @@ exports[`Footer component Should display a large footer 1`] = `
           >
             <p
               class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-              style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 11px; font-weight: bold;\\"
+              style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 14px; font-weight: bold;\\"
             >
               Follow us:
             </p>
@@ -146,7 +146,7 @@ exports[`Footer component Should display a large footer 1`] = `
               >
                 <p
                   class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 11px; font-weight: bold; text-decoration: underline;\\"
+                  style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 14px; font-weight: bold; text-decoration: underline;\\"
                 >
                   About us
                 </p>
@@ -156,7 +156,7 @@ exports[`Footer component Should display a large footer 1`] = `
               >
                 <p
                   class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 11px; font-weight: bold; text-decoration: underline;\\"
+                  style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 14px; font-weight: bold; text-decoration: underline;\\"
                 >
                   Resources
                 </p>
@@ -200,7 +200,7 @@ exports[`Footer component Should display a large footer 1`] = `
                 >
                   <p
                     class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
                   >
                     145 New Street - Mamaroneck, NY 10543
                   </p>
@@ -234,7 +234,7 @@ exports[`Footer component Should display a large footer 1`] = `
                 >
                   <p
                     class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
                   >
                     First Lego League
                   </p>
@@ -277,7 +277,7 @@ exports[`Footer component Should display a large footer 1`] = `
                 >
                   <p
                     class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
                   >
                     green.brick.road.first@gmail.com
                   </p>
@@ -311,7 +311,7 @@ exports[`Footer component Should display a large footer 1`] = `
                 >
                   <p
                     class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
                   >
                     French American School of New York
                   </p>
@@ -350,7 +350,7 @@ exports[`Footer component Should display a large footer 1`] = `
               >
                 <p
                   class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+                  style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
                 >
                   Privacy policy
                 </p>
@@ -383,7 +383,7 @@ exports[`Footer component Should display a large footer 1`] = `
                 >
                   <p
                     class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
                   >
                     Our big brothers & sisters from FTC team
                   </p>
@@ -417,7 +417,7 @@ exports[`Footer component Should display a large footer 1`] = `
               >
                 <p
                   class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+                  style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
                 >
                    Terms & Conditions
                 </p>
@@ -450,7 +450,7 @@ exports[`Footer component Should display a large footer 1`] = `
                 >
                   <p
                     class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
                   >
                     Our regional First Lego League
                   </p>
@@ -462,12 +462,33 @@ exports[`Footer component Should display a large footer 1`] = `
             class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
             style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%; padding-top: 5px;\\"
           />
-          <p
-            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-            style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+          <div
+            class=\\"MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root\\"
+            style=\\"padding-top: 5px;\\"
           >
-             THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road - All rights reserved 
-          </p>
+            <div
+              class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root\\"
+              style=\\"padding-bottom: 5px;\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+              >
+                 THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road - All rights reserved 
+              </p>
+            </div>
+            <div
+              class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root\\"
+              style=\\"padding-bottom: 5px;\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                style=\\"color: rgb(102, 102, 102); font-size: 11px; text-align: right;\\"
+              >
+                 
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -487,7 +508,7 @@ exports[`Footer component Should display a thin footer 1`] = `
         <div
           class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
           id=\\"footer-mobile\\"
-          style=\\"padding: 0px 20px 0px 0px;\\"
+          style=\\"padding: 0px 5px 0px 5px;\\"
         >
           <hr
             class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
@@ -778,7 +799,19 @@ exports[`Footer component Should display a thin footer 1`] = `
             class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
             style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
           >
-             THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road - All rights reserved 
+             THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road 
+          </p>
+          <p
+            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+          >
+             All rights reserved 
+          </p>
+          <p
+            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+          >
+             
           </p>
         </div>
       </div>

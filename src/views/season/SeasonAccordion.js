@@ -20,13 +20,14 @@ const SeasonAccordion = styled(Accordion)(() => ({
     border: 0,
 }));
 
-const SeasonAccordionSummary= styled(AccordionSummary)(({col}) => ({
+const SeasonAccordionSummary= styled(AccordionSummary)(({col, bgcol}) => ({
     border: 0,
     margin: 0,
     width:'100%',
     marginTop: '2px',
     marginBottom: '2px',
     minHeight: '15px',
+    backgroundColor: bgcol,
     'p' : { color: col} ,
     'div' : {
         marginTop: '2px',
@@ -48,7 +49,7 @@ const SeasonAccordionSummary= styled(AccordionSummary)(({col}) => ({
         marginBottom: '2px',
     },
     '.Mui-expanded > p': {
-        color: 'white',
+        color: bgcol,
         fontWeight: 'bold',
     },
     '.Mui-expanded > svg': { color: 'white' },

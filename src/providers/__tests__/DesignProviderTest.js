@@ -95,8 +95,8 @@ describe("Design provider" ,() => {
             "images" :  [
                 {
                     "name" : "test",
-                    "raw"  : "home.png",
-                    "web"  : "home.webp",
+                    "raw"  : "mission.png",
+                    "web"  : "mission.webp",
                 }
             ],
             "sizes" : {

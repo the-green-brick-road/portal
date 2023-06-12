@@ -7,7 +7,7 @@
 # Data provider reducer
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @30 may 2023
-# Latest revision: 30 may 2023
+# Latest revision: 09 june 2023
 # ---------------------------------------------------- */
 
 /* Local includes */
@@ -24,6 +24,12 @@ export default function reducer(state = {}, action) {
         return { ...state, posts: payload };
     case types.SET_SEASONS:
         return { ...state, seasons: payload };
+    case types.SET_ROBOTS:
+        return { ...state, robots: payload };
+    case types.SET_TEAM:
+        return { ...state, team: payload };
+    case types.SET_CALENDARS:
+        return { ...state, calendars: payload };
     default:
         return state;
 

@@ -56,6 +56,7 @@ describe("Router component" ,() => {
 
         const Seasons = [ { 'name' : 'season1', 'id' : '1' } , { 'name' : 'season2', 'id' : '2' } ];
         const Posts = [ { 'title' : 'post1', 'id' : '1', 'real': true } , { 'title' : 'post2', 'id' : '2', 'real': true }, { 'title' : 'post3', 'id' : '3', 'real': false } ];
+        const Robots = [ { 'name' : 'robot1', 'id' : '1' } , { 'name' : 'robot2', 'id' : '2' } ];
 
         let view = null
         await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
@@ -63,7 +64,7 @@ describe("Router component" ,() => {
             view = render(
 
                 <MockConfigurationProvider config={Config}>
-                    <MockDataProvider seasons={Seasons} posts={Posts} >
+                    <MockDataProvider seasons={Seasons} posts={Posts} robots={Robots} >
                         <Suspense>
                             <Router folder='/__mocks__' />
                         </Suspense>

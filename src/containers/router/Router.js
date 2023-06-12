@@ -21,9 +21,9 @@ import { Layout }                              from '../../containers';
 function PortalRouter(props) {
 
     /* --------- Gather inputs --------- */
-    const { folder }         = props
-    const { config }         = useConfiguration();
-    const { seasons, posts } = useData();
+    const { folder }                 = props
+    const { config }                 = useConfiguration();
+    const { seasons, posts, robots } = useData();
     /* const componentName      = 'PortalRouter'; */
 
     const [ routesState, setRoutes ] = useState(
@@ -55,6 +55,17 @@ function PortalRouter(props) {
                 exact: true,
                 path: `/seasons/${seasons[i_route].id}`,
                 element: <Element data={seasons[i_route]}/>,
+            };
+            newRoutes[0].children.push(rt);
+
+        }
+        for (let i_route = 0; i_route < robots.length; i_route += 1) {
+
+            const Element = lazy(() => import(`../../views${folder}/robot/Robot`));
+            const rt = {
+                exact: true,
+                path: `/robots/${robots[i_route].id}`,
+                element: <Element data={robots[i_route]}/>,
             };
             newRoutes[0].children.push(rt);
 

@@ -30,7 +30,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             >
               <a
                 alt=\\"item1\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-2l621i-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-16bn3o3-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#666666\\"
                 href=\\"/\\"
                 id=\\"item1\\"
@@ -46,6 +46,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
                     data-testid=\\"ScienceIcon\\"
                     focusable=\\"false\\"
+                    style=\\"height: 14px;\\"
                     viewBox=\\"0 0 24 24\\"
                   >
                     <path
@@ -61,7 +62,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             >
               <button
                 alt=\\"item2\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-2l621i-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-16bn3o3-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#666666\\"
                 id=\\"item2\\"
                 name=\\"item2\\"
@@ -76,6 +77,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
                     data-testid=\\"ScienceIcon\\"
                     focusable=\\"false\\"
+                    style=\\"height: 14px;\\"
                     viewBox=\\"0 0 24 24\\"
                   >
                     <path
@@ -94,13 +96,13 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                 <li
                   class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root\\"
                   role=\\"menuitem\\"
-                  style=\\"background-color: rgb(68, 68, 68); color: rgb(102, 102, 102); border-radius: 0;\\"
+                  style=\\"background-color: rgb(85, 85, 85); color: rgb(102, 102, 102); border-radius: 0;\\"
                   tabindex=\\"0\\"
                 >
                   <a
                     class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test1\\"
-                    style=\\"text-decoration: none; color: rgb(102, 102, 102); font-size: 12px;\\"
+                    style=\\"text-decoration: none; color: rgb(102, 102, 102); font-size: 15px;\\"
                     target=\\"_top\\"
                   >
                     subitem21
@@ -112,13 +114,13 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                 <li
                   class=\\"MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root\\"
                   role=\\"menuitem\\"
-                  style=\\"background-color: rgb(68, 68, 68); color: rgb(102, 102, 102); border-radius: 0;\\"
+                  style=\\"background-color: rgb(85, 85, 85); color: rgb(102, 102, 102); border-radius: 0;\\"
                   tabindex=\\"-1\\"
                 >
                   <a
                     class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test2\\"
-                    style=\\"text-decoration: none; color: rgb(102, 102, 102); font-size: 12px;\\"
+                    style=\\"text-decoration: none; color: rgb(102, 102, 102); font-size: 15px;\\"
                     target=\\"_top\\"
                   >
                     subitem22
@@ -188,7 +190,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
             >
               <a
                 alt=\\"item1\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-pzygiv-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-bjx162-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#555555\\"
                 href=\\"/\\"
                 id=\\"item1\\"
@@ -204,6 +206,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
                     data-testid=\\"ScienceIcon\\"
                     focusable=\\"false\\"
+                    style=\\"height: 14px;\\"
                     viewBox=\\"0 0 24 24\\"
                   >
                     <path
@@ -219,7 +222,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
             >
               <button
                 alt=\\"item2\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-pzygiv-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-bjx162-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#555555\\"
                 id=\\"item2\\"
                 name=\\"item2\\"
@@ -234,6 +237,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
                     data-testid=\\"ScienceIcon\\"
                     focusable=\\"false\\"
+                    style=\\"height: 14px;\\"
                     viewBox=\\"0 0 24 24\\"
                   >
                     <path
@@ -258,7 +262,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                   <a
                     class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test1\\"
-                    style=\\"text-decoration: none; color: rgb(85, 85, 85); font-size: 12px;\\"
+                    style=\\"text-decoration: none; color: rgb(85, 85, 85); font-size: 15px;\\"
                     target=\\"_top\\"
                   >
                     subitem21
@@ -276,7 +280,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                   <a
                     class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test2\\"
-                    style=\\"text-decoration: none; color: rgb(85, 85, 85); font-size: 12px;\\"
+                    style=\\"text-decoration: none; color: rgb(85, 85, 85); font-size: 15px;\\"
                     target=\\"_top\\"
                   >
                     subitem22

@@ -43,7 +43,7 @@ function NavigationBar(props) {
     if (isDark) { logincolor = theme.palette.common.black; }
     if (isNegative) { logincolor = theme.palette.primary.main; }
 
-    let menucolor = theme.palette.common.black;
+    let menucolor = theme.palette.common.white;
     if (isNegative) { menucolor = theme.palette.primary.main; }
 
     let style = 'solid';
@@ -113,7 +113,7 @@ function NavigationBar(props) {
                                     href={ 'subitems' in item ? null : item.path }
                                     target={ 'subitems' in item ? null : item.target }
                                     alt={item.id}
-                                    startIcon={<IconName/>}
+                                    startIcon={<IconName style={{height:theme.typography.button.fontSize}}/>}
                                     onClick={'subitems' in item ? handleButtonClick : handleClose}
                                 >
                                     {item.id}
@@ -127,7 +127,7 @@ function NavigationBar(props) {
 
                                             return (
                                                 <MenuItem onClick={handleClose} key={subitem.id} style={{backgroundColor:menucolor, color:stackcolor, borderRadius:0}}>
-                                                    <Link href={subitem.path} target={subitem.target} style={{ textDecoration: 'none', color:stackcolor, fontSize:'12px' }}>
+                                                    <Link href={subitem.path} target={subitem.target} style={{ textDecoration: 'none', color:stackcolor, fontSize:'15px' }}>
                                                         {subitem.id}
                                                     </Link>
                                                 </MenuItem>

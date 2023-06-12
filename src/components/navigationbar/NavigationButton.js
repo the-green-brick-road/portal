@@ -33,8 +33,6 @@ const NavigationButton = styled(Button)(({ col }) => ({
         transition: 'border-bottom-style 2s',
     },
     '&:hover span': { visibility: 'visible' },
-    a: { fontSize: '14px' },
-    '@media all and (max-device-width: 720px)': { a: { fontSize: '12px' } },
 }));
 
 export default NavigationButton;

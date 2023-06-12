@@ -48,7 +48,7 @@ function FooterDesktop(props) {
     /* ----------- Define HTML --------- */
     /* eslint-disable padded-blocks */
     return (
-        <Container id="footer-mobile" style={{ paddingLeft:0, paddingTop:0, paddingBottom:0, paddingRight:'20px' }}>
+        <Container id="footer-mobile" style={{ paddingLeft:5, paddingTop:0, paddingBottom:0, paddingRight:'5px' }}>
             <Divider style={{ color:main_color, borderColor:main_color, width:'100%' }}/>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={1} style={{ width:'100%', paddingTop:10, paddingLeft:0, paddingRight:0, paddingBottom:10 }}>
                 <Typography style={{ textTransform:'uppercase', color:main_color, textAlign:'left', fontSize:'11px', fontWeight:'bold' }}>
@@ -130,7 +130,9 @@ function FooterDesktop(props) {
                 </Grid>
             </Grid>
             <Divider style={{ color:main_color, borderColor:main_color, width:'100%' }}/>
-            <Typography style={{ color:main_color, fontSize:'10px' }}> THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road - All rights reserved </Typography>
+            <Typography style={{ color:main_color, fontSize:'10px' }}> THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road </Typography>
+            <Typography style={{ color:main_color, fontSize:'10px' }}> All rights reserved </Typography>
+            <Typography style={{ color:main_color, fontSize:'10px' }}> {process.env.REACT_APP_VERSION}</Typography>
         </Container>
     );
     /* eslint-enable padded-blocks */

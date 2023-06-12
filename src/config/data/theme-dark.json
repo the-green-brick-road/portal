@@ -6,14 +6,13 @@
             "white": "#ffffff"
         },
         "primary" : {
-            "main": "#b9d3b2",
-            "light": "#b9d3b2",
-            "dark": "#b9d3b2"
+            "main": "#70ad47",
+            "light": "#70ad47",
+            "dark": "#70ad47"
         },
         "background" : {
-            "main": "#000000",
-            "light": "#000000",
-            "dark": "#000000"
+            "paper": "#000000",
+            "default": "#000000"
         },
         "secondary" : {
             "main": "#b9d3b2",
@@ -29,13 +28,14 @@
             "primary": "rgba(0,0,0,0.87)",
             "secondary": "rgba(0,0,0,0.6)",
             "disabled": "rgba(0,0,0,0.38)"
-        }
+        },
+        "tonalOffset" : 0
     },
     "direction": "ltr",
     "typography": {
         "h1": {
-            "fontSize": "2rem",
-            "color": "#b9d3b2",
+            "fontSize": "30px",
+            "color": "#70ad47",
             "textTransform": "uppercase",
             "fontFamily": "Consolas,monaco,monospace",
             "textAlign": "center",
@@ -52,7 +52,7 @@
                 "padding": "4px 0 5px",
                 "borderStyle": "solid",
                 "borderWidth": "1px 0",
-                "borderColor": "#b9d3b2",
+                "borderColor": "#70ad47",
                 "opacity": "0.67",
                 "position": "absolute",
                 "left": "0px",
@@ -67,7 +67,7 @@
                 "height": "1px",
                 "left": "0px",
                 "right": "0px",
-                "backgroundColor": "#b9d3b2",
+                "backgroundColor": "#70ad47",
                 "textColor": "rgba(255,255,255,0)",
                 "position": "absolute",
                 "margin": "0 auto",
@@ -77,7 +77,7 @@
         },
         "h2": {
             "fontSize": "1.5rem",
-            "color": "white",
+            "color": "black",
             "textTransform": "uppercase",
             "fontFamily": "Consolas,monaco,monospace",
             "position": "relative",
@@ -118,7 +118,7 @@
         },
         "h3": {
             "fontSize": "14px",
-            "color": "white",
+            "color": "black",
             "textTransform": "uppercase",
             "fontFamily": "Consolas,monaco,monospace",
             "position": "relative",
@@ -140,22 +140,22 @@
             }
         },
         "body1": {
-            "fontSize": "9px",
-            "color": "white",
+            "fontSize": "16px",
+            "color": "black",
             "fontFamily": "Consolas,monaco,monospace",
             "position": "relative",
             "textAlign": "justify"
         },
         "body2": {
-            "fontSize": "9px",
-            "color": "white",
+            "fontSize": "16px",
+            "color": "black",
             "fontFamily": "Play, sans-serif",
             "position": "relative",
             "textAlign": "justify"
         },
         "button": {
-            "fontSize": "13px",
-            "color": "white",
+            "fontSize": "16px",
+            "color": "black",
             "fontWeight": "bold",
             "fontFamily": "Play, sans-serif",
             "position": "relative",

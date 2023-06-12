@@ -1,0 +1,450 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Events view Should display events page 1`] = `
+"<body>
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100%; padding: 0px; position: relative;\\"
+      >
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"width: 100%; pointer-events: none; background-color: blue;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <table
+          class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
+        >
+          <tbody
+            class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
+          >
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"4\\"
+              >
+                <div
+                  class=\\"MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren MuiDivider-textAlignLeft css-yt76fy-MuiDivider-root\\"
+                  col=\\"#1976d2\\"
+                  role=\\"separator\\"
+                >
+                  <span
+                    class=\\"MuiDivider-wrapper css-qywfm8-MuiDivider-wrapper\\"
+                  >
+                    <div
+                      class=\\"MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root\\"
+                      style=\\"color: rgb(25, 118, 210);\\"
+                    >
+                      <span
+                        class=\\"MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label\\"
+                      >
+                        May 2012
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center;\\"
+                >
+                   
+                  Wed
+                   
+                </p>
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center;\\"
+                >
+                   
+                  16
+                   
+                </p>
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"3\\"
+                style=\\"padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"font-size: 14px;\\"
+                >
+                  12:00 AM
+                   - 
+                  09:00 PM
+                  : 
+                  event2
+                </p>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"LocationOnIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 14px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"font-size: 11px;\\"
+                  >
+                     
+                    location2
+                     
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"4\\"
+              >
+                <div
+                  class=\\"MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren MuiDivider-textAlignLeft css-yt76fy-MuiDivider-root\\"
+                  col=\\"#1976d2\\"
+                  role=\\"separator\\"
+                >
+                  <span
+                    class=\\"MuiDivider-wrapper css-qywfm8-MuiDivider-wrapper\\"
+                  >
+                    <div
+                      class=\\"MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root\\"
+                      style=\\"color: rgb(25, 118, 210);\\"
+                    >
+                      <span
+                        class=\\"MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label\\"
+                      >
+                        May 2013
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center;\\"
+                >
+                   
+                  Fri
+                   
+                </p>
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center;\\"
+                >
+                   
+                  17
+                   
+                </p>
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"3\\"
+                style=\\"padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"font-size: 14px;\\"
+                >
+                  12:00 AM
+                  : 
+                  event1
+                   [START]
+                </p>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"LocationOnIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 14px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"font-size: 11px;\\"
+                  >
+                     
+                    location1
+                     
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center;\\"
+                >
+                   
+                  Sun
+                   
+                </p>
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center;\\"
+                >
+                   
+                  19
+                   
+                </p>
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"3\\"
+                style=\\"padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"font-size: 14px;\\"
+                >
+                  09:00 PM
+                  : 
+                  event1
+                   [END]
+                </p>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"LocationOnIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 14px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"font-size: 11px;\\"
+                  >
+                     
+                    location1
+                     
+                  </p>
+                </div>
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"font-size: 14px;\\"
+                >
+                  11:59 PM
+                  : 
+                  event3
+                   [END]
+                </p>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"LocationOnIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 14px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"font-size: 11px;\\"
+                  >
+                     
+                    location3
+                     
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center;\\"
+                >
+                   
+                  Mon
+                   
+                </p>
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center;\\"
+                >
+                   
+                  20
+                   
+                </p>
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"3\\"
+                style=\\"padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"font-size: 14px;\\"
+                >
+                  12:00 AM
+                  : 
+                  event3
+                   [START]
+                </p>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"LocationOnIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 14px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"font-size: 11px;\\"
+                  >
+                     
+                    location3
+                     
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"4\\"
+              >
+                <div
+                  class=\\"MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren MuiDivider-textAlignLeft css-yt76fy-MuiDivider-root\\"
+                  col=\\"#1976d2\\"
+                  role=\\"separator\\"
+                >
+                  <span
+                    class=\\"MuiDivider-wrapper css-qywfm8-MuiDivider-wrapper\\"
+                  >
+                    <div
+                      class=\\"MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root\\"
+                      style=\\"color: rgb(25, 118, 210);\\"
+                    >
+                      <span
+                        class=\\"MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label\\"
+                      >
+                        Jun 2023
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"background-color: rgb(25, 118, 210); padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center; color: rgb(255, 255, 255);\\"
+                >
+                   
+                  Mon
+                   
+                </p>
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"text-align: center; color: rgb(255, 255, 255);\\"
+                >
+                   
+                  12
+                   
+                </p>
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"3\\"
+                style=\\"padding: 5px;\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                  style=\\"color: rgb(25, 118, 210); font-size: 14px;\\"
+                >
+                   Today 
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>"
+`;

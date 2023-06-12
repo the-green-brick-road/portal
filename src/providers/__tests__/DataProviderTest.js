@@ -27,9 +27,11 @@ import { useData, DataProvider }           from '../../providers/data';
 /* eslint-disable jest/no-mocks-import */
 import { useInitializeApp, useGetFirestore, useGetStorage, useGetApps }         from '../data/FirebaseHook';
 import { useCollection, useGetDocs, useRef, useGetDownloadUrl }                 from '../data/FirebaseHook';
+import { useFetch }                                                             from '../data/RestHook';
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
 import { useConfiguration as mockUseConfiguration, ConfigurationProvider as MockConfigurationProvider } from '../../providers/__mocks__/ConfigurationProvider';
 jest.mock('../data/FirebaseHook');
+jest.mock('../data/RestHook');
 jest.mock('../../providers', () => ({
     useLogging:       (() => { return mockUseLogging(); }),
     useConfiguration: (() => { return mockUseConfiguration(); }),
@@ -38,17 +40,20 @@ jest.mock('../../providers', () => ({
 
 function MockDataConsumer(props) {
 
-    const { seasons_size, posts_size } = props;
-    const { seasons, posts } = useData();
+    const { seasons_size, posts_size, robots_size, team_size, calendars_size } = props;
+    const { seasons, posts, robots, team, calendars } = useData();
     var calls = JSON.parse(localStorage.getItem('mock-data-consumer'));
 
     calls = calls + 1;
-    localStorage.setItem('mock-analytics-consumer', JSON.stringify(calls))
+    localStorage.setItem('mock-data-consumer', JSON.stringify(calls))
 
-    if (calls > 2) {
+    if (calls > 5) {
 
         expect(seasons.length).toBe(seasons_size)
         expect(posts.length).toBe(posts_size)
+        expect(robots.length).toBe(robots_size)
+        expect(team.length).toBe(team_size)
+        expect(Object.entries(calendars['public']).length).toBe(calendars_size)
 
     }
 
@@ -67,6 +72,24 @@ function MockDataConsumer(props) {
                 return(<Typography key={label} data-testid={label}>{item.title}</Typography>)
 
             })}
+            { robots.map((item, index) => {
+
+                const label = `mock-data-consumer-robot-${index}`
+                return(<Typography key={label} data-testid={label}>{item.name}</Typography>)
+
+            })}
+            { team.map((item, index) => {
+
+                const label = `mock-data-consumer-team-${index}`
+                return(<Typography key={label} data-testid={label}>{item.name}</Typography>)
+
+            })}
+            {('public' in calendars) && (Object.entries(calendars['public']).map((item, index) => {
+
+                const label = `mock-data-consumer-calendar-${index}`
+                return(<Typography key={label} data-testid={label}>{item[0]}</Typography>)
+
+            }))}
         </Fragment>
 
     )
@@ -112,6 +135,36 @@ describe("Data provider" ,() => {
                 }
 
             }
+            class DataTeam  {
+
+                constructor(name, image) {
+
+                    this.name = name;
+                    if (image !== undefined) { this.image = image}
+
+                }
+                data() {
+
+                    let result = {}
+                    if(this.hasOwnProperty('image')) { result = { 'name' : this.name, 'image': this.name } }
+                    else { result = { 'name' : this.name } }
+                    return result
+
+                }
+
+            }
+            class DataRobot {
+
+                constructor(name, features=[], views=[]) { this.name = name; this.features = features; this.views = views}
+                data() {
+
+                    const result = { 'name' : this.name, 'image': this.name, 'features': this.features , 'views': this.views };
+                    return result
+
+                }
+
+            }
+
             class DataPost {
 
                 constructor(title, media) { this.title = title; this.media = media }
@@ -140,6 +193,8 @@ describe("Data provider" ,() => {
                 let result = []
                 if ( name === 'seasons' ) { result = [ new DataSeason('season1'), new DataSeason('season2'), new DataSeason('season3')]}
                 if ( name === 'posts' ) { result = [ new DataPost('post1', []), new DataPost('post2', ['media1', 'media2', 'media3'])]}
+                if ( name === 'robots' ) { result = [ new DataRobot('robot1',[{media:'media1'}],[{image:'view1'}]), new DataRobot('robot2'), new DataRobot('robot3')]}
+                if ( name === 'team' ) { result = [ new DataTeam('member1','member1'), new DataTeam('member2','member2'), new DataTeam('member3'), new DataTeam('member4')]}
 
                 resolve(new Result(result));
 
@@ -147,6 +202,24 @@ describe("Data provider" ,() => {
 
         });
         useGetDocs.mockReturnValue(mockGetDocs);
+        const mockFetch = jest.fn((name) => {
+
+
+            class Response {
+
+                constructor(data) { this.data = {items:data} }
+                json() { return this.data }
+
+            }
+
+            return new Promise((resolve) => {
+
+                resolve(new Response({'date1':{},'date2':{}}));
+
+            });
+
+        })
+        useFetch.mockReturnValue(mockFetch);
         const mockRef = jest.fn((storage, path) => { return path  });
         useRef.mockReturnValue(mockRef);
         const mockGetDownloadUrl = jest.fn((path) => {
@@ -168,7 +241,7 @@ describe("Data provider" ,() => {
                     <MockConfigurationProvider config={Config}>
                         <MockLoggingProvider>
                             <DataProvider >
-                                <MockDataConsumer seasons_size={3} posts_size={2}/>
+                                <MockDataConsumer seasons_size={3} robots_size={3} posts_size={2} team_size={4} calendars_size={2}/>
                             </DataProvider>
                         </MockLoggingProvider>
                     </MockConfigurationProvider>
@@ -185,17 +258,28 @@ describe("Data provider" ,() => {
         expect(mockGetApps).toHaveBeenCalledTimes(2)
         expect(mockGetFirestore).toHaveBeenCalledTimes(2)
         expect(mockGetStorage).toHaveBeenCalledTimes(2)
-        expect(mockCollection).toHaveBeenCalledTimes(4)
-        expect(mockGetDocs).toHaveBeenCalledTimes(4)
-        expect(mockRef).toHaveBeenCalledTimes(16)
-        expect(mockGetDownloadUrl).toHaveBeenCalledTimes(16)
+        expect(mockCollection).toHaveBeenCalledTimes(8)
+        expect(mockGetDocs).toHaveBeenCalledTimes(8)
+        expect(mockFetch).toHaveBeenCalledTimes(2)
+        expect(mockRef).toHaveBeenCalledTimes(30)
+        expect(mockGetDownloadUrl).toHaveBeenCalledTimes(30)
 
         expect(screen.getByTestId('mock-data-consumer-season-0').textContent).toBe('season1');
         expect(screen.getByTestId('mock-data-consumer-season-1').textContent).toBe('season2');
         expect(screen.getByTestId('mock-data-consumer-season-2').textContent).toBe('season3');
         expect(screen.getByTestId('mock-data-consumer-post-0').textContent).toBe('post1');
         expect(screen.getByTestId('mock-data-consumer-post-1').textContent).toBe('post2');
+        expect(screen.getByTestId('mock-data-consumer-robot-0').textContent).toBe('robot2');
+        expect(screen.getByTestId('mock-data-consumer-robot-1').textContent).toBe('robot3');
+        expect(screen.getByTestId('mock-data-consumer-robot-2').textContent).toBe('robot1');
+        expect(screen.getByTestId('mock-data-consumer-team-0').textContent).toBe('member3');
+        expect(screen.getByTestId('mock-data-consumer-team-1').textContent).toBe('member4');
+        expect(screen.getByTestId('mock-data-consumer-team-2').textContent).toBe('member1');
+        expect(screen.getByTestId('mock-data-consumer-team-3').textContent).toBe('member2');
+        expect(screen.getByTestId('mock-data-consumer-calendar-0').textContent).toBe('date1');
+        expect(screen.getByTestId('mock-data-consumer-calendar-1').textContent).toBe('date2');
 
     })
 
 })
+

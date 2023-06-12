@@ -11,29 +11,80 @@
 # ---------------------------------------------------- */
 
 /* Test includes */
-import { render, prettyDOM }       from '@testing-library/react'
-import { expect, test}             from '@jest/globals';
+import { render, prettyDOM, act, fireEvent, screen } from '@testing-library/react'
+import { expect, test}                               from '@jest/globals';
 
 /* Component under test */
-import { default as RobotGallery } from '../views/robotgallery/RobotGallery';
+import { default as RobotGallery }                   from '../views/robotgallery/RobotGallery';
 
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
-import { default as MockImage }    from '../components/__mocks__/Image';
+import { default as MockImage }                      from '../components/__mocks__/Image';
+import { useData as mockUseData, DataProvider as MockDataProvider } from '../providers/__mocks__/DataProvider';
+import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../providers/__mocks__/LoggingProvider';
 jest.mock("../components", () => ({ Image: (props) => MockImage(props) }));
+jest.mock('../providers', () => ({
+    useData:    (() => { return mockUseData(); }),
+    useLogging: (() => { return mockUseLogging(); }),
+}));
 /* eslint-enable jest/no-mocks-import */
 
 describe("RobotGallery view" ,() => {
 
     test('Should display robot gallery page', async () => {
 
-        const view = render(
-            <div>
-                <RobotGallery/>
-            </div>
-        );
+        const Robots = [ { 'name' : 'robot1', 'id' : '1', 'type' : 'attachment', 'season' : '1' } , { 'name' : 'robot2', 'id' : '2', 'type' : 'jig', 'season' : '2'  }, { 'name' : 'robot3', 'id' : '3', 'type' : 'base', 'season' : '3'  }, { 'name' : 'robot5', 'id' : '5', 'type' : 'attachment', 'season' : '1' }, { 'name' : 'robot4', 'id' : '4', 'type' : 'attachment', 'season' : '1' }  ];
+        const Seasons = [ { 'name' : 'season1', 'id' : '1', 'start' : {'seconds' : 500000}} , { 'name' : 'season2', 'id' : '2', 'start' : {'seconds' : 400000} } , { 'name' : 'season3', 'id' : '3', 'start' : {'seconds' : 600000}}, { 'name' : 'season4', 'id' : '4', 'start' : {'seconds' : 550000} }]
+
+        let view = null
+        await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
+
+            view = render(
+                <div>
+                    <MockDataProvider robots={Robots} seasons={Seasons}>
+                        <MockLoggingProvider>
+                            <RobotGallery/>
+                        </MockLoggingProvider>
+                    </MockDataProvider>
+                </div>
+            )
+
+        })
+
+
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+        await delay(1000);
+
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});
         expect(tree).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('checkbox', { name: 'season1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const tree23 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(tree23).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('checkbox', { name: 'season2' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const tree3 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(tree3).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('checkbox', { name: 'season3' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const tree_empty = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(tree_empty).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('checkbox', { name: 'season1' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await act(async () => {fireEvent.click(screen.getByRole('checkbox', { name: 'season2' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await act(async () => {fireEvent.click(screen.getByRole('checkbox', { name: 'season3' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+
+        await act(async () => {fireEvent.click(screen.getByRole('checkbox', { name: 'jig' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const treeab = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(treeab).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('checkbox', { name: 'attachment' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const treeb = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(treeb).toMatchSnapshot();
+
+        await act(async () => {fireEvent.click(screen.getByRole('checkbox', { name: 'base' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        const tree_empty2 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true,highlight: false});
+        expect(tree_empty2).toMatchSnapshot();
 
     })
 

@@ -48,10 +48,10 @@ function FooterDesktop(props) {
     /* ----------- Define HTML --------- */
     /* eslint-disable padded-blocks */
     return (
-        <Container id="footer-desktop" style={{ padding:0 }}>
+        <Container id="footer-desktop" style={{ paddingTop:0, padddingBottom:0, paddingLeft:'11px', paddingRight:'20px' }}>
             <Divider style={{ color:main_color, borderColor:main_color, width:'100%' }}/>
             <Stack direction="row" alignItems="center" justifyContent="center" spacing={1} style={{ width:'100%', padding:5 }}>
-                <Typography style={{ textTransform:'uppercase', color:main_color, textAlign:'left', fontSize:'11px', fontWeight:'bold' }}>
+                <Typography style={{ textTransform:'uppercase', color:main_color, textAlign:'left', fontSize:'14px', fontWeight:'bold' }}>
                     Follow us:
                 </Typography>
                 <Tooltip title="GBR on YouTube">
@@ -79,12 +79,12 @@ function FooterDesktop(props) {
             <Grid container style={{ paddingTop:'5px' }}>
                 <Grid container item xs={12} style={{ paddingBottom:5 }}>
                     <Grid item xs={6} >
-                        <Typography style={{ textTransform:'uppercase', color:main_color, textAlign:'left', fontSize:'11px', fontWeight:'bold', textDecoration:'underline' }}>
+                        <Typography style={{ textTransform:'uppercase', color:main_color, textAlign:'left', fontSize:'14px', fontWeight:'bold', textDecoration:'underline' }}>
                             About us
                         </Typography>
                     </Grid>
                     <Grid item xs={6} >
-                        <Typography style={{ textTransform:'uppercase', color:main_color, textAlign:'left', fontSize:'11px', fontWeight:'bold', textDecoration:'underline' }}>
+                        <Typography style={{ textTransform:'uppercase', color:main_color, textAlign:'left', fontSize:'14px', fontWeight:'bold', textDecoration:'underline' }}>
                             Resources
                         </Typography>
                     </Grid>
@@ -97,7 +97,7 @@ function FooterDesktop(props) {
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'3px' }}>
                         <Link underline="none" href="https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu" target="_blank">
-                            <Typography style={{ color:main_color, fontSize:'10px' }}>
+                            <Typography style={{ color:main_color, fontSize:'11px' }}>
                                 145 New Street - Mamaroneck, NY 10543
                             </Typography>
                         </Link>
@@ -109,7 +109,7 @@ function FooterDesktop(props) {
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'3px' }}>
                         <Link href="https://www.firstlegoleague.org/" target="_blank" underline="none">
-                            <Typography style={{ color:main_color, fontSize:'10px' }}>
+                            <Typography style={{ color:main_color, fontSize:'11px' }}>
                                 First Lego League
                             </Typography>
                         </Link>
@@ -123,7 +123,7 @@ function FooterDesktop(props) {
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
                         <Link href="mailto:contact.technogix@gmail.com" underline="none">
-                            <Typography style={{ color:main_color, fontSize:'10px' }}>
+                            <Typography style={{ color:main_color, fontSize:'11px' }}>
                                 green.brick.road.first@gmail.com
                             </Typography>
                         </Link>
@@ -135,7 +135,7 @@ function FooterDesktop(props) {
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
                         <Link href="https://www.fasny.org/" target="_blank" underline="none">
-                            <Typography style={{ color:main_color, fontSize:'10px' }}>
+                            <Typography style={{ color:main_color, fontSize:'11px' }}>
                                 French American School of New York
                             </Typography>
                         </Link>
@@ -146,7 +146,7 @@ function FooterDesktop(props) {
                         <Policy style={{ color:main_color, height:'20px' }}/>
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
-                        <Typography style={{ color:main_color, fontSize:'10px' }}>
+                        <Typography style={{ color:main_color, fontSize:'11px' }}>
                             Privacy policy
                         </Typography>
                     </Grid>
@@ -157,7 +157,7 @@ function FooterDesktop(props) {
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
                         <Link href="https://www.sharkbots.org/" target="_blank" underline="none">
-                            <Typography style={{ color:main_color, fontSize:'10px' }}>
+                            <Typography style={{ color:main_color, fontSize:'11px' }}>
                                 Our big brothers & sisters from FTC team
                             </Typography>
                         </Link>
@@ -168,7 +168,7 @@ function FooterDesktop(props) {
                         <Gavel style={{ color:main_color, height:'20px' }}/>
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
-                        <Typography style={{ color:main_color, fontSize:'10px' }}> Terms & Conditions</Typography>
+                        <Typography style={{ color:main_color, fontSize:'11px' }}> Terms & Conditions</Typography>
                     </Grid>
                     <Grid item xs={1} style={{ textAlign:'center' }}>
                         <Link href="https://sites.google.com/site/hudsonvalleyfirstlegoleague/" target="_blank">
@@ -177,7 +177,7 @@ function FooterDesktop(props) {
                     </Grid>
                     <Grid item xs={5} style={{ paddingTop:'4px' }}>
                         <Link href="https://sites.google.com/site/hudsonvalleyfirstlegoleague/" target="_blank" underline="none">
-                            <Typography style={{ color:main_color, fontSize:'10px' }}>
+                            <Typography style={{ color:main_color, fontSize:'11px' }}>
                                 Our regional First Lego League
                             </Typography>
                         </Link>
@@ -185,7 +185,14 @@ function FooterDesktop(props) {
                 </Grid>
             </Grid>
             <Divider style={{ color:main_color, borderColor:main_color, width:'100%', paddingTop:5 }}/>
-            <Typography style={{ color:main_color, fontSize:'10px' }}> THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road - All rights reserved </Typography>
+            <Grid container style={{ paddingTop:'5px' }}>
+                <Grid item xs={10} style={{ paddingBottom:5 }}>
+                    <Typography style={{ color:main_color, fontSize:'11px' }}> THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road - All rights reserved </Typography>
+                </Grid>
+                <Grid item xs={2} style={{ paddingBottom:5 }}>
+                    <Typography style={{ color:main_color, fontSize:'11px', textAlign:'right' }}> {process.env.REACT_APP_VERSION}</Typography>
+                </Grid>
+            </Grid>
         </Container>
     );
     /* eslint-enable padded-blocks */
