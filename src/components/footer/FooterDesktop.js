@@ -34,16 +34,12 @@ import FooterAvatar from './FooterAvatar';
 function FooterDesktop(props) {
 
     /* --------- Gather inputs --------- */
-    const { isDark } = props;
     const theme = useTheme();
     //const componentName = 'FooterDesktop';
 
     /* -------- Defining theme --------- */
     const main_color = theme.palette.primary.main;
-
-    let background_color = theme.palette.common.white;
-    if (isDark) { background_color = theme.palette.common.black; }
-
+    const background_color = theme.palette.common.white;
 
     /* ----------- Define HTML --------- */
     /* eslint-disable padded-blocks */
