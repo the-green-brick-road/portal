@@ -28,22 +28,23 @@ function LayoutMenu(props) {
     const { screen, isSliding }  = useDesign();
     const { isMenuOpen }         = useMenu();
     const theme                  = useTheme();
-    /* const componentName = 'LayoutMenu'; */
-
+    // const componentName = 'LayoutMenu';
 
     /* ----------- Define HTML --------- */
     return (
-        <AppBar elevation={isSliding ? 4 : 0} style={{ position:'absolute', height:height, display:'flex', width:width, top:top, left:left, backgroundColor: isSliding ? theme.palette.primary.main : 'rgba(255,255,255,0)'}}>
-            <Toolbar variant="dense" style={{ height: '100%', width: '100%', paddingLeft: '0px', paddingRight:'20px' }}>
-                {(screen === 'large') && (<NavigationBar height={height} isNegative={isSliding} theme={theme} isDark={isDark}/>)}
-                {(screen !== 'large') && (
-                    <Fragment>
-                        <HamburgerBar height={height} isNegative={isSliding} theme={theme} isDark={isDark}/>
-                        {(isMenuOpen) && (<HamburgerMenu isDark={isDark} margin={left} top={height} itemHeight={item} isNegative={isSliding} theme={theme}/>)}
-                    </Fragment>
-                )}
-            </Toolbar>
-        </AppBar>
+        <Fragment>
+            <AppBar elevation={isSliding ? 4 : 0} style={{ position:'absolute', height:height, display:'flex', width:width, top:top, left:left, backgroundColor: isSliding ? theme.palette.primary.main : 'rgba(255,255,255,0)'}}>
+                <Toolbar variant="dense" style={{ height: '100%', width: '100%', paddingLeft: '0px', paddingRight:'20px' }}>
+                    {(screen === 'large') && (<NavigationBar height={height} isNegative={isSliding} theme={theme} isDark={isDark}/>)}
+                    {(screen !== 'large') && (
+                        <Fragment>
+                            <HamburgerBar height={height} isNegative={isSliding} theme={theme} isDark={isDark}/>
+                            {(isMenuOpen) && (<HamburgerMenu isDark={isDark} margin={left} top={height} itemHeight={item} isNegative={isSliding} theme={theme}/>)}
+                        </Fragment>
+                    )}
+                </Toolbar>
+            </AppBar>
+        </Fragment>
     );
 
 }

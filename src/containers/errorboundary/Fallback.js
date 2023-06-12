@@ -30,18 +30,17 @@ function Fallback(props) {
     const { logText }                              = useLogging();
     const componentName                            = 'Fallback';
 
-    /* Initialize state */
+    /* ------- Initialize state -------- */
     const [isOpen, dispatch] = useState(false);
 
-    /* Fomatting stack */
+    /* -------- Fomatting stack -------- */
     const stack_lines = error.stack.split('\n')
 
-    /* Event handling functions */
+    /* --- Event handling functions ---- */
     const handleChange = (event) => {
 
-        logText(componentName, 'log', 'workflow', ' handleClick --- BEGIN');
+        logText(componentName, 'log', 'workflow', ' handleClick');
         dispatch(!isOpen)
-        logText(componentName, 'log', 'workflow', ' handleClick --- END');
 
     };
 

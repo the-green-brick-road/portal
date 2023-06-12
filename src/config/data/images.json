@@ -1,8 +1,8 @@
 [
     {
-        "name" : "home",
-        "raw"  : "home.png",
-        "web"  : "home.webp"
+        "name" : "mission",
+        "raw"  : "mission.png",
+        "web"  : "mission.webp"
     },
     {
         "name" : "logo",
@@ -10,8 +10,38 @@
         "web"  : "logo.webp"
     },
     {
+        "name" : "chicken",
+        "raw"  : "chicken.png",
+        "web"  : "chicken.webp"
+    },
+    {
         "name" : "gbr",
         "raw"  : "gbr.png",
         "web"  : "gbr.webp"
+    },
+    {
+        "name" : "robots",
+        "raw"  : "robots.png",
+        "web"  : "robots.webp"
+    },
+    {
+        "name" : "events",
+        "raw"  : "events.png",
+        "web"  : "events.webp"
+    },
+    {
+        "name" : "seasons",
+        "raw"  : "seasons.png",
+        "web"  : "seasons.webp"
+    },
+    {
+        "name" : "team",
+        "raw"  : "team.png",
+        "web"  : "team.webp"
+    },
+    {
+        "name" : "blog",
+        "raw"  : "blog.png",
+        "web"  : "blog.webp"
     }
 ]

@@ -11,21 +11,21 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { useEffect, Fragment, useState }  from 'react';
+import { useEffect, Fragment, useState }                             from 'react';
 
 /* Material UI includes */
-import { Link, Card, CardContent, CardMedia, CardHeader, Container, Typography, Paper } from '@mui/material';
-import { Grid } from '@mui/material';
-import { useTheme }                                                     from '@mui/material/styles';
+import { Link, Card, CardContent, CardMedia, CardHeader, Container } from '@mui/material';
+import { Grid, Typography, Paper }                                   from '@mui/material';
+import { useTheme }                                                  from '@mui/material/styles';
 
 /* Portal includes */
-import { useData, useDesign }                                           from '../../providers';
+import { useData }                                                   from '../../providers';
+import { Image }                                                     from '../../components';
 
 function Blog() {
 
     /* --------- Gather inputs --------- */
     const { posts }                     = useData();
-    const { sizes }                     = useDesign();
     const theme                         = useTheme();
     const [ localPosts, setLocalPosts ] = useState([])
 
@@ -60,11 +60,13 @@ function Blog() {
     /* ----------- Define HTML --------- */
     return (
         <Fragment>
-            <Container style={{ backgroundColor: theme.palette.common.black, width:'100%', height:sizes['menu-height']}}/>
-            <Container style={{ backgroundColor: theme.palette.common.black, width:'100%', overflowX: 'hidden', overflowY: 'hidden' }}>
+            <Container style={{ width:'100%', padding:0, position:'relative', margin:0 }}>
+                <Image name="blog" style={{ width:'100%', pointerEvents: 'none', objectFit:'cover' }}/>
+            </Container>
+            <Container style={{ width:'100%', overflowX: 'hidden', overflowY: 'hidden', paddingTop:10 }}>
                 <Grid container spacing={1} columns={60} style={{ transformOrigin: '50vw 50vh' }} >
 
-                    { localPosts.map((item, index) => { /* Loop on all menu content to create button */
+                    { localPosts.map((item, index) => { /* Loop on all posts to create card */
 
                         let url=""
                         let target = ""
@@ -86,14 +88,14 @@ function Blog() {
 
                                 {(item.real) && (
                                     <Link href={url} underline="none" target={target}>
-                                        <Card elevation={4} style={{ backgroundColor:theme.palette.common.white, margin:10 }}>
-                                            <CardMedia component="img" style={{objectFit: 'cover', objectPosition: item['image-position'] }} image={item.image}/>
+                                        <Card elevation={4} style={{ backgroundColor:'#eeeeee', margin:10 }}>
+                                            <CardMedia component="img" style={{objectFit:'cover', objectPosition: item['image-position'] }} image={item.image}/>
                                             <CardContent style={{ backgroundColor:theme.palette.common.white, padding:'5px' }}>
                                                 <Paper style={{ backgroundColor:theme.palette.primary.main, paddingLeft:'5px', paddingRight:'5px' }} >
-                                                    <Typography variant="body1" style={{ color:theme.palette.common.white, fontSize:'11px', fontWeight:'bold'}}> {date}-{month}-{year} </Typography>
+                                                    <Typography variant="body1" style={{ color:theme.palette.common.white, fontSize:'11px', fontWeight:'bold'}}> {month}-{date}-{year} </Typography>
                                                 </Paper>
                                             </CardContent>
-                                            <CardHeader style={{ backgroundColor:theme.palette.common.white, padding:'5px'}} titleTypographyProps={{ fontSize:'12px', fontWeight:'bold', fontFamily:item.font }} title={item.title} />
+                                            <CardHeader style={{ backgroundColor:theme.palette.common.white, padding:'5px'}} titleTypographyProps={{ fontSize:item['font-size'], fontWeight:'bold', fontFamily:item.font }} title={item.title} />
                                         </Card>
                                     </Link>
                                 )}
@@ -105,7 +107,7 @@ function Blog() {
                                                 <Typography variant="body1" style={{ color:theme.palette.common.white, fontSize:'11px', fontWeight:'bold'}}> {date}-{month}-{year} </Typography>
                                             </Paper>
                                         </CardContent>
-                                        <CardHeader style={{ backgroundColor:theme.palette.common.white, padding:'5px'}} titleTypographyProps={{ fontSize:'12px', fontWeight:'bold', fontFamily:item.font }} title={item.title} />
+                                        <CardHeader style={{ backgroundColor:theme.palette.common.white, padding:'5px'}} titleTypographyProps={{ fontSize:item['font-size'], fontWeight:'bold', fontFamily:item.font }} title={item.title} />
                                     </Card>
                                 )}
                             </Grid>

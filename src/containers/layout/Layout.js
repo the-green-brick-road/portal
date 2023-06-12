@@ -34,8 +34,7 @@ function Layout() {
     const theme                 = useTheme();
 
     /* -------- Defining theme --------- */
-    let background_color = theme.palette.common.white;
-    if (isDarkMode) { background_color = theme.palette.common.black; }
+    const background_color = theme.palette.common.white;
 
     /* --------- Compute sizes --------- */
     const menu_height       = `${sizes['menu-height']}px`;
@@ -49,7 +48,7 @@ function Layout() {
     /* -------- Render component ------- */
     return (
         <Fragment>
-            <Container style={{ width: '100vw', height: '100vh', maxWidth:'3000px', backgroundColor: 'black', zIndex: -1, position: 'absolute', padding:0}}/>
+            <Container style={{ width: '100vw', height: '100vh', maxWidth:'3000px', backgroundColor: theme.palette.background.default, zIndex: -1, position: 'absolute', padding:0}}/>
             <LayoutMenu top={margin_height} height={menu_height} width={width} left={margin_width} item={item} isDark={isDarkMode}/>
             <LayoutContent top={menu_height} left={margin_width} height={content_height} width={width}/>
             <LayoutPage top={margin_height} left={margin_width} height={height} width={width} color={background_color}>

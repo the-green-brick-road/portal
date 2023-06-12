@@ -15,7 +15,7 @@ import { default as Home }          from '@mui/icons-material/Home';
 import { default as EmojiEvents }   from '@mui/icons-material/EmojiEvents';
 import { default as SmartToy }      from '@mui/icons-material/SmartToy';
 import { default as Newspaper }     from '@mui/icons-material/Newspaper';
-import { default as CalendarMonth } from '@mui/icons-material/CalendarMonth';
+import { default as Stadium }       from '@mui/icons-material/Stadium';
 
 /* Local includes */
 import MenuConfig                   from './data/menu.json';
@@ -29,7 +29,7 @@ for (let i_entry = 0; i_entry < Menu.entries.length; i_entry += 1) {
     else if(Menu.entries[i_entry].icon === 'EmojiEvents')   { Menu.entries[i_entry].icon = EmojiEvents }
     else if(Menu.entries[i_entry].icon === 'SmartToy')      { Menu.entries[i_entry].icon = SmartToy }
     else if(Menu.entries[i_entry].icon === 'Newspaper')     { Menu.entries[i_entry].icon = Newspaper }
-    else if(Menu.entries[i_entry].icon === 'CalendarMonth') { Menu.entries[i_entry].icon = CalendarMonth }
+    else if(Menu.entries[i_entry].icon === 'Stadium')       { Menu.entries[i_entry].icon = Stadium }
 
 }
 

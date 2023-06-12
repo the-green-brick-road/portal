@@ -50,6 +50,7 @@ function MockLayoutWithBar() {
             "primary": { "main": "#666666" },
             "secondary" : { "main": "#777777" },
         },
+        "typography" : { "button": { "fontSize": "14px" } },
     };
 
     return(
@@ -130,6 +131,13 @@ describe("NavigationBar component" ,() => {
                 "fontFamily": "Roboto Condensed",
             },
             "body1": {
+                "fontSize": "14px",
+                "color": "black",
+                "fontFamily": "Roboto",
+                "position": "relative",
+                "textAlign": "justify",
+            },
+            "button": {
                 "fontSize": "14px",
                 "color": "black",
                 "fontFamily": "Roboto",

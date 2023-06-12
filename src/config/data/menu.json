@@ -1,13 +1,29 @@
 [
     {
-        "id":     "home",
-        "path":   "/",
+        "id":     "About",
         "icon":   "Home",
-        "target": "_top"
+        "target": "_top",
+        "subitems": [
+            {
+                "id": "The mission",
+                "path": "/",
+                "target": "_top"
+            },
+            {
+                "id": "The team",
+                "path": "/team",
+                "target": "_top"
+            },
+            {
+                "id": "The chicken",
+                "path": "/chicken",
+                "target": "_top"
+            }
+        ]
     },
     {
         "id": "seasons",
-        "icon" : "CalendarMonth",
+        "icon" : "EmojiEvents",
         "subitems": [
             {
                 "id": "2023-2024 masterpiece",
@@ -33,9 +49,9 @@
         "target": "_top"
     },
     {
-        "id": "competitions",
-        "path": "/competitions",
-        "icon" : "EmojiEvents",
+        "id": "events",
+        "path": "/events",
+        "icon" : "Stadium",
         "target": "_top"
     },
     {

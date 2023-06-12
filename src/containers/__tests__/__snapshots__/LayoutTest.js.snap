@@ -6,7 +6,7 @@ exports[`Layout container Should provide required design when not sliding and me
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: rgb(255, 255, 255); z-index: -1; position: absolute; padding: 0px;\\"
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
@@ -119,7 +119,7 @@ exports[`Layout container Should provide required design when not sliding for la
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: rgb(255, 255, 255); z-index: -1; position: absolute; padding: 0px;\\"
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
@@ -222,7 +222,7 @@ exports[`Layout container Should provide required design when not sliding for me
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: rgb(255, 255, 255); z-index: -1; position: absolute; padding: 0px;\\"
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
@@ -325,7 +325,7 @@ exports[`Layout container Should provide required design when not sliding for sm
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: rgb(255, 255, 255); z-index: -1; position: absolute; padding: 0px;\\"
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
@@ -428,7 +428,7 @@ exports[`Layout container Should provide required design when sliding and menu o
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: rgb(255, 255, 255); z-index: -1; position: absolute; padding: 0px;\\"
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
@@ -541,7 +541,7 @@ exports[`Layout container Should provide required design when sliding for large 
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: rgb(255, 255, 255); z-index: -1; position: absolute; padding: 0px;\\"
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
@@ -644,7 +644,7 @@ exports[`Layout container Should provide required design when sliding for medium
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: rgb(255, 255, 255); z-index: -1; position: absolute; padding: 0px;\\"
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
@@ -747,7 +747,7 @@ exports[`Layout container Should provide required design when sliding for small 
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: black; z-index: -1; position: absolute; padding: 0px;\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: rgb(255, 255, 255); z-index: -1; position: absolute; padding: 0px;\\"
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"

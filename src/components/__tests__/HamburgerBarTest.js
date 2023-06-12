@@ -108,6 +108,13 @@ describe("HamburgerBar component" ,() => {
                 "position": "relative",
                 "textAlign": "justify",
             },
+            "button": {
+                "fontSize": "14px",
+                "color": "black",
+                "fontFamily": "Roboto",
+                "position": "relative",
+                "textAlign": "justify",
+            },
         },
     }
 

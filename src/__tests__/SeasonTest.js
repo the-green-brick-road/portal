@@ -31,13 +31,36 @@ jest.mock('../providers', () => ({
 
 describe("Season view" ,() => {
 
+    const sizes = {
+        "small-width"          : 200,
+        "medium-width"         : 400,
+        "large-width"          : 800,
+        "menu-height"          : 80,
+        "margin"               : 10,
+        "hamburger-height"     : 40,
+    }
+
     test('Should display season page for desktop', async () => {
 
         const view = render(
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen="large">
-                        <Season data={{'name':'season', 'image':'https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0','reveal':'JBSUgDxICg8','robot-game':'T2sv8jXoP4s', 'resources':[{'name':'google','url':'www.google.com'}]}}/>
+                    <MockDesignProvider screen="large" sizes={sizes}>
+                        <Season data={{
+                            'name':'season',
+                            'image':'https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0',
+                            'reveal':'JBSUgDxICg8',
+                            'robot-game':'T2sv8jXoP4s',
+                            'robot-game-gbr':'T2sv8jXoP4s',
+                            'judging-session-gbr':'temp.pdf',
+                            'resources':[{'name':'google','url':'www.google.com'}],
+                            'competitions' : [
+                                {'name':'compet1', 'level':'regional','rank':'Champion','award':'best','date':{seconds:40000000}},
+                                {'name':'compet2', 'level':'regional','rank':'Champion','award':'best','date':{seconds:60000000}},
+                                {'name':'compet3', 'level':'international','rank':'Champion','award':'best','date':{seconds:50000000}},
+                                {'name':'compet4', 'level':'international','rank':'Champion','award':'best','date':{seconds:45000000}}
+                            ],
+                        }}/>
                     </MockDesignProvider>
                 </MockLoggingProvider>
             </div>
@@ -52,8 +75,22 @@ describe("Season view" ,() => {
         const view = render(
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen="small">
-                        <Season data={{'name':'season', 'image':'https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0','reveal':'JBSUgDxICg8','robot-game':'T2sv8jXoP4s', 'resources':[{'name':'google','url':'www.google.com'}]}}/>
+                    <MockDesignProvider screen="small" sizes={sizes}>
+                        <Season data={{
+                            'name':'season',
+                            'image':'https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0',
+                            'reveal':'JBSUgDxICg8',
+                            'robot-game':'T2sv8jXoP4s',
+                            'robot-game-gbr':'T2sv8jXoP4s',
+                            'judging-session-gbr':'temp.pdf',
+                            'resources':[{'name':'google','url':'www.google.com'}],
+                            'competitions' : [
+                                {'name':'compet1', 'level':'regional','rank':'Champion','award':'best','date':{seconds:40000000}},
+                                {'name':'compet2', 'level':'regional','rank':'Champion','award':'best','date':{seconds:60000000}},
+                                {'name':'compet3', 'level':'international','rank':'Champion','award':'best','date':{seconds:50000000}},
+                                {'name':'compet4', 'level':'international','rank':'Champion','award':'best','date':{seconds:45000000}}
+                            ],
+                        }}/>
                     </MockDesignProvider>
                 </MockLoggingProvider>
             </div>

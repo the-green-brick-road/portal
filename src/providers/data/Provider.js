@@ -22,16 +22,17 @@ import { Context }                                                  from './Cont
 import { useInitializeApp, useGetApps }                             from './FirebaseHook';
 import { useGetFirestore, useCollection, useGetDocs }               from './FirebaseHook';
 import { useGetStorage, useRef, useGetDownloadUrl }                 from './FirebaseHook';
-import { setPosts, setSeasons }                                     from './store/actions';
+import { useFetch }                                                 from './RestHook';
+import { setPosts, setSeasons, setRobots, setTeam, setCalendars }   from './store/actions';
 import reducer                                                      from './store/reducer';
 
 function Provider(props) {
 
     /* --------- Gather inputs --------- */
-    const { children, persistKey = 'data' } = props;
+    const { children, persistKey = 'data' }      = props;
     const { logText }                            = useLogging();
     const { config }                             = useConfiguration();
-    const { firebase = {} }                      = config;
+    const { firebase = {}, calendars = {} }      = config;
     const initializeApp                          = useInitializeApp();
     const getApps                                = useGetApps();
     const getFirestore                           = useGetFirestore();
@@ -40,6 +41,7 @@ function Provider(props) {
     const getStorage                             = useGetStorage();
     const getDownloadURL                         = useGetDownloadUrl();
     const ref                                    = useRef();
+    const fetch                                  = useFetch();
     const componentName = 'DataProvider';
 
     /* Create local states */
@@ -47,6 +49,9 @@ function Provider(props) {
     const [dataStore, dispatch] = useReducer(reducer, {
         posts:  [],
         seasons:  [],
+        robots: [],
+        team: [],
+        calendars: {},
         ...savedState,
     });
 
@@ -65,6 +70,19 @@ function Provider(props) {
             measurementId:       firebase['measurement-id'],
         };
 
+        /* Collect public calendars */
+        fetch(`https://www.googleapis.com/calendar/v3/calendars/${calendars['public']}/events?key=${firebase['api-key']}`)
+            .then(response => response.json())
+            .then(data => {
+
+                const calendars = {...dataStore.calendars}
+                calendars['public'] = data.items
+                dispatch(setCalendars(calendars))
+
+            }
+            );
+
+
         /* Initialize firebase if it was not previously done */
         const apps              = getApps()
         let app = null
@@ -75,6 +93,107 @@ function Provider(props) {
         const local_firestore   = getFirestore(app);
         const local_storage     = getStorage(app);
         setFirebase({firestore: local_firestore, storage: local_storage})
+
+        getDocs(collection(local_firestore, 'team'))
+            .then((docs) => {
+
+                logText(componentName, 'info', 'data', ` Found ${docs.size} team members`)
+                const team = []
+                docs.forEach((doc) => {
+
+                    const data = JSON.parse(JSON.stringify(doc.data()))
+                    if ( 'image' in data ) {
+
+                        getDownloadURL(ref(local_storage, `team/${data['image']}`))
+                            .then((url) => {
+
+                                data['image'] = url
+                                data['id'] = doc.id
+                                team.push(data)
+                                if(team.length === docs.size) { dispatch(setTeam(team)) }
+
+                            })
+
+                    }
+                    else {
+
+                        data['id'] = doc.id
+                        team.push(data)
+                        if(team.length === docs.size) { dispatch(setTeam(team)) }
+
+                    }
+
+                })
+
+            })
+
+        getDocs(collection(local_firestore, 'robots'))
+            .then((docs) => {
+
+                logText(componentName, 'info', 'data', ` Found ${docs.size} robots`)
+                const robots = []
+                docs.forEach((doc) => {
+
+                    const data = JSON.parse(JSON.stringify(doc.data()))
+                    getDownloadURL(ref(local_storage, `robots/${data['image']}`))
+                        .then((url) => {
+
+                            data['image'] = url
+                            data['id'] = doc.id
+                            const media = [];
+                            const count_media_total =
+                                ('features' in data ? data.features.length  : 0) +
+                                ('views'    in data ? data.views.length  : 0)
+                            if ('features' in data && data.features.length > 0) {
+
+                                for(let i_feature = 0; i_feature < data.features.length; i_feature +=1)
+                                {
+
+                                    getDownloadURL(ref(local_storage, `robots/${data.features[i_feature].media}`))
+                                        .then((url_media) => {
+
+                                            data.features[i_feature].media = url_media
+                                            media.push(url_media)
+                                            if (media.length === count_media_total) { robots.push(data) }
+                                            if( robots.length === docs.size) { dispatch(setRobots(robots)) }
+
+                                        })
+
+                                }
+
+                            }
+                            if ('views' in data && data.views.length > 0) {
+
+                                for(let i_view = 0; i_view < data.views.length; i_view ++)
+                                {
+
+                                    getDownloadURL(ref(local_storage, `robots/${data.views[i_view].image}`))
+                                        .then((url_media) => {
+
+                                            data.views[i_view].image = url_media
+                                            media.push(url_media)
+                                            if (media.length === count_media_total) { robots.push(data) }
+                                            if( robots.length === docs.size) { dispatch(setRobots(robots)) }
+
+                                        })
+
+                                }
+
+                            }
+                            if(count_media_total === 0 ) {
+
+                                robots.push(data)
+                                if(robots.length === docs.size) { dispatch(setRobots(robots)) }
+
+                            }
+
+                        })
+
+                })
+
+            })
+
+
         getDocs(collection(local_firestore, 'seasons'))
             .then((docs) => {
 
@@ -160,6 +279,9 @@ function Provider(props) {
     const state = useMemo(() => ({
         seasons :   dataStore.seasons,
         posts :     dataStore.posts,
+        robots:     dataStore.robots,
+        team:       dataStore.team,
+        calendars:  dataStore.calendars,
     }), [dataStore]);
 
 

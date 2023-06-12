@@ -6,13 +6,380 @@ exports[`Season view Should display season page for desktop 1`] = `
     <div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-        style=\\"pointer-events: none; width: 100%; height: 30vh; padding: 0px; background-color: rgb(0, 0, 0); position: relative;\\"
+        style=\\"background-color: rgb(255, 255, 255); width: 100%; height: 80px; padding: 0px; position: relative;\\"
+      />
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100%; padding: 0px; position: relative;\\"
       >
-        <img
-          alt=\\"season\\"
-          src=\\"https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0\\"
-          style=\\"position: absolute; z-index: 1; top: 11vh; right: 2%; height: 15vh;\\"
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"width: 100%; pointer-events: none; background-color: blue;\\"
         />
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          style=\\"position: absolute; z-index: 1; top: 0%; left: 0%; width: 20%;\\"
+        >
+          <img
+            alt=\\"season\\"
+            src=\\"https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0\\"
+            style=\\"pointer-events: none; width: 100%; position: absolute; z-index: 1;\\"
+          />
+        </div>
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"padding: 10px;\\"
+      >
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-1sra7t5-MuiTypography-root\\"
+        >
+          Competitions
+        </h2>
+        <table
+          class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
+        >
+          <tbody
+            class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
+          >
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    fill=\\"#1976d2\\"
+                    style=\\"height: 1rem; margin-right: 10px;\\"
+                  >
+                    hudson.svg
+                  </svg>
+                  compet1
+                </div>
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                8
+                -
+                Apr
+                -
+                1971
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"StarIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    Champion
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                  style=\\"padding: 0px; font-size: 14px;\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"MilitaryTechIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 10.43V2H7v8.43c0 .35.18.68.49.86l4.18 2.51-.99 2.34-3.41.29 2.59 2.24L9.07 22 12 20.23 14.93 22l-.78-3.33 2.59-2.24-3.41-.29-.99-2.34 4.18-2.51c.3-.18.48-.5.48-.86zm-4 1.8-1 .6-1-.6V3h2v9.23z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    best
+                     award 
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"PublicIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z\\"
+                    />
+                  </svg>
+                  compet4
+                </div>
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                5
+                -
+                Jun
+                -
+                1971
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"StarIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    Champion
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                  style=\\"padding: 0px; font-size: 14px;\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"MilitaryTechIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 10.43V2H7v8.43c0 .35.18.68.49.86l4.18 2.51-.99 2.34-3.41.29 2.59 2.24L9.07 22 12 20.23 14.93 22l-.78-3.33 2.59-2.24-3.41-.29-.99-2.34 4.18-2.51c.3-.18.48-.5.48-.86zm-4 1.8-1 .6-1-.6V3h2v9.23z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    best
+                     award 
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"PublicIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z\\"
+                    />
+                  </svg>
+                  compet3
+                </div>
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                2
+                -
+                Aug
+                -
+                1971
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"StarIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    Champion
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                  style=\\"padding: 0px; font-size: 14px;\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"MilitaryTechIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 10.43V2H7v8.43c0 .35.18.68.49.86l4.18 2.51-.99 2.34-3.41.29 2.59 2.24L9.07 22 12 20.23 14.93 22l-.78-3.33 2.59-2.24-3.41-.29-.99-2.34 4.18-2.51c.3-.18.48-.5.48-.86zm-4 1.8-1 .6-1-.6V3h2v9.23z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    best
+                     award 
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    fill=\\"#1976d2\\"
+                    style=\\"height: 1rem; margin-right: 10px;\\"
+                  >
+                    hudson.svg
+                  </svg>
+                  compet2
+                </div>
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                26
+                -
+                Nov
+                -
+                1971
+              </td>
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"StarIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    Champion
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                  style=\\"padding: 0px; font-size: 14px;\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"MilitaryTechIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 10.43V2H7v8.43c0 .35.18.68.49.86l4.18 2.51-.99 2.34-3.41.29 2.59 2.24L9.07 22 12 20.23 14.93 22l-.78-3.33 2.59-2.24-3.41-.29-.99-2.34 4.18-2.51c.3-.18.48-.5.48-.86zm-4 1.8-1 .6-1-.6V3h2v9.23z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    best
+                     award 
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
@@ -74,6 +441,20 @@ exports[`Season view Should display season page for desktop 1`] = `
                     class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
                   />
                 </button>
+                <button
+                  aria-selected=\\"false\\"
+                  class=\\"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root\\"
+                  id=\\"3\\"
+                  role=\\"tab\\"
+                  style=\\"font-weight: bold; text-transform: capitalize;\\"
+                  tabindex=\\"-1\\"
+                  type=\\"button\\"
+                >
+                  Green Brick Road 
+                  <span
+                    class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                  />
+                </button>
               </div>
               <span
                 class=\\"MuiTabs-indicator css-1aquho2-MuiTabs-indicator\\"
@@ -116,12 +497,475 @@ exports[`Season view Should display season page for mobile 1`] = `
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         style=\\"padding: 10px;\\"
       >
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-1sra7t5-MuiTypography-root\\"
+        >
+          Competitions
+        </h2>
+        <table
+          class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
+        >
+          <tbody
+            class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
+          >
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"2\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    fill=\\"#1976d2\\"
+                    style=\\"height: 1rem; margin-right: 10px;\\"
+                  >
+                    hudson.svg
+                  </svg>
+                  compet1
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              />
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"EventIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    8
+                    -
+                    Apr
+                    -
+                    1971
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"StarIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    Champion
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                  style=\\"padding: 0px; font-size: 14px;\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"MilitaryTechIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 10.43V2H7v8.43c0 .35.18.68.49.86l4.18 2.51-.99 2.34-3.41.29 2.59 2.24L9.07 22 12 20.23 14.93 22l-.78-3.33 2.59-2.24-3.41-.29-.99-2.34 4.18-2.51c.3-.18.48-.5.48-.86zm-4 1.8-1 .6-1-.6V3h2v9.23z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    best
+                     award 
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"2\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"PublicIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z\\"
+                    />
+                  </svg>
+                  compet4
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              />
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"EventIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    5
+                    -
+                    Jun
+                    -
+                    1971
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"StarIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    Champion
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                  style=\\"padding: 0px; font-size: 14px;\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"MilitaryTechIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 10.43V2H7v8.43c0 .35.18.68.49.86l4.18 2.51-.99 2.34-3.41.29 2.59 2.24L9.07 22 12 20.23 14.93 22l-.78-3.33 2.59-2.24-3.41-.29-.99-2.34 4.18-2.51c.3-.18.48-.5.48-.86zm-4 1.8-1 .6-1-.6V3h2v9.23z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    best
+                     award 
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"2\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"PublicIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z\\"
+                    />
+                  </svg>
+                  compet3
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              />
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"EventIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    2
+                    -
+                    Aug
+                    -
+                    1971
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"StarIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    Champion
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                  style=\\"padding: 0px; font-size: 14px;\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"MilitaryTechIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 10.43V2H7v8.43c0 .35.18.68.49.86l4.18 2.51-.99 2.34-3.41.29 2.59 2.24L9.07 22 12 20.23 14.93 22l-.78-3.33 2.59-2.24-3.41-.29-.99-2.34 4.18-2.51c.3-.18.48-.5.48-.86zm-4 1.8-1 .6-1-.6V3h2v9.23z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    best
+                     award 
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"2\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    fill=\\"#1976d2\\"
+                    style=\\"height: 1rem; margin-right: 10px;\\"
+                  >
+                    hudson.svg
+                  </svg>
+                  compet2
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            >
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              />
+              <td
+                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+                colspan=\\"1\\"
+                style=\\"padding: 5px; font-size: 14px;\\"
+              >
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"EventIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    26
+                    -
+                    Nov
+                    -
+                    1971
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"StarIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    Champion
+                  </p>
+                </div>
+                <div
+                  class=\\"MuiStack-root css-1d9cypr-MuiStack-root\\"
+                  style=\\"padding: 0px; font-size: 14px;\\"
+                >
+                  <svg
+                    aria-hidden=\\"true\\"
+                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                    data-testid=\\"MilitaryTechIcon\\"
+                    focusable=\\"false\\"
+                    style=\\"height: 1rem; color: rgb(25, 118, 210); margin-right: 10px;\\"
+                    viewBox=\\"0 0 24 24\\"
+                  >
+                    <path
+                      d=\\"M17 10.43V2H7v8.43c0 .35.18.68.49.86l4.18 2.51-.99 2.34-3.41.29 2.59 2.24L9.07 22 12 20.23 14.93 22l-.78-3.33 2.59-2.24-3.41-.29-.99-2.34 4.18-2.51c.3-.18.48-.5.48-.86zm-4 1.8-1 .6-1-.6V3h2v9.23z\\"
+                    />
+                  </svg>
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                    style=\\"padding: 0px; font-size: 14px;\\"
+                  >
+                    best
+                     award 
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"padding: 10px;\\"
+      >
         <div
           class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-1yof2we-MuiPaper-root-MuiAccordion-root\\"
         >
           <div
             aria-expanded=\\"false\\"
-            class=\\"MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-1ig3gh6-MuiButtonBase-root-MuiAccordionSummary-root\\"
+            bgcol=\\"#fff\\"
+            class=\\"MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-9b1ycs-MuiButtonBase-root-MuiAccordionSummary-root\\"
             col=\\"#1976d2\\"
             role=\\"button\\"
             tabindex=\\"0\\"
@@ -180,7 +1024,8 @@ exports[`Season view Should display season page for mobile 1`] = `
         >
           <div
             aria-expanded=\\"false\\"
-            class=\\"MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-1ig3gh6-MuiButtonBase-root-MuiAccordionSummary-root\\"
+            bgcol=\\"#fff\\"
+            class=\\"MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-9b1ycs-MuiButtonBase-root-MuiAccordionSummary-root\\"
             col=\\"#1976d2\\"
             role=\\"button\\"
             tabindex=\\"0\\"
@@ -290,7 +1135,8 @@ exports[`Season view Should display season page for mobile 1`] = `
         >
           <div
             aria-expanded=\\"false\\"
-            class=\\"MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-1ig3gh6-MuiButtonBase-root-MuiAccordionSummary-root\\"
+            bgcol=\\"#fff\\"
+            class=\\"MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-9b1ycs-MuiButtonBase-root-MuiAccordionSummary-root\\"
             col=\\"#1976d2\\"
             role=\\"button\\"
             tabindex=\\"0\\"
@@ -303,6 +1149,66 @@ exports[`Season view Should display season page for mobile 1`] = `
                 style=\\"font-weight: bold; font-size: 12px;\\"
               >
                 Robot Game
+              </p>
+            </div>
+            <div
+              class=\\"MuiAccordionSummary-expandIconWrapper css-yw020d-MuiAccordionSummary-expandIconWrapper\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                data-testid=\\"ExpandMoreIcon\\"
+                focusable=\\"false\\"
+                style=\\"margin: 0px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class=\\"MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root\\"
+            style=\\"min-height: 0px;\\"
+          >
+            <div
+              class=\\"MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper\\"
+            >
+              <div
+                class=\\"MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner\\"
+              >
+                <div
+                  class=\\"MuiAccordion-region\\"
+                  role=\\"region\\"
+                >
+                  <div
+                    class=\\"MuiAccordionDetails-root css-yuqx6y-MuiAccordionDetails-root\\"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-1yof2we-MuiPaper-root-MuiAccordion-root\\"
+        >
+          <div
+            aria-expanded=\\"false\\"
+            bgcol=\\"#fff\\"
+            class=\\"MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-9b1ycs-MuiButtonBase-root-MuiAccordionSummary-root\\"
+            col=\\"#1976d2\\"
+            role=\\"button\\"
+            tabindex=\\"0\\"
+          >
+            <div
+              class=\\"MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
+                style=\\"font-weight: bold; font-size: 12px;\\"
+              >
+                Green Brick Road
               </p>
             </div>
             <div

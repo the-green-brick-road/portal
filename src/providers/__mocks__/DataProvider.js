@@ -19,15 +19,21 @@ const context = createContext(null);
 var state = {
     seasons: [],
     posts: [],
+    robots: [],
+    team: [],
+    calendars: {},
 };
 
 function DataProvider(props) {
 
-    const { children, seasons, posts } = props;
+    const { children, seasons = [], posts = [], robots = [], team = [], calendars={} } = props;
 
     /* ------ Defining behaviour ------- */
     state.seasons = seasons;
     state.posts = posts;
+    state.robots = robots
+    state.team = team
+    state.calendars = calendars;
 
     /* ----------- Define HTML --------- */
     return (
