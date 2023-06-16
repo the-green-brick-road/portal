@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Mission view Should display chicken page 1`] = `
+exports[`Chicken view Should display chicken page 1`] = `
 "<body>
   <div>
     <div>

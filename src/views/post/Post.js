@@ -11,14 +11,14 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment }                    from 'react';
+import { Profiler }                    from 'react';
 
 /* Material UI includes */
 import { Container, Typography }       from '@mui/material';
 import { useTheme }                    from '@mui/material/styles';
 
 /* Portal includes */
-import { useDesign }                   from '../../providers';
+import { useDesign, useLogging }       from '../../providers';
 
 /* Local includes */
 import PostParser                      from './PostParser'
@@ -28,8 +28,9 @@ function Post(props) {
     /* --------- Gather inputs --------- */
     const { data }              = props
     const theme                 = useTheme();
+    const { onRender }          = useLogging();
     const { sizes, isDarkMode } = useDesign();
-    //const componentName     = 'Post';
+    const componentName     = 'Post';
 
     /* -------- Defining theme --------- */
     let bgcolor = 'rgba(255,255,255,0.7)';
@@ -82,7 +83,7 @@ function Post(props) {
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <Container style={{ position:'absolute', zIndex:5, backgroundColor:bgcolor, width:'100%', height:sizes['menu-height']}}/>
             <Container style={{ width:'100%', height:data['image-height'], padding:0, backgroundColor:theme.palette.common.black, position:'relative' }}>
                 <img src={data.image} style={{ pointerEvents: 'none', width:'100%', height:data['image-height'], objectFit: 'cover', objectPosition: data['image-position'] }} alt={data.name}/>
@@ -91,7 +92,7 @@ function Post(props) {
                 <Typography variant="h1">{data.title}</Typography>
             </Container>
             <PostParser code={code}/>
-        </Fragment>
+        </Profiler>
     );
 
 }

@@ -11,42 +11,52 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { useEffect, Fragment, useState }                             from 'react';
+import { useEffect, Profiler, useState }                             from 'react';
 
 /* Material UI includes */
 import { Link, Card, CardContent, CardMedia, CardHeader, Container } from '@mui/material';
 import { Grid, Typography, Paper }                                   from '@mui/material';
 import { useTheme }                                                  from '@mui/material/styles';
 
+/* Google fonts includes */
+import '@fontsource/libre-bodoni'
+import '@fontsource/courier-prime'
+import '@fontsource/anton'
+import '@fontsource/acme'
+import '@fontsource/dancing-script'
+import '@fontsource/dm-serif-display'
+
 /* Portal includes */
-import { useData }                                                   from '../../providers';
+import { usePosts, useLogging }                                       from '../../providers';
 import { Image }                                                     from '../../components';
 
 function Blog() {
 
     /* --------- Gather inputs --------- */
-    const { posts }                     = useData();
+    const { posts }                     = usePosts();
+    const { onRender }                  = useLogging();
     const theme                         = useTheme();
     const [ localPosts, setLocalPosts ] = useState([])
-
-    const months   = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    // const componentName = 'Blog'
+    const months        = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    const componentName = 'Blog'
 
     useEffect(() => {
 
         /* ------- Sort posts by date ------ */
         const local_posts = [];
-        for (let i_post = 0; i_post < posts.length; i_post +=1) {
+        const keys = Object.keys(posts)
 
-            if (local_posts.length === 0) { local_posts.push(posts[i_post]); }
+        for (let i_post = 0; i_post < keys.length; i_post +=1) {
+
+            if (local_posts.length === 0) { local_posts.push(posts[keys[i_post]]); }
             else {
 
                 let j_post = 0
-                if(posts[i_post].date.seconds > local_posts[local_posts.length - 1].date.seconds) { local_posts.push(posts[i_post]); }
+                if(posts[keys[i_post]].date.seconds > local_posts[local_posts.length - 1].date.seconds) { local_posts.push(posts[keys[i_post]]); }
                 else {
 
-                    while((posts[i_post].date.seconds > local_posts[j_post].date.seconds) && ((j_post + 1) < local_posts.length)) { j_post += 1 }
-                    local_posts.splice(j_post, 0, posts[i_post]);
+                    while((posts[keys[i_post]].date.seconds > local_posts[j_post].date.seconds) && ((j_post + 1) < local_posts.length)) { j_post += 1 }
+                    local_posts.splice(j_post, 0, posts[keys[i_post]]);
 
                 }
 
@@ -59,7 +69,7 @@ function Blog() {
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <Container style={{ width:'100%', padding:0, position:'relative', margin:0 }}>
                 <Image name="blog" style={{ width:'100%', pointerEvents: 'none', objectFit:'cover' }}/>
             </Container>
@@ -116,7 +126,7 @@ function Blog() {
                     })}
                 </Grid>
             </Container>
-        </Fragment>
+        </Profiler>
     );
 
 }

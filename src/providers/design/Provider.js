@@ -11,7 +11,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { useMemo, useReducer, useEffect }              from 'react';
+import { useMemo, useReducer, useEffect, Profiler }    from 'react';
 
 /* Material UI includes */
 import { CssBaseline }                                 from '@mui/material';
@@ -30,11 +30,15 @@ function Provider(props) {
 
     /* --------- Gather inputs --------- */
     const { children, persistKey = 'design' }  = props;
-    const { logText }                          = useLogging();
+    const { logText, onRender }                = useLogging();
     const { config }                           = useConfiguration();
     const { design = {} }                      = config;
     const useMediaQuery                        = useUseMediaQuery();
     const componentName = 'DesignProvider';
+    const isLarge       = useMediaQuery(`(min-width:${design.sizes['medium-width']}px)`)
+    const isMedium      = useMediaQuery(`(min-width:${design.sizes['small-width']}px)`)
+    const isDarkMode    = useMediaQuery('(prefers-color-scheme: dark)')
+
     /* Create local states */
     const savedState = JSON.parse(localStorage.getItem(persistKey));
     const [designStore, dispatch] = useReducer(reducer, {
@@ -44,9 +48,6 @@ function Provider(props) {
         images: [],
         ...savedState,
     });
-    const isLarge    = useMediaQuery(`(min-width:${design.sizes['medium-width']}px)`)
-    const isMedium   = useMediaQuery(`(min-width:${design.sizes['small-width']}px)`)
-    const isDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
 
     var screen     = 'small'
     if (isMedium) { screen = 'medium'}
@@ -108,7 +109,6 @@ function Provider(props) {
                 image.addEventListener('error', () => resolve(false));
                 image.addEventListener('load', () => resolve(image.width === 1));
                 image.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=';
-                resolve(true);
 
             });
 
@@ -142,12 +142,14 @@ function Provider(props) {
 
     /* ----------- Define HTML --------- */
     return (
-        <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <Context.Provider value={{isDarkMode, screen, sizes, ...state}}>
-                {children}
-            </Context.Provider>
-        </ThemeProvider>
+        <Profiler id={componentName} onRender={onRender}>
+            <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <Context.Provider value={{isDarkMode, screen, sizes, ...state}}>
+                    {children}
+                </Context.Provider>
+            </ThemeProvider>
+        </Profiler>
     );
 
 }

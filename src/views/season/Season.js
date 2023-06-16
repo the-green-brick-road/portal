@@ -11,28 +11,29 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment }  from 'react';
+import { Profiler }              from 'react';
 
 /* Portal includes */
-import { useDesign } from '../../providers';
+import { useDesign, useLogging } from '../../providers';
 
 /* Local includes */
-import SeasonDesktop from './SeasonDesktop';
-import SeasonMobile  from './SeasonMobile';
+import SeasonDesktop             from './SeasonDesktop';
+import SeasonMobile              from './SeasonMobile';
 
 function Season(props) {
 
     /* --------- Gather inputs --------- */
     const { data }      = props
     const { screen }    = useDesign();
-    //const componentName = 'Season';
+    const { onRender }  = useLogging();
+    const componentName = 'Season';
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             {(screen === 'large') && (<SeasonDesktop data={data} />)}
             {(screen !== 'large') && (<SeasonMobile data={data} />)}
-        </Fragment>
+        </Profiler>
     );
 
 }

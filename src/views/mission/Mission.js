@@ -12,13 +12,13 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment }              from 'react';
+import { Profiler }              from 'react';
 
 /* Material UI includes */
 import { Typography, Container } from '@mui/material';
 
 /* Portal includes */
-import { useDesign }             from '../../providers';
+import { useDesign, useLogging } from '../../providers';
 import { Image }                 from '../../components'
 
 function Mission() {
@@ -26,10 +26,12 @@ function Mission() {
 
     /* --------- Gather inputs --------- */
     const { sizes }     = useDesign();
+    const { onRender }  = useLogging();
+    const componentName = 'Mission';
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <Container style={{ backgroundColor:'#333333', width:'100%', height:sizes['menu-height'], padding:0, position:'relative' }}/>
             <Container style={{ width:'100%', padding:0, position:'relative' }}>
                 <Image name="mission" style={{ width:'100%', pointerEvents: 'none' }}/>
@@ -48,7 +50,7 @@ function Mission() {
                 <Typography variant="body2" style={{ paddingTop:10, textAlign:'justify' }}> Remember, the future is not something that just happens. It's something we build. And we're excited to build it with you! </Typography>
                 <Typography variant="body2" style={{ paddingTop:10, textAlign:'justify', fontWeight:'bold' }}> Are you ready to engineer the future with us? </Typography>
             </Container>
-        </Fragment>
+        </Profiler>
     );
 
 }

@@ -59,148 +59,119 @@ exports[`Team view Should display team page 1`] = `
                   member1
                   \\"
                 </p>
-                <table
-                  class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
-                  style=\\"margin-top: 10px;\\"
+                <div
+                  class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root\\"
                 >
-                  <tbody
-                    class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
                   >
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Member : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(61, 237, 151); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            1970
-                             - 
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                       Member : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(61, 237, 151); padding-left: 5px; padding-right: 5px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
                       >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Grade : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(112, 125, 59); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            8
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                         
+                        1970
+                         - 
+                         
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Coding : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(132, 205, 84); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            2
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                       Grade : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(112, 125, 59); padding-left: 5px; padding-right: 5px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
                       >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Building : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
+                         
+                        8
+                         
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
+                    >
+                       Coding : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(132, 205, 84); padding-left: 5px; padding-right: 5px;\\"
+                    >
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
                       >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(133, 151, 128); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            2
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                         
+                        2
+                         
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
+                    >
+                       Building : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(133, 151, 128); padding-left: 5px; padding-right: 5px;\\"
+                    >
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
+                      >
+                         
+                        2
+                         
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -238,148 +209,119 @@ exports[`Team view Should display team page 1`] = `
                   member2
                   \\"
                 </p>
-                <table
-                  class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
-                  style=\\"margin-top: 10px;\\"
+                <div
+                  class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root\\"
                 >
-                  <tbody
-                    class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
                   >
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Member : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(61, 237, 151); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            1970
-                             - 
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                       Member : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(61, 237, 151); padding-left: 5px; padding-right: 5px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
                       >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Grade : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(112, 125, 59); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            7
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                         
+                        1970
+                         - 
+                         
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Coding : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(132, 205, 84); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            1
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                       Grade : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(112, 125, 59); padding-left: 5px; padding-right: 5px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
                       >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Building : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
+                         
+                        7
+                         
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
+                    >
+                       Coding : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(132, 205, 84); padding-left: 5px; padding-right: 5px;\\"
+                    >
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
                       >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(133, 151, 128); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            1
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                         
+                        1
+                         
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
+                    >
+                       Building : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(133, 151, 128); padding-left: 5px; padding-right: 5px;\\"
+                    >
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
+                      >
+                         
+                        1
+                         
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -431,116 +373,93 @@ exports[`Team view Should display team page 1`] = `
                   member3
                   \\"
                 </p>
-                <table
-                  class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
-                  style=\\"margin-top: 10px;\\"
+                <div
+                  class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root\\"
                 >
-                  <tbody
-                    class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
                   >
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Member : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(61, 237, 151); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            1970
-                             - 
-                            1970
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                       Member : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(61, 237, 151); padding-left: 5px; padding-right: 5px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
                       >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Coding : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
-                      >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(132, 205, 84); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            1
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr
-                      class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+                         
+                        1970
+                         - 
+                        1970
+                         
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
                     >
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
+                       Coding : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(132, 205, 84); padding-left: 5px; padding-right: 5px;\\"
+                    >
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
                       >
-                        <p
-                          class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                          style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
-                        >
-                           Building : 
-                        </p>
-                      </td>
-                      <td
-                        class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                        style=\\"padding: 2px;\\"
+                         
+                        1
+                         
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <p
+                      class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                      style=\\"color: rgb(0, 0, 0); font-size: 14px;\\"
+                    >
+                       Building : 
+                    </p>
+                  </div>
+                  <div
+                    class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1osj8n2-MuiGrid-root\\"
+                  >
+                    <div
+                      class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
+                      style=\\"background-color: rgb(133, 151, 128); padding-left: 5px; padding-right: 5px;\\"
+                    >
+                      <p
+                        class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
+                        style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
                       >
-                        <div
-                          class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root\\"
-                          style=\\"background-color: rgb(133, 151, 128); padding-left: 5px; padding-right: 5px;\\"
-                        >
-                          <p
-                            class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                            style=\\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; text-align: center;\\"
-                          >
-                             
-                            2
-                             
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                         
+                        2
+                         
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

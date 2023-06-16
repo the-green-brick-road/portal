@@ -9,19 +9,46 @@
     "name": "The Green Brick Road",
     "icons": [
         {
+          "src": "favicon64.ico",
+          "sizes": "64x64",
+          "type": "image/x-icon",
+          "purpose": "maskable"
+        },
+        {
+          "src": "favicon32.ico",
+          "sizes": "32x32",
+          "type": "image/x-icon",
+          "purpose": "maskable"
+        },
+        {
+          "src": "favicon24.ico",
+          "sizes": "24x24",
+          "type": "image/x-icon",
+          "purpose": "maskable"
+        },
+        {
+          "src": "favicon16.ico",
+          "sizes": "16x16",
+          "type": "image/x-icon",
+          "purpose": "maskable"
+        },
+        {
           "src": "favicon.ico",
-          "sizes": "64x64 32x32 24x24 16x16",
-          "type": "image/x-icon"
+          "sizes": "256x256",
+          "type": "image/x-icon",
+          "purpose": "any"
         },
         {
           "src": "logo192.png",
           "type": "image/png",
-          "sizes": "192x192"
+          "sizes": "192x192",
+          "purpose": "maskable"
         },
         {
           "src": "logo512.png",
           "type": "image/png",
-          "sizes": "512x512"
+          "sizes": "512x512",
+          "purpose": "any"
         }
     ],
     "start_url": ".",

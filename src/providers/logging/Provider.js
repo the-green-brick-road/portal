@@ -12,7 +12,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { useMemo, useReducer, useEffect }               from 'react';
+import { useMemo, useReducer, useEffect, Profiler }     from 'react';
 
 /* Portal includes */
 import { useConfiguration }                             from '../../providers';
@@ -63,8 +63,10 @@ function Provider(props) {
 
             }
             else if (
-                (logging.settings.components.indexOf(component) > -1) ||
-                (logging.settings.components.indexOf('all') > -1)
+                ((logging.settings.components.indexOf(component) > -1) ||
+                 (logging.settings.components.indexOf('all') > -1)) &&
+                ((logging.settings.topics.indexOf(topic) > -1) ||
+                 (logging.settings.topics.indexOf('all') > -1))
             ) {
 
                 if(level === 'info') {
@@ -87,18 +89,25 @@ function Provider(props) {
 
     const logDevelopment = (component, level, topic, message) => {
 
+
         if ((logging.settings.levels.indexOf(level) <= logging.settings.levels.indexOf(logging.settings.level)) &&
             (loggingStore.isLoggingActivated)) { /* If event level shall be logged */
 
             if (
-                (logging.settings.components.indexOf(component) > -1) ||
-                (logging.settings.components.indexOf('all') > -1))
+                ((logging.settings.components.indexOf(component) > -1) ||
+                 (logging.settings.components.indexOf('all') > -1)) &&
+                ((logging.settings.topics.indexOf(topic) > -1) ||
+                 (logging.settings.topics.indexOf('all') > -1))
+            )
             {
 
-                if(level === 'fatal') { error(`${component} - ${topic} -${message}`)}
-                else if(level === 'error') { error(`${component} - ${topic} -${message}`)}
-                else if(level === 'warning') { warn(`${component} - ${topic} -${message}`)}
-                else { log(`${component} - ${level} - ${topic} -${message}`) }
+                const date = new Date();
+                const dateString = date.toLocaleString('en-US')
+
+                if(level === 'fatal') { error(`${dateString} - ${component} - ${topic} -${message}`)}
+                else if(level === 'error') { error(`${dateString} - ${component} - ${topic} -${message}`)}
+                else if(level === 'warning') { warn(`${dateString} - ${component} - ${topic} -${message}`)}
+                else { log(`${dateString} - ${component} - ${level} - ${topic} -${message}`) }
 
             }
 
@@ -149,14 +158,25 @@ function Provider(props) {
             else if( process.env.NODE_ENV === 'development') { logDevelopment(component, level, topic, message)}
 
         },
+        onRender(id, phase, actualDuration, baseDuration, startTime, commitTime) {
+
+            if( process.env.NODE_ENV === 'development') {
+
+                logDevelopment(id,'debug','profiling',` ${actualDuration} ms`)
+
+            }
+
+        },
         isLoggingActivated :   loggingStore.isLoggingActivated,
     }), [loggingStore]); /* eslint-disable-line react-hooks/exhaustive-deps */
 
     /* ----------- Define HTML --------- */
     return (
-        <Context.Provider value={state}>
-            {children}
-        </Context.Provider>
+        <Profiler id={componentName} onRender={state.onRender}>
+            <Context.Provider value={state}>
+                {children}
+            </Context.Provider>
+        </Profiler>
     );
 
 }

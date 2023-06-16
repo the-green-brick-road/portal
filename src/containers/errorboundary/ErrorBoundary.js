@@ -12,7 +12,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment }                                     from 'react';
+import { Profiler }                                     from 'react';
 import { ErrorBoundary as ReactErrorBoundary}           from 'react-error-boundary';
 
 /* Sentry includes */
@@ -27,8 +27,8 @@ import Fallback                                         from './Fallback';
 function ErrorBoundary(props) {
 
     /* --------- Gather inputs --------- */
-    const { logText }   = useLogging();
-    const { children }  = props;
+    const { logText, onRender } = useLogging();
+    const { children }          = props;
     const componentName = "ErrorBoundary";
 
     /* -- Deal with boundaries errors -- */
@@ -41,7 +41,7 @@ function ErrorBoundary(props) {
     /* ----------- Define HTML --------- */
     return (
 
-        <Fragment>
+        <Profiler id="ErrorBoundary" onRender={onRender}>
             {(process.env.NODE_ENV === 'production') && (
 
                 <SentryErrorBoundary data-testid='error-boundary' fallback={<Fallback/>} showDialog>
@@ -56,7 +56,7 @@ function ErrorBoundary(props) {
                 </ReactErrorBoundary>
 
             )}
-        </Fragment>
+        </Profiler>
 
     );
 

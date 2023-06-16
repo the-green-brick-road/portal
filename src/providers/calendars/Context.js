@@ -4,10 +4,10 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Data provider context
+# Calendars provider context
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @30 may 2023
-# Latest revision: 30 may 2023
+# Nadège LEMPERIERE, @14 june 2023
+# Latest revision: 14 june 2023
 # ---------------------------------------------------- */
 
 /* React includes */

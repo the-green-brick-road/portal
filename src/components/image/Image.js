@@ -7,20 +7,22 @@
 # Image component
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @22 may 2023
-# Latest revision: 24 may 2023
+# Latest revision: 14 june 2023
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment }  from 'react';
+import { Profiler }              from 'react';
 
 /* Portal includes */
-import { useDesign } from '../../providers';
+import { useDesign, useLogging } from '../../providers';
 
 function Image(props) {
 
     /* --------- Gather inputs --------- */
     const { name, style={} }    = props;
     const { images }            = useDesign();
+    const { onRender }          = useLogging();
+    const componentName = 'Image';
 
     /* ---- Select image if loaded ----- */
     let data = {}
@@ -30,10 +32,10 @@ function Image(props) {
     /* ----------- Define HTML --------- */
     /* eslint-disable padded-blocks */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             {(data !== {}) && (
-                <picture data-testid={label_picture}>
-                    { Object.entries(data).map((item) => {
+                <picture style={style} data-testid={label_picture}>
+                    { Object.entries(data).toReversed().map((item) => {
 
                         let result;
                         const localType = `image/${item[0]}`;
@@ -50,7 +52,7 @@ function Image(props) {
                     <img src={data.default} style={style} alt={name}/>
                 </picture>
             )}
-        </Fragment>
+        </Profiler>
     );
     /* eslint-enable padded-blocks */
 

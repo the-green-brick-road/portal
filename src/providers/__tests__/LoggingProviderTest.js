@@ -35,8 +35,8 @@ jest.mock('../../providers', () => ({ useConfiguration: (() => { return mockUseC
 
 function MockLoggingConsumer(props) {
 
-    const { mode, index } = props;
-    const { activateLogging, deactivateLogging, isLoggingActivated, logText } = useLogging();
+    const { mode, index, jndex } = props;
+    const { activateLogging, deactivateLogging, isLoggingActivated, logText, onRender } = useLogging();
     var calls = JSON.parse(localStorage.getItem('mock-logging-consumer'));
     if (calls === null) { calls = 0; }
 
@@ -62,6 +62,9 @@ function MockLoggingConsumer(props) {
     logText('test','debug','test','test')
     logText('test','log','test','test')
 
+    onRender('test','render',10,10)
+    onRender('test','render',20,20)
+
     const handleClick = () => {
 
         if (isLoggingActivated) { deactivateLogging() }
@@ -72,7 +75,7 @@ function MockLoggingConsumer(props) {
 
     }
 
-    const button_name = `mock-logging-consumer-${index}`
+    const button_name = `mock-logging-consumer-${index}-${jndex}`
 
     return(
         <Button aria-label={button_name} onClick={handleClick} />
@@ -80,13 +83,14 @@ function MockLoggingConsumer(props) {
 
 };
 
-const developmentTest = async (level, components, stats, index) => {
+const developmentTest = async (level, components, topics, stats, index, jndex) => {
 
     const Config = {
         "logging": {
             "sentry"   : { "dsn" : "https://5383c643fb7f49c8ae0b87c5a00a1f7b@o4505149124640768.ingest.sentry.io/4505149126148096" },
             "settings" : {
                 "components": components,
+                "topics":     topics,
                 "levels":     ["fatal", "error", "warning", "info", "debug", "log"],
                 "level":      level,
             },
@@ -99,7 +103,7 @@ const developmentTest = async (level, components, stats, index) => {
     useCaptureMessage.mockReturnValue(mockUseCaptureMessage);
     const mockUseSetTag = jest.fn((name, value) => { });
     useSetTag.mockReturnValue(mockUseSetTag);
-    const mockUseLog = jest.fn((text) => { });
+    const mockUseLog = jest.fn((text) => {  });
     useLog.mockReturnValue(mockUseLog);
     const mockUseError = jest.fn((text) => { });
     useError.mockReturnValue(mockUseError);
@@ -113,7 +117,7 @@ const developmentTest = async (level, components, stats, index) => {
             <div>
                 <MockConfigurationProvider config={Config}>
                     <LoggingProvider>
-                        <MockLoggingConsumer mode={process.env.NODE_ENV} index={index}/>
+                        <MockLoggingConsumer mode={process.env.NODE_ENV} index={index} jndex={jndex}/>
                     </LoggingProvider>
                 </MockConfigurationProvider>
             </div>
@@ -122,32 +126,31 @@ const developmentTest = async (level, components, stats, index) => {
 
     })
 
-    const button_name = `mock-logging-consumer-${index}`
+    const button_name = `mock-logging-consumer-${index}-${jndex}`
 
     expect(mockUseError).toHaveBeenCalledTimes(stats.error)
     expect(mockUseWarn).toHaveBeenCalledTimes(stats.warning)
-    expect(mockUseLog).toHaveBeenCalledTimes(stats.log)
+    expect(mockUseLog).toHaveBeenCalledTimes(stats.log + stats.render)
 
     await act(async () => {fireEvent.click(screen.getByRole('button', { name: button_name }))}) // eslint-disable-line testing-library/no-unnecessary-act
 
     expect(mockUseError).toHaveBeenCalledTimes(stats.error)
     expect(mockUseWarn).toHaveBeenCalledTimes(stats.warning)
-    expect(mockUseLog).toHaveBeenCalledTimes(stats.log)
+    expect(mockUseLog).toHaveBeenCalledTimes(stats.log + stats.render)
 
     await act(async () => {fireEvent.click(screen.getByRole('button', { name: button_name }))}) // eslint-disable-line testing-library/no-unnecessary-act
 
     expect(mockUseError).toHaveBeenCalledTimes(stats.error * 2)
     expect(mockUseWarn).toHaveBeenCalledTimes(stats.warning * 2)
-    expect(mockUseLog).toHaveBeenCalledTimes(stats.log * 2)
+    expect(mockUseLog).toHaveBeenCalledTimes(stats.log * 2 + stats.render + (stats.render !== 0?1:0))
 
     expect(mockUseInit).toHaveBeenCalledTimes(0)
     expect(mockUseCaptureMessage).toHaveBeenCalledTimes(0)
     expect(mockUseSetTag).toHaveBeenCalledTimes(0)
 
-
 }
 
-const productionTest = async (level, components, stats, index) => {
+const productionTest = async (level, components, topics, stats, index, jndex) => {
 
     process.env.NODE_ENV = 'production'
 
@@ -156,13 +159,12 @@ const productionTest = async (level, components, stats, index) => {
             "sentry"   : { "dsn" : "https://5383c643fb7f49c8ae0b87c5a00a1f7b@o4505149124640768.ingest.sentry.io/4505149126148096" },
             "settings" : {
                 "components": components,
+                "topics":     topics,
                 "levels":     ["fatal", "error", "warning", "info", "debug", "log"],
                 "level":      level,
             },
         },
     }
-
-
 
     const mockUseInit = jest.fn((conf) => {  });
     useInit.mockReturnValue(mockUseInit);
@@ -184,7 +186,7 @@ const productionTest = async (level, components, stats, index) => {
             <div>
                 <MockConfigurationProvider config={Config}>
                     <LoggingProvider>
-                        <MockLoggingConsumer mode={process.env.NODE_ENV} index={index}/>
+                        <MockLoggingConsumer mode={process.env.NODE_ENV} index={index} jndex={jndex}/>
                     </LoggingProvider>
                 </MockConfigurationProvider>
             </div>
@@ -193,7 +195,7 @@ const productionTest = async (level, components, stats, index) => {
 
     })
 
-    const button_name = `mock-logging-consumer-${index}`
+    const button_name = `mock-logging-consumer-${index}-${jndex}`
 
     expect(mockUseInit).toHaveBeenCalledTimes(1)
     expect(mockUseCaptureMessage).toHaveBeenCalledTimes(0)
@@ -214,7 +216,6 @@ const productionTest = async (level, components, stats, index) => {
     expect(mockUseWarn).toHaveBeenCalledTimes(0)
     expect(mockUseLog).toHaveBeenCalledTimes(0)
 
-
 }
 
 
@@ -231,6 +232,7 @@ describe("Logging provider" ,() => {
                 "sentry"   : { "dsn" : "https://5383c643fb7f49c8ae0b87c5a00a1f7b@o4505149124640768.ingest.sentry.io/4505149126148096" },
                 "settings" : {
                     "components": ["all"],
+                    "topics":     ["all"],
                     "levels":     ["fatal", "error", "warning", "info", "debug", "log"],
                     "level":      "log",
                 },
@@ -257,7 +259,7 @@ describe("Logging provider" ,() => {
                     <div>
                         <MockConfigurationProvider config={Config}>
                             <LoggingProvider>
-                                <MockLoggingConsumer mode={process.env.NODE_ENV} index={0}/>
+                                <MockLoggingConsumer mode={process.env.NODE_ENV} index={0} jndex={0}/>
                             </LoggingProvider>
                         </MockConfigurationProvider>
                     </div>
@@ -267,23 +269,23 @@ describe("Logging provider" ,() => {
 
         })
 
-        const button_name = `mock-logging-consumer-0`
+        const button_name = `mock-logging-consumer-0-0`
 
         expect(mockUseError).toHaveBeenCalledTimes(4)
         expect(mockUseWarn).toHaveBeenCalledTimes(2)
-        expect(mockUseLog).toHaveBeenCalledTimes(6)
+        expect(mockUseLog).toHaveBeenCalledTimes(14)
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: button_name }))}) // eslint-disable-line testing-library/no-unnecessary-act
 
         expect(mockUseError).toHaveBeenCalledTimes(4)
         expect(mockUseWarn).toHaveBeenCalledTimes(2)
-        expect(mockUseLog).toHaveBeenCalledTimes(6)
+        expect(mockUseLog).toHaveBeenCalledTimes(14)
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: button_name }))}) // eslint-disable-line testing-library/no-unnecessary-act
 
         expect(mockUseError).toHaveBeenCalledTimes(8)
         expect(mockUseWarn).toHaveBeenCalledTimes(4)
-        expect(mockUseLog).toHaveBeenCalledTimes(12)
+        expect(mockUseLog).toHaveBeenCalledTimes(25)
 
         expect(mockUseInit).toHaveBeenCalledTimes(0)
         expect(mockUseCaptureMessage).toHaveBeenCalledTimes(0)
@@ -297,38 +299,57 @@ describe("Logging provider" ,() => {
         process.env.NODE_ENV = 'development'
 
         const levels = ['fatal', 'error', 'warning', 'info', 'debug', 'log'];
+        const topics = [ 'test', 'profiling','all']
         const stats = [
-            {error:1, warning:0, log:0},
-            {error:2, warning:0, log:0},
-            {error:2, warning:1, log:0},
-            {error:2, warning:1, log:1},
-            {error:2, warning:1, log:2},
-            {error:2, warning:1, log:3}
+            {error:1, warning:0, log:0, render: 0},
+            {error:2, warning:0, log:0, render: 0},
+            {error:2, warning:1, log:0, render: 0},
+            {error:2, warning:1, log:1, render: 0},
+            {error:2, warning:1, log:2, render: 0},
+            {error:2, warning:1, log:3, render: 0},
+            {error:0, warning:0, log:0, render: 0},
+            {error:0, warning:0, log:0, render: 0},
+            {error:0, warning:0, log:0, render: 0},
+            {error:0, warning:0, log:0, render: 0},
+            {error:0, warning:0, log:2, render: 3},
+            {error:0, warning:0, log:2, render: 3},
+            {error:1, warning:0, log:0, render: 0},
+            {error:2, warning:0, log:0, render: 0},
+            {error:2, warning:1, log:0, render: 0},
+            {error:2, warning:1, log:1, render: 0},
+            {error:2, warning:1, log:4, render: 3},
+            {error:2, warning:1, log:5, render: 3}
         ]
 
+        for (let i_topic = 0; i_topic < topics.length; i_topic ++) {
 
-        for (let i_level = 0; i_level < 1; i_level++) {
+            for (let i_level = 0; i_level < levels.length; i_level++) {
 
-            await developmentTest(levels[i_level], ["all"], stats[i_level], i_level)
-            localStorage.clear();
+                await developmentTest(levels[i_level], ["all"], topics[i_topic], stats[ i_topic * levels.length + i_level ], i_level, i_topic)
+                localStorage.clear();
+
+            }
 
         }
 
     })
 
-
     test('Should activate and deactivate logging publication in production', async () => {
-
 
         process.env.NODE_ENV = 'production'
 
         const levels = ['fatal', 'error', 'warning', 'info', 'debug', 'log'];
-        const stats = [1, 2, 3, 4, 4, 4]
+        const topics = [ 'test', 'profiling', 'all']
+        const stats = [1, 2, 3, 4, 4, 4, 1, 2, 3, 3, 3, 3, 1, 2, 3, 4, 4, 4]
 
-        for (let i_level = 0; i_level < levels.length; i_level++) {
+        for (let i_topic = 0; i_topic < topics.length; i_topic ++) {
 
-            await productionTest(levels[i_level], ["all"], stats[i_level], i_level)
-            localStorage.clear();
+            for (let i_level = 0; i_level < levels.length; i_level++) {
+
+                await productionTest(levels[i_level], ["all"], topics[i_topic], stats[i_topic * levels.length + i_level], i_level, i_topic)
+                localStorage.clear();
+
+            }
 
         }
 
@@ -337,26 +358,33 @@ describe("Logging provider" ,() => {
 
     test('Should not send message for non required components in production', async () => {
 
-
         process.env.NODE_ENV = 'production'
 
         const levels = ['fatal', 'error', 'warning', 'info', 'debug', 'log'];
-        const stats_selected = [1, 2, 3, 4, 4, 4]
-        const stats_unselected = [1, 2, 3, 3, 3, 3]
+        const topics = [ 'test', 'profiling', 'all']
+        const stats_selected = [1, 2, 3, 4, 4, 4, 1, 2, 3, 3, 3, 3, 1, 2, 3, 4, 4, 4]
+        const stats_unselected = [1, 2, 3, 3, 3, 3, 1, 2, 3, 3, 3, 3, 1, 2, 3, 3, 3, 3]
 
-        for (let i_level = 0; i_level < levels.length; i_level++) {
+        for (let i_topic = 0; i_topic < topics.length; i_topic ++) {
 
-            await productionTest(levels[i_level], ["test"], stats_selected[i_level], i_level)
-            localStorage.clear();
+            for (let i_level = 0; i_level < levels.length; i_level++) {
+
+                await productionTest(levels[i_level], ["test"], topics[i_topic], stats_selected[i_topic * levels.length + i_level], i_level, i_topic)
+                localStorage.clear();
+
+            }
 
         }
-        for (let i_level = 0; i_level < levels.length; i_level++) {
+        for (let i_topic = 0; i_topic < topics.length; i_topic ++) {
 
-            await productionTest(levels[i_level], [], stats_unselected[i_level], i_level + levels.length)
-            localStorage.clear();
+            for (let i_level = 0; i_level < levels.length; i_level++) {
+
+                await productionTest(levels[i_level], [], topics[i_topic], stats_unselected[i_topic * levels.length + i_level], i_level + levels.length, i_topic + topics.length)
+                localStorage.clear();
+
+            }
 
         }
-
 
     })
 
@@ -365,37 +393,69 @@ describe("Logging provider" ,() => {
 
         process.env.NODE_ENV = 'development'
 
-        const levels = ['fatal', 'error', 'warning', 'info', 'debug', 'log'];
+        const levels = [ 'fatal', 'error', 'warning', 'info', 'debug', 'log'];
+        const topics = [ 'test', 'profiling', 'all']
         const stats_selected = [
-            {error:1, warning:0, log:0},
-            {error:2, warning:0, log:0},
-            {error:2, warning:1, log:0},
-            {error:2, warning:1, log:1},
-            {error:2, warning:1, log:2},
-            {error:2, warning:1, log:3}
+            {error:1, warning:0, log:0, render:0},
+            {error:2, warning:0, log:0, render:0},
+            {error:2, warning:1, log:0, render:0},
+            {error:2, warning:1, log:1, render:0},
+            {error:2, warning:1, log:2, render:0},
+            {error:2, warning:1, log:3, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:2, render:0},
+            {error:0, warning:0, log:2, render:0},
+            {error:1, warning:0, log:0, render:0},
+            {error:2, warning:0, log:0, render:0},
+            {error:2, warning:1, log:0, render:0},
+            {error:2, warning:1, log:1, render:0},
+            {error:2, warning:1, log:4, render:0},
+            {error:2, warning:1, log:5, render:0}
         ]
         const stats_unselected = [
-            {error:0, warning:0, log:0},
-            {error:0, warning:0, log:0},
-            {error:0, warning:0, log:0},
-            {error:0, warning:0, log:0},
-            {error:0, warning:0, log:0},
-            {error:0, warning:0, log:0}
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0},
+            {error:0, warning:0, log:0, render:0}
         ]
 
-        for (let i_level = 0; i_level < levels.length; i_level++) {
+        for (let i_topic = 0; i_topic < topics.length; i_topic ++) {
 
-            await developmentTest(levels[i_level], ["test"], stats_selected[i_level], i_level)
-            localStorage.clear();
+            for (let i_level = 0; i_level < levels.length; i_level++) {
 
-        }
-        for (let i_level = 0; i_level < levels.length; i_level++) {
+                await developmentTest(levels[i_level], ["test"], topics[i_topic], stats_selected[i_topic * levels.length + i_level], i_level, i_topic)
+                localStorage.clear();
 
-            await developmentTest(levels[i_level], [], stats_unselected[i_level], i_level + levels.length)
-            localStorage.clear();
+            }
 
         }
+        for (let i_topic = 0; i_topic < topics.length; i_topic ++) {
 
+            for (let i_level = 0; i_level < levels.length; i_level++) {
+
+                await developmentTest(levels[i_level], [], topics[i_topic], stats_unselected[i_topic * levels.length + i_level], i_level + levels.length, i_topic + topics.length)
+                localStorage.clear();
+
+            }
+
+        }
 
     })
 

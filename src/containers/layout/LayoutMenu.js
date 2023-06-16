@@ -11,7 +11,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment }                                   from 'react';
+import { Fragment, Profiler }                         from 'react';
 
 /* Material UI includes */
 import { Toolbar, AppBar }                            from '@mui/material';
@@ -19,7 +19,7 @@ import { useTheme }                                   from '@mui/material/styles
 
 /* Portal includes */
 import { NavigationBar, HamburgerMenu, HamburgerBar } from '../../components';
-import { useDesign, useMenu }                         from '../../providers';
+import { useDesign, useMenu, useLogging }             from '../../providers';
 
 function LayoutMenu(props) {
 
@@ -27,12 +27,13 @@ function LayoutMenu(props) {
     const { top = '95px', left = '20px', height = '20px', width = '100%', item = '40px', isDark=false } = props || {};
     const { screen, isSliding }  = useDesign();
     const { isMenuOpen }         = useMenu();
+    const { onRender }           = useLogging();
     const theme                  = useTheme();
-    // const componentName = 'LayoutMenu';
+    const componentName = 'LayoutMenu';
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <AppBar elevation={isSliding ? 4 : 0} style={{ position:'absolute', height:height, display:'flex', width:width, top:top, left:left, backgroundColor: isSliding ? theme.palette.primary.main : 'rgba(255,255,255,0)'}}>
                 <Toolbar variant="dense" style={{ height: '100%', width: '100%', paddingLeft: '0px', paddingRight:'20px' }}>
                     {(screen === 'large') && (<NavigationBar height={height} isNegative={isSliding} theme={theme} isDark={isDark}/>)}
@@ -44,7 +45,7 @@ function LayoutMenu(props) {
                     )}
                 </Toolbar>
             </AppBar>
-        </Fragment>
+        </Profiler>
     );
 
 }

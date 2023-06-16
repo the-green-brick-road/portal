@@ -20,12 +20,16 @@ import { default as RobotGallery }                   from '../views/robotgallery
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { default as MockImage }                      from '../components/__mocks__/Image';
-import { useData as mockUseData, DataProvider as MockDataProvider } from '../providers/__mocks__/DataProvider';
+import { useRobots as mockUseRobots, RobotsProvider as MockRobotsProvider } from '../providers/__mocks__/RobotsProvider';
+import { useSeasons as mockUseSeasons, SeasonsProvider as MockSeasonsProvider } from '../providers/__mocks__/SeasonsProvider';
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../providers/__mocks__/LoggingProvider';
+import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../providers/__mocks__/DesignProvider';
 jest.mock("../components", () => ({ Image: (props) => MockImage(props) }));
 jest.mock('../providers', () => ({
-    useData:    (() => { return mockUseData(); }),
-    useLogging: (() => { return mockUseLogging(); }),
+    useRobots:    (() => { return mockUseRobots(); }),
+    useSeasons:   (() => { return mockUseSeasons(); }),
+    useLogging:   (() => { return mockUseLogging(); }),
+    useDesign:   (() => { return mockUseDesign(); }),
 }));
 /* eslint-enable jest/no-mocks-import */
 
@@ -33,19 +37,34 @@ describe("RobotGallery view" ,() => {
 
     test('Should display robot gallery page', async () => {
 
-        const Robots = [ { 'name' : 'robot1', 'id' : '1', 'type' : 'attachment', 'season' : '1' } , { 'name' : 'robot2', 'id' : '2', 'type' : 'jig', 'season' : '2'  }, { 'name' : 'robot3', 'id' : '3', 'type' : 'base', 'season' : '3'  }, { 'name' : 'robot5', 'id' : '5', 'type' : 'attachment', 'season' : '1' }, { 'name' : 'robot4', 'id' : '4', 'type' : 'attachment', 'season' : '1' }  ];
-        const Seasons = [ { 'name' : 'season1', 'id' : '1', 'start' : {'seconds' : 500000}} , { 'name' : 'season2', 'id' : '2', 'start' : {'seconds' : 400000} } , { 'name' : 'season3', 'id' : '3', 'start' : {'seconds' : 600000}}, { 'name' : 'season4', 'id' : '4', 'start' : {'seconds' : 550000} }]
+        const Robots = {
+            1 : { name : 'robot1', id : '1', type : 'attachment', season : '1', image : {raw : 'robot1', web : 'robot1' } } ,
+            2 : { name : 'robot2', id : '2', type : 'jig', season : '2' },
+            3 : { name : 'robot3', id : '3', type : 'base', season : '3' },
+            5 : { name : 'robot5', id : '5', type : 'attachment', season : '1' },
+            4 : { name : 'robot4', id : '4', type : 'attachment', season : '1' },
+        };
+        const Seasons = {
+            1 : { name : 'season1', id : '1', start : {seconds : 500000} } ,
+            2 : { name : 'season2', id : '2', start : {seconds : 400000} } ,
+            3 : { name : 'season3', id : '3', start : {seconds : 600000} },
+            4 : { name : 'season4', id : '4', start : {seconds : 550000} },
+        };
 
         let view = null
         await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
 
             view = render(
                 <div>
-                    <MockDataProvider robots={Robots} seasons={Seasons}>
-                        <MockLoggingProvider>
-                            <RobotGallery/>
-                        </MockLoggingProvider>
-                    </MockDataProvider>
+                    <MockRobotsProvider robots={Robots}>
+                        <MockSeasonsProvider seasons={Seasons}>
+                            <MockLoggingProvider>
+                                <MockDesignProvider>
+                                    <RobotGallery/>
+                                </MockDesignProvider>
+                            </MockLoggingProvider>
+                        </MockSeasonsProvider>
+                    </MockRobotsProvider>
                 </div>
             )
 

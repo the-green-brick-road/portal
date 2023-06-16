@@ -6,14 +6,15 @@ exports[`Image component Should display an image if existing 1`] = `
     <div>
       <picture
         data-testid=\\"picture-test\\"
+        style=\\"margin: 70px;\\"
       >
-        <source
-          srcset=\\" test.png 200w , test.png 400w , test.png 800w ,\\"
-          type=\\"image/png\\"
-        />
         <source
           srcset=\\" test.webp 200w , test.webp 400w , test.webp 800w ,\\"
           type=\\"image/webp\\"
+        />
+        <source
+          srcset=\\" test.png 200w , test.png 400w , test.png 800w ,\\"
+          type=\\"image/png\\"
         />
         <img
           alt=\\"test\\"

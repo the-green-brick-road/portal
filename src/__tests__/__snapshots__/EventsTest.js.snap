@@ -10,7 +10,7 @@ exports[`Events view Should display events page 1`] = `
       >
         <div
           class=\\"MuiBox-root css-0\\"
-          style=\\"width: 100%; pointer-events: none; background-color: blue;\\"
+          style=\\"width: 100%; pointer-events: none; height: auto; background-color: blue;\\"
         />
       </div>
       <div
@@ -406,28 +406,6 @@ exports[`Events view Should display events page 1`] = `
             <tr
               class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
             >
-              <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-                colspan=\\"1\\"
-                style=\\"background-color: rgb(25, 118, 210); padding: 5px;\\"
-              >
-                <p
-                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                  style=\\"text-align: center; color: rgb(255, 255, 255);\\"
-                >
-                   
-                  Mon
-                   
-                </p>
-                <p
-                  class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                  style=\\"text-align: center; color: rgb(255, 255, 255);\\"
-                >
-                   
-                  12
-                   
-                </p>
-              </td>
               <td
                 class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
                 colspan=\\"3\\"

@@ -20,8 +20,12 @@ import { default as Footer } from '../../components/footer/Footer';
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../../providers/__mocks__/DesignProvider';
+import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
 import { default as MockImage }  from '../../components/__mocks__/Image';
-jest.mock('../../providers', () => ({ useDesign: (() => { return mockUseDesign(); }) }));
+jest.mock('../../providers', () => ({
+    useLogging: (() => { return mockUseLogging(); }),
+    useDesign: (() => { return mockUseDesign(); }),
+}));
 jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
 /* eslint-enable jest/no-mocks-import */
 
@@ -82,9 +86,11 @@ describe("Footer component" ,() => {
 
         const view = render(
             <div>
-                <MockDesignProvider isWebpSupported={true} screen='large' theme={theme}>
-                    <Footer/>
-                </MockDesignProvider>
+                <MockLoggingProvider>
+                    <MockDesignProvider isWebpSupported={true} screen='large' theme={theme}>
+                        <Footer/>
+                    </MockDesignProvider>
+                </MockLoggingProvider>
             </div>
         );
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});
@@ -96,9 +102,11 @@ describe("Footer component" ,() => {
 
         const view = render(
             <div>
-                <MockDesignProvider isWebpSupported={true} screen='small' theme={theme}>
-                    <Footer/>
-                </MockDesignProvider>
+                <MockLoggingProvider>
+                    <MockDesignProvider isWebpSupported={true} screen='small' theme={theme}>
+                        <Footer/>
+                    </MockDesignProvider>
+                </MockLoggingProvider>
             </div>
         );
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});

@@ -10,32 +10,42 @@
 # Latest revision: 23 may 2023
 # ---------------------------------------------------- */
 
+/* React includes */
+import { Profiler }     from 'react';
+
 /* Material UI includes */
 import { Container }    from '@mui/material';
+
+/* Portal includes */
+import { useLogging }   from '../../providers';
 
 function LayoutContent(props) {
 
     /* --------- Gather inputs --------- */
     const { top, left, height, width } = props || {};
+    const { onRender }                 = useLogging();
+    const componentName  = "LayoutContent";
 
     /* ----------- Define HTML --------- */
     return (
-        <Container>
-            <Container
-                id="content"
-                style={{
-                    width,
-                    height,
-                    position: 'fixed',
-                    backgroundColor: 'rgba(255,255,255,0)',
-                    top: top,
-                    left: left,
-                    flexDirection: 'row',
-                    overflow: 'hidden',
-                    zIndex: '-1',
-                }}
-            />
-        </Container>
+        <Profiler id={componentName} onRender={onRender}>
+            <Container>
+                <Container
+                    id="content"
+                    style={{
+                        width,
+                        height,
+                        position: 'fixed',
+                        backgroundColor: 'rgba(255,255,255,0)',
+                        top: top,
+                        left: left,
+                        flexDirection: 'row',
+                        overflow: 'hidden',
+                        zIndex: '-1',
+                    }}
+                />
+            </Container>
+        </Profiler>
     );
 
 }

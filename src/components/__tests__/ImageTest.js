@@ -20,7 +20,11 @@ import { Image }                     from '../../components';
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../../providers/__mocks__/DesignProvider';
-jest.mock('../../providers', () => ({ useDesign: (() => { return mockUseDesign(); }) }));
+import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
+jest.mock('../../providers', () => ({
+    useDesign: (() => { return mockUseDesign(); }),
+    useLogging: (() => { return mockUseLogging(); }),
+}));
 /* eslint-enable jest/no-mocks-import */
 
 
@@ -45,9 +49,11 @@ describe("Image component" ,() => {
         const view = render(
 
             <div>
-                <MockDesignProvider screen='large' images={images} sizes={sizes}>
-                    <Image name='test' style={{ margin:'70px' }}/>
-                </MockDesignProvider>
+                <MockLoggingProvider>
+                    <MockDesignProvider screen='large' images={images} sizes={sizes}>
+                        <Image name='test' style={{ margin:'70px' }}/>
+                    </MockDesignProvider>
+                </MockLoggingProvider>
             </div>
 
         );
@@ -77,9 +83,11 @@ describe("Image component" ,() => {
         render(
 
             <div>
-                <MockDesignProvider screen='large' images={images} sizes={sizes}>
-                    <Image name='logo' style={{ margin:'70px' }}/>
-                </MockDesignProvider>
+                <MockLoggingProvider>
+                    <MockDesignProvider screen='large' images={images} sizes={sizes}>
+                        <Image name='logo' style={{ margin:'70px' }}/>
+                    </MockDesignProvider>
+                </MockLoggingProvider>
             </div>
 
         );

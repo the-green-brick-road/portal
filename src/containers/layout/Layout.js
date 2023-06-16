@@ -11,27 +11,29 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment }   from 'react';
-import { Outlet }     from "react-router-dom";
+import { Profiler }              from 'react';
+import { Outlet }                from "react-router-dom";
 
 /* Material UI includes */
-import { Container }  from '@mui/material';
-import { useTheme }   from '@mui/material/styles';
+import { Container }             from '@mui/material';
+import { useTheme }              from '@mui/material/styles';
 
 /* Portal includes */
-import { useDesign }  from '../../providers';
+import { useDesign, useLogging } from '../../providers';
 
 /* Local includes */
-import LayoutPage     from './LayoutPage';
-import LayoutContent  from './LayoutContent';
-import LayoutMenu     from './LayoutMenu';
-import LayoutFooter   from './LayoutFooter';
+import LayoutPage                from './LayoutPage';
+import LayoutContent             from './LayoutContent';
+import LayoutMenu                from './LayoutMenu';
+import LayoutFooter              from './LayoutFooter';
 
 function Layout() {
 
     /* --------- Gather inputs --------- */
     const { sizes, isDarkMode } = useDesign();
+    const { onRender }          = useLogging();
     const theme                 = useTheme();
+    const componentName = 'Layout';
 
     /* -------- Defining theme --------- */
     const background_color = theme.palette.common.white;
@@ -47,7 +49,7 @@ function Layout() {
 
     /* -------- Render component ------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <Container style={{ width: '100vw', height: '100vh', maxWidth:'3000px', backgroundColor: theme.palette.background.default, zIndex: -1, position: 'absolute', padding:0}}/>
             <LayoutMenu top={margin_height} height={menu_height} width={width} left={margin_width} item={item} isDark={isDarkMode}/>
             <LayoutContent top={menu_height} left={margin_width} height={content_height} width={width}/>
@@ -55,7 +57,7 @@ function Layout() {
                 <Outlet />
                 <LayoutFooter width={width} color={background_color} isDark={isDarkMode}/>
             </LayoutPage>
-        </Fragment>
+        </Profiler>
     );
 
 }

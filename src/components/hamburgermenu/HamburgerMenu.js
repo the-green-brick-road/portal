@@ -10,6 +10,9 @@
 # Latest revision: 24 may 2023
 # ---------------------------------------------------- */
 
+/* React includes */
+import { Profiler }                                                                 from 'react';
+
 /* Material UI includes */
 import { MenuList, MenuItem, ListItemText, ListItemIcon, Link, Divider, Container } from '@mui/material';
 import { styled }                                                                   from '@mui/system';
@@ -114,8 +117,8 @@ function HamburgerMenu(props) {
 
     /* --------- Gather inputs --------- */
     const { top = '95px', margin='20px', itemHeight='20px', isNegative = false, theme={palette:{common:{white:'#ffffff'},primary:{main:'#000000'},secondary:{main:'#ffffff'}}} } = props;
-    const { selectEntry, entries, setMenuState }                           = useMenu();
-    const { logText }                                                                      = useLogging();
+    const { selectEntry, entries, setMenuState } = useMenu();
+    const { logText, onRender }                  = useLogging();
     const componentName    = 'HamburgerMenu';
 
     /* --------- Derive sizes ---------- */
@@ -147,40 +150,16 @@ function HamburgerMenu(props) {
 
     /* ----------- Define HTML --------- */
     return (
-        <HamburgerMenuFrame top={top} left={0} width={menuWidthString} color={menucolor}>
-            <HamburgerMenuList padding="0px">
-                {entries.map((item) => {
+        <Profiler id={componentName} onRender={onRender}>
+            <HamburgerMenuFrame top={top} left={0} width={menuWidthString} color={menucolor}>
+                <HamburgerMenuList padding="0px">
+                    {entries.map((item) => {
 
-                    const IconName = item.icon;
-                    return (
-                        <div key={item.id}>
-                            {('subitems' in item) && (
-                                <HamburgerMenuItem name={item.id} divider={false} padding="0px" height={itemHeight} color={txtcolor} onClick={handleClick} >
-                                    <HamburgerListItemIcon color={txtcolor}>
-                                        <IconName />
-                                    </HamburgerListItemIcon>
-                                    <HamburgerListItemText color={txtcolor}>
-                                        {item.id}
-                                    </HamburgerListItemText>
-                                </HamburgerMenuItem>
-                            )}
-                            {('subitems' in item) && item.subitems.map((subitem) => {
-
-                                return (
-                                    <Link key={subitem.id} underline="none" href={subitem.path} target={subitem.target} name={subitem.id}>
-                                        <HamburgerMenuSubItem name={item.id} onClick={handleClose} divider={false} padding="0px" height={itemHeight} color={txtcolor}>
-                                            <HamburgerListSubItemText color={txtcolor}>
-                                                {subitem.id}
-                                            </HamburgerListSubItemText>
-                                        </HamburgerMenuSubItem>
-                                    </Link>
-                                )
-
-                            })}
-                            {('subitems' in item) && <Divider light />}
-                            {!('subitems' in item) && (
-                                <Link key={item.id} underline="none" href={item.path} target={item.target} name={item.id}>
-                                    <HamburgerMenuItem name={item.id} onClick={handleClose} divider={true} key={item.id} padding="0px" height={itemHeight} color={txtcolor}>
+                        const IconName = item.icon;
+                        return (
+                            <div key={item.id}>
+                                {('subitems' in item) && (
+                                    <HamburgerMenuItem name={item.id} divider={false} padding="0px" height={itemHeight} color={txtcolor} onClick={handleClick} >
                                         <HamburgerListItemIcon color={txtcolor}>
                                             <IconName />
                                         </HamburgerListItemIcon>
@@ -188,14 +167,40 @@ function HamburgerMenu(props) {
                                             {item.id}
                                         </HamburgerListItemText>
                                     </HamburgerMenuItem>
-                                </Link>
-                            )}
-                        </div>
-                    );
+                                )}
+                                {('subitems' in item) && item.subitems.map((subitem) => {
 
-                })}
-            </HamburgerMenuList>
-        </HamburgerMenuFrame>
+                                    return (
+                                        <Link key={subitem.id} underline="none" href={subitem.path} target={subitem.target} name={subitem.id}>
+                                            <HamburgerMenuSubItem name={item.id} onClick={handleClose} divider={false} padding="0px" height={itemHeight} color={txtcolor}>
+                                                <HamburgerListSubItemText color={txtcolor}>
+                                                    {subitem.id}
+                                                </HamburgerListSubItemText>
+                                            </HamburgerMenuSubItem>
+                                        </Link>
+                                    )
+
+                                })}
+                                {('subitems' in item) && <Divider light />}
+                                {!('subitems' in item) && (
+                                    <Link key={item.id} underline="none" href={item.path} target={item.target} name={item.id}>
+                                        <HamburgerMenuItem name={item.id} onClick={handleClose} divider={true} key={item.id} padding="0px" height={itemHeight} color={txtcolor}>
+                                            <HamburgerListItemIcon color={txtcolor}>
+                                                <IconName />
+                                            </HamburgerListItemIcon>
+                                            <HamburgerListItemText color={txtcolor}>
+                                                {item.id}
+                                            </HamburgerListItemText>
+                                        </HamburgerMenuItem>
+                                    </Link>
+                                )}
+                            </div>
+                        );
+
+                    })}
+                </HamburgerMenuList>
+            </HamburgerMenuFrame>
+        </Profiler>
     );
 
 }
