@@ -37,8 +37,8 @@ jest.mock('../../providers', () => ({
 
 function MockDesignConsumer(props) {
 
-    const { isSliding, isWebpSupported, screen, sizes, images, setIsSliding } = useDesign();
-    const { size } = props;
+    const { isSliding, isWebpSupported, screen, sizes, images, isDarkMode, setIsSliding } = useDesign();
+    const { size, isDark } = props;
 
     var calls = JSON.parse(localStorage.getItem('mock-design-consumer'));
     if (calls === null) { calls = 0; }
@@ -49,7 +49,8 @@ function MockDesignConsumer(props) {
     expect(screen).toBe(size)
     if(calls > 0) {
 
-        expect(isWebpSupported).toBe(true)
+        expect(isWebpSupported).toBe(false)
+        expect(isDarkMode).toBe(isDark)
 
         expect(sizes['small-width']).toBe(200)
         expect(sizes['medium-width']).toBe(400)
@@ -227,7 +228,7 @@ describe("Design provider" ,() => {
                     <MockConfigurationProvider config={Config}>
                         <MockLoggingProvider>
                             <DesignProvider >
-                                <MockDesignConsumer size='large'/>
+                                <MockDesignConsumer size='large' isDark={true}/>
                             </DesignProvider>
                         </MockLoggingProvider>
                     </MockConfigurationProvider>
@@ -274,7 +275,7 @@ describe("Design provider" ,() => {
                     <MockConfigurationProvider config={Config}>
                         <MockLoggingProvider>
                             <DesignProvider >
-                                <MockDesignConsumer size='small'/>
+                                <MockDesignConsumer size='small' isDark={false}/>
                             </DesignProvider>
                         </MockLoggingProvider>
                     </MockConfigurationProvider>
@@ -284,8 +285,12 @@ describe("Design provider" ,() => {
 
         })
 
+        const delay = ms => new Promise(res => setTimeout(res, ms));
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-design-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(1000);
+
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-design-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(1000);
 
         const h1 = getComputedStyle(screen.getByTestId('mock-design-consumer-h1'))
         const h2 = getComputedStyle(screen.getByTestId('mock-design-consumer-h2'))

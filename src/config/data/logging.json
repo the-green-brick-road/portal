@@ -1,5 +1,6 @@
 {
     "components": ["all"],
+    "topics":     ["workflow"],
     "levels":     ["fatal", "error", "warning", "info", "debug", "log"],
     "level":      "log"
 }

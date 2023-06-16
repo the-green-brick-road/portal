@@ -12,22 +12,22 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { useMemo, useReducer, useEffect }   from 'react';
+import { useMemo, useReducer, useEffect, Profiler } from 'react';
 
 /* Portal includes */
-import { useLogging, useConfiguration }     from '../../providers';
+import { useLogging, useConfiguration }             from '../../providers';
 
 /* Local includes */
-import { Context }                          from './Context';
-import { setIsMenuOpen, setIsItemSelected } from './store/actions';
-import reducer                              from './store/reducer';
+import { Context }                                  from './Context';
+import { setIsMenuOpen, setIsItemSelected }         from './store/actions';
+import reducer                                      from './store/reducer';
 
 
 function Provider(props) {
 
     /* --------- Gather inputs --------- */
     const { children, persistKey = 'menu' } = props;
-    const { logText }                       = useLogging();
+    const { logText, onRender }             = useLogging();
     const { config }                        = useConfiguration();
     const componentName = 'MenuProvider';
 
@@ -83,9 +83,11 @@ function Provider(props) {
 
     /* ----------- Define HTML --------- */
     return (
-        <Context.Provider value={state}>
-            {children}
-        </Context.Provider>
+        <Profiler id={componentName} onRender={onRender}>
+            <Context.Provider value={state}>
+                {children}
+            </Context.Provider>
+        </Profiler>
     );
 
 }

@@ -20,17 +20,18 @@ import { default as Blog }         from '../views/blog/Blog';
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { default as MockImage }    from '../components/__mocks__/Image';
-import { useData as mockUseData, DataProvider as MockDataProvider } from '../providers/__mocks__/DataProvider';
+import { usePosts as mockUsePosts, PostsProvider as MockPostsProvider } from '../providers/__mocks__/PostsProvider';
 import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../providers/__mocks__/DesignProvider';
+import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../providers/__mocks__/LoggingProvider';
 jest.mock("../components", () => ({ Image: (props) => MockImage(props) }));
 jest.mock('../providers', () => ({
-    useData:    (() => { return mockUseData(); }),
+    usePosts:    (() => { return mockUsePosts(); }),
     useDesign: (() => { return mockUseDesign(); }),
+    useLogging: (() => { return mockUseLogging() }),
 }));
 /* eslint-enable jest/no-mocks-import */
 
 describe("Blog view" ,() => {
-
 
     const sizes = {
         "small-width"          : 200,
@@ -94,16 +95,26 @@ describe("Blog view" ,() => {
 
     test('Should display blog page', async () => {
 
-
-        const Posts = [ { 'title' : 'post1', 'id' : '1', 'real': true, 'date' : { 'seconds' : 500000 } } , { 'title' : 'post2', 'id' : '2', 'real': true, 'date' : { 'seconds' : 400000 } }, { 'title' : 'post3', 'id' : '3', 'real': true, 'date' : { 'seconds' : 800000 } }, { 'title' : 'post4', 'id' : '4', 'real': true, 'date' : { 'seconds' : 0 } }, { 'title' : 'post5', 'id' : '5', 'real': true, 'date' : { 'seconds' : 0 } }, { 'title' : 'post6', 'id' : '6', 'real': true, 'date' : { 'seconds' : 1000000 } }, { 'title' : 'post7', 'id' : '7', 'real': true, 'date' : { 'seconds' : 450000 } }, { 'title' : 'post8', 'id' : '8', 'real': false, 'date' : { 'seconds' : 1200000 } } ];
+        const Posts = {
+            1 : { title : 'post1', id : '1', real: true, date : { seconds : 500000 } },
+            2 : { title : 'post2', id : '2', real: true, date : { seconds : 400000 } },
+            3 : { title : 'post3', id : '3', real: true, date : { seconds : 800000 } },
+            4 : { title : 'post4', id : '4', real: true, date : { seconds : 0 } },
+            5 : { title : 'post5', id : '5', real: true, date : { seconds : 0 } },
+            6 : { title : 'post6', id : '6', real: true, date : { seconds : 1000000 } },
+            7 : { title : 'post7', id : '7', real: true, date : { seconds : 450000 } },
+            8 : { title : 'post8', id : '8', real: false, date : { seconds : 1200000 } },
+        };
 
         const view = render(
             <div>
-                <MockDataProvider posts={Posts}>
-                    <MockDesignProvider screen='large' theme={theme} sizes={sizes}>
-                        <Blog/>
-                    </MockDesignProvider>
-                </MockDataProvider>
+                <MockLoggingProvider>
+                    <MockPostsProvider posts={Posts}>
+                        <MockDesignProvider screen='large' theme={theme} sizes={sizes}>
+                            <Blog/>
+                        </MockDesignProvider>
+                    </MockPostsProvider>
+                </MockLoggingProvider>
             </div>
         );
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});

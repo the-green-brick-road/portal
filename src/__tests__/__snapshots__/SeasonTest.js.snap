@@ -22,7 +22,6 @@ exports[`Season view Should display season page for desktop 1`] = `
         >
           <img
             alt=\\"season\\"
-            src=\\"https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0\\"
             style=\\"pointer-events: none; width: 100%; position: absolute; z-index: 1;\\"
           />
         </div>
@@ -485,13 +484,25 @@ exports[`Season view Should display season page for mobile 1`] = `
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
         id=\\"season-mobile\\"
-        style=\\"width: 100%; height: 30vh; padding: 0px; background-color: rgb(0, 0, 0); position: relative;\\"
+        style=\\"background-color: rgb(255, 255, 255); width: 100%; height: 80px; padding: 0px; position: relative;\\"
+      />
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100%; padding: 0px; position: relative;\\"
       >
-        <img
-          alt=\\"season\\"
-          src=\\"https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0\\"
-          style=\\"position: absolute; z-index: 1; top: 11vh; right: 2%; height: 15vh;\\"
+        <div
+          class=\\"MuiBox-root css-0\\"
+          style=\\"width: 100%; pointer-events: none; background-color: blue;\\"
         />
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          style=\\"position: absolute; z-index: 1; top: 0%; left: 0%; width: 20%;\\"
+        >
+          <img
+            alt=\\"season\\"
+            style=\\"pointer-events: none; width: 100%; position: absolute; z-index: 1;\\"
+          />
+        </div>
       </div>
       <div
         class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
@@ -997,27 +1008,6 @@ exports[`Season view Should display season page for mobile 1`] = `
               </svg>
             </div>
           </div>
-          <div
-            class=\\"MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root\\"
-            style=\\"min-height: 0px;\\"
-          >
-            <div
-              class=\\"MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper\\"
-            >
-              <div
-                class=\\"MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner\\"
-              >
-                <div
-                  class=\\"MuiAccordion-region\\"
-                  role=\\"region\\"
-                >
-                  <div
-                    class=\\"MuiAccordionDetails-root css-yuqx6y-MuiAccordionDetails-root\\"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div
           class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-1yof2we-MuiPaper-root-MuiAccordion-root\\"
@@ -1055,78 +1045,6 @@ exports[`Season view Should display season page for mobile 1`] = `
                   d=\\"M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
                 />
               </svg>
-            </div>
-          </div>
-          <div
-            class=\\"MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root\\"
-            style=\\"min-height: 0px;\\"
-          >
-            <div
-              class=\\"MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper\\"
-            >
-              <div
-                class=\\"MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner\\"
-              >
-                <div
-                  class=\\"MuiAccordion-region\\"
-                  role=\\"region\\"
-                >
-                  <div
-                    class=\\"MuiAccordionDetails-root css-yuqx6y-MuiAccordionDetails-root\\"
-                  >
-                    <table
-                      class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
-                      style=\\"width: 100%;\\"
-                    >
-                      <tbody
-                        class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
-                      >
-                        <tr
-                          class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
-                        >
-                          <td
-                            class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-                            style=\\"width: 0%; padding: 0px; border-style: none;\\"
-                          >
-                            <a
-                              class=\\"MuiTypography-root MuiTypography-body2 MuiLink-root MuiLink-underlineAlways css-101ca9i-MuiTypography-root-MuiLink-root\\"
-                              href=\\"www.google.com\\"
-                              style=\\"color: black; text-decoration: none;\\"
-                              target=\\"_blank\\"
-                            >
-                              <svg
-                                aria-hidden=\\"true\\"
-                                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                                data-testid=\\"OpenInBrowserIcon\\"
-                                focusable=\\"false\\"
-                                style=\\"color: rgb(25, 118, 210);\\"
-                                viewBox=\\"0 0 24 24\\"
-                              >
-                                <path
-                                  d=\\"M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6-4 4h3v6h2v-6h3l-4-4z\\"
-                                />
-                              </svg>
-                            </a>
-                          </td>
-                          <td
-                            class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-                            style=\\"text-align: left; padding-top: 0px; padding-bottom: 0px; padding-left: 10px; border-style: none;\\"
-                          >
-                            <a
-                              class=\\"MuiTypography-root MuiTypography-body2 MuiLink-root MuiLink-underlineAlways css-101ca9i-MuiTypography-root-MuiLink-root\\"
-                              href=\\"www.google.com\\"
-                              style=\\"color: black; text-decoration: none; font-size: 11px;\\"
-                              target=\\"_blank\\"
-                            >
-                              google
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1168,27 +1086,6 @@ exports[`Season view Should display season page for mobile 1`] = `
               </svg>
             </div>
           </div>
-          <div
-            class=\\"MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root\\"
-            style=\\"min-height: 0px;\\"
-          >
-            <div
-              class=\\"MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper\\"
-            >
-              <div
-                class=\\"MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner\\"
-              >
-                <div
-                  class=\\"MuiAccordion-region\\"
-                  role=\\"region\\"
-                >
-                  <div
-                    class=\\"MuiAccordionDetails-root css-yuqx6y-MuiAccordionDetails-root\\"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div
           class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-1yof2we-MuiPaper-root-MuiAccordion-root\\"
@@ -1226,27 +1123,6 @@ exports[`Season view Should display season page for mobile 1`] = `
                   d=\\"M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
                 />
               </svg>
-            </div>
-          </div>
-          <div
-            class=\\"MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root\\"
-            style=\\"min-height: 0px;\\"
-          >
-            <div
-              class=\\"MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper\\"
-            >
-              <div
-                class=\\"MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner\\"
-              >
-                <div
-                  class=\\"MuiAccordion-region\\"
-                  role=\\"region\\"
-                >
-                  <div
-                    class=\\"MuiAccordionDetails-root css-yuqx6y-MuiAccordionDetails-root\\"
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>

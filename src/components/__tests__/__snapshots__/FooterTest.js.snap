@@ -7,488 +7,433 @@ exports[`Footer component Should display a large footer 1`] = `
       <div
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation1 css-1p2ttux-MuiPaper-root\\"
         id=\\"footer\\"
-        style=\\"position: relative; padding: 0px; bottom: 0px;\\"
+        style=\\"position: relative; padding: 0px 20px 0px 11px; bottom: 0px;\\"
       >
+        <hr
+          class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
+          style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
+        />
         <div
-          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-          id=\\"footer-desktop\\"
-          style=\\"padding-top: 0px; padding-left: 11px; padding-right: 20px;\\"
+          class=\\"MuiStack-root css-1phf8ru-MuiStack-root\\"
+          style=\\"width: 100%; padding: 5px;\\"
         >
-          <hr
-            class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
-            style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
-          />
+          <p
+            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 14px; font-weight: bold;\\"
+          >
+            Follow us:
+          </p>
+          <a
+            aria-label=\\"GBR on YouTube\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            col=\\"#666666\\"
+            data-mui-internal-clone-element=\\"true\\"
+            href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+            target=\\"_blank\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"YouTubeIcon\\"
+              focusable=\\"false\\"
+              style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z\\"
+              />
+            </svg>
+          </a>
+          <a
+            aria-label=\\"GBR on Github\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            col=\\"#666666\\"
+            data-mui-internal-clone-element=\\"true\\"
+            href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+            target=\\"_blank\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"GitHubIcon\\"
+              focusable=\\"false\\"
+              style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27\\"
+              />
+            </svg>
+          </a>
+          <a
+            aria-label=\\"GBR on Facebook\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            col=\\"#666666\\"
+            data-mui-internal-clone-element=\\"true\\"
+            href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+            target=\\"_blank\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"FacebookIcon\\"
+              focusable=\\"false\\"
+              style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z\\"
+              />
+            </svg>
+          </a>
+          <a
+            aria-label=\\"GBR on Instagram\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            col=\\"#666666\\"
+            data-mui-internal-clone-element=\\"true\\"
+            href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+            target=\\"_blank\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"InstagramIcon\\"
+              focusable=\\"false\\"
+              style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z\\"
+              />
+            </svg>
+          </a>
+        </div>
+        <hr
+          class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
+          style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
+        />
+        <div
+          class=\\"MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root\\"
+          style=\\"padding-top: 5px;\\"
+        >
           <div
-            class=\\"MuiStack-root css-1phf8ru-MuiStack-root\\"
-            style=\\"width: 100%; padding: 5px;\\"
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-1osj8n2-MuiGrid-root\\"
+            style=\\"padding-bottom: 5px;\\"
           >
             <p
               class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-              style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 14px; font-weight: bold;\\"
+              style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 14px; font-weight: bold; text-decoration: underline;\\"
             >
-              Follow us:
+              About us
             </p>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-1osj8n2-MuiGrid-root\\"
+            style=\\"padding-bottom: 5px;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 14px; font-weight: bold; text-decoration: underline;\\"
+            >
+              Resources
+            </p>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
+            style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
+          >
             <a
-              aria-label=\\"GBR on YouTube\\"
               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-              data-mui-internal-clone-element=\\"true\\"
-              href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+              href=\\"https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu\\"
               target=\\"_blank\\"
             >
-              <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
-                col=\\"#666666\\"
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                data-testid=\\"LocationOnIcon\\"
+                focusable=\\"false\\"
+                style=\\"color: rgb(102, 102, 102); height: 20px;\\"
+                viewBox=\\"0 0 24 24\\"
               >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"YouTubeIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z\\"
-                  />
-                </svg>
-              </div>
-            </a>
-            <a
-              aria-label=\\"GBR on Github\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-              data-mui-internal-clone-element=\\"true\\"
-              href=\\"https://github.com/the-green-brick-road/\\"
-              target=\\"_blank\\"
-            >
-              <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
-                col=\\"#666666\\"
-              >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"GitHubIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27\\"
-                  />
-                </svg>
-              </div>
-            </a>
-            <a
-              aria-label=\\"GBR on Facebook\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-              data-mui-internal-clone-element=\\"true\\"
-              href=\\"https://www.facebook.com/100093250563007/\\"
-              target=\\"_blank\\"
-            >
-              <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
-                col=\\"#666666\\"
-              >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"FacebookIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z\\"
-                  />
-                </svg>
-              </div>
-            </a>
-            <a
-              aria-label=\\"GBR on Instagram\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-              data-mui-internal-clone-element=\\"true\\"
-              href=\\"https://www.instagram.com/the.green.brick.road/\\"
-              target=\\"_blank\\"
-            >
-              <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
-                col=\\"#666666\\"
-              >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"InstagramIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z\\"
-                  />
-                </svg>
-              </div>
+                <path
+                  d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
+                />
+              </svg>
             </a>
           </div>
-          <hr
-            class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
-            style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
-          />
           <div
-            class=\\"MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root\\"
-            style=\\"padding-top: 5px;\\"
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
+            style=\\"padding-top: 5px; height: 20px;\\"
           >
-            <div
-              class=\\"MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 css-spompt-MuiGrid-root\\"
-              style=\\"padding-bottom: 5px;\\"
-            >
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-1osj8n2-MuiGrid-root\\"
-              >
-                <p
-                  class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 14px; font-weight: bold; text-decoration: underline;\\"
-                >
-                  About us
-                </p>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-1osj8n2-MuiGrid-root\\"
-              >
-                <p
-                  class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 14px; font-weight: bold; text-decoration: underline;\\"
-                >
-                  Resources
-                </p>
-              </div>
-            </div>
-            <div
-              class=\\"MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 css-spompt-MuiGrid-root\\"
-              style=\\"padding-top: 2px; height: 20px;\\"
-            >
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
-                style=\\"text-align: center;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    aria-hidden=\\"true\\"
-                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                    data-testid=\\"LocationOnIcon\\"
-                    focusable=\\"false\\"
-                    style=\\"color: rgb(102, 102, 102); height: 20px;\\"
-                    viewBox=\\"0 0 24 24\\"
-                  >
-                    <path
-                      d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
-                style=\\"padding-top: 3px;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu\\"
-                  target=\\"_blank\\"
-                >
-                  <p
-                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
-                  >
-                    145 New Street - Mamaroneck, NY 10543
-                  </p>
-                </a>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
-                style=\\"text-align: center;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://www.firstlegoleague.org/\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    fill=\\"#666666\\"
-                    style=\\"color: rgb(102, 102, 102); height: 20px;\\"
-                  >
-                    fll.svg
-                  </svg>
-                </a>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
-                style=\\"padding-top: 3px;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://www.firstlegoleague.org/\\"
-                  target=\\"_blank\\"
-                >
-                  <p
-                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
-                  >
-                    First Lego League
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div
-              class=\\"MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 css-spompt-MuiGrid-root\\"
-              style=\\"padding-top: 2px; height: 20px;\\"
-            >
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
-                style=\\"text-align: center;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  href=\\"mailto:green.brick.road.first@gmail.com\\"
-                >
-                  <svg
-                    aria-hidden=\\"true\\"
-                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                    data-testid=\\"EmailIcon\\"
-                    focusable=\\"false\\"
-                    style=\\"color: rgb(102, 102, 102); height: 20px;\\"
-                    viewBox=\\"0 0 24 24\\"
-                  >
-                    <path
-                      d=\\"M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z\\"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
-                style=\\"padding-top: 4px;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
-                  href=\\"mailto:contact.technogix@gmail.com\\"
-                >
-                  <p
-                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
-                  >
-                    green.brick.road.first@gmail.com
-                  </p>
-                </a>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
-                style=\\"text-align: center;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://www.fasny.org/\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    fill=\\"#666666\\"
-                    style=\\"height: 20px;\\"
-                  >
-                    fasny.svg
-                  </svg>
-                </a>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
-                style=\\"padding-top: 4px;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://www.fasny.org/\\"
-                  target=\\"_blank\\"
-                >
-                  <p
-                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
-                  >
-                    French American School of New York
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div
-              class=\\"MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 css-spompt-MuiGrid-root\\"
-              style=\\"padding-top: 2px; height: 20px;\\"
-            >
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
-                style=\\"text-align: center;\\"
-              >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"PolicyIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"color: rgb(102, 102, 102); height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"m21 5-9-4-9 4v6c0 5.55 3.84 10.74 9 12 2.3-.56 4.33-1.9 5.88-3.71l-3.12-3.12c-1.94 1.29-4.58 1.07-6.29-.64-1.95-1.95-1.95-5.12 0-7.07 1.95-1.95 5.12-1.95 7.07 0 1.71 1.71 1.92 4.35.64 6.29l2.9 2.9C20.29 15.69 21 13.38 21 11V5z\\"
-                  />
-                  <circle
-                    cx=\\"12\\"
-                    cy=\\"12\\"
-                    r=\\"3\\"
-                  />
-                </svg>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
-                style=\\"padding-top: 4px;\\"
-              >
-                <p
-                  class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
-                >
-                  Privacy policy
-                </p>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
-                style=\\"text-align: center;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://www.sharkbots.org/\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    fill=\\"#666666\\"
-                    style=\\"height: 20px;\\"
-                  >
-                    sharkbots.svg
-                  </svg>
-                </a>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
-                style=\\"padding-top: 4px;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://www.sharkbots.org/\\"
-                  target=\\"_blank\\"
-                >
-                  <p
-                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
-                  >
-                    Our big brothers & sisters from FTC team
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div
-              class=\\"MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 css-spompt-MuiGrid-root\\"
-              style=\\"padding-top: 2px; height: 20px;\\"
-            >
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
-                style=\\"text-align: center;\\"
-              >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"GavelIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"color: rgb(102, 102, 102); height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z\\"
-                  />
-                </svg>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
-                style=\\"padding-top: 4px;\\"
-              >
-                <p
-                  class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
-                >
-                   Terms & Conditions
-                </p>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
-                style=\\"text-align: center;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    fill=\\"#666666\\"
-                    style=\\"height: 20px;\\"
-                  >
-                    hudson.svg
-                  </svg>
-                </a>
-              </div>
-              <div
-                class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
-                style=\\"padding-top: 4px;\\"
-              >
-                <a
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
-                  href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
-                  target=\\"_blank\\"
-                >
-                  <p
-                    class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                    style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
-                  >
-                    Our regional First Lego League
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr
-            class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
-            style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%; padding-top: 5px;\\"
-          />
-          <div
-            class=\\"MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root\\"
-            style=\\"padding-top: 5px;\\"
-          >
-            <div
-              class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-17p3wh3-MuiGrid-root\\"
-              style=\\"padding-bottom: 5px;\\"
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu\\"
+              target=\\"_blank\\"
             >
               <p
                 class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
                 style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
               >
-                 THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road - All rights reserved 
+                145 New Street - Mamaroneck, NY 10543
               </p>
-            </div>
-            <div
-              class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root\\"
-              style=\\"padding-bottom: 5px;\\"
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
+            style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              href=\\"https://www.firstlegoleague.org/\\"
+              target=\\"_blank\\"
+            >
+              <svg
+                fill=\\"#666666\\"
+                style=\\"color: rgb(102, 102, 102); height: 20px;\\"
+              >
+                fll.svg
+              </svg>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
+            style=\\"padding-top: 5px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"https://www.firstlegoleague.org/\\"
+              target=\\"_blank\\"
             >
               <p
                 class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                style=\\"color: rgb(102, 102, 102); font-size: 11px; text-align: right;\\"
+                style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
               >
-                 
+                First Lego League
               </p>
-            </div>
+            </a>
           </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
+            style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              href=\\"mailto:green.brick.road.first@gmail.com\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                data-testid=\\"EmailIcon\\"
+                focusable=\\"false\\"
+                style=\\"color: rgb(102, 102, 102); height: 20px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z\\"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
+            style=\\"padding-top: 6px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"mailto:contact.technogix@gmail.com\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+              >
+                green.brick.road.first@gmail.com
+              </p>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
+            style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              href=\\"https://www.fasny.org/\\"
+              target=\\"_blank\\"
+            >
+              <svg
+                fill=\\"#666666\\"
+                style=\\"height: 20px;\\"
+              >
+                fasny.svg
+              </svg>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
+            style=\\"padding-top: 6px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"https://www.fasny.org/\\"
+              target=\\"_blank\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+              >
+                French American School of New York
+              </p>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
+            style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"PolicyIcon\\"
+              focusable=\\"false\\"
+              style=\\"color: rgb(102, 102, 102); height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"m21 5-9-4-9 4v6c0 5.55 3.84 10.74 9 12 2.3-.56 4.33-1.9 5.88-3.71l-3.12-3.12c-1.94 1.29-4.58 1.07-6.29-.64-1.95-1.95-1.95-5.12 0-7.07 1.95-1.95 5.12-1.95 7.07 0 1.71 1.71 1.92 4.35.64 6.29l2.9 2.9C20.29 15.69 21 13.38 21 11V5z\\"
+              />
+              <circle
+                cx=\\"12\\"
+                cy=\\"12\\"
+                r=\\"3\\"
+              />
+            </svg>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
+            style=\\"padding-top: 6px; height: 20px;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+            >
+              Privacy policy
+            </p>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
+            style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              href=\\"https://www.sharkbots.org/\\"
+              target=\\"_blank\\"
+            >
+              <svg
+                fill=\\"#666666\\"
+                style=\\"height: 20px;\\"
+              >
+                sharkbots.svg
+              </svg>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
+            style=\\"padding-top: 6px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"https://www.sharkbots.org/\\"
+              target=\\"_blank\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+              >
+                Our big brothers & sisters from FTC team
+              </p>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
+            style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"GavelIcon\\"
+              focusable=\\"false\\"
+              style=\\"color: rgb(102, 102, 102); height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z\\"
+              />
+            </svg>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
+            style=\\"padding-top: 6px; height: 20px;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+            >
+               Terms & Conditions
+            </p>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
+            style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
+              target=\\"_blank\\"
+            >
+              <svg
+                fill=\\"#666666\\"
+                style=\\"height: 20px;\\"
+              >
+                hudson.svg
+              </svg>
+            </a>
+          </div>
+          <div
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
+            style=\\"padding-top: 6px; height: 20px;\\"
+          >
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
+              target=\\"_blank\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+              >
+                Our regional First Lego League
+              </p>
+            </a>
+          </div>
+        </div>
+        <hr
+          class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
+          style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%; padding-top: 5px;\\"
+        />
+        <div
+          class=\\"MuiStack-root css-3y1137-MuiStack-root\\"
+          style=\\"padding-top: 5px;\\"
+        >
+          <p
+            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+          >
+             THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road - All rights reserved 
+          </p>
+          <p
+            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            style=\\"color: rgb(102, 102, 102); font-size: 11px; text-align: right;\\"
+          >
+             
+          </p>
         </div>
       </div>
     </div>
@@ -503,317 +448,280 @@ exports[`Footer component Should display a thin footer 1`] = `
       <div
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation1 css-1p2ttux-MuiPaper-root\\"
         id=\\"footer\\"
-        style=\\"position: relative; padding: 0px; bottom: 0px;\\"
+        style=\\"position: relative; padding: 0px 5px 0px 5px; bottom: 0px;\\"
       >
+        <hr
+          class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
+          style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
+        />
         <div
-          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-          id=\\"footer-mobile\\"
-          style=\\"padding: 0px 5px 0px 5px;\\"
+          class=\\"MuiStack-root css-kpwk9i-MuiStack-root\\"
+          style=\\"width: 100%; padding: 10px 5px 10px 0px;\\"
         >
-          <hr
-            class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
-            style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
-          />
+          <p
+            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 11px; font-weight: bold;\\"
+          >
+            Follow us:
+          </p>
+          <a
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            col=\\"#666666\\"
+            href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+            target=\\"_blank\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"YouTubeIcon\\"
+              focusable=\\"false\\"
+              style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z\\"
+              />
+            </svg>
+          </a>
+          <a
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            col=\\"#666666\\"
+            href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+            target=\\"_blank\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"GitHubIcon\\"
+              focusable=\\"false\\"
+              style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27\\"
+              />
+            </svg>
+          </a>
+          <a
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            col=\\"#666666\\"
+            href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+            target=\\"_blank\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"FacebookIcon\\"
+              focusable=\\"false\\"
+              style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z\\"
+              />
+            </svg>
+          </a>
+          <a
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            col=\\"#666666\\"
+            href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+            target=\\"_blank\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              data-testid=\\"InstagramIcon\\"
+              focusable=\\"false\\"
+              style=\\"background-color: rgba(255, 255, 255, 0); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
+              viewBox=\\"0 0 24 24\\"
+            >
+              <path
+                d=\\"M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z\\"
+              />
+            </svg>
+          </a>
+        </div>
+        <hr
+          class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
+          style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
+        />
+        <div
+          class=\\"MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root\\"
+          style=\\"width: 100%; padding: 10px 5px 10px 0px;\\"
+        >
           <div
-            class=\\"MuiStack-root css-kpwk9i-MuiStack-root\\"
-            style=\\"width: 100%; padding: 10px 0px 10px 0px;\\"
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root\\"
+            style=\\"width: 100%; padding-top: 10px; padding-left: 0px; padding-right: 0px; display: flex; justify-content: space-between; align-items: center;\\"
           >
             <p
               class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
               style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 11px; font-weight: bold;\\"
             >
-              Follow us:
+              About us :
             </p>
             <a
-              aria-label=\\"GBR on YouTube\\"
+              aria-label=\\"145 New Street - Mamaroneck, NY 10543\\"
               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
-              href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
+              href=\\"https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu\\"
               target=\\"_blank\\"
             >
-              <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
-                col=\\"#666666\\"
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                data-testid=\\"LocationOnIcon\\"
+                focusable=\\"false\\"
+                style=\\"color: rgb(102, 102, 102); height: 24px;\\"
+                viewBox=\\"0 0 24 24\\"
               >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"YouTubeIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z\\"
-                  />
-                </svg>
-              </div>
+                <path
+                  d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
+                />
+              </svg>
             </a>
             <a
-              aria-label=\\"GBR on Github\\"
+              aria-label=\\"green.brick.road.first@gmail.com\\"
               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
-              href=\\"https://github.com/the-green-brick-road/\\"
-              target=\\"_blank\\"
+              href=\\"mailto:green.brick.road.first@gmail.com\\"
             >
-              <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
-                col=\\"#666666\\"
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                data-testid=\\"EmailIcon\\"
+                focusable=\\"false\\"
+                style=\\"color: rgb(102, 102, 102); height: 24px;\\"
+                viewBox=\\"0 0 24 24\\"
               >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"GitHubIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27\\"
-                  />
-                </svg>
-              </div>
+                <path
+                  d=\\"M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z\\"
+                />
+              </svg>
             </a>
-            <a
-              aria-label=\\"GBR on Facebook\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+            <svg
+              aria-hidden=\\"true\\"
+              aria-label=\\"Privacy policy\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
               data-mui-internal-clone-element=\\"true\\"
-              href=\\"https://www.facebook.com/100093250563007/\\"
-              target=\\"_blank\\"
+              data-testid=\\"PolicyIcon\\"
+              focusable=\\"false\\"
+              style=\\"color: rgb(102, 102, 102); height: 24px;\\"
+              viewBox=\\"0 0 24 24\\"
             >
-              <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
-                col=\\"#666666\\"
-              >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"FacebookIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z\\"
-                  />
-                </svg>
-              </div>
-            </a>
-            <a
-              aria-label=\\"GBR on Instagram\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              <path
+                d=\\"m21 5-9-4-9 4v6c0 5.55 3.84 10.74 9 12 2.3-.56 4.33-1.9 5.88-3.71l-3.12-3.12c-1.94 1.29-4.58 1.07-6.29-.64-1.95-1.95-1.95-5.12 0-7.07 1.95-1.95 5.12-1.95 7.07 0 1.71 1.71 1.92 4.35.64 6.29l2.9 2.9C20.29 15.69 21 13.38 21 11V5z\\"
+              />
+              <circle
+                cx=\\"12\\"
+                cy=\\"12\\"
+                r=\\"3\\"
+              />
+            </svg>
+            <svg
+              aria-hidden=\\"true\\"
+              aria-label=\\"Terms & Conditions\\"
+              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
               data-mui-internal-clone-element=\\"true\\"
-              href=\\"https://www.instagram.com/the.green.brick.road/\\"
-              target=\\"_blank\\"
+              data-testid=\\"GavelIcon\\"
+              focusable=\\"false\\"
+              style=\\"color: rgb(102, 102, 102); height: 24px;\\"
+              viewBox=\\"0 0 24 24\\"
             >
-              <div
-                class=\\"MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault css-18x4028-MuiAvatar-root\\"
-                col=\\"#666666\\"
-              >
-                <svg
-                  aria-hidden=\\"true\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-testid=\\"InstagramIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"background-color: rgb(102, 102, 102); color: rgb(85, 85, 85); padding: 2px; height: 20px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z\\"
-                  />
-                </svg>
-              </div>
-            </a>
+              <path
+                d=\\"m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z\\"
+              />
+            </svg>
           </div>
-          <hr
-            class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
-            style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
-          />
           <div
-            class=\\"MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root\\"
+            class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root\\"
+            style=\\"width: 100%; padding-bottom: 10px; padding-top: 10px; display: flex; justify-content: space-between; align-items: center;\\"
           >
-            <div
-              class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root\\"
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 11px; font-weight: bold;\\"
             >
-              <div
-                class=\\"MuiStack-root css-kpwk9i-MuiStack-root\\"
-                style=\\"width: 100%; padding-top: 10px; padding-left: 0px; padding-right: 0px;\\"
-              >
-                <p
-                  class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 11px; font-weight: bold;\\"
-                >
-                  About us :
-                </p>
-                <a
-                  aria-label=\\"145 New Street - Mamaroneck, NY 10543\\"
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  data-mui-internal-clone-element=\\"true\\"
-                  href=\\"https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    aria-hidden=\\"true\\"
-                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                    data-testid=\\"LocationOnIcon\\"
-                    focusable=\\"false\\"
-                    style=\\"color: rgb(102, 102, 102); height: 24px;\\"
-                    viewBox=\\"0 0 24 24\\"
-                  >
-                    <path
-                      d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
-                    />
-                  </svg>
-                </a>
-                <a
-                  aria-label=\\"green.brick.road.first@gmail.com\\"
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  data-mui-internal-clone-element=\\"true\\"
-                  href=\\"mailto:green.brick.road.first@gmail.com\\"
-                >
-                  <svg
-                    aria-hidden=\\"true\\"
-                    class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                    data-testid=\\"EmailIcon\\"
-                    focusable=\\"false\\"
-                    style=\\"color: rgb(102, 102, 102); height: 24px;\\"
-                    viewBox=\\"0 0 24 24\\"
-                  >
-                    <path
-                      d=\\"M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z\\"
-                    />
-                  </svg>
-                </a>
-                <svg
-                  aria-hidden=\\"true\\"
-                  aria-label=\\"Privacy policy\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-mui-internal-clone-element=\\"true\\"
-                  data-testid=\\"PolicyIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"color: rgb(102, 102, 102); height: 24px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"m21 5-9-4-9 4v6c0 5.55 3.84 10.74 9 12 2.3-.56 4.33-1.9 5.88-3.71l-3.12-3.12c-1.94 1.29-4.58 1.07-6.29-.64-1.95-1.95-1.95-5.12 0-7.07 1.95-1.95 5.12-1.95 7.07 0 1.71 1.71 1.92 4.35.64 6.29l2.9 2.9C20.29 15.69 21 13.38 21 11V5z\\"
-                  />
-                  <circle
-                    cx=\\"12\\"
-                    cy=\\"12\\"
-                    r=\\"3\\"
-                  />
-                </svg>
-                <svg
-                  aria-hidden=\\"true\\"
-                  aria-label=\\"Terms & Conditions\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-                  data-mui-internal-clone-element=\\"true\\"
-                  data-testid=\\"GavelIcon\\"
-                  focusable=\\"false\\"
-                  style=\\"color: rgb(102, 102, 102); height: 24px;\\"
-                  viewBox=\\"0 0 24 24\\"
-                >
-                  <path
-                    d=\\"m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z\\"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root\\"
+              Resources :
+            </p>
+            <a
+              aria-label=\\"First Lego League\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              data-mui-internal-clone-element=\\"true\\"
+              href=\\"https://www.firstlegoleague.org/\\"
+              target=\\"_blank\\"
             >
-              <div
-                class=\\"MuiStack-root css-kpwk9i-MuiStack-root\\"
-                style=\\"width: 100%; padding-bottom: 10px; padding-top: 10px;\\"
+              <svg
+                fill=\\"#666666\\"
+                style=\\"color: rgb(102, 102, 102); height: 24px;\\"
               >
-                <p
-                  class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-                  style=\\"text-transform: uppercase; color: rgb(102, 102, 102); text-align: left; font-size: 11px; font-weight: bold;\\"
-                >
-                  Resources :
-                </p>
-                <a
-                  aria-label=\\"First Lego League\\"
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  data-mui-internal-clone-element=\\"true\\"
-                  href=\\"https://www.firstlegoleague.org/\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    fill=\\"#666666\\"
-                    style=\\"color: rgb(102, 102, 102); height: 24px;\\"
-                  >
-                    fll.svg
-                  </svg>
-                </a>
-                <a
-                  aria-label=\\"French American School of New York\\"
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  data-mui-internal-clone-element=\\"true\\"
-                  href=\\"https://www.fasny.org/\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    fill=\\"#666666\\"
-                    style=\\"height: 24px;\\"
-                  >
-                    fasny.svg
-                  </svg>
-                </a>
-                <a
-                  aria-label=\\"Our big brothers & sisters from FTC team\\"
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  data-mui-internal-clone-element=\\"true\\"
-                  href=\\"https://www.sharkbots.org/\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    fill=\\"#666666\\"
-                    style=\\"height: 24px;\\"
-                  >
-                    sharkbots.svg
-                  </svg>
-                </a>
-                <a
-                  aria-label=\\"Our regional First Lego League\\"
-                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
-                  data-mui-internal-clone-element=\\"true\\"
-                  href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
-                  target=\\"_blank\\"
-                >
-                  <svg
-                    fill=\\"#666666\\"
-                    style=\\"color: rgb(102, 102, 102); height: 24px;\\"
-                  >
-                    hudson.svg
-                  </svg>
-                </a>
-              </div>
-            </div>
+                fll.svg
+              </svg>
+            </a>
+            <a
+              aria-label=\\"French American School of New York\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              data-mui-internal-clone-element=\\"true\\"
+              href=\\"https://www.fasny.org/\\"
+              target=\\"_blank\\"
+            >
+              <svg
+                fill=\\"#666666\\"
+                style=\\"height: 24px;\\"
+              >
+                fasny.svg
+              </svg>
+            </a>
+            <a
+              aria-label=\\"Our big brothers & sisters from FTC team\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              data-mui-internal-clone-element=\\"true\\"
+              href=\\"https://www.sharkbots.org/\\"
+              target=\\"_blank\\"
+            >
+              <svg
+                fill=\\"#666666\\"
+                style=\\"height: 24px;\\"
+              >
+                sharkbots.svg
+              </svg>
+            </a>
+            <a
+              aria-label=\\"Our regional First Lego League\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              data-mui-internal-clone-element=\\"true\\"
+              href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
+              target=\\"_blank\\"
+            >
+              <svg
+                fill=\\"#666666\\"
+                style=\\"color: rgb(102, 102, 102); height: 24px;\\"
+              >
+                hudson.svg
+              </svg>
+            </a>
           </div>
-          <hr
-            class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
-            style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
-          />
-          <p
-            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-            style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
-          >
-             THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road 
-          </p>
-          <p
-            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-            style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
-          >
-             All rights reserved 
-          </p>
-          <p
-            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-            style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
-          >
-             
-          </p>
         </div>
+        <hr
+          class=\\"MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root\\"
+          style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
+        />
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+        >
+           THE GREEN BRICK ROAD Copyright © 2023 The Green Brick Road 
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+        >
+           All rights reserved 
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"color: rgb(102, 102, 102); font-size: 10px;\\"
+        >
+           
+        </p>
       </div>
     </div>
   </div>

@@ -34,7 +34,7 @@ function NavigationLogo(props) {
 
     /* ----------- Define HTML --------- */
     return (
-        <NavigationLogoLink href="/" logopadding={padding}>
+        <NavigationLogoLink aria-label="navigation-logo" href="/" logopadding={padding}>
             <Image
                 name={name}
                 style={{ height: '100%', verticalAlign: 'middle' }}

@@ -23,11 +23,17 @@ import { default as Router }                         from '../../containers/rout
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useConfiguration as mockUseConfiguration, ConfigurationProvider as MockConfigurationProvider } from '../../providers/__mocks__/ConfigurationProvider';
-import { useData as mockUseData, DataProvider as MockDataProvider } from '../../providers/__mocks__/DataProvider';
+import { useRobots as mockUseRobots, RobotsProvider as MockRobotsProvider } from '../../providers/__mocks__/RobotsProvider';
+import { useSeasons as mockUseSeasons, SeasonsProvider as MockSeasonsProvider } from '../../providers/__mocks__/SeasonsProvider';
+import { usePosts as mockUsePosts, PostsProvider as MockPostsProvider } from '../../providers/__mocks__/PostsProvider';
+import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
 import { default as MockLayout }  from '../../containers/__mocks__/Layout';
 jest.mock('../../providers', () => ({
     useConfiguration: (() => { return mockUseConfiguration(); }),
-    useData: (() => { return mockUseData(); }),
+    useRobots: (() => { return mockUseRobots(); }),
+    useSeasons: (() => { return mockUseSeasons(); }),
+    usePosts: (() => { return mockUsePosts(); }),
+    useLogging: (() => { return mockUseLogging(); }),
 }));
 jest.mock("../../containers", () => ({ Layout: (props) => MockLayout(props) }));
 
@@ -55,8 +61,13 @@ describe("Router component" ,() => {
         };
 
         const Seasons = [ { 'name' : 'season1', 'id' : '1' } , { 'name' : 'season2', 'id' : '2' } ];
-        const Posts = [ { 'title' : 'post1', 'id' : '1', 'real': true } , { 'title' : 'post2', 'id' : '2', 'real': true }, { 'title' : 'post3', 'id' : '3', 'real': false } ];
+        const Posts = {
+            1 : { title : 'post1', id : '1', real: true } ,
+            2 : { title : 'post2', id : '2', real: true },
+            3 : { title : 'post3', id : '3', real: false },
+        };
         const Robots = [ { 'name' : 'robot1', 'id' : '1' } , { 'name' : 'robot2', 'id' : '2' } ];
+
 
         let view = null
         await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
@@ -64,11 +75,17 @@ describe("Router component" ,() => {
             view = render(
 
                 <MockConfigurationProvider config={Config}>
-                    <MockDataProvider seasons={Seasons} posts={Posts} robots={Robots} >
-                        <Suspense>
-                            <Router folder='/__mocks__' />
-                        </Suspense>
-                    </MockDataProvider>
+                    <MockLoggingProvider>
+                        <MockSeasonsProvider seasons={Seasons} >
+                            <MockPostsProvider posts={Posts} >
+                                <MockRobotsProvider robots={Robots} >
+                                    <Suspense>
+                                        <Router folder='/__mocks__' />
+                                    </Suspense>
+                                </MockRobotsProvider>
+                            </MockPostsProvider>
+                        </MockSeasonsProvider>
+                    </MockLoggingProvider>
                 </MockConfigurationProvider>
 
             )

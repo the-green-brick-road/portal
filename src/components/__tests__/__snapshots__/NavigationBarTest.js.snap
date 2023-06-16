@@ -11,6 +11,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
           class=\\"MuiStack-root css-1bfbfkp-MuiStack-root\\"
         >
           <a
+            aria-label=\\"navigation-logo\\"
             class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1gvp9s9-MuiTypography-root-MuiLink-root\\"
             href=\\"/\\"
             logopadding=\\"10px\\"
@@ -100,6 +101,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                   tabindex=\\"0\\"
                 >
                   <a
+                    aria-label=\\"subitem21\\"
                     class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test1\\"
                     style=\\"text-decoration: none; color: rgb(102, 102, 102); font-size: 15px;\\"
@@ -118,6 +120,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                   tabindex=\\"-1\\"
                 >
                   <a
+                    aria-label=\\"subitem22\\"
                     class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test2\\"
                     style=\\"text-decoration: none; color: rgb(102, 102, 102); font-size: 15px;\\"
@@ -171,6 +174,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
           class=\\"MuiStack-root css-1bfbfkp-MuiStack-root\\"
         >
           <a
+            aria-label=\\"navigation-logo\\"
             class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1gvp9s9-MuiTypography-root-MuiLink-root\\"
             href=\\"/\\"
             logopadding=\\"10px\\"
@@ -260,6 +264,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                   tabindex=\\"0\\"
                 >
                   <a
+                    aria-label=\\"subitem21\\"
                     class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test1\\"
                     style=\\"text-decoration: none; color: rgb(85, 85, 85); font-size: 15px;\\"
@@ -278,6 +283,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                   tabindex=\\"-1\\"
                 >
                   <a
+                    aria-label=\\"subitem22\\"
                     class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test2\\"
                     style=\\"text-decoration: none; color: rgb(85, 85, 85); font-size: 15px;\\"

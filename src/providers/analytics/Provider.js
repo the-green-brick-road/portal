@@ -12,7 +12,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { useMemo, useReducer, useEffect, useState }                 from 'react';
+import { useMemo, useReducer, useEffect, useState, Profiler }       from 'react';
 
 /* Portal includes */
 import { useLogging, useConfiguration }                             from '../../providers';
@@ -29,7 +29,7 @@ function Provider(props) {
 
     /* --------- Gather inputs --------- */
     const { children, persistKey = 'analytics' } = props;
-    const { logText }                            = useLogging();
+    const { logText, onRender }                  = useLogging();
     const { config }                             = useConfiguration();
     const { firebase = {}}                       = config;
     const isSupported                            = useIsSupported();
@@ -141,9 +141,11 @@ function Provider(props) {
 
     /* ----------- Define HTML --------- */
     return (
-        <Context.Provider value={state}>
-            {children}
-        </Context.Provider>
+        <Profiler id={componentName} onRender={onRender}>
+            <Context.Provider value={state}>
+                {children}
+            </Context.Provider>
+        </Profiler>
     );
 
 }

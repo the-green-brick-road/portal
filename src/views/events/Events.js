@@ -11,7 +11,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment, useState, useEffect }             from 'react';
+import { Fragment, Profiler, useState, useEffect }   from 'react';
 
 /* Material UI includes */
 import { Typography, Container, Table, TableBody }   from '@mui/material';
@@ -20,7 +20,7 @@ import { default as LocationOn }                     from '@mui/icons-material/L
 import { useTheme }                                  from '@mui/material/styles';
 
 /* Portal includes */
-import { useData }                                   from '../../providers';
+import { useCalendars, useLogging }                  from '../../providers';
 import { Image }                                     from '../../components';
 
 /* Local includes */
@@ -30,10 +30,12 @@ function Competitions() {
 
     /* --------- Gather inputs --------- */
     const theme                           = useTheme();
-    const { calendars }                   = useData();
+    const { onRender }                    = useLogging();
+    const { open }                        = useCalendars();
     const [ localEvents, setLocalEvents ] = useState([])
-    const months   = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    const days   = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    const months        = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    const days          = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    const componentName = 'Events';
 
     /* ------- Preprocess competitions ------- */
     useEffect(() => {
@@ -49,95 +51,90 @@ function Competitions() {
         local_events[year][month][date] = {
             day:day,
             now:true,
-            events:[
-            ],
+            events:[],
         }
 
-        if ('public' in calendars) {
+        for (let i_event = 0; i_event < open.length; i_event +=1) {
 
-            for (let i_event = 0; i_event < calendars.public.length; i_event +=1) {
+            let date_start = Date()
+            let date_end = Date()
+            if ( 'date' in open[i_event].start ) {
 
-                let date_start = Date()
-                let date_end = Date()
-                if ( 'date' in calendars.public[i_event].start ) {
+                date_start = new Date(open[i_event].start.date)
+                const offset = date_start.getTimezoneOffset()
+                date_start = new Date(date_start.getTime() + offset * 60 * 1000)
 
-                    date_start = new Date(calendars.public[i_event].start.date)
-                    const offset = date_start.getTimezoneOffset()
-                    date_start = new Date(date_start.getTime() + offset * 60 * 1000)
+            }
+            else if ( 'dateTime' in open[i_event].start ) {
 
-                }
-                else if ( 'dateTime' in calendars.public[i_event].start ) {
+                const temp = new Date(Date.parse(open[i_event].start.dateTime))
+                temp.toLocaleString("en-US", {timeZone: open[i_event].start.timeZone})
+                date_start = temp
 
-                    const temp = new Date(Date.parse(calendars.public[i_event].start.dateTime))
-                    temp.toLocaleString("en-US", {timeZone: calendars.public[i_event].start.timeZone})
-                    date_start = temp
+            }
+            if ( 'date' in open[i_event].end )   {
 
-                }
-                if ( 'date' in calendars.public[i_event].end )   {
+                date_end = new Date(open[i_event].end.date)
+                const offset = date_end.getTimezoneOffset()
+                date_end = new Date(date_end.getTime() + offset * 60 * 1000 - 1)
 
-                    date_end = new Date(calendars.public[i_event].end.date)
-                    const offset = date_end.getTimezoneOffset()
-                    date_end = new Date(date_end.getTime() + offset * 60 * 1000 - 1)
+            }
+            else if ( 'dateTime' in open[i_event].end )   {
 
-                }
-                else if ( 'dateTime' in calendars.public[i_event].end )   {
+                const temp = new Date(Date.parse(open[i_event].end.dateTime))
+                temp.toLocaleString("en-US", {timeZone: open[i_event].end.timeZone})
+                date_end = temp
 
-                    const temp = new Date(Date.parse(calendars.public[i_event].end.dateTime))
-                    temp.toLocaleString("en-US", {timeZone: calendars.public[i_event].end.timeZone})
-                    date_end = temp
+            }
 
-                }
+            const ms = date_start.getMonth();
+            const ys = date_start.getYear() + 1900;
+            const dts = date_start.getDate();
+            const das = date_start.getDay();
+            const me = date_end.getMonth();
+            const ye = date_end.getYear() + 1900;
+            const dte = date_end.getDate();
+            const dae = date_end.getDay();
 
-                const ms = date_start.getMonth();
-                const ys = date_start.getYear() + 1900;
-                const dts = date_start.getDate();
-                const das = date_start.getDay();
-                const me = date_end.getMonth();
-                const ye = date_end.getYear() + 1900;
-                const dte = date_end.getDate();
-                const dae = date_end.getDay();
+            const shall_add_end = (ys !== ye) || (ms !== me) || (dts !== dte)
 
-                const shall_add_end = (ys !== ye) || (ms !== me) || (dts !== dte)
+            if (!( ys in local_events)) { local_events[ys] = {}}
+            if (!( ms in local_events[ys])) { local_events[ys][ms] = {}}
+            if (!( dts in local_events[ys][ms])) { local_events[ys][ms][dts] = {day:das, now:false, events:[]} }
+            if (!shall_add_end) {
 
-                if (!( ys in local_events)) { local_events[ys] = {}}
-                if (!( ms in local_events[ys])) { local_events[ys][ms] = {}}
-                if (!( dts in local_events[ys][ms])) { local_events[ys][ms][dts] = {day:das, now:false, events:[]} }
-                if (!shall_add_end) {
+                local_events[ys][ms][dts].events.push({
+                    start:date_start.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'}),
+                    end:date_end.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'}),
+                    type:'public',
+                    summary:open[i_event].summary,
+                    location:open[i_event].location,
+                })
 
-                    local_events[ys][ms][dts].events.push({
+            }
+            else {
+
+                local_events[ys][ms][dts].events.push(
+                    {
                         start:date_start.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'}),
+                        type:'public',
+                        summary:open[i_event].summary,
+                        location:open[i_event].location,
+                    }
+
+                )
+                if (!( ye in local_events)) { local_events[ye] = {}}
+                if (!( me in local_events[ys])) { local_events[ye][me] = {}}
+                if (!( dte in local_events[ys][ms])) { local_events[ye][me][dte] = {day:dae, now:false, events:[]} }
+                local_events[ye][me][dte].events.push(
+                    {
                         end:date_end.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'}),
                         type:'public',
-                        summary:calendars.public[i_event].summary,
-                        location:calendars.public[i_event].location,
-                    })
+                        summary:open[i_event].summary,
+                        location:open[i_event].location,
+                    }
 
-                }
-                else {
-
-                    local_events[ys][ms][dts].events.push(
-                        {
-                            start:date_start.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'}),
-                            type:'public',
-                            summary:calendars.public[i_event].summary,
-                            location:calendars.public[i_event].location,
-                        }
-
-                    )
-                    if (!( ye in local_events)) { local_events[ye] = {}}
-                    if (!( me in local_events[ys])) { local_events[ye][me] = {}}
-                    if (!( dte in local_events[ys][ms])) { local_events[ye][me][dte] = {day:dae, now:false, events:[]} }
-                    local_events[ye][me][dte].events.push(
-                        {
-                            end:date_end.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'}),
-                            type:'public',
-                            summary:calendars.public[i_event].summary,
-                            location:calendars.public[i_event].location,
-                        }
-
-                    )
-
-                }
+                )
 
             }
 
@@ -146,13 +143,13 @@ function Competitions() {
 
         setLocalEvents(local_events)
 
-    }, [calendars]);
+    }, [open]);
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <Container style={{ width:'100%', padding:0, position:'relative' }}>
-                <Image name="events" style={{ width:'100%', pointerEvents: 'none' }}/>
+                <Image name="events" style={{ width:'100%', pointerEvents: 'none', height: 'auto' }}/>
             </Container>
             <Container>
                 <Table>
@@ -178,7 +175,7 @@ function Competitions() {
                                                     return(
                                                         <TableRow key={kndex}>
                                                             {(ktem[1].now) && (
-                                                                <TableCell colSpan={1} style={{backgroundColor:theme.palette.primary.main, padding:5}}>
+                                                                <TableCell id='now' colSpan={1} style={{backgroundColor:theme.palette.primary.main, padding:5}}>
                                                                     <Typography style={{ textAlign:'center', color:theme.palette.common.white }}> {days[ktem[1].day]} </Typography>
                                                                     <Typography style={{ textAlign:'center', color:theme.palette.common.white }}> {[ktem[0]]} </Typography>
                                                                 </TableCell>
@@ -230,7 +227,7 @@ function Competitions() {
                     </TableBody>
                 </Table>
             </Container>
-        </Fragment>
+        </Profiler>
     );
 
 }

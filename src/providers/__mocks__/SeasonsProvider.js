@@ -4,10 +4,10 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Menu provider mock
+# Seasons provider mock
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @09 may 2023
-# Latest revision: 09 may 2023
+# Nadège LEMPERIERE, @14 june 2023
+# Latest revision: 14 june 2023
 # ---------------------------------------------------- */
 
 /* React includes */
@@ -16,24 +16,14 @@ import { createContext }       from 'react';
 const context = createContext(null);
 
 /* ----- Define provider values ---- */
-var state = {
-    seasons: [],
-    posts: [],
-    robots: [],
-    team: [],
-    calendars: {},
-};
+var state = { seasons: {} };
 
-function DataProvider(props) {
+function SeasonsProvider(props) {
 
-    const { children, seasons = [], posts = [], robots = [], team = [], calendars={} } = props;
+    const { children, seasons = {} } = props;
 
     /* ------ Defining behaviour ------- */
     state.seasons = seasons;
-    state.posts = posts;
-    state.robots = robots
-    state.team = team
-    state.calendars = calendars;
 
     /* ----------- Define HTML --------- */
     return (
@@ -44,6 +34,6 @@ function DataProvider(props) {
 
 }
 
-function useData() { return state; };
+function useSeasons() { return state; };
 
-export { useData, DataProvider };
+export { useSeasons, SeasonsProvider };

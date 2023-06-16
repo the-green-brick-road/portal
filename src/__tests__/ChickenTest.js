@@ -21,11 +21,15 @@ import { default as Chicken }    from '../views/chicken/Chicken';
 /* eslint-disable jest/no-mocks-import */
 import { default as MockImage }  from '../components/__mocks__/Image';
 import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../providers/__mocks__/DesignProvider';
+import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../providers/__mocks__/LoggingProvider';
 jest.mock("../components", () => ({ Image: (props) => MockImage(props) }));
-jest.mock('../providers', () => ({ useDesign: (() => { return mockUseDesign(); }) }));
+jest.mock('../providers', () => ({
+    useDesign: (() => { return mockUseDesign(); }),
+    useLogging: (() => { return mockUseLogging(); }),
+}));
 /* eslint-enable jest/no-mocks-import */
 
-describe("Mission view" ,() => {
+describe("Chicken view" ,() => {
 
     const sizes = {
         "small-width"          : 200,
@@ -40,9 +44,11 @@ describe("Mission view" ,() => {
 
         const view = render(
             <div>
-                <MockDesignProvider sizes={sizes}>
-                    <Chicken/>
-                </MockDesignProvider>
+                <MockLoggingProvider>
+                    <MockDesignProvider sizes={sizes}>
+                        <Chicken/>
+                    </MockDesignProvider>
+                </MockLoggingProvider>
             </div>
         );
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});

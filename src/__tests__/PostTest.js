@@ -21,8 +21,13 @@ import { default as Post }         from '../views/post/Post';
 /* eslint-disable jest/no-mocks-import */
 import { default as MockImage }    from '../components/__mocks__/Image';
 import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../providers/__mocks__/DesignProvider';
+import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../providers/__mocks__/LoggingProvider';
 jest.mock("../components", () => ({ Image: (props) => MockImage(props) }));
-jest.mock('../providers', () => ({ useDesign: (() => { return mockUseDesign(); }) }));
+jest.mock('../providers', () => ({
+    useDesign: (() => { return mockUseDesign(); }),
+    useLogging: (() => { return mockUseLogging(); }),
+}));
+/* eslint-enable jest/no-mocks-import */
 /* eslint-enable jest/no-mocks-import */
 
 
@@ -42,15 +47,17 @@ describe("Post view" ,() => {
 
         const view = render(
             <div>
-                <MockDesignProvider sizes={sizes}>
-                    <Post data={{
-                        'code':'<p>Hello</p>',
-                        'title':'post',
-                        'image':'https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0',
-                        'date':'13/10/2008',
-                        'media':['a','c','b','e','d'],
-                    }}/>
-                </MockDesignProvider>
+                <MockLoggingProvider>
+                    <MockDesignProvider sizes={sizes}>
+                        <Post data={{
+                            'code':'<p>Hello</p>',
+                            'title':'post',
+                            'image':'https://th.bing.com/th/id/R.4aa108082e7d3cbd55add79f84612aaa?rik=I4dbPhSe%2fbHHSg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&ehk=ewmaCOvP0Ji4QViEJnxSdlrYUrTSTWhi8nZ9XdyCgAI%3d&risl=&pid=ImgRaw&r=0',
+                            'date':'13/10/2008',
+                            'media':['a','c','b','e','d'],
+                        }}/>
+                    </MockDesignProvider>
+                </MockLoggingProvider>
             </div>
         );
         const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});

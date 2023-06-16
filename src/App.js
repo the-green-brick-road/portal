@@ -13,11 +13,16 @@
 /* Material UI includes */
 import { Container }                                            from '@mui/material';
 
+/* Google fonts includes */
+import '@fontsource/play'
+
 /* Portal includes */
 import Config                                                   from './config';
 import { ErrorBoundary, Router }                                from './containers';
 import { AnalyticsProvider, LoggingProvider, DesignProvider }   from './providers';
-import { ConfigurationProvider, MenuProvider, DataProvider }    from './providers';
+import { ConfigurationProvider, MenuProvider, PostsProvider }   from './providers';
+import { CalendarsProvider, RobotsProvider, SeasonsProvider }   from './providers';
+import { TeamProvider }                                         from './providers';
 
 function App() {
 
@@ -30,15 +35,23 @@ function App() {
             <ConfigurationProvider config={Config}>
                 <LoggingProvider>
                     <ErrorBoundary>
-                        <DataProvider>
-                            <AnalyticsProvider>
-                                <DesignProvider>
-                                    <MenuProvider>
-                                        <Router/>
-                                    </MenuProvider>
-                                </DesignProvider>
-                            </AnalyticsProvider>
-                        </DataProvider>
+                        <CalendarsProvider>
+                            <RobotsProvider>
+                                <SeasonsProvider>
+                                    <PostsProvider>
+                                        <TeamProvider>
+                                            <AnalyticsProvider>
+                                                <DesignProvider>
+                                                    <MenuProvider>
+                                                        <Router/>
+                                                    </MenuProvider>
+                                                </DesignProvider>
+                                            </AnalyticsProvider>
+                                        </TeamProvider>
+                                    </PostsProvider>
+                                </SeasonsProvider>
+                            </RobotsProvider>
+                        </CalendarsProvider>
                     </ErrorBoundary>
                 </LoggingProvider>
             </ConfigurationProvider>

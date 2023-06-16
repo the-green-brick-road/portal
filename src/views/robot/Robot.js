@@ -11,7 +11,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment, useState }                                from 'react';
+import { Profiler, useState }                                from 'react';
 
 /* Material UI includes */
 import { Container, Typography, Stack, Divider, Pagination } from '@mui/material';
@@ -24,19 +24,19 @@ import { useDesign, useLogging }                             from '../../provide
 function Robot(props) {
 
     /* --------- Gather inputs --------- */
-    const { data }              = props
-    const theme                 = useTheme();
-    const { sizes } = useDesign();
-    const { logText }           = useLogging();
-    const [ hoverFeature, setHoverFeature ] = useState({id:"-1"})
+    const { data }                            = props
+    const theme                               = useTheme();
+    const { sizes }                           = useDesign();
+    const { logText, onRender }               = useLogging();
+    const [ hoverFeature, setHoverFeature ]   = useState({id:"-1"})
     const [ selectFeature, setSelectFeature ] = useState({id:"-1"})
-    const [ selectView, setSelectView ] = useState(0)
+    const [ selectView, setSelectView ]       = useState(0)
     const componentName         = 'Robot';
 
     /* View management functions */
     const handleViewChange = (event, value) => {
 
-        logText(componentName, 'log', 'workflow', ' handleViewChange --- BEGIN');
+        logText(componentName, 'debug', 'workflow', ' handleViewChange --- BEGIN');
         setSelectView(value - 1)
         setHoverFeature({id:"-1"})
         setSelectFeature({id:"-1"})
@@ -46,7 +46,7 @@ function Robot(props) {
     /* Feature info display management functions */
     const handleFeatureHover = (event, value) => {
 
-        logText(componentName, 'log', 'workflow', ' handleFeatureHover --- BEGIN');
+        logText(componentName, 'debug', 'workflow', ' handleFeatureHover --- BEGIN');
 
         let id = -1
         if (event.target.parentNode.getAttribute('id') !== null) { id = event.target.parentNode.getAttribute('id') }
@@ -68,7 +68,7 @@ function Robot(props) {
     /* Feature selection management functions */
     const handleFeatureClick = (event) => {
 
-        logText(componentName, 'log', 'workflow', ' handleFeatureClick --- BEGIN');
+        logText(componentName, 'debug', 'workflow', ' handleFeatureClick --- BEGIN');
 
         let id = -1
         if (event.target.parentNode.getAttribute('id') !== null) { id = event.target.parentNode.getAttribute('id') }
@@ -89,7 +89,7 @@ function Robot(props) {
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <Container style={{ backgroundColor:'#eeeeee', width:'100%', height:sizes['menu-height']}}/>
             <Container style={{ backgroundColor:'#eeeeee', fontFamily:data.font, fontSize:'14px', paddingTop:'20px', paddingBottom:'20px' }}>
                 <Typography style={{ textAlign:'center', color:theme.typography.h1.color, fontFamily:data.font, fontSize:theme.typography.h1.fontSize}} >{data.name}</Typography>
@@ -130,7 +130,7 @@ function Robot(props) {
                 )}
             </Container>
 
-        </Fragment>
+        </Profiler>
     );
 
 }

@@ -19,6 +19,7 @@ const context = createContext(null);
 var state = {
     isLoggingActivated : true,
     logText: jest.fn((component, level, topic, message) => {  console.log(`${component} - ${level} - ${topic} -${message}`) }),
+    onRender: jest.fn((id, phase, actualDuration, baseDuration, startTime, commitTime) => {  console.log(`${id} - ${phase} - ${actualDuration} - ${baseDuration}`) }),
 };
 
 function LoggingProvider(props) {

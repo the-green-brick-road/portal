@@ -11,25 +11,27 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { useEffect, Fragment, useState }                                  from 'react';
+import { useEffect, Fragment, useState, Profiler }              from 'react';
 
 /* Material UI includes */
-import { Card, CardContent, CardMedia, CardHeader, Container }            from '@mui/material';
-import { Grid, Typography, Paper, Table, TableBody, TableRow, TableCell } from '@mui/material';
-import { Checkbox, Stack, Divider }                                       from '@mui/material';
-import { default as CheckBox }                                            from '@mui/icons-material/CheckBox';
-import { default as CheckBoxOutlineBlank }                                from '@mui/icons-material/CheckBoxOutlineBlank';
-import { useTheme }                                                       from '@mui/material/styles';
+import { Card, CardContent, CardMedia, CardHeader, Container }  from '@mui/material';
+import { Grid, Typography, Paper }                              from '@mui/material';
+import { Checkbox, Stack, Divider }                             from '@mui/material';
+import { default as CheckBox }                                  from '@mui/icons-material/CheckBox';
+import { default as CheckBoxOutlineBlank }                      from '@mui/icons-material/CheckBoxOutlineBlank';
+import { useTheme }                                             from '@mui/material/styles';
 
 /* Portal includes */
-import { useData, useLogging }                                            from '../../providers';
-import { Image }                                                          from '../../components'
+import { useRobots, useSeasons, useLogging, useDesign }         from '../../providers';
+import { Image }                                                from '../../components'
 
 function RobotGallery() {
 
     /* --------- Gather inputs --------- */
-    const { seasons, robots }                     = useData();
-    const { logText }                             = useLogging();
+    const { seasons }                             = useSeasons();
+    const { robots }                              = useRobots();
+    const { logText, onRender }                   = useLogging();
+    const { isWebpSupported }                     = useDesign();
     const theme                                   = useTheme();
     const [ localRobots, setLocalRobots ]         = useState([])
     const [ localSeasons, setLocalSeasons ]       = useState([])
@@ -47,25 +49,27 @@ function RobotGallery() {
         const local_seasons = [];
         const selected_seasons = {};
         const selected_types = {};
+        const seasons_keys = Object.keys(seasons);
+        const robots_keys = Object.keys(robots);
 
-        for (let i_season = 0; i_season < seasons.length; i_season +=1) {
+        for (let i_season = 0; i_season < seasons_keys.length; i_season +=1) {
 
-            const local_season = JSON.parse(JSON.stringify(seasons[i_season]))
+            const local_season = JSON.parse(JSON.stringify(seasons[seasons_keys[i_season]]))
             local_season.robots = []
 
-            for (let i_robot = 0; i_robot < robots.length; i_robot += 1) {
+            for (let i_robot = 0; i_robot < robots_keys.length; i_robot += 1) {
 
-                if (robots[i_robot].season === local_season.id) {
+                if (robots[robots_keys[i_robot]].season === local_season.id) {
 
-                    if (local_season.robots.length === 0) { local_season.robots.push(robots[i_robot]); }
+                    if (local_season.robots.length === 0) { local_season.robots.push(robots[robots_keys[i_robot]]); }
                     else {
 
                         let j_robot = 0
-                        if(robots[i_robot].id > local_season.robots[local_season.robots.length - 1].id) { local_season.robots.push(robots[i_robot]); }
+                        if(robots[robots_keys[i_robot]].id > local_season.robots[local_season.robots.length - 1].id) { local_season.robots.push(robots[robots_keys[i_robot]]); }
                         else {
 
-                            while((robots[i_robot].id > local_season.robots[j_robot].id) && ((j_robot + 1) < local_season.robots.length)) { j_robot += 1 }
-                            local_season.robots.splice(j_robot, 0, robots[i_robot]);
+                            while((robots[robots_keys[i_robot]].id > local_season.robots[j_robot].id) && ((j_robot + 1) < local_season.robots.length)) { j_robot += 1 }
+                            local_season.robots.splice(j_robot, 0, robots[robots_keys[i_robot]]);
 
                         }
 
@@ -122,7 +126,7 @@ function RobotGallery() {
     /* Filters management functions */
     const handleSeasonChange = (event) => {
 
-        logText(componentName, 'log', 'workflow', ' handleSeasonChange --- BEGIN');
+        logText(componentName, 'debug', 'workflow', ' handleSeasonChange --- BEGIN');
         const local_select = JSON.parse(JSON.stringify(selectedSeasons))
         local_select[event.target.id] = !(local_select[event.target.id])
         setSelectedSeasons(local_select)
@@ -130,7 +134,7 @@ function RobotGallery() {
     };
     const handleTypeChange = (event) => {
 
-        logText(componentName, 'log', 'workflow', ' handleTypeChange --- BEGIN');
+        logText(componentName, 'debug', 'workflow', ' handleTypeChange --- BEGIN');
         const local_select = JSON.parse(JSON.stringify(selectedTypes))
         local_select[event.target.id] = !(local_select[event.target.id])
         setSelectedTypes(local_select)
@@ -140,7 +144,7 @@ function RobotGallery() {
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <Container style={{ width:'100%', padding:0, position:'relative' }}>
                 <Image name="robots" style={{ width:'100%', pointerEvents: 'none' }}/>
             </Container>
@@ -154,60 +158,53 @@ function RobotGallery() {
             </Container>
             <Container style={{ width:'100%'}}>
                 <Divider style={{ color:theme.palette.primary.main, borderColor:theme.palette.primary.main, width:'100%', paddingTop:5 }}/>
-                <Table size="small">
-                    <TableBody>
-                        <TableRow>
-                            <TableCell style={{border:'none', padding:2}}>
-                                <Typography variant="body2" style={{ fontSize:'11px' }}> SEASONS : </Typography>
-                            </TableCell>
-                            { localSeasons.map((item, index) => { /* Loop on all seasons to create checkboxes */
+                <Grid container columns={60}>
+                    <Grid item xs={60} sm={15} md={12} lg={10} style={{padding:0}}>
+                        <Typography variant="body2" style={{ fontSize:'11px' }}> SEASONS : </Typography>
+                    </Grid>
+                    { localSeasons.map((item, index) => { /* Loop on all seasons to create checkboxes */
 
-                                const checked = (selectedSeasons[item.name])
-                                return(
+                        const checked = (selectedSeasons[item.name])
+                        return(
+                            <Grid item xs={60} sm={15} md={12} lg={10} style={{padding:0}}>
+                                <Stack direction="row" alignItems="center">
+                                    <Checkbox
+                                        size="small" id={item.name} style={{ padding:'2px' }}
+                                        checked={checked} onChange={handleSeasonChange}
+                                        inputProps={{'aria-label': item.name}}
+                                        checkedIcon={<CheckBox style={{color:theme.palette.primary.main}}/>}
+                                        icon={<CheckBoxOutlineBlank style={{color:theme.palette.primary.main}}/>}/>
+                                    <Typography variant="body2" style={{ fontSize:'11px' }}> {item.name} </Typography>
+                                </Stack>
+                            </Grid>
+                        )
 
-                                    <TableCell style={{border:'none', padding:2}} key={item.name}>
-                                        <Stack direction="row" alignItems="center">
-                                            <Checkbox
-                                                size="small" id={item.name} style={{ padding:'2px' }}
-                                                checked={checked} onChange={handleSeasonChange}
-                                                inputProps={{'aria-label': item.name}}
-                                                checkedIcon={<CheckBox style={{color:theme.palette.primary.main}}/>}
-                                                icon={<CheckBoxOutlineBlank style={{color:theme.palette.primary.main}}/>}/>
-                                            <Typography variant="body2" style={{ fontSize:'11px' }}> {item.name} </Typography>
-                                        </Stack>
-                                    </TableCell>
+                    })}
+                </Grid>
+                <Grid container columns={60}>
+                    <Grid item xs={60} sm={15} md={12} lg={10} style={{padding:0}}>
+                        <Typography variant="body2" style={{ fontSize:'11px' }}> TYPES : </Typography>
+                    </Grid>
+                    { localTypes.map((item, index) => { /* Loop on all seasons to create checkboxes */
 
-                                )
+                        const checked = (selectedTypes[item])
+                        return(
 
-                            })}
-                        </TableRow>
-                        <TableRow>
-                            <TableCell style={{border:'none', padding:2}}>
-                                <Typography variant="body2" style={{ fontSize:'11px' }}> TYPES : </Typography>
-                            </TableCell>
-                            { localTypes.map((item, index) => { /* Loop on all seasons to create checkboxes */
+                            <Grid item xs={60} sm={15} md={12} lg={10} style={{padding:0}}>
+                                <Stack direction="row" alignItems="center">
+                                    <Checkbox
+                                        size="small" id={item} style={{ padding:'2px' }}
+                                        checked={checked} onChange={handleTypeChange}
+                                        inputProps={{'aria-label': item}}
+                                        checkedIcon={<CheckBox style={{color:theme.palette.primary.main}}/>}
+                                        icon={<CheckBoxOutlineBlank style={{color:theme.palette.primary.main}}/>}/>
+                                    <Typography variant="body2" style={{ fontSize:'11px' }}> {item} </Typography>
+                                </Stack>
+                            </Grid>
+                        )
 
-                                const checked = (selectedTypes[item])
-                                return(
-
-                                    <TableCell key={item} style={{border:'none', padding:2}}>
-                                        <Stack direction="row" alignItems="center">
-                                            <Checkbox
-                                                size="small" id={item} style={{ padding:'2px' }}
-                                                checked={checked} onChange={handleTypeChange}
-                                                inputProps={{'aria-label': item}}
-                                                checkedIcon={<CheckBox style={{color:theme.palette.primary.main}}/>}
-                                                icon={<CheckBoxOutlineBlank style={{color:theme.palette.primary.main}}/>}/>
-                                            <Typography variant="body2" style={{ fontSize:'11px' }}> {item} </Typography>
-                                        </Stack>
-                                    </TableCell>
-                                )
-
-                            })}
-
-                        </TableRow>
-                    </TableBody>
-                </Table>
+                    })}
+                </Grid>
                 <Divider style={{ color:theme.palette.primary.main, borderColor:theme.palette.primary.main, width:'100%'  }}/>
             </Container>
             <Container style={{ width:'100%', overflowX: 'hidden', overflowY: 'hidden' }}>
@@ -223,36 +220,31 @@ function RobotGallery() {
                         return(
                             <Fragment key={item.id}>
                                 {(selectedSeasons[item.season.name]) && (selectedTypes[item.type]) && (
-                                    <Grid item xs={30} sm={20} md={15} lg={12}  style={{padding:0}}>
+                                    <Grid item xs={30} sm={20} md={15} lg={12} style={{padding:0}}>
                                         <Card elevation={4} style={{ backgroundColor:'#eeeeee', margin:10 }}>
                                             <CardHeader style={{ backgroundColor:'#eeeeee', paddingTop:'5px', paddingBottom:'5px', paddingLeft:'5px', paddingRight:'5px', textAlign:'center'}} titleTypographyProps={{ color:theme.palette.primary.main, fontSize:'14px', fontWeight:'bold', fontFamily:item.font }} title={item.name} />
                                             <CardContent style={{ backgroundColor:'#eeeeee', padding:'5px' }}>
-                                                <Table size="small" >
-                                                    <TableBody>
-                                                        <TableRow>
-                                                            <TableCell style={{border:'none', padding:2}}>
-                                                                <Typography variant="body1" style={{ color:theme.palette.common.black, fontSize:'11px' }}> Type : </Typography>
-                                                            </TableCell>
-                                                            <TableCell style={{border:'none', padding:2}}>
-                                                                <Paper style={{ backgroundColor:type_color, paddingLeft:'5px', paddingRight:'5px' }} >
-                                                                    <Typography variant="body1" style={{ color:theme.palette.common.white, fontSize:'11px', fontWeight:'bold', textAlign:'center'}}> {item.type} </Typography>
-                                                                </Paper>
-                                                            </TableCell>
-                                                        </TableRow>
-                                                        <TableRow>
-                                                            <TableCell style={{border:'none', padding:2}}>
-                                                                <Typography variant="body1" style={{ color:theme.palette.common.black, fontSize:'11px' }}> Season : </Typography>
-                                                            </TableCell>
-                                                            <TableCell style={{border:'none', padding:2}}>
-                                                                <Paper style={{ backgroundColor:season_color, paddingLeft:'5px', paddingRight:'5px' }} >
-                                                                    <Typography variant="body1" style={{ color:theme.palette.common.white, fontSize:'11px', fontWeight:'bold', textAlign:'center'}}> {item.season.name} </Typography>
-                                                                </Paper>
-                                                            </TableCell>
-                                                        </TableRow>
-                                                    </TableBody>
-                                                </Table>
+                                                <Grid container columns={2} spacing={1}>
+                                                    <Grid item xs={2} sm={1} md={1} lg={1}>
+                                                        <Typography variant="body1" style={{ color:theme.palette.common.black, fontSize:'11px' }}> Type : </Typography>
+                                                    </Grid>
+                                                    <Grid item xs={2} sm={1} md={1} lg={1}>
+                                                        <Paper style={{ backgroundColor:type_color, paddingLeft:'5px', paddingRight:'5px' }} >
+                                                            <Typography variant="body1" style={{ color:theme.palette.common.white, fontSize:'11px', fontWeight:'bold', textAlign:'center'}}> {item.type} </Typography>
+                                                        </Paper>
+                                                    </Grid>
+                                                    <Grid item xs={2} sm={1} md={1} lg={1}>
+                                                        <Typography variant="body1" style={{ color:theme.palette.common.black, fontSize:'11px' }}> Season : </Typography>
+                                                    </Grid>
+                                                    <Grid item xs={2} sm={1} md={1} lg={1}>
+                                                        <Paper style={{ backgroundColor:season_color, paddingLeft:'5px', paddingRight:'5px' }} >
+                                                            <Typography variant="body1" style={{ color:theme.palette.common.white, fontSize:'11px', fontWeight:'bold', textAlign:'center'}}> {item.season.name} </Typography>
+                                                        </Paper>
+                                                    </Grid>
+                                                </Grid>
                                             </CardContent>
-                                            <CardMedia component="img" style={{objectFit: 'cover' }} image={item.image}/>
+                                            {(isWebpSupported) && ('image' in item) && ('web' in item.image) && (<CardMedia component="img" style={{objectFit: 'cover' }} image={item.image['web'][200]}/>)}
+                                            {(!isWebpSupported) && ('image' in item) && ('raw' in item.image) &&  (<CardMedia component="img" style={{objectFit: 'cover' }} image={item.image['raw'][200]}/>)}
                                         </Card>
                                     </Grid>
                                 )}
@@ -262,7 +254,7 @@ function RobotGallery() {
                     })}
                 </Grid>
             </Container>
-        </Fragment>
+        </Profiler>
 
     )
 

@@ -11,7 +11,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment, useState, useEffect }                                   from 'react';
+import { Fragment, useState, useEffect, Profiler }                         from 'react';
 
 /* Material UI includes */
 import { Typography, Container, Link, Stack }                              from '@mui/material';
@@ -31,6 +31,7 @@ import YouTube                                                             from 
 /* Portal includes */
 import { useLogging, useDesign }                                           from '../../providers';
 import { ReactComponent as HudsonIcon }                                    from '../../assets/icons/hudson.svg';
+import { Image }                                                           from '../../components';
 
 /* Local includes */
 import { SeasonAccordion, SeasonAccordionSummary, SeasonAccordionDetails } from './SeasonAccordion';
@@ -39,8 +40,8 @@ function SeasonMobile(props) {
 
     /* --------- Gather inputs --------- */
     const { data }                                    = props
-    const { logText }                                 = useLogging();
-    const { isDarkMode }                              = useDesign();
+    const { logText, onRender }                       = useLogging();
+    const { sizes, isWebpSupported }                  = useDesign();
     const [width, setWidth]                           = useState(560);
     const [isRevealOpen, setIsRevealOpen]             = useState(false)
     const [isRobotGameOpen, setIsRobotGameOpen]       = useState(false)
@@ -126,14 +127,18 @@ function SeasonMobile(props) {
 
     }
 
-    let accordion_bgcol = theme.palette.common.white
-    if ( isDarkMode ) { accordion_bgcol = theme.palette.common.black}
+    const accordion_bgcol = theme.palette.common.white
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment >
-            <Container id='season-mobile' style={{ width:'100%', height:'30vh', padding:0, backgroundColor:theme.palette.common.black, position:'relative' }}>
-                <img src={data.image} style={{ position: 'absolute', zIndex:1, top: '11vh', right: '2%', height:'15vh' }} alt={data.name}/>
+        <Profiler id={componentName} onRender={onRender}>
+            <Container id='season-mobile' style={{ backgroundColor:'#ffffff', width:'100%', height:sizes['menu-height'], padding:0, position:'relative' }}/>
+            <Container style={{ width:'100%', padding:0, position:'relative' }}>
+                <Image name="seasons" style={{ width:'100%', pointerEvents: 'none' }}/>
+                <Container style={{ position: 'absolute', zIndex: '1', top: '0%', left: '0%', width: '20%'}}>
+                    {(isWebpSupported) && (<img src={data.image['web']} style={{ pointerEvents: 'none', width:'100%', position: 'absolute', zIndex:1}} alt={data.name}/>)}
+                    {(!isWebpSupported) && (<img src={data.image['raw']} style={{ pointerEvents: 'none', width:'100%', position: 'absolute', zIndex:1}} alt={data.name}/>)}
+                </Container>
             </Container>
             {('description' in data) && (
                 <Container style={{padding:10}}>
@@ -202,21 +207,21 @@ function SeasonMobile(props) {
             )}
             <Container style={{padding:10}}>
                 {('reveal' in data) && (
-                    <SeasonAccordion elevation={0} onChange={handleReveal}>
+                    <SeasonAccordion TransitionProps={{ unmountOnExit: true }} elevation={0} onChange={handleReveal}>
                         <SeasonAccordionSummary expandIcon={<ExpandMoreIcon style={{margin:0}}/>} col={theme.palette.primary.main} bgcol={accordion_bgcol}>
                             <Typography variant="body2" style={{ fontWeight:'bold', fontSize:'12px' }}>Season Reveal</Typography>
                         </SeasonAccordionSummary>
-                        <SeasonAccordionDetails>
-                            {(isRevealOpen) && (<YouTube videoId={data['reveal']} opts={{ width: video_width, height:video_height, playerVars: {origin: 'https://the-green-brick-road.org', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
+                        <SeasonAccordionDetails style={{ backgroundColor:accordion_bgcol }}>
+                            {(isRevealOpen) && (<YouTube videoId={data['reveal']} opts={{ width: video_width, height:video_height, playerVars: {origin: 'https://the-green-brick-road.org', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center'}}/>)}
                         </SeasonAccordionDetails>
                     </SeasonAccordion>
                 )}
                 {('resources' in data) && (
-                    <SeasonAccordion  elevation={0}>
+                    <SeasonAccordion TransitionProps={{ unmountOnExit: true }} elevation={0}>
                         <SeasonAccordionSummary expandIcon={<ExpandMoreIcon style={{margin:0}}/>} col={theme.palette.primary.main} bgcol={accordion_bgcol}>
                             <Typography variant="body2" style={{ fontWeight:'bold', fontSize:'12px'}} >Resources</Typography>
                         </SeasonAccordionSummary>
-                        <SeasonAccordionDetails>
+                        <SeasonAccordionDetails style={{ backgroundColor:accordion_bgcol }}>
                             <Table style={{ width:'100%' }}>
                                 <TableBody>
                                     { data['resources'].map((item, index) => { /* Loop on all resources */
@@ -239,21 +244,21 @@ function SeasonMobile(props) {
                     </SeasonAccordion>
                 )}
                 {('robot-game' in data) && (
-                    <SeasonAccordion  elevation={0} onChange={handleRobotGame}>
+                    <SeasonAccordion TransitionProps={{ unmountOnExit: true }} elevation={0} onChange={handleRobotGame}>
                         <SeasonAccordionSummary expandIcon={<ExpandMoreIcon style={{margin:0}}/>} col={theme.palette.primary.main} bgcol={accordion_bgcol}>
                             <Typography variant="body2" style={{ fontWeight:'bold', fontSize:'12px'}}>Robot Game</Typography>
                         </SeasonAccordionSummary>
-                        <SeasonAccordionDetails>
+                        <SeasonAccordionDetails  style={{ backgroundColor:accordion_bgcol }}>
                             {(isRobotGameOpen) && (<YouTube videoId={data['robot-game']} opts={{ width: video_width, height:video_height, playerVars: {origin: 'https://the-green-brick-road.org', enablejsapi: '1'} }} style={{ paddingTop: '20px', paddingBottom: '20px', textAlign:'center' }}/>)}
                         </SeasonAccordionDetails>
                     </SeasonAccordion>
                 )}
                 {(('robot-game-gbr' in data) || ('judging-session-gbr' in data)) && (
-                    <SeasonAccordion  elevation={0} onChange={handleGbr}>
+                    <SeasonAccordion TransitionProps={{ unmountOnExit: true }}  elevation={0} onChange={handleGbr}>
                         <SeasonAccordionSummary expandIcon={<ExpandMoreIcon style={{margin:0}}/>} col={theme.palette.primary.main} bgcol={accordion_bgcol}>
                             <Typography variant="body2" style={{ fontWeight:'bold', fontSize:'12px'}}>Green Brick Road</Typography>
                         </SeasonAccordionSummary>
-                        <SeasonAccordionDetails>
+                        <SeasonAccordionDetails  style={{ backgroundColor:accordion_bgcol }}>
                             {(isGbrOpen) && ('robot-game-gbr' in data) && (
                                 <Fragment>
                                     <Typography variant="body2" style={{ marginTop:'10px', textAlign:'center', color:theme.palette.primary.main, textDecoration:'none', fontSize:'16px', fontWeight:'bold' }}> Our robot game solution </Typography>
@@ -270,7 +275,7 @@ function SeasonMobile(props) {
 
                 )}
             </Container>
-        </Fragment>
+        </Profiler>
     );
 
 }

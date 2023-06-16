@@ -12,13 +12,13 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment }                    from 'react';
+import { Profiler }                    from 'react';
 
 /* Material UI includes */
 import { Typography, Container, Link } from '@mui/material';
 
 /* Portal includes */
-import { useDesign }                   from '../../providers';
+import { useDesign, useLogging }       from '../../providers';
 import { Image }                       from '../../components'
 
 
@@ -26,17 +26,18 @@ function Chicken() {
 
     /* --------- Gather inputs --------- */
     const { sizes }     = useDesign();
-    //const componentName = 'Chicken'
+    const { onRender }  = useLogging();
+    const componentName = 'Chicken'
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <Container style={{ backgroundColor:'rgba(255,255,255,0)', width:'100%', height:sizes['menu-height'], padding:0, position:'relative' }}/>
             <Container style={{ width:'100%', padding:0, position:'relative' }}>
                 <Image name="chicken" style={{ width:'100%', pointerEvents: 'none' }}/>
             </Container>
             <Typography style={{textAlign:'center', fontSize:'11px'}}> From <Link>https://flltutorials.com/</Link></Typography>
-        </Fragment>
+        </Profiler>
     );
 
 }

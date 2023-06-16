@@ -4,14 +4,17 @@
 # Copyright (c) [2023] The Green Brick Road
 # All rights reserved
 # -------------------------------------------------------
-# Data provider exports
+# Team provider context
 # -------------------------------------------------------
-# Nadège LEMPERIERE, @30 may 2023
-# Latest revision: 30 may 2023
+# Nadège LEMPERIERE, @14 june 2023
+# Latest revision: 14 june 2023
 # ---------------------------------------------------- */
 
-/* Local includes */
-import useProvider  from './Context';
-import Provider     from './Provider';
+/* React includes */
+import { useContext, createContext } from 'react';
 
-export { useProvider as useData, Provider as DataProvider };
+export const Context = createContext(null);
+
+function useProvider() { return useContext(Context); }
+
+export default useProvider;

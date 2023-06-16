@@ -11,7 +11,7 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { Fragment, useState, useEffect }                from 'react';
+import { Profiler, Fragment, useState, useEffect }      from 'react';
 
 /* Material UI includes */
 import { Container, Tabs, Tab, Box, Link, Typography }  from '@mui/material';
@@ -35,8 +35,8 @@ function SeasonDesktop(props) {
 
     /* --------- Gather inputs --------- */
     const { data }                                    = props
-    const { logText }                                 = useLogging();
-    const { sizes }                                   = useDesign();
+    const { logText, onRender }                       = useLogging();
+    const { sizes, isWebpSupported }                  = useDesign();
     const [tab, setTab]                               = useState(0);
     const theme                                       = useTheme();
     const [ localCompetitions, setLocalCompetitions ] = useState([]);
@@ -74,6 +74,7 @@ function SeasonDesktop(props) {
     }, [data]);
 
 
+
     /* ------ Manage tab selection ----- */
     const handleChange = (event) => {
 
@@ -84,12 +85,13 @@ function SeasonDesktop(props) {
 
     /* ----------- Define HTML --------- */
     return (
-        <Fragment>
+        <Profiler id={componentName} onRender={onRender}>
             <Container style={{ backgroundColor:'#ffffff', width:'100%', height:sizes['menu-height'], padding:0, position:'relative' }}/>
             <Container style={{ width:'100%', padding:0, position:'relative' }}>
                 <Image name="seasons" style={{ width:'100%', pointerEvents: 'none' }}/>
                 <Container style={{ position: 'absolute', zIndex: '1', top: '0%', left: '0%', width: '20%'}}>
-                    <img src={data.image} style={{ pointerEvents: 'none', width:'100%', position: 'absolute', zIndex:1}} alt={data.name}/>
+                    {(isWebpSupported) && (<img src={data.image['web']} style={{ pointerEvents: 'none', width:'100%', position: 'absolute', zIndex:1}} alt={data.name}/>)}
+                    {(!isWebpSupported) && (<img src={data.image['raw']} style={{ pointerEvents: 'none', width:'100%', position: 'absolute', zIndex:1}} alt={data.name}/>)}
                 </Container>
             </Container>
             {('description' in data) && (
@@ -117,7 +119,7 @@ function SeasonDesktop(props) {
                                 const date = time.getDate();
 
                                 return(
-                                    <TableRow key={item}>
+                                    <TableRow key={index}>
                                         <TableCell style={{padding:5, fontSize:'14px'}}>
                                             <Stack direction="row" alignItems='center' >
                                                 {(item.level === 'regional') && (<HudsonIcon fill={theme.palette.primary.main} style={{height:theme.typography.body1.fontSize, marginRight:10 }}/>)}
@@ -199,7 +201,7 @@ function SeasonDesktop(props) {
                     </Stack>
                 )}
             </Container>
-        </Fragment>
+        </Profiler>
     );
 
 }
