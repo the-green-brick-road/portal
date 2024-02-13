@@ -27,5 +27,9 @@ export function setImages(content) {
     return { type: types.SET_IMAGES, payload: content };
 }
 
+export function setHasAcceptedCookies(content) {
+    return { type: types.SET_HAS_ACCEPTED_COOKIES, payload: content };
+}
+
 
 /* eslint-enable padded-blocks */

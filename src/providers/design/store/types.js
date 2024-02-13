@@ -10,6 +10,7 @@
 # Latest revision: 15 may 2023
 # ---------------------------------------------------- */
 
-export const SET_IS_WEBP_SUPPORTED = 'SET_IS_WEBP_SUPPORTED';
-export const SET_IS_SLIDING        = 'SET_IS_SLIDING';
-export const SET_IMAGES            = 'SET_IMAGES';
+export const SET_IS_WEBP_SUPPORTED      = 'SET_IS_WEBP_SUPPORTED';
+export const SET_IS_SLIDING             = 'SET_IS_SLIDING';
+export const SET_IMAGES                 = 'SET_IMAGES';
+export const SET_HAS_ACCEPTED_COOKIES   = 'SET_HAS_ACCEPTED_COOKIES';

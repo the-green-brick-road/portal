@@ -11,7 +11,7 @@
 # ---------------------------------------------------- */
 
 /* Test includes */
-import { render, prettyDOM, act }  from '@testing-library/react'
+import { render, prettyDOM }       from '@testing-library/react'
 import { expect, test}             from '@jest/globals';
 
 /* Component under test */

@@ -15,18 +15,43 @@ import { Profiler }                                                          fro
 
 /* Material UI includes */
 import { Typography, Container, List, ListItemText, ListItemIcon, ListItem } from '@mui/material';
+import { Switch, Stack }                                                     from '@mui/material';
 import { default as Circle }                                                 from '@mui/icons-material/Circle';
 
 /* Portal includes */
-import { useDesign, useLogging }                                             from '../../providers';
+import { useDesign, useLogging, useAnalytics }                               from '../../providers';
 
 
 function Policy() {
 
     /* --------- Gather inputs --------- */
-    const { sizes }     = useDesign();
-    const { onRender }  = useLogging();
-    const componentName = 'Chicken'
+    const { deactivatePerformance, activatePerformance, deactivateAnalytics, activateAnalytics  } = useAnalytics();
+    const { logText, onRender }     = useLogging();
+    const { sizes, setHasAcceptedCookies, hasAcceptedCookies } = useDesign();
+    const componentName = 'Policy';
+
+    /* ------ Manage cookie change ----- */
+    const handleCookies = () => {
+
+        logText(componentName, 'debug', 'workflow', ' activateCookies');
+        if (!hasAcceptedCookies)
+        {
+
+            setHasAcceptedCookies(true);
+            activateAnalytics();
+            activatePerformance();
+
+        }
+        else
+        {
+
+            setHasAcceptedCookies(false);
+            deactivateAnalytics();
+            deactivatePerformance();
+
+        }
+
+    };
 
     /* ----------- Define HTML --------- */
     return (
@@ -125,10 +150,19 @@ function Policy() {
                 <Typography style={{fontSize:'12px'}}>If you have any complaints about how we process your personal data, please contact us through the contact methods listed in the contact information section section so that we can, where possible, resolve the issue. If you feel we have not addressed your concern in a satisfactory manner you may contact a supervisory authority. You also have the right to directly make a complaint to a supervisory authority.</Typography>
                 <Typography variant="h2">Contact Information</Typography>
                 <Typography style={{fontSize:'12px'}}>If you have any questions, concerns or complaints, you can contact our privacy officer at green.brick.road.first@gmail.com</Typography>
-            </Container></Profiler>
+                <Typography variant="h2">Settings</Typography>
+                <Stack direction="row">
+                    <Typography style={{ paddingBottom:'20px' }}> Activate cookies </Typography>
+                    <Switch
+                        checked={hasAcceptedCookies}
+                        color='primary'
+                        onChange={handleCookies}
+                        inputProps={{ 'aria-label': 'change' }}
+                    />
+                </Stack>
+            </Container>
+        </Profiler>
     );
-
-
 
 }
 

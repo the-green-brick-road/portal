@@ -11,28 +11,23 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { useContext, createContext } from 'react';
+import { createContext } from 'react';
 
 const context = createContext(null);
 
 /* ----- Define provider values ---- */
 var state = {
-    ui: {
-        start:       jest.fn(() => {})
-    },
+    ui: { start:     jest.fn(() => {}) },
     config:          false,
     isAuthenticated: false,
     isOpen:          false,
     shallRefresh:    false,
     user:            { email:'test@test.org', role:'dummy' },
     registration:    null,
-    error:           "",
     signOut:         jest.fn(() => { state.isAuthenticated = false }),
-    setIsOpen:       jest.fn((value) => { state;isOpen = value }),
-    resetError:      jest.fn(() => { state.error = "" }),
+    setIsOpen:       jest.fn((value) => { state.isOpen = value }),
     message:         "",
     resetMessage:    jest.fn(() => { state.message = "" }),
-    shallRefresh:    true
 };
 
 

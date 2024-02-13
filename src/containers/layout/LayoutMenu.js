@@ -25,7 +25,7 @@ function LayoutMenu(props) {
 
     /* --------- Gather inputs --------- */
     const { top = '95px', left = '20px', height = '20px', width = '100%', item = '40px', isDark=false } = props || {};
-    const { screen, isSliding }  = useDesign();
+    const { screen, isSliding, hasAcceptedCookies }  = useDesign();
     const { isMenuOpen }         = useMenu();
     const { onRender }           = useLogging();
     const theme                  = useTheme();
@@ -34,7 +34,7 @@ function LayoutMenu(props) {
     /* ----------- Define HTML --------- */
     return (
         <Profiler id={componentName} onRender={onRender}>
-            <AppBar elevation={isSliding ? 4 : 0} style={{ position:'absolute', height:height, display:'flex', width:width, top:top, left:left, backgroundColor: isSliding ? theme.palette.primary.main : 'rgba(255,255,255,0)'}}>
+            <AppBar elevation={isSliding ? 4 : 0} style={{ position:'absolute', height:height, display:'flex', width:width, top:top, left:left, backgroundColor: isSliding ? theme.palette.primary.main : 'rgba(255,255,255,0)', visibility: ( hasAcceptedCookies? 'visible' : 'hidden' )}}>
                 <Toolbar variant="dense" style={{ height: '100%', width: '100%', paddingLeft: '0px', paddingRight:'20px' }}>
                     {(screen === 'large') && (<NavigationBar height={height} isNegative={isSliding} theme={theme} isDark={isDark}/>)}
                     {(screen !== 'large') && (

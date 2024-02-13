@@ -21,29 +21,32 @@ const context = createContext(null);
 
 /* ----- Define provider values ---- */
 var state = {
-    isWebpSupported: true,
-    isSliding:       false,
-    isDarkMode:      false,
-    images:          {},
-    screen:          '',
-    sizes:           {},
-    setIsSliding:    jest.fn((value) => { state.isSliding = value }),
+    isWebpSupported:        true,
+    isSliding:              false,
+    isDarkMode:             false,
+    hasAcceptedCookies:     false,
+    images:                 {},
+    screen:                 '',
+    sizes:                  {},
+    setIsSliding:           jest.fn((value) => { state.isSliding = value }),
+    setHasAcceptedCookies:  jest.fn((value) => { state.hasAcceptedCookies = value }),
 };
 
 function DesignProvider(props) {
 
-    const { children, isWebpSupported, screen, isDarkMode = false, isSliding = false, sizes, images = [], theme = {} } = props;
+    const { children, isWebpSupported, screen, isDarkMode = false, isSliding = false, sizes, images = [], theme = {}, hasAcceptedCookies = false } = props;
 
     /* ------ Defining behaviour ------- */
     var local_theme = {}
     if (Object.keys(theme).length !== 0) { local_theme = createTheme(theme); }
 
-    state.isWebpSupported = isWebpSupported;
-    state.screen          = screen;
-    state.images          = {}
-    state.sizes           = sizes;
-    state.isSliding       = isSliding;
-    state.isDarkMode      = isDarkMode;
+    state.isWebpSupported    = isWebpSupported;
+    state.screen             = screen;
+    state.images             = {}
+    state.sizes              = sizes;
+    state.isSliding          = isSliding;
+    state.isDarkMode         = isDarkMode;
+    state.hasAcceptedCookies = hasAcceptedCookies;
     for (const image of images)
     {
 

@@ -24,7 +24,7 @@ function LayoutPage(props) {
 
     /* --------- Gather inputs --------- */
     const { top = '0px', left = '0px', height = '100vh', width='100vw', color='white', children } = props || {};
-    const { setIsSliding }                              = useDesign();
+    const { setIsSliding, hasAcceptedCookies }          = useDesign();
     const { logText }                                   = useLogging();
     const componentName                                 = 'LayoutPage';
 
@@ -64,7 +64,7 @@ function LayoutPage(props) {
                 zIndex: '0',
             }}
         >
-            <Container data-testid='layout-page-subcontainer' ref={ref} style={{ backgroundColor: color, position: 'absolute', overflowY: 'scroll', overflowX: 'hidden', width: width, height: height, top: 0, paddingLeft: 0, paddingRight: 0, zIndex: '1' }}>
+            <Container data-testid='layout-page-subcontainer' ref={ref} style={{ backgroundColor: color, position: 'absolute', overflowY: (hasAcceptedCookies? 'scroll' : 'hidden'), overflowX: 'hidden', width: width, height: height, top: 0, paddingLeft: 0, paddingRight: 0, zIndex: '1' }}>
                 {children}
             </Container>
         </Container>

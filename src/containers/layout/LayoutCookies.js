@@ -17,39 +17,41 @@ import { Profiler }               from 'react';
 import { Container }              from '@mui/material';
 
 /* Portal includes */
-import { Footer }                 from '../../components';
-import { useLogging }             from '../../providers';
+import { Cookies }                from '../../components';
+import { useLogging, useDesign }  from '../../providers';
 
-function LayoutFooter(props) {
+function LayoutCookies(props) {
 
     /* --------- Gather inputs --------- */
-    const { width, color, isDark } = props || {};
-    const { onRender }             = useLogging();
-    const componentName            = 'LayoutFooter';
+    const { width, left, color } = props || {};
+    const { onRender }           = useLogging();
+    const { hasAcceptedCookies } = useDesign();
+    const componentName          = 'LayoutCookies';
 
     /* ----------- Define HTML --------- */
     return (
         <Profiler id={componentName} onRender={onRender}>
             <Container
-                id="layout-footer"
-                data-testid='layout-footer-container'
+                id="layout-cookies"
+                data-testid='layout-cookies-container'
                 style={{
                     width: width,
                     backgroundColor: color,
-                    position: 'relative',
+                    position: 'absolute',
                     bottom:0,
                     padding:0,
-                    left:0,
+                    left: left,
                     marginBottom: 0,
                     boxShadow: 0,
+                    height: ( hasAcceptedCookies? '0px' : 'auto' ),
+                    visibility: ( hasAcceptedCookies? 'hidden' : 'visible' ),
                 }}
             >
-                <Footer color={color} isDark={isDark}/>
+                <Cookies color={color}/>
             </Container>
         </Profiler>
     );
 
-
 }
 
-export default LayoutFooter;
+export default LayoutCookies;

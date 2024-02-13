@@ -10,9 +10,11 @@
 # Latest revision: 23 june 2023
 # ---------------------------------------------------- */
 
+/* React includes */
+import { Profiler }                            from 'react';
+
 /* Material UI includes */
-import { Button, Typography, Link }            from '@mui/material';
-import { useTheme }                            from '@mui/material/styles';
+import { Button, Typography, Link, Paper }     from '@mui/material';
 
 /* Website includes */
 import { useLogging, useAnalytics, useDesign } from '../../providers';
@@ -20,31 +22,27 @@ import { useLogging, useAnalytics, useDesign } from '../../providers';
 function Cookies(props) {
 
     /* --------- Gather inputs --------- */
-    const { isAnalyticsActivated, isPerformanceActivated, deactivatePerformance, activatePerformance, deactivateAnalytics, activateAnalytics  } = useAnalytics();
-    const { logText, onRender } = useLogging();
-    const { sizes, screen }     = useDesign();
-    const theme = useTheme();
-    const componentName = 'Cookies';
-
-    /* --------- Compute sizes --------- */
-    var margin = `max( ${sizes['margin']} ,calc((100vw - ${sizes['large-width']} )/2)`;
-    if (screen !== 'large') { margin = 0; }
+    const { color }                 = props;
+    const { deactivatePerformance, activatePerformance, deactivateAnalytics, activateAnalytics  } = useAnalytics();
+    const { logText, onRender }     = useLogging();
+    const { setHasAcceptedCookies } = useDesign();
+    const componentName             = 'Cookies';
 
     /* ------ Manage cookie change ----- */
     const activateCookies = () => {
 
-        logMessage(componentName, 'activateCookies --- BEGIN');
+        logText(componentName, 'debug', 'workflow', ' activateCookies');
+        setHasAcceptedCookies(true);
         activateAnalytics();
         activatePerformance();
-        logMessage(componentName, 'activateCookies --- END');
 
     };
     const deactivateCookies = () => {
 
-        logMessage(componentName, 'deactivateCookies --- BEGIN');
+        logText(componentName, 'debug', 'workflow', ' deactivateCookies');
+        setHasAcceptedCookies(false);
         deactivateAnalytics();
         deactivatePerformance();
-        logMessage(componentName, 'deactivateCookies --- END');
 
     };
 
@@ -52,24 +50,24 @@ function Cookies(props) {
     return (
 
         <Profiler id={componentName} onRender={onRender}>
-            <div style={{ position:'fixed', backgroundColor: theme.palette.primary.main, bottom:'0px', left:margin, right:margin, zIndex:'10000', padding:'10px', height: ( hasChosen? '0px' : 'auto' ), visibility: ( hasChosen? 'hidden' : 'visible' ) }}>
+            <Paper id="cookies" square={true} style={{ backgroundColor:color, position:'relative', paddingLeft:10, paddingRight:10, paddingBottom:10, paddingTop:10, bottom:0 }}>
                 <Typography style= {{ color:'#ffffff' }}>
-                    {intl.formatMessage({ id: 'cookies_consent', defaultMessage: ''})}
+                    We use cookies to enable the proper functioning and security of our websites, and help us offer you the best possible user experience. By clicking Accept, you consent to the use of these cookies for advertising and analytics. You can change your cookie settings at any time. For more information, please read our
                     <Link href="/policy" style= {{ color:'#ffffff' }}>
-                        {intl.formatMessage({ id: 'cookies_consent0', defaultMessage: ''})}
+                        cookie policy
                     </Link>
                 </Typography>
-                <Button onClick={activateCookies} style={{ backgroundColor: '#ffffff', margin:'10px' }} >
-                    <Typography style={{ color: theme.palette.primary.main, fontWeight:'bold' }}>
-                        {intl.formatMessage({ id: 'cookies_consent_accept', defaultMessage: ''})}
+                <Button aria-label='accept' onClick={activateCookies} style={{ backgroundColor: '#ffffff', margin:'10px' }} >
+                    <Typography style={{ color: color, fontWeight:'bold' }}>
+                        Accept
                     </Typography>
                 </Button>
-                <Button onClick={deactivateCookies} style={{ backgroundColor: '#ffffff', margin:'10px' }} >
-                    <Typography style={{ color: theme.palette.primary.main, fontWeight:'bold' }}>
-                        {intl.formatMessage({ id: 'cookies_consent_reject', defaultMessage: ''})}
+                <Button aria-label='decline' onClick={deactivateCookies} style={{ backgroundColor: '#ffffff', margin:'10px' }} >
+                    <Typography style={{ color: color, fontWeight:'bold' }}>
+                        Decline
                     </Typography>
                 </Button>
-            </div>
+            </Paper>
         </Profiler>
     );
 

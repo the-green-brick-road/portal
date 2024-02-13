@@ -35,7 +35,7 @@ jest.mock('../../providers', () => ({
 }));
 /* eslint-enable jest/no-mocks-import */
 
-function MockDesignConsumer(props) {
+function MockDesignSlidingConsumer(props) {
 
     const { isSliding, isWebpSupported, screen, sizes, images, isDarkMode, setIsSliding } = useDesign();
     const { size, isDark } = props;
@@ -72,6 +72,60 @@ function MockDesignConsumer(props) {
 
         if (isSliding)   { setIsSliding(false) }
         else             { setIsSliding(true)  }
+
+        calls = calls + 1;
+        localStorage.setItem('mock-design-consumer', JSON.stringify(calls))
+
+    }
+
+    return(
+        <Container>
+            <Button aria-label='mock-design-consumer' onClick={handleClick} />
+            <Typography data-testid='mock-design-consumer-h1' variant="h1">h1</Typography>
+            <Typography data-testid='mock-design-consumer-h2' variant="h2">h2</Typography>
+            <Typography data-testid='mock-design-consumer-body1' variant="body1">body1</Typography>
+        </Container>
+    )
+
+};
+
+function MockDesignCookiesConsumer(props) {
+
+    const { hasAcceptedCookies, isWebpSupported, screen, sizes, images, isDarkMode, setHasAcceptedCookies } = useDesign();
+    const { size, isDark } = props;
+
+    var calls = JSON.parse(localStorage.getItem('mock-design-consumer'));
+    if (calls === null) { calls = 0; }
+
+    if (calls % 2 === 0) { expect(hasAcceptedCookies).toBe(false) }
+    else                 { expect(hasAcceptedCookies).toBe(true)  }
+
+    expect(screen).toBe(size)
+    if(calls > 0) {
+
+        expect(isWebpSupported).toBe(false)
+        expect(isDarkMode).toBe(isDark)
+
+        expect(sizes['small-width']).toBe(200)
+        expect(sizes['medium-width']).toBe(400)
+        expect(sizes['large-width']).toBe(800)
+        expect(sizes['menu-height']).toBe(80)
+        expect(sizes['margin']).toBe(10)
+        expect(sizes['hamburger-height']).toBe(40)
+
+        expect(images['test']['png']['small']['width']).toBe('200w')
+        expect(images['test']['png']['medium']['width']).toBe('400w')
+        expect(images['test']['png']['large']['width']).toBe('800w')
+        expect(images['test']['webp']['small']['width']).toBe('200w')
+        expect(images['test']['webp']['medium']['width']).toBe('400w')
+        expect(images['test']['webp']['large']['width']).toBe('800w')
+
+    }
+
+    const handleClick = () => {
+
+        if (hasAcceptedCookies)   { setHasAcceptedCookies(false) }
+        else                      { setHasAcceptedCookies(true)  }
 
         calls = calls + 1;
         localStorage.setItem('mock-design-consumer', JSON.stringify(calls))
@@ -228,7 +282,7 @@ describe("Design provider" ,() => {
                     <MockConfigurationProvider config={Config}>
                         <MockLoggingProvider>
                             <DesignProvider >
-                                <MockDesignConsumer size='large' isDark={true}/>
+                                <MockDesignSlidingConsumer size='large' isDark={true}/>
                             </DesignProvider>
                         </MockLoggingProvider>
                     </MockConfigurationProvider>
@@ -275,7 +329,7 @@ describe("Design provider" ,() => {
                     <MockConfigurationProvider config={Config}>
                         <MockLoggingProvider>
                             <DesignProvider >
-                                <MockDesignConsumer size='small' isDark={false}/>
+                                <MockDesignSlidingConsumer size='small' isDark={false}/>
                             </DesignProvider>
                         </MockLoggingProvider>
                     </MockConfigurationProvider>
@@ -309,6 +363,41 @@ describe("Design provider" ,() => {
         expect(body1['font-family']).toBe('Roboto')
         expect(body1['position']).toBe('relative')
         expect(body1['text-align']).toBe('justify')
+
+    })
+
+
+    test('Should manage cookies acceptation', async () => {
+
+        const mockUseUseMediaQuery= jest.fn(() => { return true });
+        useUseMediaQuery.mockReturnValue(mockUseUseMediaQuery);
+
+        await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
+
+            render(
+
+                <StrictMode>
+
+                    <MockConfigurationProvider config={Config}>
+                        <MockLoggingProvider>
+                            <DesignProvider>
+                                <MockDesignCookiesConsumer size='large' isDark={true}/>
+                            </DesignProvider>
+                        </MockLoggingProvider>
+                    </MockConfigurationProvider>
+                </StrictMode>
+
+            );
+
+        })
+
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-design-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(1000);
+
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-design-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await delay(1000);
+
 
     })
 

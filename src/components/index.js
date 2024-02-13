@@ -15,3 +15,4 @@ export { default as HamburgerBar }  from './hamburgermenu/HamburgerBar';
 export { default as HamburgerMenu } from './hamburgermenu/HamburgerMenu';
 export { default as Image }         from './image/Image';
 export { default as Footer }        from './footer/Footer';
+export { default as Cookies }       from './cookies/Cookies';

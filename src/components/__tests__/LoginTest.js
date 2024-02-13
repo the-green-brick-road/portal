@@ -7,7 +7,7 @@
 # Footer component test suite
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @29 may 2023
-# Latest revision: 29 may 2023
+# Latest revision: 13 february 2024
 # ---------------------------------------------------- */
 
 /* Test includes */
@@ -100,6 +100,7 @@ describe("Login component" ,() => {
                     </MockLoggingProvider>
                 </div>
             );
+
         })
 
         const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -110,14 +111,14 @@ describe("Login component" ,() => {
         expect(state.setIsOpen).toHaveBeenCalledTimes(0)
         expect(state.signOut).toHaveBeenCalledTimes(0)
         expect(state.ui.start).toHaveBeenCalledTimes(0)
-        expect(state.resetError).toHaveBeenCalledTimes(0)
+        expect(state.resetMessage).toHaveBeenCalledTimes(0)
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'options' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         expect(state.setIsOpen).toHaveBeenLastCalledWith(true)
         expect(state.setIsOpen).toHaveBeenCalledTimes(1)
         expect(state.signOut).toHaveBeenCalledTimes(0)
         expect(state.ui.start).toHaveBeenCalledTimes(0)
-        //expect(state.resetError).toHaveBeenCalledTimes(1)
+        expect(state.resetMessage).toHaveBeenCalledTimes(1)
 
     })
 
@@ -139,6 +140,7 @@ describe("Login component" ,() => {
                     </MockLoggingProvider>
                 </div>
             );
+
         })
 
         const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -149,14 +151,14 @@ describe("Login component" ,() => {
         expect(state.setIsOpen).toHaveBeenCalledTimes(0)
         expect(state.signOut).toHaveBeenCalledTimes(0)
         expect(state.ui.start).toHaveBeenCalledTimes(0)
-        expect(state.resetError).toHaveBeenCalledTimes(0)
+        expect(state.resetMessage).toHaveBeenCalledTimes(0)
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'options' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         expect(state.setIsOpen).toHaveBeenLastCalledWith(true)
         expect(state.setIsOpen).toHaveBeenCalledTimes(1)
         expect(state.signOut).toHaveBeenCalledTimes(0)
         expect(state.ui.start).toHaveBeenCalledTimes(0)
-        //expect(state.resetError).toHaveBeenCalledTimes(1)
+        expect(state.resetMessage).toHaveBeenCalledTimes(1)
 
     })
 
@@ -178,6 +180,7 @@ describe("Login component" ,() => {
                     </MockLoggingProvider>
                 </div>
             );
+
         })
 
         const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -188,7 +191,7 @@ describe("Login component" ,() => {
         expect(state.setIsOpen).toHaveBeenCalledTimes(0)
         expect(state.signOut).toHaveBeenCalledTimes(0)
         expect(state.ui.start).toHaveBeenCalledTimes(1)
-        expect(state.resetError).toHaveBeenCalledTimes(0)
+        expect(state.resetMessage).toHaveBeenCalledTimes(0)
 
     })
 
@@ -210,6 +213,7 @@ describe("Login component" ,() => {
                     </MockLoggingProvider>
                 </div>
             );
+
         })
 
         const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -220,7 +224,7 @@ describe("Login component" ,() => {
         expect(state.setIsOpen).toHaveBeenCalledTimes(0)
         expect(state.signOut).toHaveBeenCalledTimes(0)
         expect(state.ui.start).toHaveBeenCalledTimes(0)
-        expect(state.resetError).toHaveBeenCalledTimes(0)
+        expect(state.resetMessage).toHaveBeenCalledTimes(0)
 
         await act(async () => {fireEvent.click(screen.getByRole('link', { name: 'registration' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         const tree1 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});
@@ -229,7 +233,7 @@ describe("Login component" ,() => {
         expect(state.setIsOpen).toHaveBeenCalledTimes(1)
         expect(state.signOut).toHaveBeenCalledTimes(0)
         expect(state.ui.start).toHaveBeenCalledTimes(0)
-        //expect(state.resetError).toHaveBeenCalledTimes(1)
+        expect(state.resetMessage).toHaveBeenCalledTimes(1)
 
     })
 
@@ -251,6 +255,7 @@ describe("Login component" ,() => {
                     </MockLoggingProvider>
                 </div>
             );
+
         })
 
         const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -261,7 +266,7 @@ describe("Login component" ,() => {
         expect(state.setIsOpen).toHaveBeenCalledTimes(0)
         expect(state.signOut).toHaveBeenCalledTimes(0)
         expect(state.ui.start).toHaveBeenCalledTimes(0)
-        expect(state.resetError).toHaveBeenCalledTimes(0)
+        expect(state.resetMessage).toHaveBeenCalledTimes(0)
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'logout' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         const tree1 = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});
@@ -270,7 +275,7 @@ describe("Login component" ,() => {
         expect(state.setIsOpen).toHaveBeenCalledTimes(1)
         expect(state.signOut).toHaveBeenCalledTimes(1)
         expect(state.ui.start).toHaveBeenCalledTimes(0)
-        expect(state.resetError).toHaveBeenCalledTimes(0)
+        expect(state.resetMessage).toHaveBeenCalledTimes(0)
 
 
     })
@@ -293,6 +298,7 @@ describe("Login component" ,() => {
                     </MockLoggingProvider>
                 </div>
             );
+
         })
 
         const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -303,7 +309,7 @@ describe("Login component" ,() => {
         expect(state.setIsOpen).toHaveBeenCalledTimes(0)
         expect(state.signOut).toHaveBeenCalledTimes(0)
         expect(state.ui.start).toHaveBeenCalledTimes(0)
-        expect(state.resetError).toHaveBeenCalledTimes(0)
+        expect(state.resetMessage).toHaveBeenCalledTimes(0)
 
 
     })
