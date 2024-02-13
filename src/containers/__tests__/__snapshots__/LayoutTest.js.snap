@@ -142,7 +142,7 @@ exports[`Layout container Should hide menu when cookies are not activated 1`] = 
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-cookies-container\\"
             id=\\"layout-cookies\\"
-            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; box-shadow: 0; height: auto; visibility: visible;\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: auto; visibility: visible;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -298,7 +298,7 @@ exports[`Layout container Should provide required design when not sliding and me
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-cookies-container\\"
             id=\\"layout-cookies\\"
-            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -426,7 +426,7 @@ exports[`Layout container Should provide required design when not sliding for la
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-cookies-container\\"
             id=\\"layout-cookies\\"
-            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -560,7 +560,7 @@ exports[`Layout container Should provide required design when not sliding for me
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-cookies-container\\"
             id=\\"layout-cookies\\"
-            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -700,7 +700,7 @@ exports[`Layout container Should provide required design when not sliding for sm
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-cookies-container\\"
             id=\\"layout-cookies\\"
-            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -859,7 +859,7 @@ exports[`Layout container Should provide required design when sliding and menu o
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-cookies-container\\"
             id=\\"layout-cookies\\"
-            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -990,7 +990,7 @@ exports[`Layout container Should provide required design when sliding for large 
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-cookies-container\\"
             id=\\"layout-cookies\\"
-            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -1127,7 +1127,7 @@ exports[`Layout container Should provide required design when sliding for medium
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-cookies-container\\"
             id=\\"layout-cookies\\"
-            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
@@ -1270,7 +1270,7 @@ exports[`Layout container Should provide required design when sliding for small 
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
             data-testid=\\"layout-cookies-container\\"
             id=\\"layout-cookies\\"
-            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
