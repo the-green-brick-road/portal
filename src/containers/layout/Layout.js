@@ -60,7 +60,7 @@ function Layout() {
                     <Outlet />
                     <LayoutFooter width={width} color={background_color} isDark={isDarkMode}/>
                 </Container>
-                <LayoutCookies width={width} left={margin_width} color={color}/>
+                <LayoutCookies width={width} left={0} color={color}/>
             </LayoutPage>
         </Profiler>
     );
