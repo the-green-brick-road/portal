@@ -2,6 +2,9 @@
 
 exports[`Robot view Should display robot page 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div

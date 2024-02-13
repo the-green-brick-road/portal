@@ -22,5 +22,13 @@
     {
         "path": "/chicken",
         "element": "Chicken"
+    },
+    {
+        "path": "/policy",
+        "element": "Policy"
+    },
+    {
+        "path": "/terms",
+        "element": "Terms"
     }
 ]

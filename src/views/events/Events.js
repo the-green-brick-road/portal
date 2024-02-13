@@ -56,8 +56,8 @@ function Competitions() {
 
         for (let i_event = 0; i_event < open.length; i_event +=1) {
 
-            let date_start = Date()
-            let date_end = Date()
+            let date_start = new Date()
+            let date_end = new Date()
             if ( 'date' in open[i_event].start ) {
 
                 date_start = new Date(open[i_event].start.date)

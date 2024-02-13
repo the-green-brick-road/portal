@@ -2,6 +2,9 @@
 
 exports[`Router component Should build correct routes 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
@@ -99,6 +102,9 @@ exports[`Router component Should build correct routes 1`] = `
 
 exports[`Router component Should build correct routes 2`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
@@ -187,6 +193,9 @@ exports[`Router component Should build correct routes 2`] = `
 
 exports[`Router component Should build correct routes 3`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
@@ -275,6 +284,9 @@ exports[`Router component Should build correct routes 3`] = `
 
 exports[`Router component Should build correct routes 4`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
@@ -365,6 +377,9 @@ exports[`Router component Should build correct routes 4`] = `
 
 exports[`Router component Should build correct routes 5`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
@@ -455,6 +470,9 @@ exports[`Router component Should build correct routes 5`] = `
 
 exports[`Router component Should build correct routes 6`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
@@ -545,6 +563,9 @@ exports[`Router component Should build correct routes 6`] = `
 
 exports[`Router component Should build correct routes 7`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
@@ -635,6 +656,9 @@ exports[`Router component Should build correct routes 7`] = `
 
 exports[`Router component Should build correct routes 8`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <p
       class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
@@ -733,6 +757,9 @@ exports[`Router component Should build correct routes 8`] = `
 
 exports[`Router component Should build correct routes 9`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div />
 </body>"
 `;

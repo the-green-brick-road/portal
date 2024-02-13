@@ -1,4 +1,3 @@
-
 /* ------------------------------------------------------
 # THE GREEN BRICK ROAD
 # -------------------------------------------------------
@@ -124,7 +123,7 @@ function Team() {
                                     {('image' in item) && (!isWebpSupported) && (<CardMedia alt={item.name} component="img" style={{objectFit: 'cover', padding:10 }} image={item.image.raw}/>)}
                                     <CardHeader style={{ backgroundColor:'#eeeeee', paddingTop:'5px', paddingBottom:'5px', paddingLeft:'5px', paddingRight:'5px', textAlign:'center'}} titleTypographyProps={{ color:theme.palette.primary.main, fontSize:'14px', fontWeight:'bold', fontFamily:item.font }} title={item.name} />
                                     <CardContent style={{ backgroundColor:'#eeeeee', padding:'5px' }}>
-                                        <Typography variant="body1" style={{ color:theme.palette.common.black, fontSize:'14px', fontStyle:'italic' }}>"{item.description}"</Typography>
+                                        <Typography variant="body1" style={{ color:theme.palette.common.black, fontSize:'14px', fontStyle:'italic', paddingBottom:'10px' }}>"{item.description}"</Typography>
                                         <Grid container columns={2} spacing={1}>
                                             <Grid item xs={1}>
                                                 <Typography variant="body1" style={{ color:theme.palette.common.black, fontSize:'14px' }}> Member : </Typography>

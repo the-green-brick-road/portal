@@ -2,6 +2,9 @@
 
 exports[`Chicken view Should display chicken page 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -23,7 +26,7 @@ exports[`Chicken view Should display chicken page 1`] = `
       >
          From 
         <a
-          class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
+          class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root\\"
         >
           https://flltutorials.com/
         </a>

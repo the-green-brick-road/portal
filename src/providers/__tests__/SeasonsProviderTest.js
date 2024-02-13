@@ -21,7 +21,7 @@ import { render, screen, act, cleanup }    from '@testing-library/react'
 import { expect, test}                     from '@jest/globals';
 
 /* Component under test */
-import { useSeasons, SeasonsProvider }         from '../../providers/seasons';
+import { useSeasons, SeasonsProvider }     from '../../providers/seasons';
 
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */

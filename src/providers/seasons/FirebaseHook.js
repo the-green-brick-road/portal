@@ -13,6 +13,7 @@
 # Latest revision: 30 may 2023
 # ---------------------------------------------------- */
 
+/* Importing TextEncoder for tests */
 import { initializeApp, getApps }               from 'firebase/app';
 import { getFirestore, collection, getDocs }    from "firebase/firestore";
 import { getStorage, ref, getDownloadURL  }     from "firebase/storage";

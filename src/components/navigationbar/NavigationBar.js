@@ -11,19 +11,19 @@
 # ---------------------------------------------------- */
 
 /* React includes */
-import { useRef, Profiler }                               from 'react';
+import { useRef, Profiler }                       from 'react';
 
 /* Material UI includes */
-import { ButtonGroup, MenuList, MenuItem, Link, Avatar }  from '@mui/material';
-import { default as Login }                               from '@mui/icons-material/Login';
+import { ButtonGroup, MenuList, MenuItem, Link }  from '@mui/material';
 
 /* Portal includes */
-import { useLogging, useMenu }                            from '../../providers';
+import { useLogging, useMenu }                    from '../../providers';
+//import { Login }                                  from '../../components';
 
 /* Local includes */
-import NavigationButton                                   from './NavigationButton';
-import NavigationLogo                                     from './NavigationLogo';
-import NavigationStack                                    from './NavigationStack';
+import NavigationButton                           from './NavigationButton';
+import NavigationLogo                             from './NavigationLogo';
+import NavigationStack                            from './NavigationStack';
 
 function NavigationBar(props) {
 
@@ -39,11 +39,8 @@ function NavigationBar(props) {
     if (isNegative && !isDark) { stackcolor = theme.palette.common.white; }
     if (isNegative && isDark) { stackcolor = theme.palette.common.black; }
 
-    let logincolor = theme.palette.common.white;
-    if (isDark) { logincolor = theme.palette.common.black; }
-    if (isNegative) { logincolor = theme.palette.primary.main; }
-
     let menucolor = theme.palette.common.white;
+    if (isDark) { menucolor = theme.palette.common.black; }
     if (isNegative) { menucolor = theme.palette.primary.main; }
 
     let style = 'solid';
@@ -143,16 +140,6 @@ function NavigationBar(props) {
 
                         })}
                     </ButtonGroup>
-                </NavigationStack>
-                <NavigationStack
-                    direction="row"
-                    justifyContent="flex-end"
-                    alignItems="center"
-                    color="rgba(255,255,255,0)"
-                    padding="10px"
-                    height={height}
-                >
-                    <Avatar style={{ backgroundColor:stackcolor }}><Login style={{ color:logincolor }} /></Avatar>
                 </NavigationStack>
             </NavigationStack>
         </Profiler>

@@ -2,6 +2,9 @@
 
 exports[`Image component Should display an image if existing 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <picture

@@ -10,4 +10,4 @@
 # Latest revision: 02 may 2023
 # -------------------------------------------------------
 User-agent: *
-Disallow:
+Allow: /

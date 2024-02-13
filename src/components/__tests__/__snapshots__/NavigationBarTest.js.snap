@@ -2,17 +2,20 @@
 
 exports[`NavigationBar component Should display a navigation bar 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
         class=\\"MuiStack-root css-i1uka7-MuiStack-root\\"
       >
         <div
-          class=\\"MuiStack-root css-1bfbfkp-MuiStack-root\\"
+          class=\\"MuiStack-root css-e7xlp6-MuiStack-root\\"
         >
           <a
             aria-label=\\"navigation-logo\\"
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1gvp9s9-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iw6689-MuiTypography-root-MuiLink-root\\"
             href=\\"/\\"
             logopadding=\\"10px\\"
           >
@@ -22,7 +25,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             />
           </a>
           <div
-            class=\\"MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-fullWidth MuiButtonGroup-disableElevation css-8q4ur5-MuiButtonGroup-root\\"
+            class=\\"MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-fullWidth MuiButtonGroup-disableElevation css-1l4dvfa-MuiButtonGroup-root\\"
             role=\\"group\\"
             style=\\"margin-left: 0px; margin-right: 0px; width: 100%; left: 0px;\\"
           >
@@ -31,7 +34,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             >
               <a
                 alt=\\"item1\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-16bn3o3-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected MuiButtonGroup-firstButton css-16bn3o3-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#666666\\"
                 href=\\"/\\"
                 id=\\"item1\\"
@@ -51,7 +54,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                     viewBox=\\"0 0 24 24\\"
                   >
                     <path
-                      d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                      d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6\\"
                     />
                   </svg>
                 </span>
@@ -63,7 +66,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             >
               <button
                 alt=\\"item2\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-16bn3o3-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected MuiButtonGroup-lastButton css-16bn3o3-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#666666\\"
                 id=\\"item2\\"
                 name=\\"item2\\"
@@ -82,7 +85,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                     viewBox=\\"0 0 24 24\\"
                   >
                     <path
-                      d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                      d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6\\"
                     />
                   </svg>
                 </span>
@@ -102,7 +105,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                 >
                   <a
                     aria-label=\\"subitem21\\"
-                    class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
+                    class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test1\\"
                     style=\\"text-decoration: none; color: rgb(102, 102, 102); font-size: 15px;\\"
                     target=\\"_top\\"
@@ -121,7 +124,7 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
                 >
                   <a
                     aria-label=\\"subitem22\\"
-                    class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
+                    class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test2\\"
                     style=\\"text-decoration: none; color: rgb(102, 102, 102); font-size: 15px;\\"
                     target=\\"_top\\"
@@ -136,27 +139,6 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
             </div>
           </div>
         </div>
-        <div
-          class=\\"MuiStack-root css-72g1hl-MuiStack-root\\"
-        >
-          <div
-            class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root\\"
-            style=\\"background-color: rgb(102, 102, 102);\\"
-          >
-            <svg
-              aria-hidden=\\"true\\"
-              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-              data-testid=\\"LoginIcon\\"
-              focusable=\\"false\\"
-              style=\\"color: rgb(85, 85, 85);\\"
-              viewBox=\\"0 0 24 24\\"
-            >
-              <path
-                d=\\"M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z\\"
-              />
-            </svg>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -165,17 +147,23 @@ exports[`NavigationBar component Should display a navigation bar 1`] = `
 
 exports[`NavigationBar component Should display a negative navigation bar 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
         class=\\"MuiStack-root css-1x3vcbx-MuiStack-root\\"
       >
         <div
-          class=\\"MuiStack-root css-1bfbfkp-MuiStack-root\\"
+          class=\\"MuiStack-root css-e7xlp6-MuiStack-root\\"
         >
           <a
             aria-label=\\"navigation-logo\\"
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1gvp9s9-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iw6689-MuiTypography-root-MuiLink-root\\"
             href=\\"/\\"
             logopadding=\\"10px\\"
           >
@@ -185,7 +173,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
             />
           </a>
           <div
-            class=\\"MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-fullWidth MuiButtonGroup-disableElevation css-8q4ur5-MuiButtonGroup-root\\"
+            class=\\"MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-fullWidth MuiButtonGroup-disableElevation css-1l4dvfa-MuiButtonGroup-root\\"
             role=\\"group\\"
             style=\\"margin-left: 0px; margin-right: 0px; width: 100%; left: 0px;\\"
           >
@@ -194,7 +182,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
             >
               <a
                 alt=\\"item1\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-bjx162-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected MuiButtonGroup-firstButton css-bjx162-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#555555\\"
                 href=\\"/\\"
                 id=\\"item1\\"
@@ -214,7 +202,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                     viewBox=\\"0 0 24 24\\"
                   >
                     <path
-                      d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                      d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6\\"
                     />
                   </svg>
                 </span>
@@ -226,7 +214,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
             >
               <button
                 alt=\\"item2\\"
-                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected css-bjx162-MuiButtonBase-root-MuiButton-root\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-fullWidth nonselected MuiButtonGroup-lastButton css-bjx162-MuiButtonBase-root-MuiButton-root\\"
                 col=\\"#555555\\"
                 id=\\"item2\\"
                 name=\\"item2\\"
@@ -245,7 +233,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                     viewBox=\\"0 0 24 24\\"
                   >
                     <path
-                      d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z\\"
+                      d=\\"M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6\\"
                     />
                   </svg>
                 </span>
@@ -265,7 +253,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                 >
                   <a
                     aria-label=\\"subitem21\\"
-                    class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
+                    class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test1\\"
                     style=\\"text-decoration: none; color: rgb(85, 85, 85); font-size: 15px;\\"
                     target=\\"_top\\"
@@ -284,7 +272,7 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                 >
                   <a
                     aria-label=\\"subitem22\\"
-                    class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root\\"
+                    class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root\\"
                     href=\\"/test2\\"
                     style=\\"text-decoration: none; color: rgb(85, 85, 85); font-size: 15px;\\"
                     target=\\"_top\\"
@@ -297,27 +285,6 @@ exports[`NavigationBar component Should display a negative navigation bar 1`] = 
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div
-          class=\\"MuiStack-root css-72g1hl-MuiStack-root\\"
-        >
-          <div
-            class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root\\"
-            style=\\"background-color: rgb(85, 85, 85);\\"
-          >
-            <svg
-              aria-hidden=\\"true\\"
-              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-              data-testid=\\"LoginIcon\\"
-              focusable=\\"false\\"
-              style=\\"color: rgb(102, 102, 102);\\"
-              viewBox=\\"0 0 24 24\\"
-            >
-              <path
-                d=\\"M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z\\"
-              />
-            </svg>
           </div>
         </div>
       </div>

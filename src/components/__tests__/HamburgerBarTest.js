@@ -25,11 +25,15 @@ import { default as HamburgerBar }                   from '../../components/hamb
 import { useMenu as mockUseMenu, MenuProvider as MockMenuProvider } from '../../providers/__mocks__/MenuProvider';
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
 import { default as MockImage }  from '../../components/__mocks__/Image';
+import { default as MockLogin }  from '../../components/__mocks__/Login';
 jest.mock('../../providers', () => ({
     useLogging: (() => { return mockUseLogging(); }),
     useMenu: (()    => { return mockUseMenu(); }),
 }));
-jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
+jest.mock("../../components", () => ({
+    Image: (props) => MockImage(props),
+    Login: (props) => MockLogin(props),
+}));
 
 /* eslint-enable jest/no-mocks-import */
 

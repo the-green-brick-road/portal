@@ -29,6 +29,7 @@ const HamburgerStack = styled(Stack)(({ color = '#ffffff', padding = '10px', hei
     right: '0px',
     width: '100%',
     verticalAlign: 'middle',
+    position: 'relative',
 }));
 
 export default HamburgerStack;

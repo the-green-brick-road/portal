@@ -117,6 +117,9 @@ describe("Analytics provider" ,() => {
         useGetApps.mockReturnValue(mockGetApps);
 
 
+        Object.defineProperty(window, "doNotTrack", { value: null, writable: true});
+        Object.defineProperty(navigator, "doNotTrack", { value: undefined, writable: true});
+
         await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
 
             render(
@@ -145,6 +148,72 @@ describe("Analytics provider" ,() => {
 
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-analytics-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, true)
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-analytics-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, false)
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-performance-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-performance-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+
+    })
+
+    test('Should deactivate analytics publication in case Do Not Track is activated', async () => {
+
+        const Config = {
+            "firebase"   : {
+                "api-key"               : "AIzaSyDxkYnmt7ihsK7dA3hTY1Njk72XkV1qHrg",
+                "auth-domain"           : "portal-8382d.firebaseapp.com",
+                "project-id"            : "portal-8382d",
+                "storage-bucket"        : "portal-8382d.appspot.com",
+                "messaging-sender-id"   : "186359319446",
+                "app-id"                : "1:186359319446:web:da2da46323495a19e3ebb7",
+                "measurement-id"        : "G-EVC01WVTWW",
+            },
+        }
+
+        const mockIsSupported = jest.fn(() => { return new Promise(function(callback) { callback(true); })});
+        useIsSupported.mockReturnValue(mockIsSupported);
+        const mockGetAnalytics = jest.fn(() => { return {} });
+        useGetAnalytics.mockReturnValue(mockGetAnalytics);
+        var performanceState = {instrumentationEnabled: true, dataCollectionEnabled: true}
+        const mockGetPerformance = jest.fn(() => { return performanceState });
+        useGetPerformance.mockReturnValue(mockGetPerformance);
+        const mockSetAnalyticsCollectionEnabled = jest.fn((analytics, enable) => { });
+        useSetAnalyticsCollectionEnabled.mockReturnValue(mockSetAnalyticsCollectionEnabled);
+        const mockInitializeApp = jest.fn((app) => { return null });
+        useInitializeApp.mockReturnValue(mockInitializeApp);
+        const mockGetApps = jest.fn(() => { return [] });
+        useGetApps.mockReturnValue(mockGetApps);
+
+        Object.defineProperty(window, "doNotTrack", { value: 1, writable: true});
+        Object.defineProperty(navigator, "doNotTrack", { value: undefined, writable: true});
+
+        await act(async () => { // eslint-disable-line testing-library/no-unnecessary-act
+
+            render(
+
+                <StrictMode>
+                    <MockConfigurationProvider config={Config}>
+                        <MockLoggingProvider>
+                            <AnalyticsProvider >
+                                <MockAnalyticsConsumer/>
+                                <MockPerformanceConsumer/>
+                            </AnalyticsProvider>
+                        </MockLoggingProvider>
+                    </MockConfigurationProvider>
+                </StrictMode>
+
+            );
+
+        })
+
+        expect(mockIsSupported).toHaveBeenCalledTimes(2)
+        expect(mockInitializeApp).toHaveBeenCalledTimes(2)
+        expect(mockGetAnalytics).toHaveBeenCalledTimes(2)
+        expect(mockGetPerformance).toHaveBeenCalledTimes(2)
+        expect(mockSetAnalyticsCollectionEnabled).toHaveBeenCalledTimes(2)
+        expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, false)
+
+        await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-analytics-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
+        expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, false)
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-analytics-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act
         expect(mockSetAnalyticsCollectionEnabled).toHaveBeenLastCalledWith({}, false)
         await act(async () => {fireEvent.click(screen.getByRole('button', { name: 'mock-performance-consumer' }))}) // eslint-disable-line testing-library/no-unnecessary-act

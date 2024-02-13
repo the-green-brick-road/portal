@@ -2,6 +2,9 @@
 
 exports[`Blog view Should display blog page 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -26,7 +29,7 @@ exports[`Blog view Should display blog page 1`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/5\\"
               target=\\"\\"
             >
@@ -82,7 +85,7 @@ exports[`Blog view Should display blog page 1`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/4\\"
               target=\\"\\"
             >
@@ -138,7 +141,7 @@ exports[`Blog view Should display blog page 1`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/2\\"
               target=\\"\\"
             >
@@ -194,7 +197,7 @@ exports[`Blog view Should display blog page 1`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/7\\"
               target=\\"\\"
             >
@@ -250,7 +253,7 @@ exports[`Blog view Should display blog page 1`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/1\\"
               target=\\"\\"
             >
@@ -306,7 +309,7 @@ exports[`Blog view Should display blog page 1`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/3\\"
               target=\\"\\"
             >
@@ -362,7 +365,7 @@ exports[`Blog view Should display blog page 1`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/6\\"
               target=\\"\\"
             >
@@ -472,6 +475,9 @@ exports[`Blog view Should display blog page 1`] = `
 
 exports[`Blog view Should display blog page 2`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -496,7 +502,7 @@ exports[`Blog view Should display blog page 2`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/5\\"
               target=\\"\\"
             >
@@ -552,7 +558,7 @@ exports[`Blog view Should display blog page 2`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/4\\"
               target=\\"\\"
             >
@@ -608,7 +614,7 @@ exports[`Blog view Should display blog page 2`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/2\\"
               target=\\"\\"
             >
@@ -664,7 +670,7 @@ exports[`Blog view Should display blog page 2`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/7\\"
               target=\\"\\"
             >
@@ -720,7 +726,7 @@ exports[`Blog view Should display blog page 2`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/1\\"
               target=\\"\\"
             >
@@ -776,7 +782,7 @@ exports[`Blog view Should display blog page 2`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/3\\"
               target=\\"\\"
             >
@@ -832,7 +838,7 @@ exports[`Blog view Should display blog page 2`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/6\\"
               target=\\"\\"
             >
@@ -942,6 +948,9 @@ exports[`Blog view Should display blog page 2`] = `
 
 exports[`Blog view Should display blog page 3`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -966,7 +975,7 @@ exports[`Blog view Should display blog page 3`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/5\\"
               target=\\"\\"
             >
@@ -1022,7 +1031,7 @@ exports[`Blog view Should display blog page 3`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/4\\"
               target=\\"\\"
             >
@@ -1078,7 +1087,7 @@ exports[`Blog view Should display blog page 3`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/2\\"
               target=\\"\\"
             >
@@ -1134,7 +1143,7 @@ exports[`Blog view Should display blog page 3`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/7\\"
               target=\\"\\"
             >
@@ -1190,7 +1199,7 @@ exports[`Blog view Should display blog page 3`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/1\\"
               target=\\"\\"
             >
@@ -1246,7 +1255,7 @@ exports[`Blog view Should display blog page 3`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/3\\"
               target=\\"\\"
             >
@@ -1302,7 +1311,7 @@ exports[`Blog view Should display blog page 3`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/6\\"
               target=\\"\\"
             >
@@ -1412,6 +1421,9 @@ exports[`Blog view Should display blog page 3`] = `
 
 exports[`Blog view Should display blog page 4`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -1436,7 +1448,7 @@ exports[`Blog view Should display blog page 4`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/5\\"
               target=\\"\\"
             >
@@ -1492,7 +1504,7 @@ exports[`Blog view Should display blog page 4`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/4\\"
               target=\\"\\"
             >
@@ -1548,7 +1560,7 @@ exports[`Blog view Should display blog page 4`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/2\\"
               target=\\"\\"
             >
@@ -1604,7 +1616,7 @@ exports[`Blog view Should display blog page 4`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/7\\"
               target=\\"\\"
             >
@@ -1660,7 +1672,7 @@ exports[`Blog view Should display blog page 4`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/1\\"
               target=\\"\\"
             >
@@ -1716,7 +1728,7 @@ exports[`Blog view Should display blog page 4`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/3\\"
               target=\\"\\"
             >
@@ -1772,7 +1784,7 @@ exports[`Blog view Should display blog page 4`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/6\\"
               target=\\"\\"
             >
@@ -1882,6 +1894,9 @@ exports[`Blog view Should display blog page 4`] = `
 
 exports[`Blog view Should display blog page 5`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -1906,7 +1921,7 @@ exports[`Blog view Should display blog page 5`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/5\\"
               target=\\"\\"
             >
@@ -1962,7 +1977,7 @@ exports[`Blog view Should display blog page 5`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/4\\"
               target=\\"\\"
             >
@@ -2018,7 +2033,7 @@ exports[`Blog view Should display blog page 5`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/2\\"
               target=\\"\\"
             >
@@ -2074,7 +2089,7 @@ exports[`Blog view Should display blog page 5`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/7\\"
               target=\\"\\"
             >
@@ -2130,7 +2145,7 @@ exports[`Blog view Should display blog page 5`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/1\\"
               target=\\"\\"
             >
@@ -2186,7 +2201,7 @@ exports[`Blog view Should display blog page 5`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/3\\"
               target=\\"\\"
             >
@@ -2242,7 +2257,7 @@ exports[`Blog view Should display blog page 5`] = `
             style=\\"padding: 0px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"/posts/6\\"
               target=\\"\\"
             >

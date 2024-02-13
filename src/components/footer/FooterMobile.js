@@ -72,7 +72,6 @@ function FooterDesktop(props) {
                     <Typography style={{ textTransform:'uppercase', color:main_color, textAlign:'left', fontSize:'11px', fontWeight:'bold' }}>
                         About us :
                     </Typography>
-
                     <Tooltip title="145 New Street - Mamaroneck, NY 10543">
                         <Link href="https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu" target="_blank">
                             <LocationOn style={{ color:main_color, height:'24px' }}/>
@@ -84,10 +83,14 @@ function FooterDesktop(props) {
                         </Link>
                     </Tooltip>
                     <Tooltip title="Privacy policy">
-                        <Policy style={{ color:main_color, height:'24px' }}/>
+                        <Link href="/policy">
+                            <Policy style={{ color:main_color, height:'24px' }}/>
+                        </Link>
                     </Tooltip>
                     <Tooltip title="Terms & Conditions">
-                        <Gavel style={{ color:main_color, height:'24px' }}/>
+                        <Link href="/terms">
+                            <Gavel style={{ color:main_color, height:'24px' }}/>
+                        </Link>
                     </Tooltip>
                 </Grid>
                 <Grid item xs={12} md={6} style={{ width:'100%', paddingBottom:10, paddingTop:10, display:'flex', justifyContent:'space-between', alignItems:'center' }}>

@@ -7,7 +7,7 @@
 # Components exports
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @18 may 2023
-# Latest revision: 23 may 2023
+# Latest revision: 16 june 2023
 # ---------------------------------------------------- */
 
 export { default as NavigationBar } from './navigationbar/NavigationBar';

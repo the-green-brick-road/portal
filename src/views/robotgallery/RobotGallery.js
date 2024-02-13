@@ -166,7 +166,7 @@ function RobotGallery() {
 
                         const checked = (selectedSeasons[item.name])
                         return(
-                            <Grid item xs={60} sm={15} md={12} lg={10} style={{padding:0}}>
+                            <Grid key={index} item xs={60} sm={15} md={12} lg={10} style={{padding:0}}>
                                 <Stack direction="row" alignItems="center">
                                     <Checkbox
                                         size="small" id={item.name} style={{ padding:'2px' }}
@@ -190,7 +190,7 @@ function RobotGallery() {
                         const checked = (selectedTypes[item])
                         return(
 
-                            <Grid item xs={60} sm={15} md={12} lg={10} style={{padding:0}}>
+                            <Grid key={index} item xs={60} sm={15} md={12} lg={10} style={{padding:0}}>
                                 <Stack direction="row" alignItems="center">
                                     <Checkbox
                                         size="small" id={item} style={{ padding:'2px' }}

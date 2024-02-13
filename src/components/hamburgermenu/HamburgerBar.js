@@ -13,12 +13,9 @@
 /* React includes */
 import { Profiler }              from 'react';
 
-/* Material UI includes */
-import { Avatar }                from '@mui/material';
-import { default as Login }      from '@mui/icons-material/Login';
-
 /* Portal includes */
 import { useLogging }            from '../../providers';
+// import { Login }                 from '../../components';
 
 /* Local includes */
 import HamburgerLogo             from './HamburgerLogo';
@@ -28,7 +25,7 @@ import HamburgerIcon             from './HamburgerIcon';
 function HamburgerBar(props) {
 
     /* --------- Gather inputs --------- */
-    const { height = '20px', isNegative = false, theme={palette:{common:{white:'#ffffff'},primary:{main:'#000000'},secondary:{main:'#ffffff'}}} }  = props
+    const { height = '20px', isNegative = false, isDark = false, theme={palette:{common:{white:'#ffffff'},primary:{main:'#000000'},secondary:{main:'#ffffff'}}} }  = props
     const { onRender }      = useLogging();
     const componentName = 'HamburgerBar';
 
@@ -36,9 +33,7 @@ function HamburgerBar(props) {
 
     let stackcolor = theme.palette.primary.main;
     if (isNegative) { stackcolor = theme.palette.common.white; }
-
-    let txtcolor = theme.palette.common.white;
-    if (isNegative) { txtcolor = theme.palette.primary.main; }
+    if (isDark && isNegative) { stackcolor = theme.palette.common.black; }
 
     /* ----------- Define HTML --------- */
     return (
@@ -46,7 +41,7 @@ function HamburgerBar(props) {
             <HamburgerStack placeholder="hamburgerbar" id="hamburgerbar" direction="row" alignItems="center" justifyContent="space-between" color={stackcolor} padding="20px" height={height}>
                 <HamburgerLogo padding="20px" height={height} name='logo' />
                 <HamburgerIcon width="30px" height="30px" color={stackcolor} />
-                <Avatar style={{ backgroundColor:stackcolor }}><Login style={{ color:txtcolor }} /></Avatar>
+                <div></div>
             </HamburgerStack>
         </Profiler>
     );

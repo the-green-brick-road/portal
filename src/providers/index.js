@@ -7,7 +7,7 @@
 # Providers exports
 # -------------------------------------------------------
 # Nadège LEMPERIERE, @09 may 2023
-# Latest revision: 14 june 2023
+# Latest revision: 16 june 2023
 # ---------------------------------------------------- */
 
 export { useLogging,           LoggingProvider }        from './logging';
@@ -20,3 +20,4 @@ export { useRobots,            RobotsProvider }         from './robots';
 export { useTeam,              TeamProvider }           from './team';
 export { usePosts,             PostsProvider }          from './posts';
 export { useSeasons,           SeasonsProvider }        from './seasons';
+export { useAuth,              AuthProvider }           from './authentication';

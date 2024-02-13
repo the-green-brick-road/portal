@@ -2,6 +2,27 @@
 
 exports[`Layout container Should provide required design when not sliding and menu open for small screens 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -115,6 +136,9 @@ exports[`Layout container Should provide required design when not sliding and me
 
 exports[`Layout container Should provide required design when not sliding for large screens 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -218,6 +242,15 @@ exports[`Layout container Should provide required design when not sliding for la
 
 exports[`Layout container Should provide required design when not sliding for medium screens 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -321,6 +354,21 @@ exports[`Layout container Should provide required design when not sliding for me
 
 exports[`Layout container Should provide required design when not sliding for small screens 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -424,6 +472,30 @@ exports[`Layout container Should provide required design when not sliding for sm
 
 exports[`Layout container Should provide required design when sliding and menu open for small screen 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -537,6 +609,12 @@ exports[`Layout container Should provide required design when sliding and menu o
 
 exports[`Layout container Should provide required design when sliding for large screen 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -640,6 +718,18 @@ exports[`Layout container Should provide required design when sliding for large 
 
 exports[`Layout container Should provide required design when sliding for medium screen 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -743,6 +833,24 @@ exports[`Layout container Should provide required design when sliding for medium
 
 exports[`Layout container Should provide required design when sliding for small screen 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div

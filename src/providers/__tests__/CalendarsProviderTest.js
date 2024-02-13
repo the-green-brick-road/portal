@@ -64,7 +64,9 @@ function MockCalendarsConsumer(props) {
 
 describe("Calendars provider" ,() => {
 
-    const Config = { "firebase" : { "api-key" : "AIzaSyDxkYnmt7ihsK7dA3hTY1Njk72XkV1qHrg"} }
+    const Config = { "firebase" : { "api-key" : "AIzaSyDxkYnmt7ihsK7dA3hTY1Njk72XkV1qHrg"},
+                     "calendars" : {"public" : {"read" : "", "share":""}}
+                   }
 
     class Response {
 

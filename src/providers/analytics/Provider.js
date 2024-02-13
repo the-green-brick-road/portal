@@ -100,8 +100,13 @@ function Provider(props) {
         activateAnalytics()   {
 
             logText(componentName, 'info', 'data', ' Activating analytics')
-            if( firebaseState.analytics !== null ) { setAnalyticsCollectionEnabled(firebaseState.analytics, true) }
-            dispatch(setIsAnalyticsActivated(true))
+            if (!navigator.doNotTrack && !window.doNotTrack) {
+
+                if( firebaseState.analytics !== null ) { setAnalyticsCollectionEnabled(firebaseState.analytics, true) }
+                dispatch(setIsAnalyticsActivated(true))
+
+            }
+            else { logText(componentName, 'info', 'data', ' Do Not Track has been activated') }
 
         },
         deactivateAnalytics() {
@@ -114,13 +119,18 @@ function Provider(props) {
         activatePerformance()   {
 
             logText(componentName, 'info', 'data', ' Activating performance')
-            if( firebaseState.performance !== null) {
+            if (!navigator.doNotTrack && !window.doNotTrack) {
 
-                firebaseState.performance.instrumentationEnabled = true
-                firebaseState.performance.dataCollectionEnabled = true
+                if( firebaseState.performance !== null) {
+
+                    firebaseState.performance.instrumentationEnabled = true
+                    firebaseState.performance.dataCollectionEnabled = true
+
+                }
+                dispatch(setIsPerformanceActivated(true))
 
             }
-            dispatch(setIsPerformanceActivated(true))
+            else { logText(componentName, 'info', 'data', ' Do Not Track has been activated') }
 
         },
         deactivatePerformance() {
