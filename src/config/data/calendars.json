@@ -1,3 +1,10 @@
 {
-    "public" : "274df4df943a4ef3dd8e14bfdec8fee64e61a40b79b166643046b2d56a2d2d41@group.calendar.google.com"
+    "public" : {
+        "read" : "274df4df943a4ef3dd8e14bfdec8fee64e61a40b79b166643046b2d56a2d2d41@group.calendar.google.com",
+        "share" : "Mjc0ZGY0ZGY5NDNhNGVmM2RkOGUxNGJmZGVjOGZlZTY0ZTYxYTQwYjc5YjE2NjY0MzA0NmIyZDU2YTJkMmQ0MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+    },
+    "main" : {
+        "read" :"f717195021137bfb0d08b7b89f40afc8f7ca1ff2884f18003d43a03be4a683eb@group.calendar.google.com",
+        "share" : "ZjcxNzE5NTAyMTEzN2JmYjBkMDhiN2I4OWY0MGFmYzhmN2NhMWZmMjg4NGYxODAwM2Q0M2EwM2JlNGE2ODNlYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+    }
 }

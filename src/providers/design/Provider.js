@@ -23,6 +23,7 @@ import { useLogging, useConfiguration }                from '../../providers';
 /* Local includes */
 import { Context }                                     from './Context';
 import { setIsSliding, setIsWebpSupported, setImages } from './store/actions';
+import { setHasAcceptedCookies }                       from './store/actions';
 import reducer                                         from './store/reducer';
 import { useUseMediaQuery }                            from './MaterialHook';
 
@@ -45,6 +46,7 @@ function Provider(props) {
         isWebpSupported: false,   /* Are webp images supported ? */
         isDarkMode: false,
         isSliding: false,
+        hasAcceptedCookies: false,
         images: [],
         ...savedState,
     });
@@ -135,9 +137,17 @@ function Provider(props) {
             dispatch(setIsSliding(value))
 
         },
+        setHasAcceptedCookies(value){
+
+            if (value) { logText(componentName, 'log', 'design', ' Cookies have been accepted') }
+            else       { logText(componentName, 'log', 'design', ' Cookies have not been accepted') }
+            dispatch(setHasAcceptedCookies(value))
+
+        },
         isWebpSupported :   designStore.isWebpSupported,
         isSliding:          designStore.isSliding,
         images:             designStore.images,
+        hasAcceptedCookies: designStore.hasAcceptedCookies,
     }), [designStore]); /* eslint-disable-line react-hooks/exhaustive-deps */
 
     /* ----------- Define HTML --------- */

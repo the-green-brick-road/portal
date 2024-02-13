@@ -25,14 +25,14 @@ function LayoutFooter(props) {
     /* --------- Gather inputs --------- */
     const { width, color, isDark } = props || {};
     const { onRender }             = useLogging();
-    const componentName    = 'LayoutFooter';
+    const componentName            = 'LayoutFooter';
 
     /* ----------- Define HTML --------- */
     return (
         <Profiler id={componentName} onRender={onRender}>
             <Container
                 id="layout-footer"
-                data-testid='layout-page-container'
+                data-testid='layout-footer-container'
                 style={{
                     width: width,
                     backgroundColor: color,

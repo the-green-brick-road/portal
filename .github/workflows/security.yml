@@ -70,7 +70,7 @@ jobs:
               uses: actions/checkout@master
 
             - name: zap scan
-              uses: zaproxy/action-full-scan@v0.4.0
+              uses: zaproxy/action-full-scan@master
               with:
                 token:  ${{ secrets.GH_ACCESS_TOKEN }}
                 docker_name: 'owasp/zap2docker-stable'

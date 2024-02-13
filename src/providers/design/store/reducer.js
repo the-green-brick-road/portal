@@ -26,6 +26,8 @@ export default function reducer(state = {}, action) {
         return { ...state, isSliding: payload };
     case types.SET_IMAGES:
         return { ...state, images: payload };
+    case types.SET_HAS_ACCEPTED_COOKIES:
+        return { ...state, hasAcceptedCookies: payload };
     default:
         return state;
 

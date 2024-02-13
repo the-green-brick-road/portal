@@ -2,6 +2,9 @@
 
 exports[`Footer component Should display a large footer 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -14,7 +17,7 @@ exports[`Footer component Should display a large footer 1`] = `
           style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
         />
         <div
-          class=\\"MuiStack-root css-1phf8ru-MuiStack-root\\"
+          class=\\"MuiStack-root css-xqxc1w-MuiStack-root\\"
           style=\\"width: 100%; padding: 5px;\\"
         >
           <p
@@ -25,7 +28,7 @@ exports[`Footer component Should display a large footer 1`] = `
           </p>
           <a
             aria-label=\\"GBR on YouTube\\"
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-d2rkg-MuiTypography-root-MuiLink-root\\"
             col=\\"#666666\\"
             data-mui-internal-clone-element=\\"true\\"
             href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
@@ -46,7 +49,7 @@ exports[`Footer component Should display a large footer 1`] = `
           </a>
           <a
             aria-label=\\"GBR on Github\\"
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-d2rkg-MuiTypography-root-MuiLink-root\\"
             col=\\"#666666\\"
             data-mui-internal-clone-element=\\"true\\"
             href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
@@ -67,7 +70,7 @@ exports[`Footer component Should display a large footer 1`] = `
           </a>
           <a
             aria-label=\\"GBR on Facebook\\"
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-d2rkg-MuiTypography-root-MuiLink-root\\"
             col=\\"#666666\\"
             data-mui-internal-clone-element=\\"true\\"
             href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
@@ -88,7 +91,7 @@ exports[`Footer component Should display a large footer 1`] = `
           </a>
           <a
             aria-label=\\"GBR on Instagram\\"
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways  css-d2rkg-MuiTypography-root-MuiLink-root\\"
             col=\\"#666666\\"
             data-mui-internal-clone-element=\\"true\\"
             href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
@@ -143,7 +146,7 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               href=\\"https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu\\"
               target=\\"_blank\\"
             >
@@ -156,7 +159,7 @@ exports[`Footer component Should display a large footer 1`] = `
                 viewBox=\\"0 0 24 24\\"
               >
                 <path
-                  d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
+                  d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5\\"
                 />
               </svg>
             </a>
@@ -166,7 +169,7 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"padding-top: 5px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu\\"
               target=\\"_blank\\"
             >
@@ -183,7 +186,7 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               href=\\"https://www.firstlegoleague.org/\\"
               target=\\"_blank\\"
             >
@@ -200,7 +203,7 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"padding-top: 5px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"https://www.firstlegoleague.org/\\"
               target=\\"_blank\\"
             >
@@ -217,7 +220,7 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               href=\\"mailto:green.brick.road.first@gmail.com\\"
             >
               <svg
@@ -229,7 +232,7 @@ exports[`Footer component Should display a large footer 1`] = `
                 viewBox=\\"0 0 24 24\\"
               >
                 <path
-                  d=\\"M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z\\"
+                  d=\\"M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z\\"
                 />
               </svg>
             </a>
@@ -239,8 +242,8 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"padding-top: 6px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
-              href=\\"mailto:contact.technogix@gmail.com\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
+              href=\\"mailto:green.brick.road..first@gmail.com\\"
             >
               <p
                 class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
@@ -255,7 +258,7 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               href=\\"https://www.fasny.org/\\"
               target=\\"_blank\\"
             >
@@ -272,7 +275,7 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"padding-top: 6px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"https://www.fasny.org/\\"
               target=\\"_blank\\"
             >
@@ -288,41 +291,51 @@ exports[`Footer component Should display a large footer 1`] = `
             class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
             style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
           >
-            <svg
-              aria-hidden=\\"true\\"
-              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-              data-testid=\\"PolicyIcon\\"
-              focusable=\\"false\\"
-              style=\\"color: rgb(102, 102, 102); height: 20px;\\"
-              viewBox=\\"0 0 24 24\\"
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
+              href=\\"/policy\\"
             >
-              <path
-                d=\\"m21 5-9-4-9 4v6c0 5.55 3.84 10.74 9 12 2.3-.56 4.33-1.9 5.88-3.71l-3.12-3.12c-1.94 1.29-4.58 1.07-6.29-.64-1.95-1.95-1.95-5.12 0-7.07 1.95-1.95 5.12-1.95 7.07 0 1.71 1.71 1.92 4.35.64 6.29l2.9 2.9C20.29 15.69 21 13.38 21 11V5z\\"
-              />
-              <circle
-                cx=\\"12\\"
-                cy=\\"12\\"
-                r=\\"3\\"
-              />
-            </svg>
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                data-testid=\\"PolicyIcon\\"
+                focusable=\\"false\\"
+                style=\\"color: rgb(102, 102, 102); height: 20px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"m21 5-9-4-9 4v6c0 5.55 3.84 10.74 9 12 2.3-.56 4.33-1.9 5.88-3.71l-3.12-3.12c-1.94 1.29-4.58 1.07-6.29-.64-1.95-1.95-1.95-5.12 0-7.07 1.95-1.95 5.12-1.95 7.07 0 1.71 1.71 1.92 4.35.64 6.29l2.9 2.9C20.29 15.69 21 13.38 21 11z\\"
+                />
+                <circle
+                  cx=\\"12\\"
+                  cy=\\"12\\"
+                  r=\\"3\\"
+                />
+              </svg>
+            </a>
           </div>
           <div
             class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
             style=\\"padding-top: 6px; height: 20px;\\"
           >
-            <p
-              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-              style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
+              href=\\"/policy\\"
             >
-              Privacy policy
-            </p>
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+              >
+                Privacy policy
+              </p>
+            </a>
           </div>
           <div
             class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
             style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               href=\\"https://www.sharkbots.org/\\"
               target=\\"_blank\\"
             >
@@ -339,7 +352,7 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"padding-top: 6px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"https://www.sharkbots.org/\\"
               target=\\"_blank\\"
             >
@@ -355,36 +368,46 @@ exports[`Footer component Should display a large footer 1`] = `
             class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
             style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
           >
-            <svg
-              aria-hidden=\\"true\\"
-              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
-              data-testid=\\"GavelIcon\\"
-              focusable=\\"false\\"
-              style=\\"color: rgb(102, 102, 102); height: 20px;\\"
-              viewBox=\\"0 0 24 24\\"
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
+              href=\\"/terms\\"
             >
-              <path
-                d=\\"m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z\\"
-              />
-            </svg>
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                data-testid=\\"GavelIcon\\"
+                focusable=\\"false\\"
+                style=\\"color: rgb(102, 102, 102); height: 20px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z\\"
+                />
+              </svg>
+            </a>
           </div>
           <div
             class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5 css-k3f0g4-MuiGrid-root\\"
             style=\\"padding-top: 6px; height: 20px;\\"
           >
-            <p
-              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
-              style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+            <a
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
+              href=\\"/terms\\"
             >
-               Terms & Conditions
-            </p>
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+                style=\\"color: rgb(102, 102, 102); font-size: 11px;\\"
+              >
+                 Terms & Conditions
+              </p>
+            </a>
           </div>
           <div
             class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-u78q51-MuiGrid-root\\"
             style=\\"text-align: center; padding-top: 2px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
               target=\\"_blank\\"
             >
@@ -401,7 +424,7 @@ exports[`Footer component Should display a large footer 1`] = `
             style=\\"padding-top: 6px; height: 20px;\\"
           >
             <a
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-i1ndt6-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-17dug8n-MuiTypography-root-MuiLink-root\\"
               href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
               target=\\"_blank\\"
             >
@@ -443,6 +466,12 @@ exports[`Footer component Should display a large footer 1`] = `
 
 exports[`Footer component Should display a thin footer 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -455,7 +484,7 @@ exports[`Footer component Should display a thin footer 1`] = `
           style=\\"color: rgb(102, 102, 102); border-color: #666666; width: 100%;\\"
         />
         <div
-          class=\\"MuiStack-root css-kpwk9i-MuiStack-root\\"
+          class=\\"MuiStack-root css-ixqxh-MuiStack-root\\"
           style=\\"width: 100%; padding: 10px 5px 10px 0px;\\"
         >
           <p
@@ -465,7 +494,7 @@ exports[`Footer component Should display a thin footer 1`] = `
             Follow us:
           </p>
           <a
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-d2rkg-MuiTypography-root-MuiLink-root\\"
             col=\\"#666666\\"
             href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
             target=\\"_blank\\"
@@ -484,7 +513,7 @@ exports[`Footer component Should display a thin footer 1`] = `
             </svg>
           </a>
           <a
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-d2rkg-MuiTypography-root-MuiLink-root\\"
             col=\\"#666666\\"
             href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
             target=\\"_blank\\"
@@ -503,7 +532,7 @@ exports[`Footer component Should display a thin footer 1`] = `
             </svg>
           </a>
           <a
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-d2rkg-MuiTypography-root-MuiLink-root\\"
             col=\\"#666666\\"
             href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
             target=\\"_blank\\"
@@ -522,7 +551,7 @@ exports[`Footer component Should display a thin footer 1`] = `
             </svg>
           </a>
           <a
-            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-15c6dgt-MuiTypography-root-MuiLink-root\\"
+            class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-d2rkg-MuiTypography-root-MuiLink-root\\"
             col=\\"#666666\\"
             href=\\"https://www.youtube.com/channel/UC-sG91KPJL1uP7vpQwxXKhg\\"
             target=\\"_blank\\"
@@ -561,7 +590,7 @@ exports[`Footer component Should display a thin footer 1`] = `
             </p>
             <a
               aria-label=\\"145 New Street - Mamaroneck, NY 10543\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
               href=\\"https://www.google.com/maps/place/145+New+St,+Mamaroneck,+NY+10543/@40.9574836,-73.7427351,17z/data=!3m1!4b1!4m6!3m5!1s0x89c29178999a22ed:0xf8e5945ae9a93104!8m2!3d40.9574796!4d-73.7401548!16s%2Fg%2F11bw503qfd?entry=ttu\\"
               target=\\"_blank\\"
@@ -575,13 +604,13 @@ exports[`Footer component Should display a thin footer 1`] = `
                 viewBox=\\"0 0 24 24\\"
               >
                 <path
-                  d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z\\"
+                  d=\\"M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5\\"
                 />
               </svg>
             </a>
             <a
               aria-label=\\"green.brick.road.first@gmail.com\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
               href=\\"mailto:green.brick.road.first@gmail.com\\"
             >
@@ -594,43 +623,53 @@ exports[`Footer component Should display a thin footer 1`] = `
                 viewBox=\\"0 0 24 24\\"
               >
                 <path
-                  d=\\"M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z\\"
+                  d=\\"M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z\\"
                 />
               </svg>
             </a>
-            <svg
-              aria-hidden=\\"true\\"
+            <a
               aria-label=\\"Privacy policy\\"
-              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
-              data-testid=\\"PolicyIcon\\"
-              focusable=\\"false\\"
-              style=\\"color: rgb(102, 102, 102); height: 24px;\\"
-              viewBox=\\"0 0 24 24\\"
+              href=\\"/policy\\"
             >
-              <path
-                d=\\"m21 5-9-4-9 4v6c0 5.55 3.84 10.74 9 12 2.3-.56 4.33-1.9 5.88-3.71l-3.12-3.12c-1.94 1.29-4.58 1.07-6.29-.64-1.95-1.95-1.95-5.12 0-7.07 1.95-1.95 5.12-1.95 7.07 0 1.71 1.71 1.92 4.35.64 6.29l2.9 2.9C20.29 15.69 21 13.38 21 11V5z\\"
-              />
-              <circle
-                cx=\\"12\\"
-                cy=\\"12\\"
-                r=\\"3\\"
-              />
-            </svg>
-            <svg
-              aria-hidden=\\"true\\"
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                data-testid=\\"PolicyIcon\\"
+                focusable=\\"false\\"
+                style=\\"color: rgb(102, 102, 102); height: 24px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"m21 5-9-4-9 4v6c0 5.55 3.84 10.74 9 12 2.3-.56 4.33-1.9 5.88-3.71l-3.12-3.12c-1.94 1.29-4.58 1.07-6.29-.64-1.95-1.95-1.95-5.12 0-7.07 1.95-1.95 5.12-1.95 7.07 0 1.71 1.71 1.92 4.35.64 6.29l2.9 2.9C20.29 15.69 21 13.38 21 11z\\"
+                />
+                <circle
+                  cx=\\"12\\"
+                  cy=\\"12\\"
+                  r=\\"3\\"
+                />
+              </svg>
+            </a>
+            <a
               aria-label=\\"Terms & Conditions\\"
-              class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
-              data-testid=\\"GavelIcon\\"
-              focusable=\\"false\\"
-              style=\\"color: rgb(102, 102, 102); height: 24px;\\"
-              viewBox=\\"0 0 24 24\\"
+              href=\\"/terms\\"
             >
-              <path
-                d=\\"m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z\\"
-              />
-            </svg>
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"
+                data-testid=\\"GavelIcon\\"
+                focusable=\\"false\\"
+                style=\\"color: rgb(102, 102, 102); height: 24px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z\\"
+                />
+              </svg>
+            </a>
           </div>
           <div
             class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root\\"
@@ -644,7 +683,7 @@ exports[`Footer component Should display a thin footer 1`] = `
             </p>
             <a
               aria-label=\\"First Lego League\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
               href=\\"https://www.firstlegoleague.org/\\"
               target=\\"_blank\\"
@@ -658,7 +697,7 @@ exports[`Footer component Should display a thin footer 1`] = `
             </a>
             <a
               aria-label=\\"French American School of New York\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
               href=\\"https://www.fasny.org/\\"
               target=\\"_blank\\"
@@ -672,7 +711,7 @@ exports[`Footer component Should display a thin footer 1`] = `
             </a>
             <a
               aria-label=\\"Our big brothers & sisters from FTC team\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
               href=\\"https://www.sharkbots.org/\\"
               target=\\"_blank\\"
@@ -686,7 +725,7 @@ exports[`Footer component Should display a thin footer 1`] = `
             </a>
             <a
               aria-label=\\"Our regional First Lego League\\"
-              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-83780e-MuiTypography-root-MuiLink-root\\"
+              class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-uzv0uc-MuiTypography-root-MuiLink-root\\"
               data-mui-internal-clone-element=\\"true\\"
               href=\\"https://sites.google.com/site/hudsonvalleyfirstlegoleague/\\"
               target=\\"_blank\\"

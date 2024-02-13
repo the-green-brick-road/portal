@@ -2,6 +2,9 @@
 
 exports[`Team view Should display team page 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -53,7 +56,7 @@ exports[`Team view Should display team page 1`] = `
               >
                 <p
                   class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                  style=\\"color: rgb(0, 0, 0); font-size: 14px; font-style: italic;\\"
+                  style=\\"color: rgb(0, 0, 0); font-size: 14px; font-style: italic; padding-bottom: 10px;\\"
                 >
                   \\"
                   member1
@@ -203,7 +206,7 @@ exports[`Team view Should display team page 1`] = `
               >
                 <p
                   class=\\"MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root\\"
-                  style=\\"color: rgb(0, 0, 0); font-size: 14px; font-style: italic;\\"
+                  style=\\"color: rgb(0, 0, 0); font-size: 14px; font-style: italic; padding-bottom: 10px;\\"
                 >
                   \\"
                   member2

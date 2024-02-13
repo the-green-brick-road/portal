@@ -1,7 +1,190 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Layout container Should hide menu when cookies are not activated 1`] = `
+"<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"width: 100vw; height: 100vh; max-width: 3000px; background-color: rgb(255, 255, 255); z-index: -1; position: absolute; padding: 0px;\\"
+      />
+      <header
+        class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102); visibility: hidden;\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
+          style=\\"height: 100%; width: 100%; padding-left: 0px; padding-right: 20px;\\"
+        >
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"height: 80px; background-color: rgb(85, 85, 85); width: 100%;\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerBar 
+            </p>
+          </div>
+          <div
+            class=\\"MuiBox-root css-0\\"
+            style=\\"min-height: 30px; top: 80px; z-index: 1000; position: absolute; background-color: rgb(85, 85, 85);\\"
+          >
+            <p
+              class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            >
+               HamburgerMenu 
+            </p>
+          </div>
+        </div>
+      </header>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          id=\\"content\\"
+          style=\\"height: calc( 100vh - 10px - 80px ); position: fixed; background-color: rgba(255, 255, 255, 0); top: 80px; flex-direction: row; overflow: hidden; z-index: -1;\\"
+        />
+      </div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        data-testid=\\"layout-page-container\\"
+        id=\\"page\\"
+        style=\\"position: absolute; display: flex; flex-direction: column; height: calc( 100vh - 10px ); background-color: rgb(85, 85, 85); top: 10px; margin-bottom: 0px; margin-top: 0px; padding: 0px; z-index: 0;\\"
+      >
+        <div
+          class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+          data-testid=\\"layout-page-subcontainer\\"
+          style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: hidden; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
+        >
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            style=\\"padding: 0px; filter: blur(4px);\\"
+          >
+            <div>
+              <p>
+                 target
+                0
+                 
+              </p>
+              <button
+                aria-label=\\"test1\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test2\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test3\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+            </div>
+            <div
+              class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+              data-testid=\\"layout-footer-container\\"
+              id=\\"layout-footer\\"
+              style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            >
+              <div
+                class=\\"MuiBox-root css-0\\"
+                style=\\"background-color: green;\\"
+              />
+            </div>
+          </div>
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            data-testid=\\"layout-cookies-container\\"
+            id=\\"layout-cookies\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: auto; visibility: visible;\\"
+          >
+            <div
+              class=\\"MuiBox-root css-0\\"
+              style=\\"min-height: 30px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              >
+                 Cookies 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
 exports[`Layout container Should provide required design when not sliding and menu open for small screens 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -10,7 +193,7 @@ exports[`Layout container Should provide required design when not sliding and me
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
-        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0);\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0); visibility: visible;\\"
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
@@ -58,53 +241,75 @@ exports[`Layout container Should provide required design when not sliding and me
           data-testid=\\"layout-page-subcontainer\\"
           style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
-          <div>
-            <p>
-               target
-              0
-               
-            </p>
-            <button
-              aria-label=\\"test1\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            style=\\"padding: 0px; filter: none;\\"
+          >
+            <div>
+              <p>
+                 target
+                0
+                 
+              </p>
+              <button
+                aria-label=\\"test1\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test2\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test3\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+            </div>
+            <div
+              class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+              data-testid=\\"layout-footer-container\\"
+              id=\\"layout-footer\\"
+              style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
             >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              <div
+                class=\\"MuiBox-root css-0\\"
+                style=\\"background-color: green;\\"
               />
-            </button>
-            <button
-              aria-label=\\"test2\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
-            <button
-              aria-label=\\"test3\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
+            </div>
           </div>
           <div
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-            data-testid=\\"layout-page-container\\"
-            id=\\"layout-footer\\"
-            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            data-testid=\\"layout-cookies-container\\"
+            id=\\"layout-cookies\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
-              style=\\"background-color: green;\\"
-            />
+              style=\\"min-height: 30px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              >
+                 Cookies 
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -115,6 +320,9 @@ exports[`Layout container Should provide required design when not sliding and me
 
 exports[`Layout container Should provide required design when not sliding for large screens 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -123,7 +331,7 @@ exports[`Layout container Should provide required design when not sliding for la
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
-        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0);\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0); visibility: visible;\\"
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
@@ -161,53 +369,75 @@ exports[`Layout container Should provide required design when not sliding for la
           data-testid=\\"layout-page-subcontainer\\"
           style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
-          <div>
-            <p>
-               target
-              0
-               
-            </p>
-            <button
-              aria-label=\\"test1\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            style=\\"padding: 0px; filter: none;\\"
+          >
+            <div>
+              <p>
+                 target
+                0
+                 
+              </p>
+              <button
+                aria-label=\\"test1\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test2\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test3\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+            </div>
+            <div
+              class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+              data-testid=\\"layout-footer-container\\"
+              id=\\"layout-footer\\"
+              style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
             >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              <div
+                class=\\"MuiBox-root css-0\\"
+                style=\\"background-color: green;\\"
               />
-            </button>
-            <button
-              aria-label=\\"test2\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
-            <button
-              aria-label=\\"test3\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
+            </div>
           </div>
           <div
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-            data-testid=\\"layout-page-container\\"
-            id=\\"layout-footer\\"
-            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            data-testid=\\"layout-cookies-container\\"
+            id=\\"layout-cookies\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
-              style=\\"background-color: green;\\"
-            />
+              style=\\"min-height: 30px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              >
+                 Cookies 
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -218,6 +448,15 @@ exports[`Layout container Should provide required design when not sliding for la
 
 exports[`Layout container Should provide required design when not sliding for medium screens 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -226,7 +465,7 @@ exports[`Layout container Should provide required design when not sliding for me
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
-        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0);\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0); visibility: visible;\\"
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
@@ -264,53 +503,75 @@ exports[`Layout container Should provide required design when not sliding for me
           data-testid=\\"layout-page-subcontainer\\"
           style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
-          <div>
-            <p>
-               target
-              0
-               
-            </p>
-            <button
-              aria-label=\\"test1\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            style=\\"padding: 0px; filter: none;\\"
+          >
+            <div>
+              <p>
+                 target
+                0
+                 
+              </p>
+              <button
+                aria-label=\\"test1\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test2\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test3\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+            </div>
+            <div
+              class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+              data-testid=\\"layout-footer-container\\"
+              id=\\"layout-footer\\"
+              style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
             >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              <div
+                class=\\"MuiBox-root css-0\\"
+                style=\\"background-color: green;\\"
               />
-            </button>
-            <button
-              aria-label=\\"test2\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
-            <button
-              aria-label=\\"test3\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
+            </div>
           </div>
           <div
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-            data-testid=\\"layout-page-container\\"
-            id=\\"layout-footer\\"
-            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            data-testid=\\"layout-cookies-container\\"
+            id=\\"layout-cookies\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
-              style=\\"background-color: green;\\"
-            />
+              style=\\"min-height: 30px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              >
+                 Cookies 
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -321,6 +582,21 @@ exports[`Layout container Should provide required design when not sliding for me
 
 exports[`Layout container Should provide required design when not sliding for small screens 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -329,7 +605,7 @@ exports[`Layout container Should provide required design when not sliding for sm
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-i407ae-MuiPaper-root-MuiAppBar-root\\"
-        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0);\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgba(255, 255, 255, 0); visibility: visible;\\"
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
@@ -367,53 +643,75 @@ exports[`Layout container Should provide required design when not sliding for sm
           data-testid=\\"layout-page-subcontainer\\"
           style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
-          <div>
-            <p>
-               target
-              0
-               
-            </p>
-            <button
-              aria-label=\\"test1\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            style=\\"padding: 0px; filter: none;\\"
+          >
+            <div>
+              <p>
+                 target
+                0
+                 
+              </p>
+              <button
+                aria-label=\\"test1\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test2\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test3\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+            </div>
+            <div
+              class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+              data-testid=\\"layout-footer-container\\"
+              id=\\"layout-footer\\"
+              style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
             >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              <div
+                class=\\"MuiBox-root css-0\\"
+                style=\\"background-color: green;\\"
               />
-            </button>
-            <button
-              aria-label=\\"test2\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
-            <button
-              aria-label=\\"test3\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
+            </div>
           </div>
           <div
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-            data-testid=\\"layout-page-container\\"
-            id=\\"layout-footer\\"
-            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            data-testid=\\"layout-cookies-container\\"
+            id=\\"layout-cookies\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
-              style=\\"background-color: green;\\"
-            />
+              style=\\"min-height: 30px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              >
+                 Cookies 
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -424,6 +722,30 @@ exports[`Layout container Should provide required design when not sliding for sm
 
 exports[`Layout container Should provide required design when sliding and menu open for small screen 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -432,7 +754,7 @@ exports[`Layout container Should provide required design when sliding and menu o
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
-        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102);\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102); visibility: visible;\\"
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
@@ -480,53 +802,75 @@ exports[`Layout container Should provide required design when sliding and menu o
           data-testid=\\"layout-page-subcontainer\\"
           style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
-          <div>
-            <p>
-               target
-              0
-               
-            </p>
-            <button
-              aria-label=\\"test1\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            style=\\"padding: 0px; filter: none;\\"
+          >
+            <div>
+              <p>
+                 target
+                0
+                 
+              </p>
+              <button
+                aria-label=\\"test1\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test2\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test3\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+            </div>
+            <div
+              class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+              data-testid=\\"layout-footer-container\\"
+              id=\\"layout-footer\\"
+              style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
             >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              <div
+                class=\\"MuiBox-root css-0\\"
+                style=\\"background-color: green;\\"
               />
-            </button>
-            <button
-              aria-label=\\"test2\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
-            <button
-              aria-label=\\"test3\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
+            </div>
           </div>
           <div
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-            data-testid=\\"layout-page-container\\"
-            id=\\"layout-footer\\"
-            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            data-testid=\\"layout-cookies-container\\"
+            id=\\"layout-cookies\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
-              style=\\"background-color: green;\\"
-            />
+              style=\\"min-height: 30px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              >
+                 Cookies 
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -537,6 +881,12 @@ exports[`Layout container Should provide required design when sliding and menu o
 
 exports[`Layout container Should provide required design when sliding for large screen 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -545,7 +895,7 @@ exports[`Layout container Should provide required design when sliding for large 
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
-        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102);\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102); visibility: visible;\\"
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
@@ -583,53 +933,75 @@ exports[`Layout container Should provide required design when sliding for large 
           data-testid=\\"layout-page-subcontainer\\"
           style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
-          <div>
-            <p>
-               target
-              0
-               
-            </p>
-            <button
-              aria-label=\\"test1\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            style=\\"padding: 0px; filter: none;\\"
+          >
+            <div>
+              <p>
+                 target
+                0
+                 
+              </p>
+              <button
+                aria-label=\\"test1\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test2\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test3\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+            </div>
+            <div
+              class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+              data-testid=\\"layout-footer-container\\"
+              id=\\"layout-footer\\"
+              style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
             >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              <div
+                class=\\"MuiBox-root css-0\\"
+                style=\\"background-color: green;\\"
               />
-            </button>
-            <button
-              aria-label=\\"test2\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
-            <button
-              aria-label=\\"test3\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
+            </div>
           </div>
           <div
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-            data-testid=\\"layout-page-container\\"
-            id=\\"layout-footer\\"
-            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            data-testid=\\"layout-cookies-container\\"
+            id=\\"layout-cookies\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
-              style=\\"background-color: green;\\"
-            />
+              style=\\"min-height: 30px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              >
+                 Cookies 
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -640,6 +1012,18 @@ exports[`Layout container Should provide required design when sliding for large 
 
 exports[`Layout container Should provide required design when sliding for medium screen 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -648,7 +1032,7 @@ exports[`Layout container Should provide required design when sliding for medium
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
-        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102);\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102); visibility: visible;\\"
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
@@ -686,53 +1070,75 @@ exports[`Layout container Should provide required design when sliding for medium
           data-testid=\\"layout-page-subcontainer\\"
           style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
-          <div>
-            <p>
-               target
-              0
-               
-            </p>
-            <button
-              aria-label=\\"test1\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            style=\\"padding: 0px; filter: none;\\"
+          >
+            <div>
+              <p>
+                 target
+                0
+                 
+              </p>
+              <button
+                aria-label=\\"test1\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test2\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test3\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+            </div>
+            <div
+              class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+              data-testid=\\"layout-footer-container\\"
+              id=\\"layout-footer\\"
+              style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
             >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              <div
+                class=\\"MuiBox-root css-0\\"
+                style=\\"background-color: green;\\"
               />
-            </button>
-            <button
-              aria-label=\\"test2\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
-            <button
-              aria-label=\\"test3\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
+            </div>
           </div>
           <div
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-            data-testid=\\"layout-page-container\\"
-            id=\\"layout-footer\\"
-            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            data-testid=\\"layout-cookies-container\\"
+            id=\\"layout-cookies\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
-              style=\\"background-color: green;\\"
-            />
+              style=\\"min-height: 30px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              >
+                 Cookies 
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -743,6 +1149,24 @@ exports[`Layout container Should provide required design when sliding for medium
 
 exports[`Layout container Should provide required design when sliding for small screen 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div
@@ -751,7 +1175,7 @@ exports[`Layout container Should provide required design when sliding for small 
       />
       <header
         class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zl5fzg-MuiPaper-root-MuiAppBar-root\\"
-        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102);\\"
+        style=\\"position: absolute; height: 80px; display: flex; top: 10px; background-color: rgb(102, 102, 102); visibility: visible;\\"
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-10ltm04-MuiToolbar-root\\"
@@ -789,53 +1213,75 @@ exports[`Layout container Should provide required design when sliding for small 
           data-testid=\\"layout-page-subcontainer\\"
           style=\\"background-color: rgb(85, 85, 85); position: absolute; overflow-y: scroll; overflow-x: hidden; height: calc( 100vh - 10px ); top: 0px; padding-left: 0px; padding-right: 0px; z-index: 1;\\"
         >
-          <div>
-            <p>
-               target
-              0
-               
-            </p>
-            <button
-              aria-label=\\"test1\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
+          <div
+            class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+            style=\\"padding: 0px; filter: none;\\"
+          >
+            <div>
+              <p>
+                 target
+                0
+                 
+              </p>
+              <button
+                aria-label=\\"test1\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test2\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+              <button
+                aria-label=\\"test3\\"
+                class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
+                tabindex=\\"0\\"
+                type=\\"button\\"
+              >
+                <span
+                  class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                />
+              </button>
+            </div>
+            <div
+              class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+              data-testid=\\"layout-footer-container\\"
+              id=\\"layout-footer\\"
+              style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
             >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              <div
+                class=\\"MuiBox-root css-0\\"
+                style=\\"background-color: green;\\"
               />
-            </button>
-            <button
-              aria-label=\\"test2\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
-            <button
-              aria-label=\\"test3\\"
-              class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-jnjbjn-MuiButtonBase-root-MuiButton-root\\"
-              tabindex=\\"0\\"
-              type=\\"button\\"
-            >
-              <span
-                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-              />
-            </button>
+            </div>
           </div>
           <div
             class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
-            data-testid=\\"layout-page-container\\"
-            id=\\"layout-footer\\"
-            style=\\"background-color: rgb(85, 85, 85); position: relative; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0;\\"
+            data-testid=\\"layout-cookies-container\\"
+            id=\\"layout-cookies\\"
+            style=\\"background-color: rgb(102, 102, 102); position: absolute; bottom: 0px; padding: 0px; left: 0px; margin-bottom: 0px; box-shadow: 0; height: 0px; visibility: hidden;\\"
           >
             <div
               class=\\"MuiBox-root css-0\\"
-              style=\\"background-color: green;\\"
-            />
+              style=\\"min-height: 30px; z-index: 1000; position: absolute; background-color: rgb(102, 102, 102);\\"
+            >
+              <p
+                class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+              >
+                 Cookies 
+              </p>
+            </div>
           </div>
         </div>
       </div>

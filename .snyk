@@ -19,3 +19,18 @@ ignore:
         reason: No update available for react-scripts
         expires: 2030-03-11T00:00:00.000Z
         created: 2023-05-11T18:24:00.000Z
+  SNYK-JS-INFLIGHT-6095116:
+    - 'react-scripts@5.0.1 > babel-jest@27.5.1 > @jest/transform@27.5.1 > babel-plugin-istanbul@6.1.1 > test-exclude@6.0.0 > glob@7.2.3 > inflight@1.0.6':
+        reason: No update available for react-scripts
+        expires: 2030-03-11T00:00:00.000Z
+        created: 2023-05-11T18:24:00.000Z
+  SNYK-JS-POSTCSS-5926692:
+    - 'react-scripts@5.0.1 > resolve-url-loader@4.0.0 > postcss@7.0.39':
+        reason: No update available for react-scripts
+        expires: 2030-03-11T00:00:00.000Z
+        created: 2023-05-11T18:24:00.000Z
+  SNYK-JS-SERIALIZEJAVASCRIPT-6147607:
+    - 'react-scripts@5.0.1 > workbox-webpack-plugin@6.6.0 > workbox-build@6.6.0 > rollup-plugin-terser@7.0.2 > serialize-javascript@4.0.0':
+        reason: No update available for react-scripts
+        expires: 2030-03-11T00:00:00.000Z
+        created: 2023-05-11T18:24:00.000Z

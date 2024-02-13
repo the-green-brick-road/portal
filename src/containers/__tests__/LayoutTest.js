@@ -23,6 +23,7 @@ import { default as Layout } from '../../containers/layout/Layout';
 /* Mocks includes */
 /* eslint-disable jest/no-mocks-import */
 import { useMenu as mockUseMenu, MenuProvider as MockMenuProvider } from '../../providers/__mocks__/MenuProvider';
+import { useAnalytics as mockUseAnalytics, AnalyticsProvider as MockAnalyticsProvider } from '../../providers/__mocks__/AnalyticsProvider';
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
 import { useDesign as mockUseDesign, DesignProvider as MockDesignProvider } from '../../providers/__mocks__/DesignProvider';
 import { default as MockNavigationBar }  from '../../components/__mocks__/NavigationBar';
@@ -30,11 +31,13 @@ import { default as MockHamburgerBar }   from '../../components/__mocks__/Hambur
 import { default as MockImage }          from '../../components/__mocks__/Image';
 import { default as MockHamburgerMenu }  from '../../components/__mocks__/HamburgerMenu';
 import { default as MockFooter }         from '../../components/__mocks__/Footer';
+import { default as MockCookies }        from '../../components/__mocks__/Cookies';
 import { default as MockRouter }         from '../../containers/__mocks__/Router';
 jest.mock('../../providers', () => ({
     useLogging: (() => { return mockUseLogging(); }),
     useMenu: (() => { return mockUseMenu(); }),
     useDesign: (() => { return mockUseDesign(); }),
+    useAnalytics: (() => { return mockUseAnalytics(); }),
 }));
 jest.mock("../../components", () => ({
     Image: (props) => MockImage(props),
@@ -42,6 +45,7 @@ jest.mock("../../components", () => ({
     HamburgerBar: (props) => MockHamburgerBar(props),
     HamburgerMenu: (props) => MockHamburgerMenu(props),
     Footer: (props) => MockFooter(props),
+    Cookies: (props) => MockCookies(props),
 }));
 jest.mock("../../containers", () => ({ Router: (props) => MockRouter(props) }));
 /* eslint-enable jest/no-mocks-import */
@@ -139,11 +143,13 @@ describe("Layout container" ,() => {
 
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen='large' theme={theme} sizes={sizes}>
-                        <MockMenuProvider entries={entries}>
-                            <MockRouter layout={Layout}/>
-                        </MockMenuProvider>
-                    </MockDesignProvider>
+                    <MockAnalyticsProvider>
+                        <MockDesignProvider hasAcceptedCookies={true} screen='large' theme={theme} sizes={sizes}>
+                            <MockMenuProvider entries={entries}>
+                                <MockRouter layout={Layout}/>
+                            </MockMenuProvider>
+                        </MockDesignProvider>
+                    </MockAnalyticsProvider>
                 </MockLoggingProvider>
             </div>
 
@@ -159,11 +165,13 @@ describe("Layout container" ,() => {
 
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen='large' theme={theme} sizes={sizes} isSliding={true}>
-                        <MockMenuProvider entries={entries}>
-                            <MockRouter layout={Layout}/>
-                        </MockMenuProvider>
-                    </MockDesignProvider>
+                    <MockAnalyticsProvider>
+                        <MockDesignProvider hasAcceptedCookies={true} screen='large' theme={theme} sizes={sizes} isSliding={true}>
+                            <MockMenuProvider entries={entries}>
+                                <MockRouter layout={Layout}/>
+                            </MockMenuProvider>
+                        </MockDesignProvider>
+                    </MockAnalyticsProvider>
                 </MockLoggingProvider>
             </div>
 
@@ -178,11 +186,13 @@ describe("Layout container" ,() => {
 
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen='medium' theme={theme} sizes={sizes}>
-                        <MockMenuProvider entries={entries}>
-                            <MockRouter layout={Layout}/>
-                        </MockMenuProvider>
-                    </MockDesignProvider>
+                    <MockAnalyticsProvider>
+                        <MockDesignProvider hasAcceptedCookies={true} screen='medium' theme={theme} sizes={sizes}>
+                            <MockMenuProvider entries={entries}>
+                                <MockRouter layout={Layout}/>
+                            </MockMenuProvider>
+                        </MockDesignProvider>
+                    </MockAnalyticsProvider>
                 </MockLoggingProvider>
             </div>
 
@@ -198,11 +208,13 @@ describe("Layout container" ,() => {
 
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen='medium' theme={theme} sizes={sizes} isSliding={true}>
-                        <MockMenuProvider entries={entries}>
-                            <MockRouter layout={Layout}/>
-                        </MockMenuProvider>
-                    </MockDesignProvider>
+                    <MockAnalyticsProvider>
+                        <MockDesignProvider hasAcceptedCookies={true} screen='medium' theme={theme} sizes={sizes} isSliding={true}>
+                            <MockMenuProvider entries={entries}>
+                                <MockRouter layout={Layout}/>
+                            </MockMenuProvider>
+                        </MockDesignProvider>
+                    </MockAnalyticsProvider>
                 </MockLoggingProvider>
             </div>
 
@@ -218,11 +230,13 @@ describe("Layout container" ,() => {
 
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen='small' theme={theme} sizes={sizes}>
-                        <MockMenuProvider entries={entries}>
-                            <MockRouter layout={Layout}/>
-                        </MockMenuProvider>
-                    </MockDesignProvider>
+                    <MockAnalyticsProvider>
+                        <MockDesignProvider hasAcceptedCookies={true} screen='small' theme={theme} sizes={sizes}>
+                            <MockMenuProvider entries={entries}>
+                                <MockRouter layout={Layout}/>
+                            </MockMenuProvider>
+                        </MockDesignProvider>
+                    </MockAnalyticsProvider>
                 </MockLoggingProvider>
             </div>
 
@@ -238,11 +252,13 @@ describe("Layout container" ,() => {
 
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen='small' theme={theme} sizes={sizes} isSliding={true}>
-                        <MockMenuProvider entries={entries}>
-                            <MockRouter layout={Layout}/>
-                        </MockMenuProvider>
-                    </MockDesignProvider>
+                    <MockAnalyticsProvider>
+                        <MockDesignProvider hasAcceptedCookies={true} screen='small' theme={theme} sizes={sizes} isSliding={true}>
+                            <MockMenuProvider entries={entries}>
+                                <MockRouter layout={Layout}/>
+                            </MockMenuProvider>
+                        </MockDesignProvider>
+                    </MockAnalyticsProvider>
                 </MockLoggingProvider>
             </div>
 
@@ -259,11 +275,13 @@ describe("Layout container" ,() => {
 
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen='small' theme={theme} sizes={sizes}>
-                        <MockMenuProvider entries={entries} isOpen={true}>
-                            <MockRouter layout={Layout}/>
-                        </MockMenuProvider>
-                    </MockDesignProvider>
+                    <MockAnalyticsProvider>
+                        <MockDesignProvider hasAcceptedCookies={true} screen='small' theme={theme} sizes={sizes}>
+                            <MockMenuProvider entries={entries} isOpen={true}>
+                                <MockRouter layout={Layout}/>
+                            </MockMenuProvider>
+                        </MockDesignProvider>
+                    </MockAnalyticsProvider>
                 </MockLoggingProvider>
             </div>
 
@@ -279,11 +297,35 @@ describe("Layout container" ,() => {
 
             <div>
                 <MockLoggingProvider>
-                    <MockDesignProvider screen='small' theme={theme} sizes={sizes} isSliding={true}>
-                        <MockMenuProvider entries={entries} isOpen={true}>
-                            <MockRouter layout={Layout}/>
-                        </MockMenuProvider>
-                    </MockDesignProvider>
+                    <MockAnalyticsProvider>
+                        <MockDesignProvider hasAcceptedCookies={true} screen='small' theme={theme} sizes={sizes} isSliding={true}>
+                            <MockMenuProvider entries={entries} isOpen={true}>
+                                <MockRouter layout={Layout}/>
+                            </MockMenuProvider>
+                        </MockDesignProvider>
+                    </MockAnalyticsProvider>
+                </MockLoggingProvider>
+            </div>
+
+        );
+        const tree = prettyDOM(view.baseElement, Number.POSITIVE_INFINITY, {filterNode: () => true, escapeString: false, highlight: false});
+        expect(tree).toMatchSnapshot();
+
+    })
+
+    test('Should hide menu when cookies are not activated', async () => {
+
+        const view = render(
+
+            <div>
+                <MockLoggingProvider>
+                    <MockAnalyticsProvider >
+                        <MockDesignProvider screen='small' theme={theme} sizes={sizes} isSliding={true} hasAcceptedCookies={false}>
+                            <MockMenuProvider entries={entries} isOpen={true}>
+                                <MockRouter layout={Layout}/>
+                            </MockMenuProvider>
+                        </MockDesignProvider>
+                    </MockAnalyticsProvider>
                 </MockLoggingProvider>
             </div>
 

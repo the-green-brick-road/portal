@@ -37,6 +37,8 @@ function Provider(props) {
     const [calendarsStore, setCalendarsStore] = useState({
         open_update : "",
         open:  { },
+        main_update: "",
+        main: { },
         ...savedState,
     });
 
@@ -45,19 +47,20 @@ function Provider(props) {
         logText(componentName,'debug','workflow',' Loading data --- BEGIN')
 
         /* Collect public calendar */
-        fetch(`https://www.googleapis.com/calendar/v3/calendars/${calendars['public']}/events?key=${firebase['api-key']}`)
+        fetch(`https://www.googleapis.com/calendar/v3/calendars/${calendars['public']['read']}/events?key=${firebase['api-key']}`)
             .then(response => response.json())
             .then(data => {
 
                 if(data.updated !== calendarsStore.open_update) {
 
-                    const local_state = {open: data.items, open_update: data.updated}
+                    const local_state = {...calendarsStore, open: data.items, open_update: data.updated }
+                    console.log(local_state)
                     setCalendarsStore(local_state)
-                    logText(componentName,'debug','workflow',' Loading data --- UPDATE')
+                    logText(componentName,'debug','workflow',' Loading public --- UPDATE')
 
                 }
 
-                logText(componentName,'debug','workflow',' Loading data --- END')
+                logText(componentName,'debug','workflow',' Loading public --- END')
 
             });
 

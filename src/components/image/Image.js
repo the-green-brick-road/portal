@@ -33,7 +33,7 @@ function Image(props) {
     /* eslint-disable padded-blocks */
     return (
         <Profiler id={componentName} onRender={onRender}>
-            {(data !== {}) && (
+            {(Object.keys(data).length !== 0) && (
                 <picture style={style} data-testid={label_picture}>
                     { Object.entries(data).toReversed().map((item) => {
 

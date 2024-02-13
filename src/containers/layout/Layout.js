@@ -26,17 +26,19 @@ import LayoutPage                from './LayoutPage';
 import LayoutContent             from './LayoutContent';
 import LayoutMenu                from './LayoutMenu';
 import LayoutFooter              from './LayoutFooter';
+import LayoutCookies             from './LayoutCookies';
 
 function Layout() {
 
     /* --------- Gather inputs --------- */
-    const { sizes, isDarkMode } = useDesign();
-    const { onRender }          = useLogging();
-    const theme                 = useTheme();
+    const { sizes, isDarkMode, hasAcceptedCookies } = useDesign();
+    const { onRender }                              = useLogging();
+    const theme                                     = useTheme();
     const componentName = 'Layout';
 
     /* -------- Defining theme --------- */
     const background_color = theme.palette.common.white;
+    const color            = theme.palette.primary.main;
 
     /* --------- Compute sizes --------- */
     const menu_height       = `${sizes['menu-height']}px`;
@@ -54,8 +56,11 @@ function Layout() {
             <LayoutMenu top={margin_height} height={menu_height} width={width} left={margin_width} item={item} isDark={isDarkMode}/>
             <LayoutContent top={menu_height} left={margin_width} height={content_height} width={width}/>
             <LayoutPage top={margin_height} left={margin_width} height={height} width={width} color={background_color}>
-                <Outlet />
-                <LayoutFooter width={width} color={background_color} isDark={isDarkMode}/>
+                <Container style={{padding:0, filter: (hasAcceptedCookies? 'none' : 'blur(4px)')}}>
+                    <Outlet />
+                    <LayoutFooter width={width} color={background_color} isDark={isDarkMode}/>
+                </Container>
+                <LayoutCookies width={width} left={0} color={color}/>
             </LayoutPage>
         </Profiler>
     );

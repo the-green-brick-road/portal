@@ -1,6 +1,6 @@
 {
-    "components": ["all"],
-    "topics":     ["workflow"],
+    "components": ["AuthenticationProvider", "Login"],
+    "topics":     ["all"],
     "levels":     ["fatal", "error", "warning", "info", "debug", "log"],
     "level":      "log"
 }

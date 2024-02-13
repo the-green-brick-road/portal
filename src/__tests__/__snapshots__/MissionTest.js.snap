@@ -2,6 +2,9 @@
 
 exports[`Mission view Should display mission page 1`] = `
 "<body>
+  <div
+    id=\\"root\\"
+  />
   <div>
     <div>
       <div

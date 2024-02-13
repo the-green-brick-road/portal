@@ -1,0 +1,2289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Policy view Should display privacy policy page and deactivate cookies 1`] = `
+"<body>
+  <div
+    id=\\"root\\"
+  />
+  <div
+    id=\\"root\\"
+  />
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgba(255, 255, 255, 0); width: 100%; height: 80px; padding: 0px; position: relative;\\"
+      />
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"margin-bottom: 10px;\\"
+      >
+        <h1
+          class=\\"MuiTypography-root MuiTypography-h1 css-wfxni2-MuiTypography-root\\"
+          style=\\"margin-bottom: 30px;\\"
+        >
+           Privacy Policy 
+        </h1>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px; font-weight: bold;\\"
+        >
+          Effective date: 22nd day of June, 2023
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          the-green-brick-road.org (the \\"Site\\") is owned and operated by the-green-brick-road team. The data controller and can be contacted at:  green.brick.road.first@gmail.com
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           Purpose 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          The purpose of this privacy policy (this \\"Privacy Policy\\") is to inform users of our Site of the following: 
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                The personal data we will collect;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Use of collected data;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Who has access to the data collected;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                The rights of Site users; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                The Site's cookie policy.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          This Privacy Policy applies in addition to the terms and conditions of our Site.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           GDPR 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          For users in the European Union, we adhere to the Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016, known as the General Data Protection Regulation (the \\"GDPR\\"). For users in the United Kingdom, we adhere to the GDPR as enshrined in the Data Protection Act 2018.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We have not appointed a Data Protection Officer as we do not fall within the categories of controllers and processors required to appoint a Data Protection Officer under Article 37 of the GDPR.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           Consent 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          By using our Site users agree that they consent to the conditions set out in this Privacy Policy.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          When the legal basis for us processing your personal data is that you have provided your consent to that processing, you may withdraw your consent at any time. If you withdraw your consent, it will not make processing which we completed before you withdrew your consent unlawful.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          You can withdraw your consent by sending an email to green.brick.road.first@gmail.com.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           Legal Basis for Processing 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We collect and process personal data about users in the EU only when we have a legal basis for doing so under Article 6 of the GDPR. 
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We rely on the following legal basis to collect and process the personal data of users in the EU. Users have provided their consent to the processing of their data for one or more specific purposes.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           Personal Data We Collect 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We only collect data that helps us achieve the purpose set out in this Privacy Policy. We will not collect any additional data beyond the data listed below without notifying you first.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We may also collect the following data when you perform certain functions on our Site:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                First and last name;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Email address; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Phone number
+              </span>
+            </div>
+          </li>
+        </ul>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          This data may be collected upon creation of an account
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          How We Use Personal Data
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          Data collected on our Site will only be used for the purposes specified in this Privacy Policy or indicated on the relevant pages of our Site. We will not use your data beyond what we disclose in this Privacy Policy.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          The data we collect when the user performs certain functions may be used for communication and data access restriction
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Who We Share Personal Data With
+        </h2>
+        <h3
+          class=\\"MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root\\"
+        >
+          Administrators
+        </h3>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We may disclose user data to any member of our organization who reasonably needs access to user data to achieve the purposes set out in this Privacy Policy
+        </p>
+        <h3
+          class=\\"MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root\\"
+        >
+          Other Disclosures
+        </h3>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We will not sell or share your data with other third parties, except in the following cases:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                If the law requires it;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                If it is required for any legal proceeding;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                To prove or protect our legal rights; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                To buyers or potential buyers of this company in the event that we seek to sell the company.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you follow hyperlinks from our Site to another Site, please note that we are not responsible for and have no control over their privacy policies and practices.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          How Long We Store Personal Data
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          User data will be stored for 2 years.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          You will be notified if your data is kept for longer than this period.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          How We Protect Your Personal Data
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          In order to protect your security, we use the strongest available browser encryption and store all of our data on servers in secure facilities. All data is only accessible to our administrators.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          While we take all reasonable precautions to ensure that user data is secure and that users are protected, there always remains the risk of harm. The Internet as a whole can be insecure at times and therefore we are unable to guarantee the security of user data beyond what is reasonably practical.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          International Data Transfers
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We transfer user personal data to the united states
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          When we transfer user personal data we will protect that data as described in this Privacy Policy and comply with applicable legal requirements for transferring personal data internationally.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you are located in the United Kingdom or the European Union, we will only transfer your personal data if:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                The country your personal data is being transferred to has been deemed to have adequate data protection by the European Commission or, if you are in the United Kingdom, by the United Kingdom adequacy regulations; or
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                We have implemented appropriate safeguards in respect of the transfer. For example, the recipient is a party to binding corporate rules, or we have entered into standard EU or United Kingdom data protection contractual clauses with the recipient.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Your Rights as a User
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          Under the GDPR, you have the following rights:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to be informed;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right of access;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to rectification;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to erasure;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to restrict processing;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to data portability; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to object.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Children
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We collect the personal data of children under 16 years of age. We only collect the personal data of children under 16 years of age with the express consent of their parents or guardians. This consent is collected through a consent form
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          How to Access, Modify, Delete, or Challenge the Data Collected
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you would like to know if we have collected your personal data, how we have used your personal data, if we have disclosed your personal data and to who we disclosed your personal data, if you would like your data to be deleted or modified in any way, or if you would like to exercise any of your other rights under the GDPR, please contact our privacy officer at green.brick.road.first@gmail.com
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Do Not Track Notice
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          Do Not Track (\\"DNT\\") is a privacy preference that you can set in certain web browsers. We respond to browser-initiated DNT signals. If we receive a DNT signal that indicates a user does not wish to be tracked, we will not track that user.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Cookie Policy
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          A cookie is a small file, stored on a user's hard drive by a website. Its purpose is to collect data relating to the user's browsing habits. You can choose to be notified each time a cookie is transmitted. You can also choose to disable cookies entirely in your internet browser, but this may decrease the quality of your user experience.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We use the following types of cookies on our Site:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Functional cookies: Functional cookies are used to remember the selections you make on our Site so that your selections are saved for your next visits;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Analytical cookies: Analytical cookies allow us to improve the design and functionality of our Site by collecting data on how you access our Site, for example data on the content you access, how long you stay on our Site, etc; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Third-Party Cookies: Third-party cookies are created by a website other than ours. We may use third-party cookies to monitor usage and impact
+              </span>
+            </div>
+          </li>
+        </ul>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Modifications
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          This Privacy Policy may be amended from time to time in order to maintain compliance with the law and to reflect any changes to our data collection process. When we amend this Privacy Policy we will update the \\"Effective Date\\" at the top of this Privacy Policy. We recommend that our users periodically review our Privacy Policy to ensure that they are notified of any updates. If necessary, we may notify users by email of changes to this Privacy Policy.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Complaints
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you have any complaints about how we process your personal data, please contact us through the contact methods listed in the contact information section section so that we can, where possible, resolve the issue. If you feel we have not addressed your concern in a satisfactory manner you may contact a supervisory authority. You also have the right to directly make a complaint to a supervisory authority.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Contact Information
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you have any questions, concerns or complaints, you can contact our privacy officer at green.brick.road.first@gmail.com
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Settings
+        </h2>
+        <div
+          class=\\"MuiStack-root css-m69qwo-MuiStack-root\\"
+        >
+          <p
+            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            style=\\"padding-bottom: 20px;\\"
+          >
+             Activate cookies 
+          </p>
+          <span
+            class=\\"MuiSwitch-root MuiSwitch-sizeMedium css-julti5-MuiSwitch-root\\"
+          >
+            <span
+              class=\\"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-1dgl9nf-MuiButtonBase-root-MuiSwitch-switchBase\\"
+            >
+              <input
+                aria-label=\\"change\\"
+                checked=\\"\\"
+                class=\\"PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3\\"
+                type=\\"checkbox\\"
+              />
+              <span
+                class=\\"MuiSwitch-thumb css-jsexje-MuiSwitch-thumb\\"
+              />
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </span>
+            <span
+              class=\\"MuiSwitch-track css-5k43ol-MuiSwitch-track\\"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;
+
+exports[`Policy view Should display privacy policy page nd activate cookies 1`] = `
+"<body>
+  <div
+    id=\\"root\\"
+  />
+  <div>
+    <div>
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"background-color: rgba(255, 255, 255, 0); width: 100%; height: 80px; padding: 0px; position: relative;\\"
+      />
+      <div
+        class=\\"MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root\\"
+        style=\\"margin-bottom: 10px;\\"
+      >
+        <h1
+          class=\\"MuiTypography-root MuiTypography-h1 css-wfxni2-MuiTypography-root\\"
+          style=\\"margin-bottom: 30px;\\"
+        >
+           Privacy Policy 
+        </h1>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px; font-weight: bold;\\"
+        >
+          Effective date: 22nd day of June, 2023
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          the-green-brick-road.org (the \\"Site\\") is owned and operated by the-green-brick-road team. The data controller and can be contacted at:  green.brick.road.first@gmail.com
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           Purpose 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          The purpose of this privacy policy (this \\"Privacy Policy\\") is to inform users of our Site of the following: 
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                The personal data we will collect;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Use of collected data;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Who has access to the data collected;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                The rights of Site users; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                The Site's cookie policy.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          This Privacy Policy applies in addition to the terms and conditions of our Site.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           GDPR 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          For users in the European Union, we adhere to the Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016, known as the General Data Protection Regulation (the \\"GDPR\\"). For users in the United Kingdom, we adhere to the GDPR as enshrined in the Data Protection Act 2018.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We have not appointed a Data Protection Officer as we do not fall within the categories of controllers and processors required to appoint a Data Protection Officer under Article 37 of the GDPR.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           Consent 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          By using our Site users agree that they consent to the conditions set out in this Privacy Policy.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          When the legal basis for us processing your personal data is that you have provided your consent to that processing, you may withdraw your consent at any time. If you withdraw your consent, it will not make processing which we completed before you withdrew your consent unlawful.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          You can withdraw your consent by sending an email to green.brick.road.first@gmail.com.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           Legal Basis for Processing 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We collect and process personal data about users in the EU only when we have a legal basis for doing so under Article 6 of the GDPR. 
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We rely on the following legal basis to collect and process the personal data of users in the EU. Users have provided their consent to the processing of their data for one or more specific purposes.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+           Personal Data We Collect 
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We only collect data that helps us achieve the purpose set out in this Privacy Policy. We will not collect any additional data beyond the data listed below without notifying you first.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We may also collect the following data when you perform certain functions on our Site:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                First and last name;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Email address; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Phone number
+              </span>
+            </div>
+          </li>
+        </ul>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          This data may be collected upon creation of an account
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          How We Use Personal Data
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          Data collected on our Site will only be used for the purposes specified in this Privacy Policy or indicated on the relevant pages of our Site. We will not use your data beyond what we disclose in this Privacy Policy.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          The data we collect when the user performs certain functions may be used for communication and data access restriction
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Who We Share Personal Data With
+        </h2>
+        <h3
+          class=\\"MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root\\"
+        >
+          Administrators
+        </h3>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We may disclose user data to any member of our organization who reasonably needs access to user data to achieve the purposes set out in this Privacy Policy
+        </p>
+        <h3
+          class=\\"MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root\\"
+        >
+          Other Disclosures
+        </h3>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We will not sell or share your data with other third parties, except in the following cases:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                If the law requires it;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                If it is required for any legal proceeding;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                To prove or protect our legal rights; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                To buyers or potential buyers of this company in the event that we seek to sell the company.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you follow hyperlinks from our Site to another Site, please note that we are not responsible for and have no control over their privacy policies and practices.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          How Long We Store Personal Data
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          User data will be stored for 2 years.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          You will be notified if your data is kept for longer than this period.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          How We Protect Your Personal Data
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          In order to protect your security, we use the strongest available browser encryption and store all of our data on servers in secure facilities. All data is only accessible to our administrators.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          While we take all reasonable precautions to ensure that user data is secure and that users are protected, there always remains the risk of harm. The Internet as a whole can be insecure at times and therefore we are unable to guarantee the security of user data beyond what is reasonably practical.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          International Data Transfers
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We transfer user personal data to the united states
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          When we transfer user personal data we will protect that data as described in this Privacy Policy and comply with applicable legal requirements for transferring personal data internationally.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you are located in the United Kingdom or the European Union, we will only transfer your personal data if:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                The country your personal data is being transferred to has been deemed to have adequate data protection by the European Commission or, if you are in the United Kingdom, by the United Kingdom adequacy regulations; or
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                We have implemented appropriate safeguards in respect of the transfer. For example, the recipient is a party to binding corporate rules, or we have entered into standard EU or United Kingdom data protection contractual clauses with the recipient.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Your Rights as a User
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          Under the GDPR, you have the following rights:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to be informed;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right of access;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to rectification;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to erasure;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to restrict processing;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to data portability; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Right to object.
+              </span>
+            </div>
+          </li>
+        </ul>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Children
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We collect the personal data of children under 16 years of age. We only collect the personal data of children under 16 years of age with the express consent of their parents or guardians. This consent is collected through a consent form
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          How to Access, Modify, Delete, or Challenge the Data Collected
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you would like to know if we have collected your personal data, how we have used your personal data, if we have disclosed your personal data and to who we disclosed your personal data, if you would like your data to be deleted or modified in any way, or if you would like to exercise any of your other rights under the GDPR, please contact our privacy officer at green.brick.road.first@gmail.com
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Do Not Track Notice
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          Do Not Track (\\"DNT\\") is a privacy preference that you can set in certain web browsers. We respond to browser-initiated DNT signals. If we receive a DNT signal that indicates a user does not wish to be tracked, we will not track that user.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Cookie Policy
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          A cookie is a small file, stored on a user's hard drive by a website. Its purpose is to collect data relating to the user's browsing habits. You can choose to be notified each time a cookie is transmitted. You can also choose to disable cookies entirely in your internet browser, but this may decrease the quality of your user experience.
+        </p>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          We use the following types of cookies on our Site:
+        </p>
+        <ul
+          class=\\"MuiList-root MuiList-padding css-h4y409-MuiList-root\\"
+        >
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Functional cookies: Functional cookies are used to remember the selections you make on our Site so that your selections are saved for your next visits;
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Analytical cookies: Analytical cookies allow us to improve the design and functionality of our Site by collecting data on how you access our Site, for example data on the content you access, how long you stay on our Site, etc; and
+              </span>
+            </div>
+          </li>
+          <li
+            class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1os9ulk-MuiListItem-root\\"
+            style=\\"padding: 0px;\\"
+          >
+            <div
+              class=\\"MuiListItemIcon-root css-cveggr-MuiListItemIcon-root\\"
+              style=\\"min-width: 8px;\\"
+            >
+              <svg
+                aria-hidden=\\"true\\"
+                class=\\"MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-trob2m-MuiSvgIcon-root\\"
+                data-testid=\\"CircleIcon\\"
+                focusable=\\"false\\"
+                style=\\"height: 8px; min-width: 8px;\\"
+                viewBox=\\"0 0 24 24\\"
+              >
+                <path
+                  d=\\"M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2\\"
+                />
+              </svg>
+            </div>
+            <div
+              class=\\"MuiListItemText-root css-tlelie-MuiListItemText-root\\"
+            >
+              <span
+                class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1ml28qw-MuiTypography-root\\"
+              >
+                Third-Party Cookies: Third-party cookies are created by a website other than ours. We may use third-party cookies to monitor usage and impact
+              </span>
+            </div>
+          </li>
+        </ul>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Modifications
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          This Privacy Policy may be amended from time to time in order to maintain compliance with the law and to reflect any changes to our data collection process. When we amend this Privacy Policy we will update the \\"Effective Date\\" at the top of this Privacy Policy. We recommend that our users periodically review our Privacy Policy to ensure that they are notified of any updates. If necessary, we may notify users by email of changes to this Privacy Policy.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Complaints
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you have any complaints about how we process your personal data, please contact us through the contact methods listed in the contact information section section so that we can, where possible, resolve the issue. If you feel we have not addressed your concern in a satisfactory manner you may contact a supervisory authority. You also have the right to directly make a complaint to a supervisory authority.
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Contact Information
+        </h2>
+        <p
+          class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+          style=\\"font-size: 12px;\\"
+        >
+          If you have any questions, concerns or complaints, you can contact our privacy officer at green.brick.road.first@gmail.com
+        </p>
+        <h2
+          class=\\"MuiTypography-root MuiTypography-h2 css-11eu52g-MuiTypography-root\\"
+        >
+          Settings
+        </h2>
+        <div
+          class=\\"MuiStack-root css-m69qwo-MuiStack-root\\"
+        >
+          <p
+            class=\\"MuiTypography-root MuiTypography-body1 css-15v4sip-MuiTypography-root\\"
+            style=\\"padding-bottom: 20px;\\"
+          >
+             Activate cookies 
+          </p>
+          <span
+            class=\\"MuiSwitch-root MuiSwitch-sizeMedium css-julti5-MuiSwitch-root\\"
+          >
+            <span
+              class=\\"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-1dgl9nf-MuiButtonBase-root-MuiSwitch-switchBase\\"
+            >
+              <input
+                aria-label=\\"change\\"
+                class=\\"PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3\\"
+                type=\\"checkbox\\"
+              />
+              <span
+                class=\\"MuiSwitch-thumb css-jsexje-MuiSwitch-thumb\\"
+              />
+              <span
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+              />
+            </span>
+            <span
+              class=\\"MuiSwitch-track css-5k43ol-MuiSwitch-track\\"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>"
+`;

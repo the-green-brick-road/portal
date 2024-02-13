@@ -116,7 +116,7 @@ function FooterDesktop(props) {
                     </Link>
                 </Grid>
                 <Grid item xs={5} style={{ paddingTop:'6px', height:'20px' }}>
-                    <Link href="mailto:contact.technogix@gmail.com" underline="none">
+                    <Link href="mailto:green.brick.road..first@gmail.com" underline="none">
                         <Typography style={{ color:main_color, fontSize:'11px' }}>
                             green.brick.road.first@gmail.com
                         </Typography>
@@ -135,12 +135,16 @@ function FooterDesktop(props) {
                     </Link>
                 </Grid>
                 <Grid item xs={1} style={{ textAlign:'center', paddingTop:'2px', height:'20px' }}>
-                    <Policy style={{ color:main_color, height:'20px' }}/>
+                    <Link href="/policy" underline="none">
+                        <Policy style={{ color:main_color, height:'20px' }}/>
+                    </Link>
                 </Grid>
                 <Grid item xs={5} style={{ paddingTop:'6px', height:'20px' }}>
-                    <Typography style={{ color:main_color, fontSize:'11px' }}>
-                        Privacy policy
-                    </Typography>
+                    <Link href="/policy" underline="none">
+                        <Typography style={{ color:main_color, fontSize:'11px' }}>
+                            Privacy policy
+                        </Typography>
+                    </Link>
                 </Grid>
                 <Grid item xs={1} style={{ textAlign:'center', paddingTop:'2px', height:'20px' }}>
                     <Link href="https://www.sharkbots.org/" target="_blank">
@@ -155,10 +159,14 @@ function FooterDesktop(props) {
                     </Link>
                 </Grid>
                 <Grid item xs={1} style={{ textAlign:'center', paddingTop:'2px', height:'20px'  }}>
-                    <Gavel style={{ color:main_color, height:'20px' }}/>
+                    <Link href="/terms" underline="none">
+                        <Gavel style={{ color:main_color, height:'20px' }}/>
+                    </Link>
                 </Grid>
                 <Grid item xs={5} style={{ paddingTop:'6px', height:'20px' }}>
-                    <Typography style={{ color:main_color, fontSize:'11px' }}> Terms & Conditions</Typography>
+                    <Link href="/terms" underline="none">
+                        <Typography style={{ color:main_color, fontSize:'11px' }}> Terms & Conditions</Typography>
+                    </Link>
                 </Grid>
                 <Grid item xs={1} style={{ textAlign:'center', paddingTop:'2px', height:'20px'  }}>
                     <Link href="https://sites.google.com/site/hudsonvalleyfirstlegoleague/" target="_blank">

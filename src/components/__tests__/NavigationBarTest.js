@@ -25,13 +25,17 @@ import { default as NavigationBar }                   from '../../components/nav
 import { useMenu as mockUseMenu, MenuProvider as MockMenuProvider } from '../../providers/__mocks__/MenuProvider';
 import { useLogging as mockUseLogging, LoggingProvider as MockLoggingProvider } from '../../providers/__mocks__/LoggingProvider';
 import { default as MockImage }   from '../../components/__mocks__/Image';
+import { default as MockLogin }   from '../../components/__mocks__/Login';
 import { default as MockRouter }  from '../../containers/__mocks__/Router';
 import { default as MockLayout }  from '../../containers/__mocks__/Layout';
 jest.mock('../../providers', () => ({
     useLogging: (() => { return mockUseLogging(); }),
     useMenu: (()    => { return mockUseMenu(); }),
 }));
-jest.mock("../../components", () => ({ Image: (props) => MockImage(props) }));
+jest.mock("../../components", () => ({
+    Image: (props) => MockImage(props),
+    Login: (props) => MockLogin(props),
+}));
 jest.mock("../../containers", () => ({
     Router: (props) => MockRouter(props),
     Layout: (props) => MockLayout(props),
@@ -148,7 +152,6 @@ describe("NavigationBar component" ,() => {
     }
 
     test('Should display a navigation bar', async () => {
-
 
         const view = render(
 
