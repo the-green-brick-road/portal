@@ -36,7 +36,6 @@ function Post(props) {
     let bgcolor = 'rgba(255,255,255,0.7)';
     if ( isDarkMode ) { bgcolor = 'rgba(51,51,51,0.7)'; }
 
-
     /* ------- Sort posts by date ------ */
     const local_media = [];
     if ('media' in data) {
@@ -85,8 +84,8 @@ function Post(props) {
     return (
         <Profiler id={componentName} onRender={onRender}>
             <Container style={{ position:'absolute', zIndex:5, backgroundColor:bgcolor, width:'100%', height:sizes['menu-height']}}/>
-            <Container style={{ width:'100%', height:data['image-height'], padding:0, backgroundColor:theme.palette.common.black, position:'relative' }}>
-                <img src={data.image} style={{ pointerEvents: 'none', width:'100%', height:data['image-height'], objectFit: 'cover', objectPosition: data['image-position'] }} alt={data.name}/>
+            <Container style={{ width:'100%', maxHeight:data['image-height'], padding:0, backgroundColor:theme.palette.common.black, position:'relative' }}>
+                <img src={data.image} style={{ pointerEvents: 'none', width:'100%', maxHeight:data['image-height'], objectFit: 'cover', objectPosition: data['image-position'] }} alt={data.name}/>
             </Container>
             <Container style={{ fontSize:'14px', paddingTop:'20px', paddingBottom:'20px' }}>
                 <Typography variant="h1">{data.title}</Typography>
